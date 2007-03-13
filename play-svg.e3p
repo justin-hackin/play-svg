@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-3.8.dtd">
+<!-- Project file for project play-svg -->
+<!-- Saved: 2007-03-13, 17:47:00 -->
+<!-- Copyright (C) 2007 imagenerator,  -->
+<Project version="3.8">
+  <ProgLanguage mixed="0">Python</ProgLanguage>
+  <UIType>Qt</UIType>
+  <Description>pLAySVG is a python library for the development and manipulation of SVG vector graphics through scripting. pLAySVG makes it easy to create graphics based on geometric relationships. It's intended for educational and artistic use.</Description>
+  <Version>0.1</Version>
+  <Author>imagenerator</Author>
+  <Email></Email>
+  <Sources>
+    <Source>
+      <Name>base.py</Name>
+    </Source>
+    <Source>
+      <Name>color.py</Name>
+    </Source>
+    <Source>
+      <Name>document.py</Name>
+    </Source>
+    <Source>
+      <Name>element.py</Name>
+    </Source>
+    <Source>
+      <Name>geom.py</Name>
+    </Source>
+    <Source>
+      <Name>gradient.py</Name>
+    </Source>
+    <Source>
+      <Name>gradshape.py</Name>
+    </Source>
+    <Source>
+      <Name>path.py</Name>
+    </Source>
+    <Source>
+      <Name>pathshapes.py</Name>
+    </Source>
+    <Source>
+      <Name>simplestyle.py</Name>
+    </Source>
+  </Sources>
+  <Forms>
+  </Forms>
+  <Translations>
+  </Translations>
+  <Interfaces>
+  </Interfaces>
+  <Others>
+  </Others>
+  <Vcs>
+    <VcsType>Subversion</VcsType>
+    <VcsOptions>{'status': [], 'log': [], 'global': [], 'update': [], 'remove': [], 'add': [], 'tag': [], 'export': [], 'diff': [], 'commit': [], 'checkout': [], 'history': []}</VcsOptions>
+    <VcsOtherData>{'standardLayout': True}</VcsOtherData>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.ui.h" type="FORMS" />
+    <FiletypeAssociation pattern="*.ui" type="FORMS" />
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES" />
+    <FiletypeAssociation pattern="*.py" type="SOURCES" />
+    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
+  </FiletypeAssociations>
+</Project>
