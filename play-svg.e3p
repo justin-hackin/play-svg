@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-3.8.dtd">
 <!-- Project file for project play-svg -->
-<!-- Saved: 2007-03-13, 17:50:24 -->
+<!-- Saved: 2007-03-17, 14:24:51 -->
 <!-- Copyright (C) 2007 imagenerator,  -->
 <Project version="3.8">
   <ProgLanguage mixed="0">Python</ProgLanguage>
@@ -12,31 +12,59 @@
   <Email></Email>
   <Sources>
     <Source>
+      <Dir>playsvg</Dir>
       <Name>color.py</Name>
     </Source>
     <Source>
+      <Dir>playsvg</Dir>
       <Name>document.py</Name>
     </Source>
     <Source>
+      <Dir>playsvg</Dir>
       <Name>element.py</Name>
     </Source>
     <Source>
+      <Dir>playsvg</Dir>
       <Name>geom.py</Name>
     </Source>
     <Source>
+      <Dir>playsvg</Dir>
       <Name>gradient.py</Name>
     </Source>
     <Source>
+      <Dir>playsvg</Dir>
       <Name>gradshape.py</Name>
     </Source>
     <Source>
+      <Dir>playsvg</Dir>
       <Name>path.py</Name>
     </Source>
     <Source>
+      <Dir>playsvg</Dir>
       <Name>pathshapes.py</Name>
     </Source>
     <Source>
-      <Name>simplestyle.py</Name>
+      <Dir>playsvg</Dir>
+      <Name>__init__.py</Name>
+    </Source>
+    <Source>
+      <Dir>playsvg</Dir>
+      <Name>numbthy.py</Name>
+    </Source>
+    <Source>
+      <Name>setup.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>cronoloshu.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>circularWeave.py</Name>
+    </Source>
+    <Source>
+      <Dir>dist</Dir>
+      <Name>playsvg-1.0.tar.gz</Name>
     </Source>
   </Sources>
   <Forms>
@@ -46,6 +74,11 @@
   <Interfaces>
   </Interfaces>
   <Others>
+    <Other>
+      <Dir></Dir>
+      <Dir>home</Dir>
+      <Name>pome</Name>
+    </Other>
   </Others>
   <Vcs>
     <VcsType>Subversion</VcsType>
@@ -53,10 +86,10 @@
     <VcsOtherData>{'standardLayout': True}</VcsOtherData>
   </Vcs>
   <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.py" type="SOURCES" />
     <FiletypeAssociation pattern="*.ui.h" type="FORMS" />
-    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
     <FiletypeAssociation pattern="*.idl" type="INTERFACES" />
     <FiletypeAssociation pattern="*.ui" type="FORMS" />
-    <FiletypeAssociation pattern="*.py" type="SOURCES" />
+    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
   </FiletypeAssociations>
 </Project>
