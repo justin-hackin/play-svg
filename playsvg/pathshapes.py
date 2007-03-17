@@ -1,21 +1,21 @@
 from amara import binderytools
 from geom import *
-from elements import *
+from element import *
 from copy import deepcopy
 
 def arcSpire(cornerA, cornerB, bottomCtrlHeight, topCtrlHeight):
     spirePathData = PathData().moveTo(cornerA).QRVBD(bottomCtrlHeight, cornerB ).QRVBD(topCtrlHeight, cornerA, flipped = 1).closePath()
     return spirePathData
     
-def magneticField(pointA, pointB, layers,layerSpacing,angle):
-    fieldGroup = base.dok.xml_element(u'g')
-    for layer in range(1,layers+1):
-        bottomCtrlPt1 = extendBendPoint(pointB, pointA,  layer*layerSpacing, angle)
-        bottomCtrlPt2 = extendBendPoint(pointA, pointB, layer*layerSpacing, 1-angle)
-        topCtrlPt1 = extendBendPoint(pointA, pointB,  layer*layerSpacing, angle)
-        topCtrlPt2 = extendBendPoint(pointB, pointA, layer*layerSpacing, 1-angle)
-        fieldLayerPathData = PathData().moveTo(pointA).cubicBezier(bottomCtrlPt1, bottomCtrlPt2, pointB).cubicBezier(topCtrlPt1, topCtrlPt2, pointA).closePath()
-    return fieldLayerPathData
+##def magneticField(pointA, pointB, layers,layerSpacing,angle):
+##    fieldGroup = base.dok.xml_element(u'g')
+##    for layer in range(1,layers+1):
+##        bottomCtrlPt1 = extendBendPoint(pointB, pointA,  layer*layerSpacing, angle)
+##        bottomCtrlPt2 = extendBendPoint(pointA, pointB, layer*layerSpacing, 1-angle)
+##        topCtrlPt1 = extendBendPoint(pointA, pointB,  layer*layerSpacing, angle)
+##        topCtrlPt2 = extendBendPoint(pointB, pointA, layer*layerSpacing, 1-angle)
+##        fieldLayerPathData = PathData().moveTo(pointA).cubicBezier(bottomCtrlPt1, bottomCtrlPt2, pointB).cubicBezier(topCtrlPt1, topCtrlPt2, pointA).closePath()
+##    return fieldLayerPathData
     
 def starPolygon(x, n, radius):
     '''see Polygon Star in wikipedia for a description of the shape generated'''
@@ -300,7 +300,7 @@ def hexagonLattice(level, radius):
         
     return latticePath
 
-def lineZigZag(base, pointA, pointB, heightRatio, reps):
+def lineZigZag( pointA, pointB, heightRatio, reps):
     ticks = getLineDivisions(pointA,pointB, reps)
     points = []
     bendAngle = 0.25
