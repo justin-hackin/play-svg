@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-3.8.dtd">
 <!-- Project file for project play-svg -->
-<!-- Saved: 2007-03-17, 15:00:58 -->
+<!-- Saved: 2007-03-17, 15:27:55 -->
 <!-- Copyright (C) 2007 imagenerator,  -->
 <Project version="3.8">
   <ProgLanguage mixed="0">Python</ProgLanguage>
@@ -53,10 +53,6 @@
     </Source>
     <Source>
       <Name>setup.py</Name>
-    </Source>
-    <Source>
-      <Dir>scripts</Dir>
-      <Name>cronoloshu.py</Name>
     </Source>
     <Source>
       <Dir>scripts</Dir>
