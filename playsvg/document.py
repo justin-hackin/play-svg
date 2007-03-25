@@ -29,7 +29,7 @@ def setAttributesFromDict(element,dict):
 
 
 class Document:
-    def __init__(self, file=None,  gridSize=295, alignment='mm'):
+    def __init__(self, document = None, file=None,  gridSize=295, alignment='mm'):
         #FIXME: test file support
         #FIXME: add support for different canvas alignments and sizes of document
         if file != None:
@@ -40,12 +40,16 @@ class Document:
                 print 'failed to parse SVG document'
         else:
             #create SVG document elements from scratch
-            self.xdoc= xml.dom.getDOMImplementation().createDocument(None, 'svg',None)
-            svgAttributes = {u'xmlns':'http://www.w3.org/2000/svg', u'height':unicode(gridSize*2), u'width':unicode(gridSize*2)}  
-            setAttributesFromDict(self.xdoc.documentElement, svgAttributes)
-            self.xdoc.documentElement.setAttributeNS( 'http://www.w3.org/1999/xlink', 'href:xlink', 'xlink')
-            self.defs = self.xdoc.createElement(u'defs')
-            self.xdoc.documentElement.appendChild(self.defs)
+            if document == None:
+                self.xdoc= xml.dom.getDOMImplementation().createDocument(None, 'svg',None)
+                svgAttributes = {u'xmlns':'http://www.w3.org/2000/svg', u'height':unicode(gridSize*2), u'width':unicode(gridSize*2)}  
+                setAttributesFromDict(self.xdoc.documentElement, svgAttributes)
+                self.xdoc.documentElement.setAttributeNS( 'http://www.w3.org/1999/xlink', 'href:xlink', 'xlink')
+                self.defs = self.xdoc.createElement(u'defs')
+                self.xdoc.documentElement.appendChild(self.defs)
+            else:
+                self.xdoc = document
+            
             
             #append canvas, the co-ordinate system group
             canvasAtts = {u'id':u'canvas', u'transform':(u'matrix(1,0,0,-1,0,'+str(gridSize*2) +u') ' + u'translate('+unicode(gridSize)+ u','+ unicode(gridSize)+u')')}
