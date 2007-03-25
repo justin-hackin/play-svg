@@ -1,6 +1,6 @@
-from amara import binderytools
-from geom import *
-from element import *
+from playsvg.geom import *
+from playsvg.element import *
+from playsvg.path import *
 from copy import deepcopy
 
 def arcSpire(cornerA, cornerB, bottomCtrlHeight, topCtrlHeight):
@@ -159,6 +159,9 @@ def lotusPetalFlower(petals, baseRadius, tipRadius, ctrlDistanceRatio):
 def rayBlocks(rays, innerRadius, outerRadius, innerSpacingRatio, outerSpacingRatio, roundedEnds=0, roundingCtrlDistanceRatio=0.1):
     slice = float(1)/rays
     allBlocks = PathData()
+    outerBezAngal = None
+    innerBezAngal = None
+   
     for i in range(rays):
         innerOffsetDistance = 0.5*innerSpacingRatio*slice
         outerOffsetDistance = 0.5*outerSpacingRatio*slice        
@@ -166,12 +169,23 @@ def rayBlocks(rays, innerRadius, outerRadius, innerSpacingRatio, outerSpacingRat
         rightInnerAngle = i*slice + innerOffsetDistance
         leftOuterAngle = i*slice -outerOffsetDistance
         rightOuterAngle = i*slice + outerOffsetDistance
-        
-        allBlocks.moveTo(Point().polerInit(innerRadius, leftInnerAngle)).\
-        lineTo(Point().polerInit(innerRadius, rightInnerAngle)).\
-        lineTo(Point().polerInit(outerRadius, rightOuterAngle)).\
-        lineTo(Point().polerInit(outerRadius, leftOuterAngle)).closePath()
-         
+        if roundedEnds ==0:
+            allBlocks.moveTo(Point().polerInit(innerRadius, leftInnerAngle)).\
+            lineTo(Point().polerInit(innerRadius, rightInnerAngle)).\
+            lineTo(Point().polerInit(outerRadius, rightOuterAngle)).\
+            lineTo(Point().polerInit(outerRadius, leftOuterAngle)).closePath()
+        else:
+            if i == 0:
+                outerBezAngal = angalBetween(Point().polerInit(outerRadius +10, leftOuterAngle),\
+                        Point().polerInit(outerRadius , leftOuterAngle), Point().polerInit(outerRadius, rightOuterAngle))
+                innerBezAngal = angalBetween(extendBendPoint(Point().polerInit(outerRadius, leftOuterAngle),  Point().polerInit(innerRadius, leftInnerAngle), 10, 0), 
+                        Point().polerInit(innerRadius , leftInnerAngle), Point().polerInit(innerRadius, rightInnerAngle))
+
+            allBlocks.moveTo(Point().polerInit(innerRadius, leftInnerAngle))
+            allBlocks.SCRVBD( (roundingCtrlDistanceRatio, innerBezAngal) , Point().polerInit(innerRadius, rightInnerAngle) )
+            allBlocks.lineTo(Point().polerInit(outerRadius, rightOuterAngle))
+            allBlocks.SCRVBD( (roundingCtrlDistanceRatio, outerBezAngal) , Point().polerInit(outerRadius, leftOuterAngle) )
+
     return allBlocks
     
 def tomsensFigure(radius, insetRatio):

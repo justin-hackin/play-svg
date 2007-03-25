@@ -474,3 +474,10 @@ def perspectiveDistanceRatioArray(angal, divisions):
         ratios.append(distanceBetween(feetPoint, sideIntersections[i])/perspectiveDistanceLength)
     
     return ratios
+    
+def getAngalBetween(pointA, pointB, pointC):
+    angBA = angalBetween(pointB, pointA)
+    angBC = angalBetween(pointB, pointC)
+    if angAB < angBC: return angAB + angBC
+    else: return angBC - angAB
+
