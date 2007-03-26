@@ -176,15 +176,16 @@ def rayBlocks(rays, innerRadius, outerRadius, innerSpacingRatio, outerSpacingRat
             lineTo(Point().polerInit(outerRadius, leftOuterAngle)).closePath()
         else:
             if i == 0:
-                outerBezAngal = angalBetween(Point().polerInit(outerRadius +10, leftOuterAngle),\
+                outerBezAngal = 1.0- angalBetween(Point().polerInit(outerRadius +10, leftOuterAngle),\
                         Point().polerInit(outerRadius , leftOuterAngle), Point().polerInit(outerRadius, rightOuterAngle))
-                innerBezAngal = angalBetween(extendBendPoint(Point().polerInit(outerRadius, leftOuterAngle),  Point().polerInit(innerRadius, leftInnerAngle), 10, 0), 
+                innerBezAngal = 1.0- angalBetween(extendBendPoint(Point().polerInit(outerRadius, leftOuterAngle),  Point().polerInit(innerRadius, leftInnerAngle), 10, 0), 
                         Point().polerInit(innerRadius , leftInnerAngle), Point().polerInit(innerRadius, rightInnerAngle))
 
             allBlocks.moveTo(Point().polerInit(innerRadius, leftInnerAngle))
             allBlocks.SCRVBD( (roundingCtrlDistanceRatio, innerBezAngal) , Point().polerInit(innerRadius, rightInnerAngle) )
             allBlocks.lineTo(Point().polerInit(outerRadius, rightOuterAngle))
             allBlocks.SCRVBD( (roundingCtrlDistanceRatio, outerBezAngal) , Point().polerInit(outerRadius, leftOuterAngle) )
+            allBlocks.closePath()
 
     return allBlocks
     

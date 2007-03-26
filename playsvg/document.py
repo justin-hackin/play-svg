@@ -47,15 +47,16 @@ class Document:
                 self.xdoc.documentElement.setAttributeNS( 'http://www.w3.org/1999/xlink', 'href:xlink', 'xlink')
                 self.defs = self.xdoc.createElement(u'defs')
                 self.xdoc.documentElement.appendChild(self.defs)
+                #append canvas, the co-ordinate system group
+                canvasAtts = {u'id':u'canvas', u'transform':(u'matrix(1,0,0,-1,0,'+str(gridSize*2) +u') ' + u'translate('+unicode(gridSize)+ u','+ unicode(gridSize)+u')')}
+                self.canvas = self.xdoc.createElement(u'g')
+                setAttributesFromDict(self.canvas, canvasAtts)
+                self.xdoc.documentElement.appendChild(self.canvas)
             else:
                 self.xdoc = document
             
             
-            #append canvas, the co-ordinate system group
-            canvasAtts = {u'id':u'canvas', u'transform':(u'matrix(1,0,0,-1,0,'+str(gridSize*2) +u') ' + u'translate('+unicode(gridSize)+ u','+ unicode(gridSize)+u')')}
-            self.canvas = self.xdoc.createElement(u'g')
-            setAttributesFromDict(self.canvas, canvasAtts)
-            self.xdoc.documentElement.appendChild(self.canvas)
+            
     
     def appendElement(self, element):
         """appends element to canvas"""
