@@ -1,0 +1,18 @@
+<inkscape-extension>
+    <_name>Metcalfe Star</_name>
+    <id>playsvg.ext.metcalfestar</id>
+	<dependency type="executable" location="extensions">metcalfestar.py</dependency>
+	<dependency type="executable" location="extensions">inkex.py</dependency>
+	<param name="radius" type="float" min="0.0" max="1000" _gui-text="Radius">300.0</param>
+	<param name="points" type="int" min="5" max="1000" _gui-text="Number of points">20</param>
+	
+    <effect>
+		<object-type>all</object-type>
+                <effects-menu>
+                    <submenu _name="Render"/>
+                </effects-menu>					    
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">metcalfestar.py</command>
+    </script>
+</inkscape-extension>
