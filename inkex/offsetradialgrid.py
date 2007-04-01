@@ -19,31 +19,32 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 import inkex
 import playsvg.pathshapes, playsvg.element, playsvg.document, playsvg.compshapes
 
-class DiscreteColorGrad(inkex.Effect):
+class RadialOffsetGrid(inkex.Effect):
     def __init__(self):
         inkex.Effect.__init__(self)
-        self.OptionParser.add_option("-i", "--intervals",
+        
+        self.OptionParser.add_option("-l", "--layers",
                         action="store", type="int", 
-                        dest="intervals", default=10,
-                        help="Number of colors in palette")
-        self.OptionParser.add_option("-s", "--startcolor",
-                        action="store", type="string", 
-                        dest="startcolor", default="#ff0000",
-                        help="Starting color")
-        self.OptionParser.add_option("-e", "--endcolor",
-                        action="store", type="string", 
-                        dest="endcolor", default="#0000ff",
-                        help="Ending color")
-        self.OptionParser.add_option("-z", "--size",
+                        dest="layers", default=16,
+                        help="Number of concentric layers")
+        self.OptionParser.add_option("-s", "--spokes",
                         action="store", type="int", 
-                        dest="size", default=300,
-                        help="Palette size")
-
+                        dest="spokes", default=20,
+                        help="Number of radial divisions")
+        self.OptionParser.add_option("-r", "--layerradius",
+                        action="store", type="float", 
+                        dest="layerradius", default=50.0,
+                        help="Radius of a layer")
+        self.OptionParser.add_option("-b", "--beginradius",
+                        action="store", type="float", 
+                        dest="beginradius", default=50.0,
+                        help="Starting radius")
+        
 
     def effect(self):
         docu = playsvg.document.Document(document=self.document)
-	new = playsvg.compshapes.buildDiscreteColorGrad(docu, self.options.intervals, self.options.startcolor, self.options.endcolor, self.options.size)
+	new = playsvg.compshapes.buildOffsetRadialGrid(docu, self.options.layers, self.options.spokes, self.options.beginradius, self.options.layerradius)
 	self.document.documentElement.appendChild(new)
 
-e = DiscreteColorGrad()
+e = RadialOffsetGrid()
 e.affect()

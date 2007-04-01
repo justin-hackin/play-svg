@@ -6,7 +6,7 @@
 	<param name="intervals" type="int" min="2" max="100" _gui-text="Number of intervals">10</param>
     <param name="startcolor" type="string"  _gui-text="Starting color">#ff0000</param>
     <param name="endcolor" type="string"  _gui-text="Ending color">#0000ff</param>
-	<param name="intervals" type="float" min="0.0" max="1000.0" _gui-text="Palette size">300</param>
+	<param name="size" type="float" min="0.0" max="1000.0" _gui-text="Palette size">300</param>
     <effect>
 		<object-type>all</object-type>
                 <effects-menu>
