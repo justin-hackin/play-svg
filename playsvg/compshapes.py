@@ -1,13 +1,12 @@
-
-'''This module builds composite shapes and returns amara xml nodes containing them'''
-
-#FIXME: separate methods that return only a node containing a single path and make them return only the PathData object itself  
+'''This module builds composite shapes and returns xml nodes containing them'''
 
 from playsvg.geom import *
 from playsvg.element import *
 import playsvg.pathshapes
+from playsvg.path import *
+import playsvg.color
 
-#CODE not compatible with new Document to replace Base
+#Code not compatible with new Document to replace Base
 ###FIXME: create method for creating true vesica pisces shapes
 ##
 ##def buildSubunitWheel(base, pssSpoke, pssLayer, axleRadius, wheelRadius, attrList=()):
@@ -238,44 +237,45 @@ import playsvg.pathshapes
 ##        
 ##    return latticeGroup
 ##
-##def flowerOfLife(abase, centre, level, radius, circleAttributes ):
-##    latticeRingOutlineGroup = abase.dok.xml_element(u'g')
-##    
-##    #add centre hexagon
-##    
-##    latticeRingOutlineGroup.xml_append(buildCircle(abase,centre, radius, attributes = circleAttributes))
-##    distFromHex = radius*math.sin((0.5-1.0/6)*2*math.pi)/math.sin(1.0/12*2*math.pi)
-##    
-##    #creates a set of concentric hexagons
-##    for i in range(1,level):
-##        
-##        
-##        #corners of an invisible hexagon on which the concentric hexagons will be centred on
-##        hexagonFrame = []
-##        
-##        for j in range(6):
-##            hexagonFrame.append(PolerPoint(i*radius , float(j)/6+1.0/12).convertToCartesian()+centre) 
-##            
-##        #each line of the invisible hexagon is equally divided into n points where n is the layer number
-##        #hexagons are plotted on these points
-##        for j in range(6):
-##            latticePath = PathData()
-##            sidePoints = []
-##            sidePoints.extend(getLineDivisions(hexagonFrame[j], hexagonFrame[(j+1)%6], i+1))
-##            for k in range(len(sidePoints)-1):
-##                if circleAttributes == {}:
-##                    latticeRingOutlineGroup.xml_append(buildCircle(abase,sidePoints[k], radius, attributes = {u'style': u'stroke-width:1;stroke:black'}))
-##                else:
-##                    latticeRingOutlineGroup.xml_append(buildCircle(abase,sidePoints[k], radius, attributes = circleAttributes))
-##    return latticeRingOutlineGroup
+def buildFlowerOfLife(docu, level, radius):
+    centre = Point(0,0)
+    flowerGroup = docu.makeGroup('floweroflife')
+    
+    #add centre hexagon
+    circleAttributes = {'style':'stroke:black;fill:none'}
+    flowerGroup.appendChild(buildCircle(docu,centre, radius, circleAttributes))
+    distFromHex = radius*math.sin((0.5-1.0/6)*2*math.pi)/math.sin(1.0/12*2*math.pi)
+    
+    #creates a set of concentric hexagons
+    for i in range(1,level):
+        
+        flowerLayerGroup = docu.makeGroup('flowerlayer'+str(i))
+        #corners of an invisible hexagon on which the concentric hexagons will be centred on
+        hexagonFrame = []
+        
+        for j in range(6):
+            hexagonFrame.append(Point().polerInit(i*radius , float(j)/6+1.0/12)) 
+            
+        #each line of the invisible hexagon is equally divided into n points where n is the layer number
+        #hexagons are plotted on these points
+        for j in range(6):
+            sidePoints = []
+            sidePoints.extend(getLineDivisions(hexagonFrame[j], hexagonFrame[(j+1)%6], i+1))
+            for k in range(len(sidePoints)-1):
+                flowerLayerGroup.appendChild(buildCircle(docu,sidePoints[k], radius, circleAttributes))
+             
+        flowerGroup.appendChild(flowerLayerGroup)
+    return flowerGroup
     
 
 def buildHexagonLattice(docu,level, radius):
-    latticePath = PathData()
+    
     #add centre hexagon
-    latticePath.appendPath(hexagon( Point(0,0),radius))
+    
     distFromHex = radius*math.sin((0.5-1.0/6)*2*math.pi)/math.sin(1.0/12*2*math.pi)
     latticeGroup = docu.makeGroup('hexagonlattice')
+    hexAttr = {'style':'stroke:black;fill:none'}
+    latticeGroup.appendChild(buildPath(docu, playsvg.pathshapes.hexagon( Point(0,0),radius), hexAttr))
     #creates a set of concentric hexagons
     for i in range(1,level):
         #corners of an invisible hexagon on which the concentric hexagons will be centred on
@@ -291,12 +291,93 @@ def buildHexagonLattice(docu,level, radius):
         for j in range(6):
             sidePoints = []
             sidePoints.extend(getLineDivisions(hexagonFrame[j], hexagonFrame[(j+1)%6], i+1))
-            for k in range(len(sidePoints)):
-                levelGroup.appendChild(buildPath(docu, playsvg.pathshapes.hexagon(sidePoints[k], radius),{'style':'stroke:black;fill:none'}  ))
+            for k in range(len(sidePoints)-1):
+                levelGroup.appendChild(buildPath(docu, playsvg.pathshapes.hexagon(sidePoints[k], radius),hexAttr  ))
         latticeGroup.appendChild(levelGroup)
         
     return latticeGroup
 
+def buildMetcalfeStar(docu, numVertices, radius):
+    '''Named after Metcalfe's Law, this function draws a fully connected graph with vertices equally spaced from each other and equidistant from the centre point'''
+    starGroup = docu.makeGroup('metcalfestar')
+    lineAttrs = {'style':'stroke:black;fill:none'}
+    #define vertices
+    vertices = []
+    for i in range(numVertices):
+        vertices.append(Point().polerInit(radius, float(i)/numVertices))
+    #connect each vertex to every other vertex
+    for i in range(numVertices):
+        for j in range(numVertices):
+            if i != j : starGroup.appendChild(buildLine(docu, vertices[i], vertices[j], lineAttrs))
+    return starGroup
+    
+def buildTriangularGrid(docu, levels, sideLength):
+    gridPoints = createTriangularGrid(Point(0,0), sideLength, levels)
+    gridGroup = docu.makeGroup('triangulargrid')
+    triAttrs = {'style':'stroke:black;fill:none'}
+    
+    upwardTriangles = docu.makeGroup('upwardtriangles')
+    for i in range(levels-1):
+        for j in range(i+1):
+            triangulatePath = PathData()
+            apex = gridPoints[i][j]
+            leftBase = gridPoints[i+1][j]
+            rightBase = gridPoints[i+1][j+1]
+            triangulatePath.moveTo(apex).lineTo(leftBase).lineTo(rightBase).closePath()
+            upwardTriangles.appendChild(buildPath(docu, triangulatePath, triAttrs))
+    gridGroup.appendChild(upwardTriangles)
+    
+    downwardTriangles = docu.makeGroup('downwardtriangles')
+    for i in range(1, levels-1):
+        for j in range(i):
+            triangulatePath = PathData()
+            leftArm = gridPoints[i][j]
+            rightArm = gridPoints[i][j+1]
+            balance = gridPoints[i+1][j+1]
+            triangulatePath.moveTo(leftArm).lineTo(rightArm).lineTo(balance).closePath()
+            downwardTriangles.appendChild(buildPath(docu, triangulatePath, triAttrs))
+    gridGroup.appendChild(downwardTriangles)
+    contPath = PathData().moveTo(Point(0,0)).lineTo(gridPoints[-1][0]).lineTo(gridPoints[-1][-1]).closePath()
+    gridGroup.appendChild(buildPath(docu, contPath, triAttrs ))
+    gridGroup.setAttribute('transform', 'rotate(180)')
+    return gridGroup
+
+def buildDiscreteColorGrad(docu,intervals, startColor, endColor,  size):
+    colorGradation = playsvg.color.tupleGradient(playsvg.color.hexToRGB(startColor), playsvg.color.hexToRGB(endColor),intervals )
+    gradBoxGroup = docu.makeGroup('discrete_gradation')
+    boxSize = float(size)/intervals
+    for i in range(intervals):
+        gradBoxGroup.appendChild(buildRect(docu, Point(0,i*boxSize), boxSize, boxSize, {'style':'stroke:black;fill:'+colorGradation[i]} ))
+    return gradBoxGroup
     
     
+def buildOffsetRadialGrid(docu, rings, spokes, layerSpacing, startRadius):
+    plots = createOffsetRadialGrid(rings, spokes, startRadius, layerSpacing)
+    
+    paths = []
+    gridGroup = docu.makeGroup('offsetradialgrid')
+    diamondEvenGroup = docu.makeGroup('even')
+    diamondOddGroup = docu.makeGroup('odd')
+    for ring in range(rings-1,2,-1):
+        diamondPath = PathData()
+        
+        if ring % 2 == 0:
+            diamondGroup = diamondEvenGroup
+        else:
+            diamondGroup = diamondOddGroup
+    
+        
+        for spoke in range(spokes):
+            diamondPath = PathData()
+            diamondPath.moveTo(plots[ring][spoke])
+            diamondPath.lineTo(plots[ring-1][(spoke+1)%spokes])
+            diamondPath.lineTo(plots[ring-2][(spoke+1)%spokes])
+            diamondPath.lineTo(plots[ring-1][spoke])
+            diamondPath.closePath()
+            diamondGroup.appendChild(buildPath(docu, diamondPath, {'style':'fill:none;stroke:black'}))
+            
+    gridGroup.appendChild(diamondEvenGroup)
+    gridGroup.appendChild(diamondOddGroup)
+    return gridGroup
+
 
