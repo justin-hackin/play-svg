@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 """
-Copyright (C) 2005 Aaron Spike, aaron@ekips.org
-
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation; either version 2 of the License, or
@@ -21,7 +19,7 @@ import inkex, os, simplepath, cubicsuperpath, copy, pathmodifier
 import xml.xpath
 import playsvg.geom, playsvg.element, playsvg.document, playsvg.path
 
-#FIXME: provide support for unlinking clones, converting paths to objects, supporting multiply nested groups 
+#FIXME: unlinking clones, converting paths to objects, supporting multiply nested groups, move gradients
 
 def getTransformLambda( bb, envPts):
     def fn(targetPoint):
@@ -74,6 +72,7 @@ class OffsetRadialTile(inkex.Effect):
             err.close()
            
         numGridLayers =  self.options.layers +3
+        numGridSpokes
         docu = playsvg.document.Document(document=self.document)
         grid = playsvg.geom.createOffsetRadialGrid(numGridLayers, self.options.spokes,  self.options.layerradius, self.options.beginradius)
         obj = self.selected[self.options.ids[0]]

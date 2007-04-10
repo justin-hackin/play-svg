@@ -1,7 +1,7 @@
 <inkscape-extension>
-    <_name>Offset Radial Grid</_name>
-    <id>playsvg.ext.offsetradialgrid</id>
-	<dependency type="executable" location="extensions">offsetradialgrid.py</dependency>
+    <_name>Radial Grid</_name>
+    <id>playsvg.ext.radialgrid</id>
+	<dependency type="executable" location="extensions">radialgrid.py</dependency>
 	<dependency type="executable" location="extensions">inkex.py</dependency>
 	<param name="layers" type="int" min="2" max="200" _gui-text="Number of concentric layers">16</param>
 	<param name="spokes" type="int" min="4" max="200" _gui-text="Number of radial divisions">20</param>
@@ -16,6 +16,6 @@
                 </effects-menu>					    
     </effect>
     <script>
-        <command reldir="extensions" interpreter="python">offsetradialgrid.py</command>
+        <command reldir="extensions" interpreter="python">radialgrid.py</command>
     </script>
 </inkscape-extension>
