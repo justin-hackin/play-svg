@@ -15,11 +15,14 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 """
-import inkex, os, simplepath, cubicsuperpath, copy, pathmodifier
+import inkex, os, copy
 import xml.xpath
 import playsvg.geom, playsvg.element, playsvg.document, playsvg.path
 
 #FIXME: unlinking clones, converting paths to objects, supporting multiply nested groups, move gradients
+#FIXME: points on bounding box not transformed properly --> Envelope in summernight does not suffer this same problem
+#FIXME: points outside bounding box (with control points): how to deal ? 
+#FIXME: non-offset option not working
 
 def getTransformLambda( bb, envPts):
     def fn(targetPoint):
@@ -39,7 +42,7 @@ def getTransformLambda( bb, envPts):
 
 
 
-class OffsetRadialTile(inkex.Effect):
+class RadialTile(inkex.Effect):
     def __init__(self):
         inkex.Effect.__init__(self)
         self.OptionParser.add_option("-l", "--layers",
@@ -58,6 +61,10 @@ class OffsetRadialTile(inkex.Effect):
                         action="store", type="float", 
                         dest="beginradius", default=50.0,
                         help="Starting radius")
+        self.OptionParser.add_option("-o","--offset",
+                        action="store", type="inkbool", 
+                        dest="offset", default=False,
+                        help="offsets the layers of the grid such that it forms a pattern similar to a dreamcatcher")    
     
     def effect(self):
         #query inkscape about the bounding box of obj
@@ -72,20 +79,32 @@ class OffsetRadialTile(inkex.Effect):
             err.close()
            
         numGridLayers =  self.options.layers +3
-        numGridSpokes
         docu = playsvg.document.Document(document=self.document)
-        grid = playsvg.geom.createOffsetRadialGrid(numGridLayers, self.options.spokes,  self.options.layerradius, self.options.beginradius)
+        grid = None
+        envCord = None
+        if self.options.offset:
+            grid = playsvg.geom.createOffsetRadialGrid(numGridLayers, self.options.spokes,  self.options.layerradius, self.options.beginradius)
+            envCord = [(0,0), (-1, 1), (-2, 1), (-1, 0)]
+        else:
+            grid = playsvg.geom.createRadialGrid(numGridLayers, self.options.spokes,  self.options.layerradius, self.options.beginradius)
+            envCord = [(0,0), (-2, 0), (-2, 1), (0, 1)]
+            
+
+
         obj = self.selected[self.options.ids[0]]
         tileGroup = docu.makeGroup('tilegroup')
         envPts = None
         
-        for layer in range(numGridLayers-1,2,-1):
+        
+        for layer in range(numGridLayers-1,1,-1):
             for spoke in range(self.options.spokes):
                 objCopy = obj.cloneNode(1)
                 objCopy.attributes.getNamedItem('id').value += 'copy'+str(layer)+'-'+str(spoke)
                 selectedObjectPaths = xml.xpath.Evaluate("descendant-or-self::path", objCopy)
-                
-                envPts = [grid[layer][spoke], grid[layer-1][(spoke+1)%self.options.spokes], grid[layer-2][(spoke+1)%self.options.spokes], grid[layer-1][spoke] ]
+                envPts = []
+                for i in range(4):
+                    envPts.append(grid[(layer+envCord[i][0]) %self.options.spokes][(spoke+envCord[i][1])%self.options.spokes ] )
+                    
                 for path in selectedObjectPaths:
                     
                     pathData = playsvg.path.PathData(text=path.attributes.getNamedItem('d').value)
@@ -94,7 +113,7 @@ class OffsetRadialTile(inkex.Effect):
                 tileGroup.appendChild(objCopy)
         docu.xdoc.documentElement.appendChild(tileGroup)
     
-    
-e = OffsetRadialTile()
+
+e = RadialTile()
 e.affect()
 

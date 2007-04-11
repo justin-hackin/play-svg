@@ -1,12 +1,13 @@
 <inkscape-extension>
-    <_name>Offset Radial Tile</_name>
-    <id>playsvg.ext.offsetradialtile</id>
-	<dependency type="executable" location="extensions">offsetradialtile.py</dependency>
+    <_name>Radial Tile</_name>
+    <id>playsvg.ext.radialtile</id>
+	<dependency type="executable" location="extensions">radialtile.py</dependency>
 	<dependency type="executable" location="extensions">inkex.py</dependency>
 	<param name="layers" type="int" min="2" max="200" _gui-text="Number of concentric layers">16</param>
 	<param name="spokes" type="int" min="4" max="200" _gui-text="Number of radial divisions">20</param>
     <param name="beginradius" type="float" min="1" max="1000" _gui-text="Begin radius">50.0</param>
     <param name="layerradius" type="float" min="1" max="1000" _gui-text="Layer radius">50.0</param>
+    <param name="offset" type="boolean" _gui-text="Offset layers">false</param>
 
 	
     <effect>
@@ -16,6 +17,6 @@
                 </effects-menu>					    
     </effect>
     <script>
-        <command reldir="extensions" interpreter="python">offsetradialtile.py</command>
+        <command reldir="extensions" interpreter="python">radialtile.py</command>
     </script>
 </inkscape-extension>
