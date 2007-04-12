@@ -29,8 +29,8 @@ class Angal:
         '''returns an Angal such that it is the reflection of the current value in a line 
         drawn through reflector and the middle of a circle'''
         difference = self.value - reflector
-    
-        
+   
+
 
     
 class Point:
@@ -342,17 +342,36 @@ def quadradicBezierLength(P1,P2,P3,maxLev=10):
     return quadradicBezierLengthHelp(P1, P2, P3)
     
 def intersectLineLine(a1,a2,b1,b2):
-    '''returns the itersection point for 2 lines if there exists one, calculations ported from Kevin Lindsey's 2D.js library'''
-    result = None
-    ua_t=(b2.x-b1.x)*(a1.y-b1.y)-(b2.y-b1.y)*(a1.x-b1.x)
-    ub_t=(a2.x-a1.x)*(a1.y-b1.y)-(a2.y-a1.y)*(a1.x-b1.x)
-    u_b=(b2.y-b1.y)*(a2.x-a1.x)-(b2.x-b1.x)*(a2.y-a1.y)
-    if(u_b!=0):
-        ua=ua_t/u_b
-        ub=ub_t/u_b
-        if(0<=ua and ua<=1 and 0<=ub and ub<=1):
-            result = Point(a1.x+ua*(a2.x-a1.x),a1.y+ua*(a2.y-a1.y))
-    return result
+    '''returns the itersection point for 2 lines if there exists one, calculations ported from Kevin Lindsey's 2D.js library (switched to Inkscape extensions' summersnight.py algorithm)'''
+##    result = None
+##    ua_t=(b2.x-b1.x)*(a1.y-b1.y)-(b2.y-b1.y)*(a1.x-b1.x)
+##    ub_t=(a2.x-a1.x)*(a1.y-b1.y)-(a2.y-a1.y)*(a1.x-b1.x)
+##    u_b=(b2.y-b1.y)*(a2.x-a1.x)-(b2.x-b1.x)*(a2.y-a1.y)
+##    if(u_b!=0):
+##        ua=ua_t/u_b
+##        ub=ub_t/u_b
+##        if(0<=ua and ua<=1 and 0<=ub and ub<=1):
+##            result = Point(a1.x+ua*(a2.x-a1.x),a1.y+ua*(a2.y-a1.y))
+##    return result
+    x1 = a1.x
+    x2 = a2.x
+    x3 = b1.x
+    x4 = b2.x
+    
+    y1 = a1.y
+    y2 = a2.y
+    y3 = b1.y
+    y4 = b2.y
+    
+    denom = ((y4 - y3) * (x2 - x1)) - ((x4 - x3) * (y2 - y1))
+    num1 = ((x4 - x3) * (y1 - y3)) - ((y4 - y3) * (x1 - x3))
+    num2 = ((x2 - x1) * (y1 - y3)) - ((y2 - y1) * (x1 - x3))
+    num = num1
+    if denom != 0: 
+        x = x1 + ((num / denom) * (x2 - x1))
+        y = y1 + ((num / denom) * (y2 - y1))
+        return Point(x, y)
+    return Point(NaN, NaN)
     
 def sideLengthToCornerRadius(sideLength, numSides):
     return 2*math.sin(math.pi/numSides)/sideLength
@@ -384,6 +403,14 @@ def createOffsetRadialGrid(rings, spokes, layerSpacing, beginRadius):
             plots[ring].append(Point().polerInit(ring*layerSpacing+beginRadius , (float(spoke)/spokes + ((0.5*ring % spokes)/spokes))))
     return plots
     
+def createRadialGrid(rings, spokes, layerSpacing, beginRadius):
+    plots = [[] for i in range(rings)]
+   
+    for ring in range(rings):
+        for spoke in range(spokes):
+            plots[ring].append(Point().polerInit(ring*layerSpacing+beginRadius , (float(spoke)/spokes )))
+    return plots
+
 def createRadialPlots(position, radius, spokes, passive = 0):
     """returns an array of equidistant points on a circle"""
     plots = []
