@@ -22,9 +22,10 @@ import playsvg.geom, playsvg.element, playsvg.document, playsvg.path
 #FIXME: unlinking clones, converting paths to objects, supporting multiply nested groups, move gradients
 #FIXME: points on bounding box not transformed properly --> Envelope in summernight does not suffer this same problem
 #FIXME: points outside bounding box (with control points): how to deal ? 
-#FIXME: non-offset option not working
+#FIXME: need "bounding box of all nodes and control points" rather than "bounding box"; bug example: stroked squares tiled get spaced apart as radius increases
 
 def getTransformLambda( bb, envPts):
+    """returns a lambda to transform a set of co-ordinates into an envelope using the prarameters of envPts """
     def fn(targetPoint):
         #Transform algorithm from summernight.py modified to suit playsvg
         vector = playsvg.geom.Point(targetPoint.x,targetPoint.y) - playsvg.geom.Point(bb['x'],bb['y']) 
@@ -82,12 +83,15 @@ class RadialTile(inkex.Effect):
         docu = playsvg.document.Document(document=self.document)
         grid = None
         envCord = None
+        rangeEnd = None
         if self.options.offset:
             grid = playsvg.geom.createOffsetRadialGrid(numGridLayers, self.options.spokes,  self.options.layerradius, self.options.beginradius)
             envCord = [(0,0), (-1, 1), (-2, 1), (-1, 0)]
+            rangeEnd =  1 
         else:
             grid = playsvg.geom.createRadialGrid(numGridLayers, self.options.spokes,  self.options.layerradius, self.options.beginradius)
-            envCord = [(0,0), (-2, 0), (-2, 1), (0, 1)]
+            envCord = [(0,0), (-1, 0), (-1, 1), (0, 1)]
+            rangeEnd = 0 
             
 
 
@@ -96,7 +100,7 @@ class RadialTile(inkex.Effect):
         envPts = None
         
         
-        for layer in range(numGridLayers-1,1,-1):
+        for layer in range(numGridLayers-1,rangeEnd,-1):
             for spoke in range(self.options.spokes):
                 objCopy = obj.cloneNode(1)
                 objCopy.attributes.getNamedItem('id').value += 'copy'+str(layer)+'-'+str(spoke)
