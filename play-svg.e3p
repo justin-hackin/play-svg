@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-3.8.dtd">
 <!-- Project file for project play-svg -->
-<!-- Saved: 2007-03-17, 15:27:55 -->
-<!-- Copyright (C) 2007 imagenerator,  -->
+<!-- Saved: 2007-05-14, 11:55:07 -->
+<!-- Copyright (C) 2007 playful_geometr,  -->
 <Project version="3.8">
   <ProgLanguage mixed="0">Python</ProgLanguage>
   <UIType>Qt</UIType>
   <Description>pLAySVG is a python library for the development and manipulation of SVG vector graphics through scripting. pLAySVG makes it easy to create graphics based on geometric relationships. It's intended for educational and artistic use.</Description>
   <Version>0.1</Version>
-  <Author>imagenerator</Author>
+  <Author>playful_geometr</Author>
   <Email></Email>
   <Sources>
     <Source>
-      <Dir>playsvg</Dir>
-      <Name>color.py</Name>
+      <Name>setup.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>circularWeave.py</Name>
     </Source>
     <Source>
       <Dir>playsvg</Dir>
-      <Name>document.py</Name>
+      <Name>pathshapes.py</Name>
     </Source>
     <Source>
       <Dir>playsvg</Dir>
@@ -41,30 +44,196 @@
     </Source>
     <Source>
       <Dir>playsvg</Dir>
-      <Name>pathshapes.py</Name>
+      <Name>__init__.py</Name>
     </Source>
     <Source>
       <Dir>playsvg</Dir>
-      <Name>__init__.py</Name>
+      <Name>document.py</Name>
+    </Source>
+    <Source>
+      <Dir>playsvg</Dir>
+      <Name>simplestyle.py</Name>
+    </Source>
+    <Source>
+      <Dir>playsvg</Dir>
+      <Name>color.py</Name>
     </Source>
     <Source>
       <Dir>playsvg</Dir>
       <Name>numbthy.py</Name>
     </Source>
     <Source>
-      <Name>setup.py</Name>
+      <Dir>playsvg</Dir>
+      <Name>compshapes.py</Name>
     </Source>
     <Source>
-      <Dir>scripts</Dir>
-      <Name>circularWeave.py</Name>
+      <Dir>inkex</Dir>
+      <Name>metcalfestar.py</Name>
     </Source>
     <Source>
-      <Dir>dist</Dir>
-      <Name>playsvg-1.0.tar.gz</Name>
+      <Dir>inkex</Dir>
+      <Name>rayblocks.py</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>lotusflower.py</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>hexagonlattice.inx</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>hexagonlattice.py</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>lotusflower.inx</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>metcalfestar.inx</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>rayblocks.inx</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>floweroflife.py</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>floweroflife.inx</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>triangulargrid.py</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>triangulargrid.inx</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>discretecolorgrad.py</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>discretecolorgrad.inx</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>offsetradialgrid.py</Name>
     </Source>
     <Source>
       <Dir>playsvg</Dir>
-      <Name>simplestyle.py</Name>
+      <Name>simplepath.py</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>offsetradialgrid.inx</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>radialtile.py</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>radialtile.inx</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>metatronsCube.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>polygonIris.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>platonicAir.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>platonicEarth.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>platonicFire.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>platonicSpirit.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>platonicWater.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>compshapesgen.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>corneredBox.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>crosshatchGrid.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>pathshapesgen.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>pathtexttest.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>rayblocks.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>starPolygon.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>triangulatedBox.py</Name>
+    </Source>
+    <Source>
+      <Name>MANIFEST.in</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>boxyStuff.py</Name>
+    </Source>
+    <Source>
+      <Name>README.TXT</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>radialgrid.py</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>radialgrid.inx</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>kolamPattern.py</Name>
+    </Source>
+    <Source>
+      <Name>replay</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>fitinbox.py</Name>
+    </Source>
+    <Source>
+      <Dir>inkex</Dir>
+      <Name>fitinbox.inx</Name>
     </Source>
   </Sources>
   <Forms>
@@ -79,6 +248,14 @@
       <Dir>home</Dir>
       <Name>pome</Name>
     </Other>
+    <Other>
+      <Dir>inkex</Dir>
+      <Name>radialgrid.inx</Name>
+    </Other>
+    <Other>
+      <Dir>inkex</Dir>
+      <Name>radialtile.inx</Name>
+    </Other>
   </Others>
   <Vcs>
     <VcsType>Subversion</VcsType>
@@ -86,10 +263,10 @@
     <VcsOtherData>{'standardLayout': True}</VcsOtherData>
   </Vcs>
   <FiletypeAssociations>
-    <FiletypeAssociation pattern="*.py" type="SOURCES" />
     <FiletypeAssociation pattern="*.ui.h" type="FORMS" />
+    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
     <FiletypeAssociation pattern="*.idl" type="INTERFACES" />
     <FiletypeAssociation pattern="*.ui" type="FORMS" />
-    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
+    <FiletypeAssociation pattern="*.py" type="SOURCES" />
   </FiletypeAssociations>
 </Project>

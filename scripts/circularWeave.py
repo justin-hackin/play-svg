@@ -1,4 +1,4 @@
-"""generates a circular wave pattern"""
+"""generates a circular wave pattern """
 import playsvg.document
 import playsvg.pathshapes
 from playsvg.geom import *

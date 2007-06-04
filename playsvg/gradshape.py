@@ -3,7 +3,9 @@ from gradient import *
 from geom import *
 from element import *
 from path import *
-
+"""module for generating SVG objects with gradients in them
+    in most cases, if the method is used more than once with the same gradient and id (or none), fault will occur  
+"""
 
 def polygonMidpoint(vertices):
     """calculates the "center" of a polygon defined by points in vertices, 
@@ -33,6 +35,7 @@ def triangleGradient(docu, points, gradient, id = '' ):
         {u'style':u'fill:url(#triGrad-'+ id +u');stroke:none;opacity:1;fill-opacity:1'})
 
 def quadGradient(docu,points, gradient, id=''):
+    '''returns a quadrilateral with a linear gradient running from the middle of first 2 points to the middle of last 2 points'''
     if len(points) != 4:
         raise Exception, "points must be of length 4"
     controls = (getMidpoint(points[0], points[1]), getMidpoint(points[2], points[3]))
@@ -44,6 +47,7 @@ def quadGradient(docu,points, gradient, id=''):
         {u'style':u'fill:url(#quadGrad-'+ id +u');stroke:none;opacity:1;fill-opacity:1'})
 
 def verticalQuadGradient(docu,points, gradient, id=''):
+    """returns a quadrilateral with a linear gradient running from the midpoint of first 2 points to it's projection onto the line formed by last 2 points"""
     if len(points) != 4:
         raise Exception, "points must be of length 4"
     
@@ -57,8 +61,7 @@ def verticalQuadGradient(docu,points, gradient, id=''):
 
 def polygonGradient(docu, points, gradient, id=''):
     """given a polygon defined by points and a Gradient object, returns a 
-    group of "pizza slices" with linear gradients running away from the middle of the polygon
-    if the method is used more than once with the same gradient and id (or none), fault will occur  """
+    group of "pizza slices" with linear gradients running away from the middle of the polygon"""
     #triangle = PathData().moveTo(Point(0,0)).lineTo(Point(-100, -100)).lineTo(Point(200, -200)).closePath()
     numPoints = len(points)
     midPoint = polygonMidpoint(points)

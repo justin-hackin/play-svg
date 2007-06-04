@@ -1,9 +1,13 @@
+"""functions for generating path objects or a particular shape"""
+
 from playsvg.geom import *
 from playsvg.element import *
 from playsvg.path import *
 from copy import deepcopy
 
+
 def arcSpire(cornerA, cornerB, bottomCtrlHeight, topCtrlHeight):
+    """a closed shaped formed by two quadradic bezier curves of varing height stacked on top of on another""" 
     spirePathData = PathData().moveTo(cornerA).QRVBD(bottomCtrlHeight, cornerB ).QRVBD(topCtrlHeight, cornerA, flipped = 1).closePath()
     return spirePathData
     
@@ -18,13 +22,13 @@ def arcSpire(cornerA, cornerB, bottomCtrlHeight, topCtrlHeight):
 ##    return fieldLayerPathData
     
 def starPolygon(x, n, radius):
-    '''see Polygon Star in wikipedia for a description of the shape generated'''
+    '''see Star Polygon in wikipedia for a description of the shape generated'''
     currentPoint = 0
     centrePoint = Point(0,0)
     points = []
       
     for i in range(0,x):
-        points.append(PolerPoint(radius,float(i)/x).convertToCartesian() )
+        points.append(Point().polerInit(radius,float(i)/x))
         
     
     starPathData = PathData().moveTo(points[0])
@@ -36,31 +40,6 @@ def starPolygon(x, n, radius):
             
     starPathData.closePath()
     return starPathData
-    
-def phiSpiralArc(pointA, pointB, iter, reverseDirection=0, expanding=0):
-    '''creates a Phi spiral inside a rectangle with short side AB, and rectangle existing
-    on the right side of AB when travelling from A to B (or the opposite if reverseDirection = 1).
-    iter defines the number of iterations.  Composed with a series of arcs. '''
-    phi = (1 + math.sqrt(5)) / 2.0
-    if reverseDirection: 
-        angle = 0.25
-    else: angle = 0.75
-    sweepValue = int((not reverseDirection) ^ insideOut)
-    if expanding : multVal = 1.0 +phi
-    else: multVal = phi -1
-    
-    spiralPath = PathData().moveTo(pointA)
-    currentPoint = deepcopy(pointA)
-    adjacentCorner = deepcopy(pointB)
-    sideLength = distanceBetween(currentPoint, adjacentCorner)
-    destinationPoint = extendBendPoint(currentPoint, adjacentCorner,  sideLength,angle)
-    for i in range(iter):
-        spiralPath.elipticalArc(sideLength, sideLength, destinationPoint, sweepFlag=sweepValue)
-        currentPoint = deepcopy(destinationPoint)
-        adjacentCorner= extendBendPoint(adjacentCorner,destinationPoint , float(sideLength)*(multVal),0)
-        sideLength = distanceBetween(currentPoint, adjacentCorner)
-        destinationPoint = extendBendPoint(currentPoint, adjacentCorner, sideLength,angle)
-    return spiralPath
     
 def phiSpiralBez(pointA, pointB, iter, reverseDirection=0, expanding=0):
     '''creates a Phi spiral inside a rectangle with short side AB, and rectangle existing
@@ -92,6 +71,7 @@ def phiSpiralBez(pointA, pointB, iter, reverseDirection=0, expanding=0):
     return spiralPath
 
 def phiFlower(centerRadius,rays, spiralWidth, spiralIter):
+    """a flower-like shape formed by phi spirals"""
     flowerPath = PathData()
     for i in range(rays):
         startPoint = PolerPoint(centerRadius,float(i)/rays).convertToCartesian()
@@ -102,6 +82,7 @@ def phiFlower(centerRadius,rays, spiralWidth, spiralIter):
     return flowerPath
 
 def phiLattice(centerRadius,rays, spiralIter):
+    """a latticework of interlocking phi spirals"""
     latticePath = PathData()
     for i in range(rays):
         radPt = PolerPoint(centerRadius,float(i)/rays).convertToCartesian()
@@ -110,40 +91,32 @@ def phiLattice(centerRadius,rays, spiralIter):
         latticePath.append(pathshapes.phiSpiralBez(radPt,center, spiralIter, expanding = 1))
     return latticePath
 
-def metcalfeStar(numVertices, radius):
-    '''Named after Metcalfe's Law, this function draws a fully connected graph with vertices equally spaced from each other and equidistant from the centre point'''
-    starPath = PathData()
-    #define vertices
-    vertices = []
-    for i in range(numVertices):
-        vertices.append(PolerPoint(radius, float(i)/numVertices).convertToCartesian())
-    #connect each vertex to every other vertex
-    for i in range(numVertices):
-        for j in range(numVertices):
-            if i != j : starPath.moveTo(vertices[i]).lineTo(vertices[j])
-    return starPath 
-
-def buildVesicaFlower(petals, centreHoopRadius, flowerRadius, insideOut=0):
-    pathData = PathData()
-    #insideOut determines whether the petal from the centreHoop moves toward the centre of the CentreHoop (if == 1)/
-    #or away from the centre (when insideOut == 0)
-    if insideOut : offsetAngle = 0.5
-    else: offsetAngle = 0
-    for i in range(0, petals):
-        innerPt = PolerPoint(centreHoopRadius,float(i)/petals).convertToCartesian()
-        outerPt = PolerPoint(flowerRadius,(float(i)/petals+offsetAngle)).convertToCartesian()
-        for clockwise in range(0,2):
-            if clockwise == 0 : bendAngle = 0.25
-            else: bendAngle = 0.75
-            ctrlPt = extendBendPoint(innerPt, getMidpoint(innerPt, outerPt),  centreHoopRadius*3, bendAngle)
-            pathData.moveTo(innerPt).quadradicBezier(ctrlPt, outerPt)
-    return pathData
-   
+##def buildVesicaFlower(petals, centreHoopRadius, flowerRadius, insideOut=0):
+##    pathData = PathData()
+##    #insideOut determines whether the petal from the centreHoop moves toward the centre of the CentreHoop (if == 1)/
+##    #or away from the centre (when insideOut == 0)
+##    if insideOut : offsetAngle = 0.5
+##    else: offsetAngle = 0
+##    for i in range(0, petals):
+##        innerPt = PolerPoint(centreHoopRadius,float(i)/petals).convertToCartesian()
+##        outerPt = PolerPoint(flowerRadius,(float(i)/petals+offsetAngle)).convertToCartesian()
+##        for clockwise in range(0,2):
+##            if clockwise == 0 : bendAngle = 0.25
+##            else: bendAngle = 0.75
+##            ctrlPt = extendBendPoint(innerPt, getMidpoint(innerPt, outerPt),  centreHoopRadius*3, bendAngle)
+##            pathData.moveTo(innerPt).quadradicBezier(ctrlPt, outerPt)
+##    return pathData
+def symetricBezierPetal(pointA, pointB, rbdVector):
+    """a petal shaped formed by 2 symetric RVBD beziers mirrored (see path.py for more details on RVBD)"""
+    petalPath = PathData().moveTo(pointA).SCRVBD(rbdVector, pointB).SCRVBD(rbdVector, pointA).closePath()
+    return petalPath
+    
 def lotusPetalFlower(petals, baseRadius, tipRadius, ctrlDistanceRatio):
+    """a flower shape similar to the lotus flower mandalas in Hindu/Yogic iconography"""
     petalFraction = 1.0/petals
     petalWidth = tipRadius - baseRadius
     pathData = PathData()
-    pathData.moveTo(Point.polerInit(baseRadius,0.0))
+    pathData.moveTo(Point().polerInit(baseRadius,0.0))
     for i in range(petals):
         tipPoint = Point().polerInit(tipRadius, (i+0.5)*petalFraction)
         endPoint = Point().polerInit(baseRadius,(i+1)*petalFraction)
@@ -157,6 +130,7 @@ def lotusPetalFlower(petals, baseRadius, tipRadius, ctrlDistanceRatio):
     return pathData
     
 def rayBlocks(rays, innerRadius, outerRadius, innerSpacingRatio, outerSpacingRatio, roundedEnds=0, roundingCtrlDistanceRatio=0.1):
+    """radially-tiled shape similar to a slice of pie with the crust and tip cut off with a straight line"""
     slice = float(1)/rays
     allBlocks = PathData()
     outerBezAngal = None
@@ -220,6 +194,7 @@ def tomsensFigure(radius, insetRatio):
     
 #FIXME: consider variations on this 
 def loopDeLoop(pointA, pointB, width, loops, loopStretchRatio):
+    """simulates a loop-de-loop from one point to another"""
     ticks = getLineDivisions(pointA,pointB, loops+1)
     points = []
     bendAngle = 0.25
@@ -247,28 +222,86 @@ def loopDeLoop(pointA, pointB, width, loops, loopStretchRatio):
         
     return path
     
-def buildArcSpire(spokes, distanceFromCentre, spireWidth, spireHeight, baseCurveRatio, sideCurveRatio):    
-    centrePoint = Point(0,0)
-    spirePath = PathData()
-    for i in range(0,spokes):
-        midBasePoint = PolerPoint(distanceFromCentre, float(i)/spokes).convertToCartesian()
-        leftBasePoint = extendBendPoint(centrePoint, midBasePoint, spireWidth/2.0, 0.75)
-        rightBasePoint = extendBendPoint(centrePoint, midBasePoint, spireWidth/2.0, 0.25)
-        apex = PolerPoint(spireHeight+distanceFromCentre, float(i)/spokes).convertToCartesian()
-        leftControlPoint = extendBendPoint(leftBasePoint, getMidpoint(leftBasePoint, apex), sideCurveRatio*(distanceBetween(leftBasePoint, apex)),0.75) 
-        rightControlPoint = extendBendPoint(rightBasePoint, getMidpoint(rightBasePoint, apex), sideCurveRatio*(distanceBetween(rightBasePoint, apex)),0.25) 
-        baseControlPoint = PolerPoint(distanceFromCentre + baseCurveRatio*(distanceBetween(leftBasePoint, rightBasePoint)), float(i)/spokes).convertToCartesian()
-        spirePath.moveTo(leftBasePoint).quadradicBezier(leftControlPoint,apex).quadradicBezier(rightControlPoint,rightBasePoint).quadradicBezier(baseControlPoint, leftBasePoint)
-    return spirePath
-    
+##def buildArcSpire(spokes, distanceFromCentre, spireWidth, spireHeight, baseCurveRatio, sideCurveRatio):    
+##    centrePoint = Point(0,0)
+##    spirePath = PathData()
+##    for i in range(0,spokes):
+##        midBasePoint = Point().polerInit(distanceFromCentre, float(i)/spokes)
+##        leftBasePoint = extendBendPoint(centrePoint, midBasePoint, spireWidth/2.0, 0.75)
+##        rightBasePoint = extendBendPoint(centrePoint, midBasePoint, spireWidth/2.0, 0.25)
+##        apex = PolerPoint(spireHeight+distanceFromCentre, float(i)/spokes).convertToCartesian()
+##        leftControlPoint = extendBendPoint(leftBasePoint, getMidpoint(leftBasePoint, apex), sideCurveRatio*(distanceBetween(leftBasePoint, apex)),0.75) 
+##        rightControlPoint = extendBendPoint(rightBasePoint, getMidpoint(rightBasePoint, apex), sideCurveRatio*(distanceBetween(rightBasePoint, apex)),0.25) 
+##        baseControlPoint = Point().polerInit(distanceFromCentre + baseCurveRatio*(distanceBetween(leftBasePoint, rightBasePoint)), float(i)/spokes)
+##        spirePath.moveTo(leftBasePoint).quadradicBezier(leftControlPoint,apex).quadradicBezier(rightControlPoint,rightBasePoint).quadradicBezier(baseControlPoint, leftBasePoint)
+##    return spirePath
+##    
 
 def frillCurveLine(pointA, pointB, rvbdVector,numCurves):
+    """forms a line of symetric bezier curves, like the path of a bouncing ball with no gravity""" 
     tickMarks = getLineDivisions(pointA, pointB, numCurves)
     frillPath = PathData().moveTo(tickMarks[0])
     for i in range(1,numCurves):
         frillPath.SCRVBD(rvbdVector, tickMarks[i])
     return frillPath
     
+def regularPolygon(sides, radius):
+    fraction = 1.0/sides
+    path = PathData().moveTo(Point().polerInit(radius, 0.5*fraction))
+    for i in range(1,sides):
+        path.lineTo(Point().polerInit(radius, (float(i) + 0.5)*fraction))
+    path.closePath()
+    return path
+    
+def regularPolygonSideLength(sides, sideLength):
+    radius = 2*math.sin(math.pi/sides)/sides
+    return regularPolygon(sides, radius)
+  
+
+def lineZigZag( pointA, pointB, heightRatio, reps):
+    ticks = getLineDivisions(pointA,pointB, reps)
+    points = []
+    bendAngle = 0.25
+    height = heightRatio*distanceBetween(ticks[0], ticks[1])
+    points.append(extendBendPoint(pointB, pointA, height, bendAngle))
+    
+    for i in range(1,reps):
+        if i %2 == 0: bendAngle = 0.25
+        else: bendAngle = 0.75
+        points.append(extendBendPoint(pointA, ticks[i], height, bendAngle))
+    
+    path = PathData().moveTo(points[1])
+        
+    for i in range(1, reps):
+        path.lineTo(points[i])
+    
+    return path
+  
+def equiStar(points, innerRadius, outerRadius):
+    starPath = PathData().moveTo(Point().polerInit(outerRadius, 0))
+    for i in range(points):
+        
+        starPath.lineTo(Point().polerInit(innerRadius,float(i)/points+0.5/points ))
+        starPath.lineTo(Point().polerInit(outerRadius,float((i+1)%points)/points))
+    
+    return starPath
+
+#FIXME: test this    
+def spikeyPolygon(numSides, spikesPerSide, innerRadius, outerRadius):
+    innerPoints = createRadialPlots(Point(0, 0), innerRadius,  numSides)
+    outerPoints = createRadialPlots(Point(0, 0), outerRadius,  numSides)
+    spikeyPath = PathData().moveTo(innerPoints[0])
+        
+    for i in range(numSides):
+        innerTicks = getLineDivisions(innerPoints[i], innerPoints[(i+1)%numSides], spikesPerSide*2+1)
+        outerTicks = getLineDivisions(outerPoints[i], outerPoints[(i+1)%numSides], spikesPerSide*2+1)
+        
+        for j in range(spikesPerSide):
+            spikeyPath.lineTo(outerTicks[j*2+1]).lineTo(innerTicks[(j+1)*2])
+    spikeyPath.closePath()
+    return spikeyPath
+
+
 def regularPolygon(sides, radius):
     fraction = 1.0/sides
     path = PathData().moveTo(Point().polerInit(radius, 0.5*fraction))
@@ -289,72 +322,44 @@ def hexagon(point, radius):
     return path
 
 
-def hexagonLattice(level, radius):
-    latticePath = PathData()
-    #add centre hexagon
-    latticePath.appendPath(hexagon( Point(0,0),radius))
-    distFromHex = radius*math.sin((0.5-1.0/6)*2*math.pi)/math.sin(1.0/12*2*math.pi)
-    
-    #creates a set of concentric hexagons
-    for i in range(1,level):
-        #corners of an invisible hexagon on which the concentric hexagons will be centred on
-        hexagonFrame = []
-        
-        for j in range(6):
-            
-            hexagonFrame.append(PolerPoint(i*distFromHex , float(j)/6+1.0/12).convertToCartesian()) 
-            #FIXME: do trig to figure out the perfect ratio for the angle in the PolerPoint     
-        
-        #each line of the invisible hexagon is equally divided into n points where n is the layer number
-        #hexagons are plotted on these points
-        for j in range(6):
-            sidePoints = []
-            sidePoints.extend(getLineDivisions(hexagonFrame[j], hexagonFrame[(j+1)%6], i+1))
-            for k in range(len(sidePoints)):
-                latticePath.appendPath(hexagon(sidePoints[k], radius))
-        
-    return latticePath
+##def phiSpiralArc(pointA, pointB, iter, reverseDirection=0, expanding=0):
+##    '''creates a Phi spiral inside a rectangle with short side AB, and rectangle existing
+##    on the right side of AB when travelling from A to B (or the opposite if reverseDirection = 1).
+##    iter defines the number of iterations.  Composed with a series of arcs. '''
+##    phi = (1 + math.sqrt(5)) / 2.0
+##    if reverseDirection: 
+##        angle = 0.25
+##    else: angle = 0.75
+##    sweepValue = int((not reverseDirection) ^ (not expanding))
+##    if expanding : multVal = 1.0 +phi
+##    else: multVal = phi -1
+##    
+##    spiralPath = PathData().moveTo(pointA)
+##    currentPoint = deepcopy(pointA)
+##    adjacentCorner = deepcopy(pointB)
+##    sideLength = distanceBetween(currentPoint, adjacentCorner)
+##    destinationPoint = extendBendPoint(currentPoint, adjacentCorner,  sideLength,angle)
+##    for i in range(iter):
+##        spiralPath.elipticalArc(Point(sideLength, sideLength), destinationPoint, sweepFlag=sweepValue)
+##        currentPoint = deepcopy(destinationPoint)
+##        adjacentCorner= extendBendPoint(adjacentCorner,destinationPoint , float(sideLength)*(multVal),0)
+##        sideLength = distanceBetween(currentPoint, adjacentCorner)
+##        destinationPoint = extendBendPoint(currentPoint, adjacentCorner, sideLength,angle)
+##    return spiralPath
+##    
 
-def lineZigZag( pointA, pointB, heightRatio, reps):
-    ticks = getLineDivisions(pointA,pointB, reps)
-    points = []
-    bendAngle = 0.25
-    height = heightRatio*distanceBetween(ticks[0], ticks[1])
-    points.append(extendBendPoint(pointB, pointA, height, bendAngle))
-    
-    for i in range(1,reps):
-        if i %2 == 0: bendAngle = 0.25
-        else: bendAngle = 0.75
-        points.append(extendBendPoint(pointA, ticks[i], height, bendAngle))
-    
-    path = PathData().moveTo(points[1])
-        
-    for i in range(1, reps):
-        path.lineTo(points[i])
-    
-    return path
-    
-def lineSawWave(base, pointA, pointB, heightRatio, reps):
-    ticks = getLineDivisions(pointA,pointB, reps)
-    points = []
-    path = PathData()
-    
-    height = heightRatio*distanceBetween(ticks[0], ticks[1])
-    points.append(pointA)
-    
-    for i in range(1,reps-1):
-        path.lineTo(extendBendPoint(pointA, points[i], height, 0.75)).lineTo(extendBendPoint(pointA, points[i], height, 0.25))
-    path.lineTo(pointB)   
-    
-    return path
-    
-def equiStar(points, innerRadius, outerRadius):
-    starPath = PathData().moveTo(Point().polerInit(outerRadius, 0))
-    for i in range(points):
-        
-        starPath.lineTo(Point().polerInit(innerRadius,float(i)/points+0.5/points ))
-        starPath.lineTo(Point().polerInit(outerRadius,float((i+1)%points)/points))
-    
-    return starPath
-    
-
+  
+##def lineSawWave(pointA, pointB, heightRatio, reps):
+##    ticks = getLineDivisions(pointA,pointB, reps)
+##    points = []
+##    path = PathData()
+##    
+##    height = heightRatio*distanceBetween(ticks[0], ticks[1])
+##    points.append(pointA)
+##    
+##    for i in range(1,reps-1):
+##        path.lineTo(extendBendPoint(pointA, points[i], height, 0.75)).lineTo(extendBendPoint(pointA, points[i], height, 0.25))
+##    path.lineTo(pointB)   
+##    
+##    return path
+##    

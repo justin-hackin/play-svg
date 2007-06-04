@@ -1,16 +1,15 @@
 #!/usr/bin/env python
-"""tiles an object into a Radial Grid or an Offset Radial Grid as generated in compshapes.py"""
+"""an alternative version of the Envelope function that supports groups of paths as well as paths with control points outside the object's bounding box"""
 import inkex, os, copy, re
 import xml.xpath
 import playsvg.geom, playsvg.element, playsvg.document, playsvg.path
-import pathmodifier
+
 #FIXME: unlinking clones,
 #FIXME: converting objects to paths
 #FIXME: supporting multiply nested groups,
 #FIXME: move gradients
 #FIXME: bounding box envelopes line caps that aren't there, any tile with lines or paths that touch bounding box get spaced apart
 #FIXME: will not work as expected if any elements to be tiled have translations, for now can fix by removing translations (grouping and ungrouping objects in Inkscape does this automatically, else use XML editor)
-
 
 def getTransformLambda( bb, envPts):
     """returns a lambda to transform a set of co-ordinates into an envelope using the prarameters of envPts """
@@ -28,7 +27,7 @@ def getTransformLambda( bb, envPts):
     return lambda x : fn(x)
 
 
-class RadialTile(pathmodifier.PathModifier):
+class FitInBox(inkex.Effect):
     def __init__(self):
         inkex.Effect.__init__(self)
         self.OptionParser.add_option("-l", "--layers",
@@ -71,60 +70,24 @@ class RadialTile(pathmodifier.PathModifier):
         rangeEnd = None
         numGridLayers = None
         
-        #initialized values based on offset option
-        if self.options.offset:
-            numGridLayers =  self.options.layers +3
-            grid = playsvg.geom.createOffsetRadialGrid(numGridLayers, self.options.spokes,  self.options.layerradius, self.options.beginradius)
-            envCord = [(0,0), (-1, 1), (-2, 1), (-1, 0)]
-            rangeEnd =  1 
-            
-        else:
-            numGridLayers =  self.options.layers +1
-            grid = playsvg.geom.createRadialGrid(numGridLayers, self.options.spokes,  self.options.layerradius, self.options.beginradius)
-            envCord = [(0,0), (-1, 0), (-1, 1), (0, 1)]
-            rangeEnd = 0 
-                         
-
+   
 
         obj = self.selected[self.options.ids[0]]
-        tileGroup = docu.makeGroup('tilegroup')
-        envPts = None
+        box = self.selected[self.options.ids[1]]
+        objCopy = obj.cloneNode(1)
+        objCopy.attributes.getNamedItem('id').value += 'copy'
+        docu.xdoc.documentElement.appendChild(objCopy)
+        selectedObjectPaths = xml.xpath.Evaluate("descendant-or-self::path", objCopy)
+        envPts = playsvg.path.PathData(text = box.attributes.getNamedItem('d').value).getNodes()
         
-        #create copies of the tile enveloped to the grid
-        for layer in range(numGridLayers-1,rangeEnd,-1):
-            for spoke in range(self.options.spokes):
-                inkex.debug("Node id:" + obj.attributes.getNamedItem('id').value)
-                #inkex.debug("Length of duplicate list:" + len(self.duplicateNodes({obj.attributes.getNamedItem('id').value:obj})))
-                #pathmodifier.fuseTransform(obj)
-                objID = obj.attributes.getNamedItem('id').value
-                objCopy = self.duplicateNodes({objID:obj}).values()[0]
-                #FIXME: add support for gradients
-                
-##                #check if fill is gradient
-##                styleDict = simplestyle.parseStyle(objCopy.attributes.getNamedItem('style').value)
-##                gradre= re.compile('url\(*\)')
-##                if gradre.match(styleDict['fill']) != None:
-##                    
-##                    #get url of gradient
-##                    #duplicate gradient in defs
-##                    #transform control points in new gradient (control points likely outside of bounding box ????)
-##                    #set color to new gradient
-                #FIXME: only paths and not convertible objects get selected and properly tiled
-                selectedObjectPaths = xml.xpath.Evaluate("descendant-or-self::path", objCopy)
-                
-                envPts = []
-                for i in range(4):
-                    envPts.append(grid[(layer+envCord[i][0])][(spoke+envCord[i][1])%self.options.spokes ] )
-                    
-                for path in selectedObjectPaths:
-                    self.objectToPath(path)    
-                    pathData = playsvg.path.PathData(text=path.attributes.getNamedItem('d').value)
-                    pathData.transformPoints(getTransformLambda(bb, envPts))
-                    path.attributes.getNamedItem('d').value = str(pathData)
-                tileGroup.appendChild(objCopy)
-        docu.xdoc.documentElement.appendChild(tileGroup)
+        for path in selectedObjectPaths:
+            
+            pathData = playsvg.path.PathData(text=path.attributes.getNamedItem('d').value)
+            pathData.transformPoints(getTransformLambda(bb, envPts))
+            path.attributes.getNamedItem('d').value = str(pathData)
+        
     
 
-e = RadialTile()
+e = FitInBox()
 e.affect()
 

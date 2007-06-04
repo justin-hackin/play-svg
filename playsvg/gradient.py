@@ -1,13 +1,15 @@
 from amara import binderytools
 from document import *
-
+"""Classes for building gradients"""
 class GradientStop:
+    """a gradient stop that stores color, offset, and opacity"""
     def __init__(self, color, offset, opacity=1.0):
         self.color = color
         self.offset = offset
         self.opacity = opacity
  
 class Gradient:
+    """represents a generic gradient (abstract, neither linear nor radial)"""
     def __init__(self, id):
         self.id = id
         self.stopList = []
@@ -53,6 +55,7 @@ class Gradient:
         return definition
 
 class LinearGradient:
+    """represents a linear gradient"""
     def __init__(self, id , gradient, ctrls):
         self.id = id
         self.ctrls = ctrls
@@ -60,6 +63,7 @@ class LinearGradient:
         self.gradient = gradient
 
     def createDefinition(self, docu):
+        """creates an XML node to be stored in the defs of an SVG document"""
         self.attributes[u'id'] = unicode(self.id)
         if not self.ctrls == None :
             self.attributes[u'x1'] = u'%.5f' %getattr(self.ctrls[0],'x') 
@@ -74,6 +78,7 @@ class LinearGradient:
         return definition
         
 class RadialGradient:
+    """represents a radial gradient"""
     def __init__(self, id,  gradient, radius,  ctrls):
         self.id = id
         self.radius = radius
@@ -82,6 +87,7 @@ class RadialGradient:
         self.gradient = gradient
 
     def createDefinition(self, docu):
+        """"creates an XML node to be stored in the defs of an SVG document"""
         self.attributes[u'id'] = unicode(self.id)
         if not self.ctrls == None :
             self.attributes[u'cx'] = u'%.5f' %getattr(self.ctrls[0],'x') 
@@ -93,8 +99,7 @@ class RadialGradient:
         definition = docu.xdoc.createElement(u'radialGradient')
         setAttributesFromDict(definition, self.attributes)
         definition.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "#"+self.gradient.id)
-        
-        
+          
         
         return definition
 

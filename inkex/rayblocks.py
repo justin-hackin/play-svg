@@ -1,19 +1,6 @@
 #!/usr/bin/env python 
-'''
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
+"""creates a series of radiating quadrilaterals, see example in scripts/images/"""
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-'''
 import inkex, simplestyle, pturtle, random
 import playsvg.pathshapes, playsvg.element, playsvg.document, playsvg.path
 
@@ -41,8 +28,8 @@ class RayBlocks(inkex.Effect):
                         dest="outerspacing", default=0.7,
                         help="percent of wedge that the outer ray edge ocupies")
 	self.OptionParser.add_option("-c", "--rounded",
-                        action="store", type="int", 
-                        dest="rounded", default=1,
+                        action="store", type="inkbool", 
+                        dest="rounded", default=True,
                         help="makes inner and outer edges rounded")
 	self.OptionParser.add_option("-d", "--roundinglength",
                         action="store", type="float", 

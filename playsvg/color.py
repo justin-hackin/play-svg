@@ -1,4 +1,6 @@
-'''color manipulation module'''
+'''color manipulation module
+all colors are represented as arrays or tuples of 3 [0,1) values except for hex colors i.e. #ffffff
+'''
 from __future__ import division
 import math
 
@@ -19,7 +21,7 @@ def hexToRGB(colorstring):
     if len(colorstring) != 6:
         raise ValueError, "input #%s is not in #RRGGBB format" % colorstring
     r, g, b = colorstring[:2], colorstring[2:4], colorstring[4:]
-    r, g, b = [int(n, 16) for n in (r, g, b)]
+    r, g, b = [float(int(n, 16))/256 for n in (r, g, b)]
     return [r, g, b]
 
 def hexToPIL(colorstring):
@@ -52,18 +54,24 @@ def RGBToPIL(rgb_array):
     
 def tupleGradient(fromTuple, toTuple, gradationSteps):
     '''given 2 3-tuples i.e. ((fromR, fromG, fromB) (toR, toG, toB)) and an integer(in), returns a list of tuples which is a discrete gradation from one tuple to the other'''
+    def roundFloat(floater):
+        if floater - math.floor(floater) < 0.5:
+            return int(math.floor(floater))
+        else:
+            return int(math.ceil(floater))
+    
     gradation = [fromTuple]
     #WARNING: very unelegant for python
     difference = [toTuple[0] - fromTuple[0], toTuple[1] - fromTuple[1], toTuple[2] - fromTuple[2]] 
     iterations=gradationSteps-1
     for i in range(iterations):
-            gradation.append((fromTuple[0]+ i/(gradationSteps-1)*difference[0], \
-            fromTuple[1]+ i/(gradationSteps-1)*difference[1],\
-            fromTuple[2]+ i/(gradationSteps-1)*difference[2]))
+            gradation.append((fromTuple[0]+ float(i)/(gradationSteps-1)*difference[0], \
+            fromTuple[1]+ float(i)/(gradationSteps-1)*difference[1],\
+            fromTuple[2]+ float(i)/(gradationSteps-1)*difference[2]))
     gradation.append(toTuple)
-    gradation =  [[roundFloat(float(elem)) for elem in tup]  for tup in gradation]
-    gradation = [(arrayTup[0], arrayTup[1], arrayTup[2]) for arrayTup in gradation]
-    gradation = [RGBToHTMLColor(modTup) for modTup in gradation]
+    #gradation =  [[roundFloat(float(elem)) for elem in tup]  for tup in gradation]
+    #gradation = [(arrayTup[0], arrayTup[1], arrayTup[2]) for arrayTup in gradation]
+    gradation = [RGBToHex(modTup) for modTup in gradation]
     return gradation
     
 def RGBToHSL(color):

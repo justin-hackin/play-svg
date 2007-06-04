@@ -1,0 +1,15 @@
+<inkscape-extension>
+    <_name>Fit In Box</_name>
+    <id>playsvg.ext.fitinbox</id>
+	<dependency type="executable" location="extensions">fitinbox.py</dependency>
+	<dependency type="executable" location="extensions">inkex.py</dependency>
+    <effect>
+	<object-type>all</object-type>
+        <effects-menu>
+            <submenu _name="Modify Path"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">fitinbox.py</command>
+    </script>
+</inkscape-extension>

@@ -1,9 +1,9 @@
 #!/usr/bin/env python 
-"""draws an Offset Radial Grid as explained in compshapes.py"""
+"""draws a Radial Grid as explained in compshapes.py"""
 import inkex
 import playsvg.pathshapes, playsvg.element, playsvg.document, playsvg.compshapes
 
-class RadialOffsetGrid(inkex.Effect):
+class RadialGrid(inkex.Effect):
     def __init__(self):
         inkex.Effect.__init__(self)
         
@@ -27,8 +27,8 @@ class RadialOffsetGrid(inkex.Effect):
 
     def effect(self):
         docu = playsvg.document.Document(document=self.document)
-	new = playsvg.compshapes.buildOffsetRadialGrid(docu, self.options.layers, self.options.spokes, self.options.beginradius, self.options.layerradius)
+	new = playsvg.compshapes.buildRadialGrid(docu, self.options.layers, self.options.spokes, self.options.beginradius, self.options.layerradius)
 	self.document.documentElement.appendChild(new)
 
-e = RadialOffsetGrid()
+e = RadialGrid()
 e.affect()

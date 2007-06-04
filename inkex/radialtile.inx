@@ -4,8 +4,8 @@
 	<dependency type="executable" location="extensions">radialtile.py</dependency>
 	<dependency type="executable" location="extensions">inkex.py</dependency>
 	<param name="layers" type="int" min="1" max="200" _gui-text="Number of concentric layers">8</param>
-	<param name="spokes" type="int" min="4" max="200" _gui-text="Number of radial divisions">12</param>
-    <param name="beginradius" type="float" min="0.0001" max="1000" _gui-text="Begin radius">50.0</param>
+	<param name="spokes" type="int" min="3" max="200" _gui-text="Number of radial divisions">12</param>
+    <param name="beginradius" type="float" min="0.0" max="1000" _gui-text="Begin radius">50.0</param>
     <param name="layerradius" type="float" min="0.0001`" max="1000" _gui-text="Layer radius">50.0</param>
     <param name="offset" type="boolean" _gui-text="Offset layers">false</param>
 

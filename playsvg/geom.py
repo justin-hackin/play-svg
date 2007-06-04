@@ -4,35 +4,6 @@ tewpi = math.pi*2
 phi = (1 + math.sqrt(5)) / 2.0
 from copy import *
 
-#FIXME: use Angal or lose it
-class Angal:
-    '''an Angal is a fractional representation  of an angle such that (using the clock metaphor) 0 is at 12:00,
-    0.25 is at 3:00, 0.5 is at 6:00, and 0.75 is at 9:00.  Angal is always in range |0 - 1( as whole number portions 
-   of numbers are truncated in constructors ''' 
-    def __init__(self,val):
-        if val >=0:
-            self.value = val - math.floor(val)
-        else:
-            self.value = val - math.ceil(val)
-    def setByRadianValue(self,rad):
-        #wraparound effect for radian values over tewpi
-        if rad >= tewpi:
-            rad = rad - (rad//tewpi)*tewpi 
-        #fractionify rad value    
-        value = rad / tewpi
-        #change direction of increase from counterclockwise to clockwise
-        value = 1-value
-        #change starting point 0 from position of 3:00 to 12:00
-        value = value + 0.25 - value//1
-        self.value = value
-    def reflectionInAngle(self, reflector):
-        '''returns an Angal such that it is the reflection of the current value in a line 
-        drawn through reflector and the middle of a circle'''
-        difference = self.value - reflector
-   
-
-
-    
 class Point:
     def __init__(self, xval=0, yval=0):
         self.x = float(xval)
@@ -68,7 +39,8 @@ class Point:
     def convertToPoler(self):
         existingAngal = Angal(0)
         existingAngal.setByRadianValue(math.atan2(self.y, self.x))
-        return PolerPoint(math.sqrt(self.x**2+ self.y**2), getattr(existingAngal, "value"))
+        #return PolerPoint(math.sqrt(self.x**2+ self.y**2), getattr(existingAngal, "value"))
+        return (math.sqrt(self.x**2+ self.y**2), getattr(existingAngal, "value"))
     def unitVector(self):
         return self.scale(1/self.vectorLength())
     def vectorLength(self):
@@ -76,6 +48,31 @@ class Point:
     def scale(self, mult):
         return Point(self.x*mult, self.y*mult)
     
+#FIXME: use Angal or lose it
+class Angal:
+    '''an Angal is a fractional representation  of an angle such that (using the clock metaphor) 0 is at 12:00,
+    0.25 is at 3:00, 0.5 is at 6:00, and 0.75 is at 9:00.  Angal is always in range |0 - 1( as whole number portions 
+   of numbers are truncated in constructors ''' 
+    def __init__(self,val):
+        if val >=0:
+            self.value = val - math.floor(val)
+        else:
+            self.value = val - math.ceil(val)
+    def setByRadianValue(self,rad):
+        #wraparound effect for radian values over tewpi
+        if rad >= tewpi:
+            rad = rad - (rad//tewpi)*tewpi 
+        #fractionify rad value    
+        value = rad / tewpi
+        #change direction of increase from counterclockwise to clockwise
+        value = 1-value
+        #change starting point 0 from position of 3:00 to 12:00
+        value = value + 0.25 - value//1
+        self.value = value
+    def reflectionInAngle(self, reflector):
+        '''returns an Angal such that it is the reflection of the current value in a line 
+        drawn through reflector and the middle of a circle'''
+        difference = self.value - reflector
 
 #DEPRICATED, use Point polarInit()
 class PolerPoint:
@@ -116,7 +113,6 @@ def convertPolarToPoler(angleNum):
     retVal = horizFlipThayda(retVal)
     return retVal
 
-
 def getMidpoint(pointA, pointB):
     return Point( float(pointA.getX()+pointB.getX())/2, float(pointA.getY()+ pointB.getY())/2)
 
@@ -132,33 +128,6 @@ def distanceBetweenPoints(points):
         totalDistance += distanceBetween(points[i], points[i+1])
     return totalDistance    
     
-#FIXME:used ?
-def vertFlipThayda(number):
-        return 1 - number
-
-#FIXME:used ?
-def horizFlipThayda(number):
-    retVal = 0.5 - number
-    if retVal < 0 :
-        retVal = retVal + 1 
-    
-    return retVal
-
-#FIXME:used ?
-def convertTanToFract(number):
-    if number < 0 :
-        retVal = 1+number
-    else:
-        retVal = number
-        
-    return retVal
-
-#FIXME:used ?
-def radialPlot(angleFraction, radius):
-    givenAngleFraction = angleFraction
-    if givenAngleFraction >= 1:
-        givenAngleFraction = angleFraction - math.floor(angleFraction)
-    return Point(math.sin(givenAngleFraction*tewpi)*radius , math.cos(givenAngleFraction*tewpi)*radius)  
 
 ##def hingePlot(axisPoint,baselinePoint, angleFraction, hingeRadius):
 ##    '''returns a point that is a plot as described in using a compas metaphor: a compas is open 
@@ -223,16 +192,29 @@ def getLineDivisions(pointA, pointB, n):
     
 def getLineDivision(pointA, pointB, fract):
     '''returns an array of fract number of equally-spaced points along the line from pointA to pointB, inclusive of both'''
+        
+    if fract < 0:
+        #reverse points
+        tmpPtA = deepcopy(pointB)
+        tmpPtB = deepcopy(pointA)
+        #change ratio to extend beyond line
+        theFract = math.fabs(fract) +1
+    else:
+        tmpPtA = deepcopy(pointA)
+        tmpPtB = deepcopy(pointB)
+        theFract = fract
+    
     xdiff = math.fabs(pointA.getX() - pointB.getX())
     ydiff = math.fabs(pointA.getY() - pointB.getY())
     
-    if pointA.getX() < pointB.getX(): axOperator = 1
+    if tmpPtA.getX() < tmpPtB.getX(): axOperator = 1
     else: axOperator = -1
     
-    if pointA.getY() < pointB.getY():ayOperator = 1
+    if tmpPtA.getY() < tmpPtB.getY():ayOperator = 1
     else: ayOperator = -1
+       
     
-    return Point(pointA.getX() +  axOperator*fract*xdiff, pointA.getY() + ayOperator*fract* ydiff)
+    return Point(tmpPtA.getX() +  axOperator*theFract*xdiff, tmpPtA.getY() + ayOperator*theFract* ydiff)
 
 def getLineDivisionDistance(pointA, pointB, distance):
     lineLength = distanceBetween(pointA, pointB)
@@ -250,19 +232,9 @@ def getLineDivisionsWithRatios(pointA, pointB, ratios):
 
 def extendBendPoint(pointA, pointB,  length, angle):
     relativeB = pointB - pointA
-    bentPoint =  PolerPoint(length, relativeB.convertToPoler().getT()+angle).convertToCartesian() + pointB
+    bentPoint =  Point().polerInit(length, relativeB.convertToPoler()[1]+angle) + pointB
     return bentPoint
 
-def hingePlot(pointA, pointB,  length, angle):
-    '''returns a point that is a plot as described in using a compas metaphor: a compas is open \
-     by the distance of hingRadius with end #1 fixed on axisPoint and end #2 \
-     resting such that it is in line with axisPoint and baselinePoint.  The returned point is the point \
-    obtained by swinging end #2 by the angal angleFraction '''
-    relativeB = pointB - pointA
-    print relativeB
-    print relativeB.convertToPoler().getT()
-    hingePoint =  PolerPoint(length, relativeB.convertToPoler().getT()+angle).convertToCartesian() + pointA
-    return hingePoint
     
 def reflectPointInLine(point, lineStart, lineEnd):
     '''Calculation as described in http://mathworld.wolfram.com/Reflection.html'''
@@ -395,20 +367,26 @@ def angalBetween(ptA, ptB, ptC):
 # note that the angular position is offset such that the first indexed 
 # point at a given layer will move clockwise as the layer increases
 def createOffsetRadialGrid(rings, spokes, layerSpacing, beginRadius):
-    plots = [[] for i in range(rings)]
-   
+    plots = []
     for ring in range(rings):
-        for spoke in range(spokes):
-            #                                                                                      offset on ring     start point of ring  
-            plots[ring].append(Point().polerInit(ring*layerSpacing+beginRadius , (float(spoke)/spokes + ((0.5*ring % spokes)/spokes))))
+        if ring ==0 and float(beginRadius) == 0.0:
+            plots.append([Point(0,0)]*spokes)
+        else:
+            plots.append([])
+            for spoke in range(spokes):
+                #                                                                                      offset on ring     start point of ring  
+                plots[-1].append(Point().polerInit(ring*layerSpacing+beginRadius , (float(spoke)/spokes + ((0.5*ring % spokes)/spokes))))
     return plots
     
 def createRadialGrid(rings, spokes, layerSpacing, beginRadius):
-    plots = [[] for i in range(rings)]
-   
+    plots = []
     for ring in range(rings):
-        for spoke in range(spokes):
-            plots[ring].append(Point().polerInit(ring*layerSpacing+beginRadius , (float(spoke)/spokes )))
+        if ring ==0 and float(beginRadius) == 0.0:
+            plots.append([Point(0,0)]*spokes)
+        else:
+            plots.append([])
+            for spoke in range(spokes):
+                plots[-1].append(Point().polerInit(ring*layerSpacing+beginRadius , (float(spoke)/spokes )))
     return plots
 
 def createRadialPlots(position, radius, spokes, passive = 0):
@@ -416,6 +394,7 @@ def createRadialPlots(position, radius, spokes, passive = 0):
     plots = []
     if not passive: offset = 0
     else: offset = 1.0/(2*spokes)
+    
     for i in range(spokes):
         plots.append(Point().polerInit(radius, float(i)/spokes + offset) + position)
     return plots
@@ -508,3 +487,46 @@ def getAngalBetween(pointA, pointB, pointC):
     if angAB < angBC: return angAB + angBC
     else: return angBC - angAB
 
+
+#FIXME:used ?
+def vertFlipThayda(number):
+        return 1 - number
+
+#FIXME:used ?
+def horizFlipThayda(number):
+    retVal = 0.5 - number
+    if retVal < 0 :
+        retVal = retVal + 1 
+    
+    return retVal
+
+#FIXME:used ?
+def convertTanToFract(number):
+    if number < 0 :
+        retVal = 1+number
+    else:
+        retVal = number
+        
+    return retVal
+
+#FIXME:used ?
+def radialPlot(angleFraction, radius):
+    givenAngleFraction = angleFraction
+    if givenAngleFraction >= 1:
+        givenAngleFraction = angleFraction - math.floor(angleFraction)
+    return Point(math.sin(givenAngleFraction*tewpi)*radius , math.cos(givenAngleFraction*tewpi)*radius)  
+
+
+
+
+##
+##def hingePlot(pointA, pointB,  length, angle):
+##    '''returns a point that is a plot as described in using a compas metaphor: a compas is open \
+##     by the distance of hingRadius with end #1 fixed on axisPoint and end #2 \
+##     resting such that it is in line with axisPoint and baselinePoint.  The returned point is the point \
+##    obtained by swinging end #2 by the angal angleFraction '''
+##    relativeB = pointB - pointA
+##    print relativeB
+##    print relativeB.convertToPoler().getT()
+##    hingePoint =  PolerPoint(length, relativeB.convertToPoler().getT()+angle).convertToCartesian() + pointA
+##    return hingePoint
