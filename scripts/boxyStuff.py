@@ -102,30 +102,6 @@ def buildAngledStripes(docu, boxSize, numStripes, corneredFlag):
     return stripesGroup
 
 
-    
-##   
-##    
-##if not os.path.exists("images/"):
-##    os.mkdir("images/")    
-##if not os.path.exists("images/stripes/"):
-##    os.mkdir("images/stripes/")
-##
-##for i in range(1, 23,2):
-##    docu = document.Document()
-##    docu.appendElement(buildAngledStripes(docu, 100, i, 1))
-##    docu.writeSVG("stripes/angled_stripes"+string.zfill(i,2)+".svg" )
-##    
-##denominators = [4, 6, 8, 10, 16, 32]
-##    
-##for i in denominators:
-##    for j in range(1,i):
-##        docu = document.Document()
-##        docu.appendElement(buildPath(docu, triangularCorner(100, float(j)/i ), {'style':'fill:black;stroke:none'}))
-##        docu.writeSVG("stripes/triangle_corner-"+string.zfill(i,2)+ "_" + string.zfill(j,2)+ ".svg" )
-##        docu = document.Document()
-##        docu.appendElement(buildPath(docu, middleStripe(100, float(j)/i ), {'style':'fill:black;stroke:none'}))
-##        docu.writeSVG("stripes/middle_stripe-"+string.zfill(i,2)+ "_" + string.zfill(j,2)+ ".svg" )
-##        
 
 docu = document.Document()
 docu.appendElement( buildWeaveTile(docu,100, 0.5 ))

@@ -129,19 +129,6 @@ def distanceBetweenPoints(points):
     return totalDistance    
     
 
-##def hingePlot(axisPoint,baselinePoint, angleFraction, hingeRadius):
-##    '''returns a point that is a plot as described in using a compas metaphor: a compas is open 
-##     by the distance of hingRadius with end #1 fixed on axisPoint and end #2 
-##     resting such that it is in line with axisPoint and baselinePoint.  The returned point is the point 
-##    obtained by swinging end #2 by the angal angleFraction '''
-##    #determine the existing angle between axisPoint and baselinePoint
-##    existingAngle = math.atan2( axisPoint.getY()-baselinePoint.getY(), axisPoint.getX()-baselinePoint.getX() ) / tewpi
-##    existingAngle = convertTanToFract(existingAngle)
-##    print str(existingAngle)
-##    #use radialPlot to make hinge
-##    plot = axisPoint + radialPlot(existingAngle+angleFraction, hingeRadius)
-##    return plot
-##    
 def getDiscreteCubicBezier(pointA, pointB, pointC, pointD, n):
     """ Accepts 4 CartesianPoint objects which represent a bezier curve as described
     on wikipedia and a number of points n and returns an array of n CartesianPoints 
@@ -530,3 +517,18 @@ def radialPlot(angleFraction, radius):
 ##    print relativeB.convertToPoler().getT()
 ##    hingePoint =  PolerPoint(length, relativeB.convertToPoler().getT()+angle).convertToCartesian() + pointA
 ##    return hingePoint
+
+
+##def hingePlot(axisPoint,baselinePoint, angleFraction, hingeRadius):
+##    '''returns a point that is a plot as described in using a compas metaphor: a compas is open 
+##     by the distance of hingRadius with end #1 fixed on axisPoint and end #2 
+##     resting such that it is in line with axisPoint and baselinePoint.  The returned point is the point 
+##    obtained by swinging end #2 by the angal angleFraction '''
+##    #determine the existing angle between axisPoint and baselinePoint
+##    existingAngle = math.atan2( axisPoint.getY()-baselinePoint.getY(), axisPoint.getX()-baselinePoint.getX() ) / tewpi
+##    existingAngle = convertTanToFract(existingAngle)
+##    print str(existingAngle)
+##    #use radialPlot to make hinge
+##    plot = axisPoint + radialPlot(existingAngle+angleFraction, hingeRadius)
+##    return plot
+##    

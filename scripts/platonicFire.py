@@ -53,15 +53,15 @@ abraGroup.appendChild(downTriangles)
  
 docu.appendElement(abraGroup)
 
-#create shaded overlay
-SupGradientColors = [ '#ff009e', '#a500ff']
-SupGradient = Gradient('sgrade000')
-SupGradient.createBalancedGradient(SupGradientColors)
-SupGradient.id = 'supgrade'
-docu.appendDefinition(SupGradient.createDefinition(docu))
-points = [tetractysArray[0][0],  tetractysArray[5][0],  tetractysArray[5][5] ]
-docu.appendElement(gradshape.polygonGradient(docu, points, SupGradient, id ='supgrade'))
-
+###create shaded overlay
+##SupGradientColors = [ '#ff009e', '#a500ff']
+##SupGradient = Gradient('sgrade000')
+##SupGradient.createBalancedGradient(SupGradientColors)
+##SupGradient.id = 'supgrade'
+##docu.appendDefinition(SupGradient.createDefinition(docu))
+##points = [tetractysArray[0][0],  tetractysArray[5][0],  tetractysArray[5][5] ]
+##docu.appendElement(gradshape.polygonGradient(docu, points, SupGradient, id ='supgrade'))
+##
 
 #innerTriangleCorners = ((0,0), (6,6), (0,6)),((10, 6), (0,6),(6,6)), ((10,0), ())
 

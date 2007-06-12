@@ -1,6 +1,6 @@
 #python libraries
 import math
-import pathshapes
+
 
 #local libraries
 from playsvg.geom import *
