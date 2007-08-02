@@ -1,4 +1,3 @@
-from amara import binderytools
 from document import *
 """Classes for building gradients"""
 class GradientStop:
@@ -28,6 +27,7 @@ class Gradient:
             self.stopList[i].offset = float(1)/totalStops
         return self
     def ensureOffsetValid(self):
+        #FIXME: DUHH, THIS IS WRONG, EACH SUCCESSIVE OFFSET NEEDS TO BE HIGHER THAT THE LAST
         offsetSum = 0.0
         for i in range(len(self.stopList)):
             offsetSum += self.stopList[i].offset

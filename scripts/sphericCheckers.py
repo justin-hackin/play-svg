@@ -7,7 +7,7 @@ from playsvg.path import *
 docu = document.Document()
 gridSize = 200
 squareSizeRatio = []
-numSquaresHalf = 22
+numSquaresHalf = 10
 perspectiveAngal = 0.1
 checkerGroup = docu.makeGroup("sphericheckers")
 darkGroup = docu.makeGroup("darkbox")
@@ -25,13 +25,32 @@ def pathRect(corner1, corner2):
 ##secondHalf.reverse()
 ##squareSizeRatio.extend(firstHalf)
 ##squareSizeRatio.extend(secondHalf)
-#convex version
-firstHalf = [1- i for i in perspectiveDistanceRatioArray(perspectiveAngal, numSquaresHalf)]
-firstHalf.reverse()
-secondHalf = [1+i for i in perspectiveDistanceRatioArray(perspectiveAngal, numSquaresHalf)[1:]]
+###convex version
+##firstHalf = [1- i for i in perspectiveDistanceRatioArray(perspectiveAngal, numSquaresHalf)]
+##
+##firstHalf.reverse()
+##secondHalf = [1+i for i in perspectiveDistanceRatioArray(perspectiveAngal, numSquaresHalf)[1:]]
+##
+##squareSizeRatio.extend(firstHalf[:-1])
+##squareSizeRatio.extend(secondHalf)
+circleQuarterTicks = []
+numMarks = 20
+circleRadius = 200
+for i in range(numMarks):
+    circleQuarterTicks.append(Point().polerInit(circleRadius, float(i)/(numMarks-1)))
 
-squareSizeRatio.extend(firstHalf)
-squareSizeRatio.extend(secondHalf)
+baseIntersections = [circleQuarterTicks[0]]
+for i in range(1,numMarks-1):
+    baseIntersections.append(projectionPointOnLine(circleQuarterTicks[i], circleQuarterTicks[0], circleQuarterTicks[-1]))
+baseIntersections.append(circleQuarterTicks[-1])
+squareSizeRatio = []
+distanceBetweenArc = distanceBetween(baseIntersections[0], baseIntersections[-1])
+print "bal"
+print distanceBetweenArc
+for i in range(numMarks-1):
+    squareSizeRatio.append(distanceBetween(baseIntersections[i],baseIntersections[i+1])/distanceBetweenArc)
+
+
 
 print squareSizeRatio
 squarePosition = [i*gridSize for i in squareSizeRatio] 
@@ -49,5 +68,5 @@ for x in range(len(squarePosition)-1):
 checkerGroup.appendChild(lightGroup)
 checkerGroup.appendChild(darkGroup)
 docu.appendElement(checkerGroup)
-docu.writeSVG('checkerd_box.svg')
+docu.writeSVG('checkerd_box03.svg')
 
