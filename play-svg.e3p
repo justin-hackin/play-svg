@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-3.8.dtd">
 <!-- Project file for project play-svg -->
-<!-- Saved: 2007-06-11, 20:53:35 -->
+<!-- Saved: 2007-08-02, 13:06:44 -->
 <!-- Copyright (C) 2007 playful_geometr,  -->
 <Project version="3.8">
   <ProgLanguage mixed="0">Python</ProgLanguage>
@@ -255,6 +255,46 @@
       <Dir>scripts</Dir>
       <Name>weaveTile.py</Name>
     </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>concentricStripeBoxes.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>shiningRays.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>concentricStripeRings.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>xchangemark.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>sunburstStringart.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>hearton.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>starToPolygon.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>chevron.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>gramatic_generation.py</Name>
+    </Source>
+    <Source>
+      <Dir>scripts</Dir>
+      <Name>permutations.py</Name>
+    </Source>
   </Sources>
   <Forms>
   </Forms>
@@ -283,10 +323,10 @@
     <VcsOtherData>{'standardLayout': True}</VcsOtherData>
   </Vcs>
   <FiletypeAssociations>
-    <FiletypeAssociation pattern="*.ui.h" type="FORMS" />
-    <FiletypeAssociation pattern="*.ui" type="FORMS" />
-    <FiletypeAssociation pattern="*.idl" type="INTERFACES" />
-    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
     <FiletypeAssociation pattern="*.py" type="SOURCES" />
+    <FiletypeAssociation pattern="*.ui.h" type="FORMS" />
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES" />
+    <FiletypeAssociation pattern="*.ui" type="FORMS" />
+    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
   </FiletypeAssociations>
 </Project>

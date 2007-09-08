@@ -45,6 +45,13 @@ def buildPath(docu, pathData,  elementAttrs):
     pathElement = docu.xdoc.createElement(u'path')
     document.setAttributesFromDict(pathElement, elementAttrs)
     return pathElement
+
+def buildText(docu, text, elementAttrs):
+    elementAttrs = copy(elementAttrs)
+    textElement = docu.xdoc.createElement(u'text')
+    document.setAttributesFromDict(textElement, elementAttrs)
+    textElement.appendChild(docu.xdoc.createTextNode(text))
+    return textElement
   
 ##def makeItGoRound(base, node, duration):
 ##    animator = base.xml_element(u'animateTransform')
