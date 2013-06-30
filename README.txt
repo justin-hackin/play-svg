@@ -1,6 +1,7 @@
 =============
 pLAySVG: making graphical programming as easy as py
-http://github.com/cosmo-guffa/play-svg
+Download: http://github.com/cosmo-guffa/play-svg
+Documentation: http://cosmo-guffa.github.io/play-svg/
 =============
 
 pLAySVG is a python library that facilitates the generation and manipulation of SVG vector graphics.  It is designed to be easy to use, even for non-programmers.  It is geared toward educational and artistic use.  It contains code to  construct XML nodes corresponding to SVG elements, perform geometric operations, manipulate colors, and produce complex shapes.  
