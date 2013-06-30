@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Basic tutorial &mdash; play-svg 3.2 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '3.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="play-svg 3.2 documentation" href="index.html" />
+    <link rel="next" title="geom module" href="geom.html" />
+    <link rel="prev" title="Welcome to pLAySVG’s documentation!" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="geom.html" title="geom module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to pLAySVG’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">play-svg 3.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="basic-tutorial">
+<h1>Basic tutorial<a class="headerlink" href="#basic-tutorial" title="Permalink to this headline">¶</a></h1>
+<p>It is suggested you have a basic understanding of cartesian geometry and SVG syntax before you begin, but if you don&#8217;t you can probably learn both as you go along.</p>
+<div class="section" id="geometry">
+<h2>Geometry<a class="headerlink" href="#geometry" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt>pLAySVG has a co-ordinate system that is slightly different from native SVG documents, namely in that (0,0) lies in the center of the document rather than the bottom left.  It bears a resemblence to the cartesian system you probably learned in school, such that:</dt>
+<dd><ul class="first last simple">
+<li>(0,0) is in the center of the document</li>
+<li>(10,0) is to the right of center</li>
+<li>(-10,0) is to the left of center</li>
+<li>(0,10) is above center</li>
+<li>(0,10) is below center</li>
+</ul>
+</dd>
+</dl>
+<p>To plot anything you&#8217;ll need to start working with the geometry module.  Lets include it and define some ponts.  You can run these examples from the python console or cut and paste these snippets into a .py document:</p>
+<div class="highlight-python"><pre>from playsvg.geom import *
+pointA = Point() # a point at (0,0)
+pointB = Point(10,10)
+print &quot;Position of pointA:&quot; + str(pointA)
+print &quot;Position of pointB:&quot; + str(pointB)</pre>
+</div>
+<p>We can use operators to create some new points:</p>
+<div class="highlight-python"><pre>pointC = pointB + Point(12,7)
+pointD = pointC - Point(7,12)
+pointE = pointD.scale(10)
+print &quot;Position of pointC:&quot; + str(pointC)
+print &quot;Position of pointD:&quot; + str(pointD)
+print &quot;Position of pointE:&quot; + str(pointE)</pre>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="svg-coding">
+<h2>SVG coding<a class="headerlink" href="#svg-coding" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>OK, so now lets get to making some SVG with our points. You&#8217;ll need to include the document and element libraries:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">playsvg.document</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">playsvg.element</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>Now we can create a document:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">docu</span> <span class="o">=</span> <span class="n">Document</span><span class="p">(</span><span class="n">gridSize</span><span class="o">=</span><span class="mi">1080</span><span class="p">)</span> <span class="c">#if brackets are empty, gridSize=640</span>
+</pre></div>
+</div>
+</div></blockquote>
+<div class="section" id="lines">
+<h3>Lines<a class="headerlink" href="#lines" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Its time to draw a line and write it to a file:</p>
+<div class="highlight-python"><pre>firstLine = buildLine(pointA, pointB)
+docu.append(firstLine)
+print &quot;Here&#x27;s our document output:&quot;
+print &quot;-----------------------------&quot;
+str(docu)
+docu.writeSVG(&quot;hello.svg&quot;)</pre>
+</div>
+<p><a class="reference external" href="http://inkscape.org/">Inkscape</a> is reccomended to view the output of the script.  With it you can easily view the SVG image and the SVG code at the same time.  You will find hello.svg in the &#8220;images&#8221; folder, which was generated inside the folder you ran your script in (if it did not already exist). Alternately, you could have the file written to an absolute path like this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">docu</span><span class="o">.</span><span class="n">writeSVG</span><span class="p">(</span><span class="s">&quot;/home/user/hello.svg&quot;</span><span class="p">,</span> <span class="n">pathAbsolute</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>or for Windows users it will look something more like:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">docu</span><span class="o">.</span><span class="n">writeSVG</span><span class="p">(</span><span class="s">&quot;C:</span><span class="se">\\</span><span class="s">users</span><span class="se">\\</span><span class="s">User1</span><span class="se">\\</span><span class="s">hello.svg&quot;</span><span class="p">,</span> <span class="n">pathAbsolute</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="circles">
+<h3>Circles<a class="headerlink" href="#circles" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Lets draw some circles on the nodes of our line:</p>
+<div class="highlight-python"><pre>circleA = buildCircle(pointA, 5) #center , radius
+circleB = buildCircle(pointB, 5)
+docu.append(firstLine)
+print &quot;Here&#x27;s our document output:&quot;
+print &quot;-----------------------------&quot;
+str(docu)
+docu.writeSVG(&quot;hello.svg&quot;)</pre>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="paths">
+<h3>Paths<a class="headerlink" href="#paths" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>pLAySVG uses a special class called PathData to store and manipulate path data as seen here:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">pathABC</span> <span class="o">=</span> <span class="n">PathData</span><span class="p">()</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="n">pointA</span><span class="p">)</span><span class="o">.</span><span class="n">lineTo</span><span class="p">(</span><span class="n">pointB</span><span class="p">)</span><span class="o">.</span><span class="n">lineTo</span><span class="p">(</span><span class="n">pointC</span><span class="p">)</span>
+<span class="n">pathABCsvg</span> <span class="o">=</span> <span class="n">buildPath</span><span class="p">(</span><span class="n">pathABC</span><span class="p">)</span>
+<span class="n">docu</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pathABCsvg</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The PathData object implements all of the other path commands including beziers, arcs, close path, etc.</p>
+</div></blockquote>
+</div>
+<div class="section" id="styles-and-other-attributes">
+<h3>Styles and other attributes<a class="headerlink" href="#styles-and-other-attributes" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Most of the buildXXX functions have a default style they use, defined by a dictionary as such:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">defaultStyleAttrs</span> <span class="o">=</span> <span class="p">{</span> <span class="s">&quot;style&quot;</span><span class="p">:</span> <span class="s">&quot;fill:none;stroke:black;stroke-width:1&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>You can define your own attributes dictionary instead and pass it to buildLine:</p>
+<div class="highlight-python"><pre>myStyleAttrs = { &quot;style&quot;: &quot;fill:none;stroke:red;stroke-width:10&quot;; &quot;id&quot;:&quot;secondLine&quot;}
+secondLine = buildLine(pointB, pointC, myStyleAttrs)
+docu.append(secondLine)</pre>
+</div>
+<p>Or, if you want to keep the default style and just add the id:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">myStyleAttrs</span> <span class="o">=</span> <span class="n">defaultStyleAttrs</span> <span class="c">#imported with element module</span>
+<span class="n">myStyleAttrs</span><span class="p">[</span><span class="s">&quot;id&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;secondLine&quot;</span>
+<span class="n">secondLine</span> <span class="o">=</span> <span class="n">buildLine</span><span class="p">(</span><span class="n">pointB</span><span class="p">,</span> <span class="n">pointC</span><span class="p">,</span> <span class="n">myStyleAttrs</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="learning-more">
+<h2>Learning more<a class="headerlink" href="#learning-more" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>pLAySVG contains a large number of example scripts in its scripts/ folder.  A great way to learn more about pLAySVG and its functionality is to look through these scripts, run them, view their output, and manipulate them to see how their output changes.  You can also refer to the module sections for more details on the API and available classes and methods.</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Basic tutorial</a><ul>
+<li><a class="reference internal" href="#geometry">Geometry</a></li>
+<li><a class="reference internal" href="#svg-coding">SVG coding</a><ul>
+<li><a class="reference internal" href="#lines">Lines</a></li>
+<li><a class="reference internal" href="#circles">Circles</a></li>
+<li><a class="reference internal" href="#paths">Paths</a></li>
+<li><a class="reference internal" href="#styles-and-other-attributes">Styles and other attributes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#learning-more">Learning more</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to pLAySVG&#8217;s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="geom.html"
+                        title="next chapter">geom module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/tutorial.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="geom.html" title="geom module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to pLAySVG’s documentation!"
+             >previous</a> |</li>
+        <li><a href="index.html">play-svg 3.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Cosmo Guffa.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
