@@ -39,10 +39,10 @@ class RayBlocks(inkex.Effect):
 	
 	
     def effect(self):
-        docu = playsvg.document.Document(document=self.document)
-	new = playsvg.element.buildPath(docu, playsvg.pathshapes.rayBlocks(self.options.numrays, self.options.innerradius, self.options.outerradius, self.options.innerspacing,  self.options.outerspacing, self.options.rounded, self.options.roundinglength), {'style':'stroke:black;fill:none'})
+        
+        new = playsvg.element.buildPath(playsvg.pathshapes.rayBlocks(self.options.numrays, self.options.innerradius, self.options.outerradius, self.options.innerspacing,  self.options.outerspacing, self.options.rounded, self.options.roundinglength), {'style':'stroke:black;fill:none'})
 	
-        self.document.documentElement.appendChild(new)
+        self.current_layer.append(new)
 
 e = RayBlocks()
 e.affect()

@@ -59,14 +59,14 @@ for x in range(len(squarePosition)-1):
         thisRect = pathRect(Point(squarePosition[x], squarePosition[y]),\
         Point(squarePosition[x+1], squarePosition[y+1]))
         if (x+y)%2 == 1 :
-            darkGroup.appendChild(buildPath(docu, thisRect\
+            darkGroup.append(buildPath( thisRect\
             , {'style':'fill:black; stroke:none'}))
         else:
-            lightGroup.appendChild(buildPath(docu, thisRect\
+            lightGroup.append(buildPath( thisRect\
             , {'style':'fill:white; stroke:none'}))
         
-checkerGroup.appendChild(lightGroup)
-checkerGroup.appendChild(darkGroup)
+checkerGroup.append(lightGroup)
+checkerGroup.append(darkGroup)
 docu.appendElement(checkerGroup)
 docu.writeSVG('checkerd_box03.svg')
 

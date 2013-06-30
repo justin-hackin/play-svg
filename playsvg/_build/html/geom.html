@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>geom module &mdash; pLAySVG 0.3.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.3.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="pLAySVG 0.3.1 documentation" href="index.html" />
+    <link rel="next" title="document module" href="document.html" />
+    <link rel="prev" title="Basic tutorial" href="tutorial.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="document.html" title="document module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="tutorial.html" title="Basic tutorial"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">pLAySVG 0.3.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-geom">
+<span id="geom-module"></span><h1>geom module<a class="headerlink" href="#module-geom" title="Permalink to this headline">¶</a></h1>
+<p>This module contains all classes and methods used for geometric calculations. 
+pLAySVG has one unconventional term it uses in its geometric calculations: &#8216;angal&#8217;.   An angal is a fractional representation of an angle such that (using the clock metaphor) 0 is at 12:00, 0.25 is at 3:00, 0.5 is at 6:00, and 0.75 is at 9:00.  An angal is always in range |0 - 1( as whole number portions of numbers are truncated in any calculations using them.</p>
+<dl class="class">
+<dt id="geom.Point">
+<em class="property">class </em><tt class="descclassname">geom.</tt><tt class="descname">Point</tt><big>(</big><em>xval=0</em>, <em>yval=0</em><big>)</big><a class="reference internal" href="_modules/geom.html#Point"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.Point" title="Permalink to this definition">¶</a></dt>
+<dd><p>A 2D cartesian point</p>
+<dl class="method">
+<dt id="geom.Point.convertToPoler">
+<tt class="descname">convertToPoler</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/geom.html#Point.convertToPoler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.Point.convertToPoler" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a pair (distance from center, angal)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geom.Point.getMultiple">
+<tt class="descname">getMultiple</tt><big>(</big><em>scalar</em><big>)</big><a class="reference internal" href="_modules/geom.html#Point.getMultiple"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.Point.getMultiple" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns Point(self.x*scalar, self.y*scalar)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geom.Point.polerInit">
+<tt class="descname">polerInit</tt><big>(</big><em>radius</em>, <em>angal</em><big>)</big><a class="reference internal" href="_modules/geom.html#Point.polerInit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.Point.polerInit" title="Permalink to this definition">¶</a></dt>
+<dd><p>initialize the x and y values based upon radial co-ordinates, with the angal representing the angle as in Angal class</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geom.Point.strForPoly">
+<tt class="descname">strForPoly</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/geom.html#Point.strForPoly"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.Point.strForPoly" title="Permalink to this definition">¶</a></dt>
+<dd><p>used to output 2D points for OpenSCAD</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geom.Point.strOnPlane">
+<tt class="descname">strOnPlane</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/geom.html#Point.strOnPlane"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.Point.strOnPlane" title="Permalink to this definition">¶</a></dt>
+<dd><p>used to output 3D points for OpenSCAD</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geom.Point.unitVector">
+<tt class="descname">unitVector</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/geom.html#Point.unitVector"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.Point.unitVector" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns unit vector Point</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geom.Point.vectorLength">
+<tt class="descname">vectorLength</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/geom.html#Point.vectorLength"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.Point.vectorLength" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns length of point as vector</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.aNum">
+<tt class="descclassname">geom.</tt><tt class="descname">aNum</tt><big>(</big><em>theNum</em><big>)</big><a class="reference internal" href="_modules/geom.html#aNum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.aNum" title="Permalink to this definition">¶</a></dt>
+<dd><p>used to output fixed decimal string of length 5 (magic number) for SVG output</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.angalBetween">
+<tt class="descclassname">geom.</tt><tt class="descname">angalBetween</tt><big>(</big><em>ptA</em>, <em>ptB</em>, <em>ptC</em><big>)</big><a class="reference internal" href="_modules/geom.html#angalBetween"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.angalBetween" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculates the angal for angle ABC</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.angalOfPoints">
+<tt class="descclassname">geom.</tt><tt class="descname">angalOfPoints</tt><big>(</big><em>pointA</em>, <em>pointB</em><big>)</big><a class="reference internal" href="_modules/geom.html#angalOfPoints"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.angalOfPoints" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculates the angal of line AB</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.createOffsetRadialGrid">
+<tt class="descclassname">geom.</tt><tt class="descname">createOffsetRadialGrid</tt><big>(</big><em>rings</em>, <em>spokes</em>, <em>layerSpacing</em>, <em>beginRadius</em><big>)</big><a class="reference internal" href="_modules/geom.html#createOffsetRadialGrid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.createOffsetRadialGrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>creates a radial grid with staggered layers as array containing arrays of Point objects
+where the returned array is accessed as follows: plots[layer][angle], 
+where increase in layer moves out from center, increase in angle moves clockwise
+odd layer has point directly above center, even layer does not 
+starting position for angle=0 varies based upon layer, spiraling clockwise</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.createRadialGrid">
+<tt class="descclassname">geom.</tt><tt class="descname">createRadialGrid</tt><big>(</big><em>rings</em>, <em>spokes</em>, <em>layerSpacing</em>, <em>beginRadius</em><big>)</big><a class="reference internal" href="_modules/geom.html#createRadialGrid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.createRadialGrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>creates a radial grid with staggered layers as array containing arrays of Point
+where returns array is accessed as follows: plots[layer][angle], 
+where increase in layer moves out from center, increase in angle moves clockwise</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.createRadialPlots">
+<tt class="descclassname">geom.</tt><tt class="descname">createRadialPlots</tt><big>(</big><em>position</em>, <em>radius</em>, <em>spokes</em>, <em>passive=0</em><big>)</big><a class="reference internal" href="_modules/geom.html#createRadialPlots"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.createRadialPlots" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns an array of equidistant points on a circle</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.createTriangleCentreGrid">
+<tt class="descclassname">geom.</tt><tt class="descname">createTriangleCentreGrid</tt><big>(</big><em>startPoint</em>, <em>sideLength</em>, <em>levels</em><big>)</big><a class="reference internal" href="_modules/geom.html#createTriangleCentreGrid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.createTriangleCentreGrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>creates a 2D array representing centres of triangles in a triangular grid bound by a triangle
+first dimension represents height second dmension represents horizontal position</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.createTriangularGrid">
+<tt class="descclassname">geom.</tt><tt class="descname">createTriangularGrid</tt><big>(</big><em>startPoint</em>, <em>sideLength</em>, <em>levels</em><big>)</big><a class="reference internal" href="_modules/geom.html#createTriangularGrid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.createTriangularGrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>creates a 2D array representing intersections of a triangular grid bound by a triangle
+first dimension represents height, second dimension represents horizontal position</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.cubicBezierLength">
+<tt class="descclassname">geom.</tt><tt class="descname">cubicBezierLength</tt><big>(</big><em>P1</em>, <em>P2</em>, <em>P3</em>, <em>P4</em>, <em>maxLev=10</em><big>)</big><a class="reference internal" href="_modules/geom.html#cubicBezierLength"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.cubicBezierLength" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate the length of a cubic bezier start:P1 control1:P2 control2:P3 end:P4</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.distanceBetween">
+<tt class="descclassname">geom.</tt><tt class="descname">distanceBetween</tt><big>(</big><em>pointA</em>, <em>pointB</em><big>)</big><a class="reference internal" href="_modules/geom.html#distanceBetween"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.distanceBetween" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns distance between pointA and pointB</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.distanceBetweenPoints">
+<tt class="descclassname">geom.</tt><tt class="descname">distanceBetweenPoints</tt><big>(</big><em>points</em><big>)</big><a class="reference internal" href="_modules/geom.html#distanceBetweenPoints"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.distanceBetweenPoints" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the sum of succesive distances between elements in the array points</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.generateStarDict">
+<tt class="descclassname">geom.</tt><tt class="descname">generateStarDict</tt><big>(</big><em>limit</em><big>)</big><a class="reference internal" href="_modules/geom.html#generateStarDict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.generateStarDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>generate a dictionary representing all possible irregular star polygons</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.getAngalBetween">
+<tt class="descclassname">geom.</tt><tt class="descname">getAngalBetween</tt><big>(</big><em>pointA</em>, <em>pointB</em>, <em>pointC</em><big>)</big><a class="reference internal" href="_modules/geom.html#getAngalBetween"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.getAngalBetween" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the angal defined for ABC (DUPLICATE ?)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.getDiscreteCubicBezier">
+<tt class="descclassname">geom.</tt><tt class="descname">getDiscreteCubicBezier</tt><big>(</big><em>pointA</em>, <em>pointB</em>, <em>pointC</em>, <em>pointD</em>, <em>n</em><big>)</big><a class="reference internal" href="_modules/geom.html#getDiscreteCubicBezier"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.getDiscreteCubicBezier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accepts 4 point objects representing a cubic bezier curve as described on wikipedia and a number of points n and returns an array of n CartesianPoints equally spaced along that curve</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.getDiscreteQuadradicBezier">
+<tt class="descclassname">geom.</tt><tt class="descname">getDiscreteQuadradicBezier</tt><big>(</big><em>pointA</em>, <em>pointB</em>, <em>pointC</em>, <em>n</em><big>)</big><a class="reference internal" href="_modules/geom.html#getDiscreteQuadradicBezier"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.getDiscreteQuadradicBezier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accepts 4 point objects representing a quadradic bezier curve as described on wikipedia and a number of points n and returns an array of n CartesianPoints equally spaced along that curve</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.getLineDivision">
+<tt class="descclassname">geom.</tt><tt class="descname">getLineDivision</tt><big>(</big><em>pointA</em>, <em>pointB</em>, <em>fract</em><big>)</big><a class="reference internal" href="_modules/geom.html#getLineDivision"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.getLineDivision" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a point that is fract percent of the distance from pointA to pointB</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.getLineDivisionDistance">
+<tt class="descclassname">geom.</tt><tt class="descname">getLineDivisionDistance</tt><big>(</big><em>pointA</em>, <em>pointB</em>, <em>distance</em><big>)</big><a class="reference internal" href="_modules/geom.html#getLineDivisionDistance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.getLineDivisionDistance" title="Permalink to this definition">¶</a></dt>
+<dd><p>get a point of specific distance along the line from pointA to pointB</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.getLineDivisions">
+<tt class="descclassname">geom.</tt><tt class="descname">getLineDivisions</tt><big>(</big><em>pointA</em>, <em>pointB</em>, <em>n</em><big>)</big><a class="reference internal" href="_modules/geom.html#getLineDivisions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.getLineDivisions" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns an array of n points equally spaced along line AB</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.getMidpoint">
+<tt class="descclassname">geom.</tt><tt class="descname">getMidpoint</tt><big>(</big><em>pointA</em>, <em>pointB</em><big>)</big><a class="reference internal" href="_modules/geom.html#getMidpoint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.getMidpoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns midpoint between pointA and pointB</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.intersectLineLine">
+<tt class="descclassname">geom.</tt><tt class="descname">intersectLineLine</tt><big>(</big><em>a1</em>, <em>a2</em>, <em>b1</em>, <em>b2</em><big>)</big><a class="reference internal" href="_modules/geom.html#intersectLineLine"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.intersectLineLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the itersection point for 2 lines if there exists one, calculations ported from Kevin Lindsey&#8217;s 2D.js library (switched to Inkscape extensions&#8217; summersnight.py algorithm)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.perspectiveDistanceRatioArray">
+<tt class="descclassname">geom.</tt><tt class="descname">perspectiveDistanceRatioArray</tt><big>(</big><em>angal</em>, <em>divisions</em><big>)</big><a class="reference internal" href="_modules/geom.html#perspectiveDistanceRatioArray"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.perspectiveDistanceRatioArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>In a perspective drawing, things which are equally spaced apart in 3 dimensions, 
+(i.e. mailboxes infront of houses on a road) get closer and closer together
+this algorithm, given a number of divisions and an angle at which the viewer is looking down, 
+returns an array of ratios that represent how far each successive point is along the line towards the origin
+see <a class="reference external" href="http://www.khulsey.com/perspective_basics.html">The Illusion of Depth</a> for an illustration.
+See in scripts/ platonicEarth.svg for an example of its use</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.projectionPointOnLine">
+<tt class="descclassname">geom.</tt><tt class="descname">projectionPointOnLine</tt><big>(</big><em>pointB</em>, <em>lineA</em>, <em>lineB</em><big>)</big><a class="reference internal" href="_modules/geom.html#projectionPointOnLine"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.projectionPointOnLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a point that is the projection of pointB onto line that intersects lineA and lineB</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.quadradicBezierLength">
+<tt class="descclassname">geom.</tt><tt class="descname">quadradicBezierLength</tt><big>(</big><em>P1</em>, <em>P2</em>, <em>P3</em>, <em>maxLev=10</em><big>)</big><a class="reference internal" href="_modules/geom.html#quadradicBezierLength"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.quadradicBezierLength" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate the length of a cubic bezier start:P1 control:P2 end:P3</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geom.reflectPointInLine">
+<tt class="descclassname">geom.</tt><tt class="descname">reflectPointInLine</tt><big>(</big><em>point</em>, <em>lineStart</em>, <em>lineEnd</em><big>)</big><a class="reference internal" href="_modules/geom.html#reflectPointInLine"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geom.reflectPointInLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculation as described in <a class="reference external" href="http://mathworld.wolfram.com/Reflection.html">mathworld Reflection entry</a></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tutorial.html"
+                        title="previous chapter">Basic tutorial</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="document.html"
+                        title="next chapter">document module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/geom.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="document.html" title="document module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="tutorial.html" title="Basic tutorial"
+             >previous</a> |</li>
+        <li><a href="index.html">pLAySVG 0.3.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Cosmo Guffa.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

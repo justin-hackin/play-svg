@@ -21,17 +21,17 @@ innerStarPoints = createRadialPlots(Point(0,0), innerRadius, 5)
 upGradientColors = [  '#a500ff', '#faff00']
 upGradient = Gradient('upgrad000')
 upGradient.createBalancedGradient(upGradientColors)
-docu.appendElement(upGradient.createDefinition(docu))
+docu.append(upGradient.createDefinition(docu))
 upGradientColors.reverse()
 #upGradients order becomes reversed
 downGradientColors = upGradientColors
 downGradient = Gradient('downgrad000')
 downGradient.createBalancedGradient(downGradientColors)
-docu.appendElement(downGradient.createDefinition(docu))
+docu.append(downGradient.createDefinition(docu))
 
 #starBackground
 ##backing = PathData().makeHull(innerStarPoints)
-##docu.appendElement( buildPath(docu, backing, {u'fill':u'black'}))
+##docu.append( buildPath( backing, {u'fill':u'black'}))
 
 
 #outer star rays
@@ -39,39 +39,39 @@ starRaysGroup = docu.makeGroup()
 #outerRayAttributes = {u'style':u'fill: white; stroke:none'}
 for i in range(5):
     ##starPointData = PathData().moveTo(outerStarPoints[i]).lineTo(midStarPoints[i]).lineTo(midStarPoints[(i-1)%5]).closePath()
-    ##outerStarRaysGroup.appendChild(buildPath(docu, starPointData,  outerRayAttributes))
+    ##outerStarRaysGroup.append(buildPath( starPointData,  outerRayAttributes))
     points = [outerStarPoints[i], midStarPoints[i], midStarPoints[(i-1)%5]]
-    starRaysGroup.appendChild(gradshape.polygonGradient(docu, points, upGradient, 'outspire'+str(i)))
+    starRaysGroup.append(gradshape.polygonGradient( points, upGradient, 'outspire'+str(i)))
 
 # inner star rays
 
 innerRayAttributes = {u'style':u'fill: white; stroke:none'}
 for i in range(5):
     ##starPointData = PathData().moveTo(midStarPoints[i]).lineTo(innerStarPoints[i]).lineTo(innerStarPoints[(i+1)%5]).closePath()
-    ##outerStarRaysGroup.appendChild(buildPath(docu, starPointData,  innerRayAttributes))
+    ##outerStarRaysGroup.append(buildPath( starPointData,  innerRayAttributes))
     points = [midStarPoints[i], innerStarPoints[i], innerStarPoints[(i+1)%5] ]
-    starRaysGroup.appendChild(gradshape.polygonGradient(docu, points, upGradient, 'inspire'+str(i)))
+    starRaysGroup.append(gradshape.polygonGradient( points, upGradient, 'inspire'+str(i)))
 
-docu.appendElement(starRaysGroup)
+docu.append(starRaysGroup)
 
 #surrounding triangles
 betweenTrianglesGroup = docu.makeGroup()
 innerRayAttributes = {u'style':u'fill: black; stroke:none'}
 for i in range(5):
     ##starPointData = PathData().moveTo(outerStarPoints[i]).lineTo(midStarPoints[i]).lineTo(outerStarPoints[(i+1)%5]).closePath()
-    ##betweenTrianglesGroup.appendChild(buildPath(docu, starPointData, innerRayAttributes))
+    ##betweenTrianglesGroup.append(buildPath( starPointData, innerRayAttributes))
     points =  [outerStarPoints[i], midStarPoints[i], outerStarPoints[(i+1)%5] ]
-    betweenTrianglesGroup.appendChild(gradshape.polygonGradient(docu, points, downGradient, 'outback'+str(i)))
+    betweenTrianglesGroup.append(gradshape.polygonGradient( points, downGradient, 'outback'+str(i)))
 for i in range(5):
 ##    starPointData = PathData().moveTo(midStarPoints[i]).lineTo(innerStarPoints[(i+1)%5]).lineTo(midStarPoints[(i+1)%5]).closePath()
-##    betweenTrianglesGroup.appendChild(buildPath(docu, starPointData,  innerRayAttributes))
+##    betweenTrianglesGroup.append(buildPath( starPointData,  innerRayAttributes))
     points = [midStarPoints[i], innerStarPoints[(i+1)%5], midStarPoints[(i+1)%5] ]
-    betweenTrianglesGroup.appendChild(gradshape.polygonGradient(docu, points, downGradient, 'inback'+str(i)))
+    betweenTrianglesGroup.append(gradshape.polygonGradient( points, downGradient, 'inback'+str(i)))
     
-docu.appendElement(betweenTrianglesGroup)
+docu.append(betweenTrianglesGroup)
 
 #inner pentagon
-betweenTrianglesGroup.appendChild(gradshape.polygonGradient(docu, innerStarPoints, downGradient, 'center'+str(i)))
+betweenTrianglesGroup.append(gradshape.polygonGradient( innerStarPoints, downGradient, 'center'+str(i)))
 
 ###border
 ##borderAttributes = {u'style':u'fill: black; stroke:white'}
@@ -82,8 +82,8 @@ betweenTrianglesGroup.appendChild(gradshape.polygonGradient(docu, innerStarPoint
 ##    innerBorderPoints =  getLineDivisions(outerStarPoints[i], outerStarPoints[(i+1)%5], borderSlices)
 ##    for i in range(borderSlices -1):
 ##        boxPath = PathData().moveTo(outerBorderPoints[i]).lineTo(outerBorderPoints[i+1]).lineTo(innerBorderPoints[i+1]).lineTo(innerBorderPoints[i]).closePath()
-##        borderBoxesGroup.appendChild(buildPath(docu, boxPath,  borderAttributes))
-##docu.appendElement(borderBoxesGroup)
+##        borderBoxesGroup.append(buildPath( boxPath,  borderAttributes))
+##docu.append(borderBoxesGroup)
 ##
 ###inward drawing lines
 ##vortexAttributes = {u'style':u'fill: none; stroke:yellow; stroke-opacity:0.4'}
@@ -93,8 +93,8 @@ betweenTrianglesGroup.appendChild(gradshape.polygonGradient(docu, innerStarPoint
 ##    rightVortexPoints =  getLineDivisions(outerStarPoints[(i+1)%5], innerStarPoints[(i+1)%5], borderSlices)
 ##    for i in range(borderSlices -1):
 ##        boxPath = PathData().moveTo(leftVortexPoints[i]).lineTo(leftVortexPoints[i+1]).lineTo(rightVortexPoints[i+1]).lineTo(rightVortexPoints[i]).closePath()
-##        vortexBoxesGroup.appendChild(buildPath(docu, boxPath,  vortexAttributes))
-##docu.appendElement(vortexBoxesGroup)
+##        vortexBoxesGroup.append(buildPath( boxPath,  vortexAttributes))
+##docu.append(vortexBoxesGroup)
 
 ###centre spires
 ##
@@ -106,16 +106,16 @@ betweenTrianglesGroup.appendChild(gradshape.polygonGradient(docu, innerStarPoint
 ##   
 ##    for i in range(borderSlices -1):
 ##        boxPath = PathData().moveTo(sidePoints[i]).lineTo(sidePoints[i+1]).lineTo(Point(0,0)).closePath()
-##        spireGroup.appendChild(buildPath(docu, boxPath, attributes = spireAttributes))
-##docu.appendElement(spireGroup)
+##        spireGroup.append(buildPath( boxPath, attributes = spireAttributes))
+##docu.append(spireGroup)
 
 ##pentagramRadius = 6
 ##pentagramAttributes = {u'stroke':u'black', u'fill':u'none'}
 ##pentagramGroup = docu.makeGroup()
 ##pentagramPath = pathshapes.starPolygon(5,2,pentagramRadius)
-##pentagramGroup.appendChild(buildPath(docu, pentagramPath, pentagramAttributes))
-##pentagramGroup.appendChild(buildCircle(docu, Point(0,0), pentagramRadius, pentagramAttributes))
-##docu.appendElement(pentagramGroup)
+##pentagramGroup.append(buildPath( pentagramPath, pentagramAttributes))
+##pentagramGroup.append(buildCircle( Point(0,0), pentagramRadius, pentagramAttributes))
+##docu.append(pentagramGroup)
 
 #proof that the pentagram does reflect the phi ratio 
 spireCorner1 = intersectLineLine(outerStarPoints[0], outerStarPoints[2], outerStarPoints[4], outerStarPoints[1])
@@ -138,14 +138,14 @@ outerEdges = PathData().moveTo(outerStarPoints[0])
 for i in range(5):
     outerEdges.lineTo(outerStarPoints[i]).lineTo(midStarPoints[i])
 outerEdges.closePath()
-docu.appendElement(buildPath(docu, outerEdges, {'style':'stroke:black; opacity:0.3; stroke-linejoin:round; fill:none'}))
+docu.append(buildPath( outerEdges, {'style':'stroke:black; opacity:0.3; stroke-linejoin:round; fill:none'}))
 
 #draw centre pentagram
 innerStar = PathData().moveTo(midStarPoints[0])
 for i in range(5):
     innerStar.lineTo(midStarPoints[(i*2)%5])
 innerStar.closePath()
-docu.appendElement(buildPath(docu,innerStar, {'style':'stroke:black;opacity:0.3; fill:none;stroke-linejoin:round;stroke-width:'+str(strokeWidth)}))
+docu.append(buildPath(innerStar, {'style':'stroke:black;opacity:0.3; fill:none;stroke-linejoin:round;stroke-width:'+str(strokeWidth)}))
 strokeWidth *= 1.0/phi
 
 
@@ -167,14 +167,14 @@ for arm in range(5):
         print pentagramPoints
         armStars[-1].append(pentagramPoints)
         starPath = PathData().makeHull(pentagramPoints)
-        recursiveArmStarGroup.appendChild(buildPath(docu, starPath, {'style':'stroke:black; fill:none; opacity:0.3; stroke-linejoin:round;stroke-width:'+str(strokeWidth)}))
+        recursiveArmStarGroup.append(buildPath( starPath, {'style':'stroke:black; fill:none; opacity:0.3; stroke-linejoin:round;stroke-width:'+str(strokeWidth)}))
         nextApex = intersectLineLine(leftArm, rightFoot, rightArm, leftFoot)    
         currentArmGapDistance *= 1.0/phi
         currentArmDistance += currentArmGapDistance
         strokeWidth *= 1.0/phi
 
 
-docu.appendElement(recursiveArmStarGroup)
+docu.append(recursiveArmStarGroup)
 
 mainLineAttrs = {'style':'stroke:black; fill:none; opacity:1; stroke-linejoin:round;stroke-width:5'}
 
@@ -183,7 +183,7 @@ outerStar = PathData().moveTo(outerStarPoints[0])
 for i in range(5):
     outerStar.lineTo(outerStarPoints[(i*2)%5])
 outerStar.closePath()
-docu.appendElement(buildPath(docu,outerStar,mainLineAttrs))
+docu.append(buildPath(outerStar,mainLineAttrs))
 
 
 #draw downward pentagram
@@ -191,12 +191,12 @@ innerStar = PathData().moveTo(midStarPoints[0])
 for i in range(5):
     innerStar.lineTo(midStarPoints[(i*2)%5])
 innerStar.closePath()
-docu.appendElement(buildPath(docu,innerStar,mainLineAttrs))
+docu.append(buildPath(innerStar,mainLineAttrs))
 
 
 #make border
 borderPath = PathData().makeHull(outerStarPoints)
-docu.appendElement(buildPath(docu, borderPath, mainLineAttrs))
+docu.append(buildPath( borderPath, mainLineAttrs))
 
 docu.writeSVG('platonicSpirit.svg')
 print "done01"

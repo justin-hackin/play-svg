@@ -1,0 +1,21 @@
+<inkscape-extension>
+    <_name>Round weave</_name>
+    <id>playsvg.ext.roundweave</id>
+	<dependency type="executable" location="extensions">roundweave.py</dependency>
+	<dependency type="executable" location="extensions">inkex.py</dependency>
+	
+	<param name="crosses" type="int" min="2" max="200" _gui-text="Number of crosses">20</param>
+	<param name="radius" type="float" min="0.0" max="1000" _gui-text="Radius">300.0</param>
+	<param name="gap" type="float" min="0.0" max="1.0" _gui-text="Gap">0.1</param>
+	<param name="extent" type="float" min="0.0" max="1.0" _gui-text="Roundedness">0.5</param>
+	
+    <effect>
+		<object-type>all</object-type>
+                <effects-menu>
+                    <submenu _name="playSVG"/>
+                </effects-menu>					    
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">roundweave.py</command>
+    </script>
+</inkscape-extension>

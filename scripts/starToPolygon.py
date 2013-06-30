@@ -17,7 +17,7 @@ for i in range(starPoints):
 
 
 docu = Document()
-docu.appendElement(buildPath(docu, PathData().makeHull(starPathPoints), {'style':'stroke:black;fill:none'}))
-docu.appendElement(buildPath(docu, PathData().makeHull(polygonPoints), {'style':'stroke:black;fill:none'}))
-docu.appendElement
+docu.append(buildPath( PathData().makeHull(starPathPoints), {'style':'stroke:black;fill:none'}))
+docu.append(buildPath( PathData().makeHull(polygonPoints), {'style':'stroke:black;fill:none'}))
+docu.append
 docu.writeSVG("starToPoly11.svg")

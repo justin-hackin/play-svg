@@ -15,18 +15,18 @@ corneredBox = PathData().moveTo(Point(cornerInsetRatio*size, 0)).lineTo(Point(si
                         lineTo(Point(size, (1-cornerInsetRatio)*size)).lineTo(Point((1-cornerInsetRatio)*size, (1-cornerInsetRatio)*size)).\
                         lineTo(Point((1-cornerInsetRatio)*size, size)).lineTo(Point(0,size)).\
                         lineTo(Point(0, cornerInsetRatio*size)).lineTo(Point(cornerInsetRatio*size, cornerInsetRatio*size)).closePath()
-docu.appendElement(buildPath(docu, corneredBox , {'style':'stroke:black;fill:none'}))
+docu.append(buildPath( corneredBox , {'style':'stroke:black;fill:none'}))
 
 darkBlocks = PathData().moveTo(Point((cornerInsetRatio + spacerRatio)*size, spacerRatio*size)).lineTo(Point((1-spacerRatio)*size, spacerRatio*size)).lineTo(Point((1-spacerRatio)*size, (1-cornerInsetRatio-spacerRatio)*size)).\
                                         lineTo(Point((1-cornerInsetRatio+spacerRatio)*size, (1-cornerInsetRatio-spacerRatio)*size)).lineTo(Point((1-cornerInsetRatio+spacerRatio)*size, (cornerInsetRatio-spacerRatio)*size)).lineTo(Point((cornerInsetRatio+spacerRatio)*size,(cornerInsetRatio-spacerRatio)*size)).closePath()
                                         
                                         
-docu.appendElement(buildPath(docu, darkBlocks , {'style':'stroke:none;fill:black'}))
+docu.append(buildPath( darkBlocks , {'style':'stroke:none;fill:black'}))
 
 
 darkBlocks = PathData().moveTo(Point( spacerRatio*size, (cornerInsetRatio + spacerRatio)*size)).lineTo( Point( spacerRatio*size, (1-spacerRatio)*size )).lineTo(Point( (1-cornerInsetRatio-spacerRatio)*size, (1-spacerRatio)*size)).\
                                         lineTo(Point((1-cornerInsetRatio-spacerRatio)*size, (1-cornerInsetRatio+spacerRatio)*size)).lineTo(Point((cornerInsetRatio-spacerRatio)*size, (1-cornerInsetRatio+spacerRatio)*size)).lineTo(Point((cornerInsetRatio-spacerRatio)*size, (cornerInsetRatio+spacerRatio)*size)).closePath()
-docu.appendElement(buildPath(docu, darkBlocks , {'style':'stroke:none;fill:black'}))
+docu.append(buildPath( darkBlocks , {'style':'stroke:none;fill:black'}))
 darkBlocks = PathData().moveTo(Point( cornerInsetRatio*size, cornerInsetRatio*size)).lineTo( Point( (1-cornerInsetRatio)*size, cornerInsetRatio*size)).lineTo(Point( (1- cornerInsetRatio)*size, (1-cornerInsetRatio)*size)).lineTo(Point( cornerInsetRatio*size, (1-cornerInsetRatio)*size)).closePath()
-docu.appendElement(buildPath(docu, darkBlocks , {'style':'stroke:none;fill:black'}))
+docu.append(buildPath( darkBlocks , {'style':'stroke:none;fill:black'}))
 docu.writeSVG('cornerdbox.svg')

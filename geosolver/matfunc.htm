@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<TITLE>Documentation for MATFUNC</TITLE>
+</HEAD>
+<BODY>
+
+<H1>Documentation for MATFUNC.PY</H1>
+
+<H2>License</H2>
+<P>Matfunc.py was written by Raymond Hettinger in 2001 and placed in the Public Domain.  Send comments and suggestions to
+<A HREF="mailto:python@rcn.com">python@rcn.com</A>
+and get updates from
+<A HREF="http://users.rcn.com/python/download/matfunc.py">users.rcn.com/python/download/matfunc.py</A>
+.</P>
+
+<H2>Overview</H2>
+<P>Matfunc.Py is a 100% pure Python module for vector, matrix, and table math operations which runs on Python 2.1 or later. It neither conflicts with nor requires NumPy.</P>
+
+<P>For matrices, it includes least matrix multiplication, division, least squares solutions, the LU and QR factorizations, inverses, determinants, and eigenvalue determination (for real matrices).  Vector operations include dot product, outer product, cross product, L<SUP>2</SUP> norm, and polynomial evaluation. Table operations provide implicit looping and convenient expression of functions applied to whole tables.  For ease of use, these operations provide broadcasting for convenient expression of vector/scalar, matrix/scalar, and matrix/vector operations. In addition, several helper functions are provided to create elementary matrices and for polynomial and rational curve-fitting.</P>
+
+<P>The Matfunc module is organized into a class Table, two sub-classes Matrix and Vec, and assorted helper functions.</P>
+
+<H2>The Table Class</H2>
+<P>Table extends UserList to include math operations which apply to every element with implicit looping while retaining other useful list features such as slices. It is best described by example:</P>
+
+<P><CODE>&gt;&gt;&gt; from matfunc import Table<BR>
+&gt;&gt;&gt; inventoryStart=Table( [100, 80, 90, 200, 105] ) &#9;# Creates object from a list<BR>
+&gt;&gt;&gt; purchases=Table( [75, 35, 23, 41, 30] )<BR>
+&gt;&gt;&gt; sales=Table( [19,56, 22,60,65] )<BR>
+&gt;&gt;&gt; inventoryEnd=inventoryStart + purchases – sales   # Note implicit looping<BR>
+&gt;&gt;&gt; inventoryEnd<BR>
+[156, 59, 91, 181, 70]<BR>
+&gt;&gt;&gt; markup=1.25<BR>
+&gt;&gt;&gt; unitPrice=unitCost * markup&#9;&#9;&#9;# Note scalar broadcast to list<BR>
+&gt;&gt;&gt; unitPrice<BR>
+[1.375, 1.3125, 1.4749999999999999, 2.0, 1.1500000000000001]<BR>
+&gt;&gt;&gt; totalPurchases=(unitCost * purchases).sum()&#9;# Sum of prices times quantities<BR>
+&gt;&gt;&gt; totalPurchases<BR>
+239.59<BR>
+&gt;&gt;&gt; totalSales=(unitPrice * sales).sum()<BR>
+&gt;&gt;&gt; totalSales<BR>
+326.82499999999999</CODE><BR>
+
+<B><P>CONSTRUCTING TABLE INSTANCES</P></B>
+<P>Call the Table constructor with a list argument. For two-dimensional arrays, call the constructor with of list of one dimensional Table objects.</P>
+
+<P><CODE>&gt;&gt;&gt; a=<B>Table</B>( [1,2,3,4] )<BR>
+&gt;&gt;&gt; b=Table( [2,3,5,7] )<BR>
+&gt;&gt;&gt; c=a * 3<BR>
+&gt;&gt;&gt; arr=Table( [a,b,c] )&#9;#  2-D array consisting of three 1-D arrays<BR>
+&gt;&gt;&gt; arr<BR>
+[[1, 2, 3, 4], [2, 3, 5, 7], [3, 6, 9, 12]]<BR>
+&gt;&gt;&gt; print a.dim, arr.<B>dim</B> &#9;&#9;# show array dimensions<BR>
+1 2<BR>
+&gt;&gt;&gt; arr[2][3] &#9;&#9;# access elements using [row][col] references<BR>
+12<BR>
+&gt;&gt;&gt; arr.<B>prod</B>() &#9;&#9;# Compute the product of all elements<BR>
+9797760.0<BR>
+&gt;&gt;&gt; arr - Table( [c,b,a] )&#9;# Subtract one 2-D array from another<BR>
+[[-2, -4, -6, -8], [0, 0, 0, 0], [2, 4, 6, 8]]<BR>
+&gt;&gt;&gt; arr * 3 &#9;&#9;&#9;&#9;# Multiply all elements by a scalar<BR>
+[[3, 6, 9, 12], [6, 9, 15, 21], [9, 18, 27, 36]]<BR>
+&gt;&gt;&gt; arr + b &#9;&#9;&#9;&#9;# Broadcast a row to every row of a 2-D array<BR>
+[[3, 5, 8, 11], [4, 6, 10, 14], [5, 9, 14, 19]]</CODE></P>
+
+<B><P>METHODS OF THE TABLE CLASS</P></B>
+<B><P>map</B>( unaryOperator )  -- Applies a function of one variable to every element. </P>
+
+<P><CODE>
+&gt;&gt;&gt; b.map( math.cos )<BR>
+[-0.4161468365471, -0.989992496600, 0.283662185463, 0.75390225434]<BR>
+&gt;&gt;&gt; arr.map( lambda x: x%2 and 3*x+1 or x/2 )<BR>
+[[4, 1, 10, 2], [1, 10, 16, 22], [10, 3, 28, 6]]</CODE></P>
+
+<B><P>map</B>( binaryOperator, secondArgument ) – Applied a function of two variables to corresponding elements in two arrays.  If the arrays are not of the same dimension, broadcasting occurs (rows or scalars are repeated to match the array of higher dimension).</P>
+
+<P><CODE>&gt;&gt;&gt; a.map( lambda x,y: 10*x+y, b )&#9;# Pair elements of two 1-D arrays<BR>
+[12, 23, 35, 47]<BR>
+&gt;&gt;&gt; a.map( lambda x,y: 10*x+y, 5 )&#9;# Broadcast the 5 to every element of a 1-D array<BR>
+[15, 25, 35, 45]<BR>
+&gt;&gt;&gt; arr.map( lambda x,y: 10*x+y, b )&#9;# Broadcast a 1D row to every row of a 2-D array<BR>
+[[12, 23, 35, 47], [22, 33, 55, 77], [32, 63, 95, 127]]</CODE></P>
+
+<B><P>flatten</B>() – Collapse an table object to a 1D list.</P>
+
+<P><CODE>
+&gt;&gt;&gt; arr.flatten()<BR>
+[3, 6, 9, 12, 2, 3, 5, 7, 1, 2, 3, 4]</CODE></P>
+
+<B><P>exists</B>(predicate) – Checks every element to see if even once instance is true. The predicate is a boolean function of one variable.</P>
+
+<P><CODE>&gt;&gt;&gt; def iseven(x):  return x%2==0<BR>
+... <BR>
+&gt;&gt;&gt; b.exists(iseven)<BR>
+1<BR>
+&gt;&gt;&gt; (b*2+1).exists(iseven)<BR>
+0</CODE></P>
+
+<B><P>forall</B>(predicate) -- Checks every element to see if all instances are true. The predicate is a boolean function of one variable.</P>
+
+<P><CODE>&gt;&gt;&gt; def isprime(x):  return x==2 or 2**(x-1)%x==1<BR>
+... <BR>
+&gt;&gt;&gt; a.forall( isprime )<BR>
+0<BR>
+&gt;&gt;&gt; b.forall(isprime)<BR>
+1</CODE></P>
+
+<B><P>concat</B>( element ) – Makes a new table object with the new element added to the end.  For lists, this function is normally provided the plus operator; however, a substitute function is needed for table objects because plus has been overridden with table addition.</P>
+
+<P><CODE>&gt;&gt;&gt; [1,2,3,4] + [5]&#9;&#9;&#9;# With lists, the plus operator appends to a list<BR>
+[1, 2, 3, 4, 5]<BR>
+&gt;&gt;&gt; Table([1,2,3,4]) + 5&#9;# Table object use plus for addition<BR>
+[6, 7, 8, 9]<BR>
+&gt;&gt;&gt; Table([1,2,3,4]).concat( [5] ) &#9;# So a concat method is needed for appending<BR>
+[1, 2, 3, 4, 5]</CODE></P>
+
+<H2>The Vector Class</H2>
+<P>The Vec class extends Table and is intended for 1-D arrays.  It adds pretty printing and standard math vector operations.  It is best described by example.</P>
+
+<CODE>&gt;&gt;&gt; from matfunc import Vec<BR>
+&gt;&gt;&gt; a=Vec( [4,-2, 5] )&#9;&#9;# Constructed just like the  Table class<BR>
+&gt;&gt;&gt; b=Vec( [3,10,-6] )<BR>
+&gt;&gt;&gt; a<BR>
+[4, -2, 5]&#9;&#9;&#9;&#9;# Normal table representation<BR>
+&gt;&gt;&gt; print a&#9;&#9;&#9;&#9;# Pretty printed with built-in <B>__str__</B>() method<BR>
+   4.000    -2.000     5.000<BR>
+&gt;&gt;&gt; a.<B>dot</B>(b)&#9;&#9;&#9;&#9;# Computes the dot or inner product of 'a' and 'b'<BR>
+-38.0<BR>
+&gt;&gt;&gt; a.<B>norm</B>()&#9;&#9;&#9;&#9;# Computs the length, hypoteneuse or L<SUP>2</SUP> norm of 'a'<BR>
+6.7082039324993694<BR>
+&gt;&gt;&gt; print a.<B>normalize</B>()&#9;&#9;# Vector of length 1 in same direction as 'a'<BR>
+   0.596    -0.298     0.745<BR>
+&gt;&gt;&gt; print a.<B>outer</B>(b)&#9;&#9;&#9;# Constructs a multiplication table from 'a' and 'b'<BR>
+12.000 &#9;40.000      &#9;-24.000     <BR>
+-6.000 &#9;-20.000     &#9;12.000      <BR>
+15.000 &#9;50.000      &#9;-30.000     <BR>
+&gt;&gt;&gt; print a.<B>cross</B>(b)&#9;&#9;&#9;#  The vector cross product in perpendicular to 'a' and 'b'<BR>
+ -38.000    39.000    46.000<BR>
+&gt;&gt;&gt; Vec([6,3,4]).<B>polyval</B>(5)       &#9;#evaluates 6*x**2 + 3*x + 4 at x=5<BR>
+169.0</CODE>
+
+<P>The .<B>house</B>(index) method is a helper for the matrix class and is used to compute Householder reflection vectors which are used to zero out parts of a vector.</P>
+
+<H2>The Matrix Class</H2>
+<P>Matrix routines are organized into a class hierarchy starting with Matrix, its subclass Square which has a Triangular subclass which splits into UpperTri and LowerTri.  This organization assigns efficient algorithms to each structure (i.e. solving upper triangular matrices with back-substitution) and adds structure specific methods (i.e. eigenvalues and inverses only have meaning for square matrices).</P>
+
+<B><P>Mat</B>(listOflists, type) is a factory method for creating new matrices from a list of lists or a list of Vecs. It automatically selects the Matrix class for rectangular matrices, Square when the row and column lengths agree, and LowerTri or UpperTri if there are blocks of zeroes.</P>
+
+<P>The methods <B>tr</B> (for transpose), <B>star</B> (for Hermetian adjoints), <B>diag</B>, <B>trace</B>, and <B>augment</B> all have their usual mathematical meanings. Matrix multiplication is accomplished by <B>mmul</B> and matrix division by <B>solve</B>(b). When the systems are inconsistent or overdetermined,  the least squares solution is computed.</P>
+
+<B><P>qr</B> returns the QR decompostion where Q is orthonormal (a rotation in space where Q<SUP>t</SUP>Q=I) and R is upper triangular.  If the original matrix A is m-by-n, then A=Q*R, Q is m-by-n, and R is n-by-n.</P>
+
+<P>Square matrices add several other methods.  <B>det</B> and <B>inverse</B> have their normal mathematical meanings.  <B>hessenberg</B> returns a similar matrix (having the same eigenvalues) where all elements below the first sub-diagonal are zero. <B>eigs</B> estimates the eigenvalues of real matrices.</P>
+
+<B><P>lu</B> returns the LU decomposition of square matrices where L is lower triangular, U is upper triangular, and L*U is the original matrix.</P>
+
+<B><P>__pow__</B> raises matrices to positive integer powers; for example, A**3 gives A*A*A.  Note, this may be unexpected because all other math operators are applied table; for example, A+3 adds 3 to every element individually.</P>
+
+<H2><P>Helper Functions</H2>
+<B><P>iszero</B>(x) This predicate evaluates to true when x is nearly zero. It is used equality testing in the post-condition assertion checks and for determining when a row has been zeroed in the eigenvalue routine.</P>
+
+<B><P>zeroes</B>(m,n), <B>eye</B>(m,n), <B>hilb</B>(m,n), <B>rand</B>(m,n) are factory functions that create elementary matrices. If one argument is given, then a square matrix is created.  With two arguments, a rectangular m-by-n matrix is created. Zeroes have all elements set to zero. Eye creates an identity matrix where the diagonal elements are set to one. Hilb creates a Hilbert matrix where element[i][j] is 1/(i+j+1) – these matrices are very close to being singular. Rand creates a matrix filled with random numbers.</P>
+
+<B><P>polyfit</B>(points, degree) and <B>ratfit</B>(points, degree) create polynomial and rational polynomial approximations (curve-fits) of the specified degree (defaults to 2) for a given set of x,y values. There need to be more points (preferably many more) than the specified degree (i.e. 4 points determine a cubic equation).  The points variable is 2-by-n matrix with the x values in the first row and y values in the second row.  The answer returned in format suitable for evaluation by Vec.polyval and Vec.ratval. The coefficient of the highest power term is stored first. For ratval of degree two, the first three terms belong to the numerator and the last two belong to the denominator and there is an implied extra term which is always 1.  For example: [10,20,30,40,50] translates to (10*x**2 + 20*x + 30) / (40*x**2 + 50*x + 1).</P>
+
+<B><P>funToVec</B>( tgtfun, low, high, steps, EqualSpacing ) is meant to compute the 2-by-n matrix used by polyfit and ratfit.  Steps (default 30) are the number of points.  If EqualSpacing is set to true, the abscissas are evenly spaced within the interval (low,high); otherwise, Chebyshev nodes are used.  The tgtfun is a function of one variable that will be evaluated at those abscissas.</P>
+
+<P><CODE>&gt;&gt;&gt; print funToVec( lambda x: math.sin(x), steps=5, EqualSpacing=1 )<BR>
+-0.800  &#9;  -0.400 &#9;    0.000  &#9;   0.400 &#9;    0.800 &#9;  # spacing of .4 within the interval (-1..1)<BR>
+-0.717  &#9;  -0.389 &#9;    0.000  &#9;   0.389 &#9;    0.717 &#9;  # sin(x) at those points<BR>
+
+&gt;&gt;&gt; print polyfit(funToVec( lambda x: math.sin(x), steps=5, EqualSpacing=1 ))<BR>
+0.000  &#9;   0.912 &#9;    0.000<BR>
+
+&gt;&gt;&gt; print polyfit(funToVec( lambda x: math.sin(x)), degree=5 )<BR>
+0.008   &#9;  0.000 &#9;   -0.166 &#9;    0.000 &#9;    1.000  &#9;   0.000 &#9; # polynomial approx to sin(x)<BR>
+
+</CODE>
+</P>
+
+<B><P>funfit</B>(points, basisfunctions) complements polyfit and ratfit by computing the least squares best fit for coefficients of arbitrary basis functions.</P>
+
+<P><CODE>&gt;&gt;&gt; print funfit(funToVec( lambda x: math.sin(x)), [math.exp, lambda x: x**3])<BR>
+   0.029     1.000&#9;&#9;# sin(x) is approx. .029*exp(x) + x**3 over (-1..1)</CODE></P>
+
+<H2>References, Algorithms and Limitations</H2>
+<P>
+<B>[Golub]</B> Gene H. Golub and Charles F. Van Loan (1996) Matrix Computations 3<SUP>rd</SUP> Edition.<BR>
+<B>[Kincaid]</B> David Kincaid and Ward Cheney (1996) Numerical Recipes 2<SUP>nd</SUP> Edition.<BR>
+<B>[Mathews]</B> John H. Mathews and Kurtis D. Fink (1999) Numerical Methods Using Matlab 3<SUP>rd</SUP> Edition.<BR>
+<B>[Press]</B> William H. Press, Saul A. Teukolsky, William T. Vetterling, and Brian P. Flannery (1993) Numerical Recipes in C: The Art of Scientific Computing 2nd Edition.</P>
+
+<B><P>ALGORITHMS</P></B>
+
+<UL>
+<LI>Determinants are computed as the product of diagonal elements on the upper-triangular matrix in a QR decomposition. A=QR, so det A=det Q * det R, and det Q=1, so det A=det R.  When R is upper-triangular, det R=prod( diag( R ) ).</LI>
+<LI>Solve applies a custom solver to a matrix and performs iterative improvement [Press section 2.5] up to 10 times or until the solution stops improving.  Solving Ax=b, and improve to x + solve(A, b-Ax).  The custom solver is back-substitution for an upper triangular matrix , forward-substitution for a lower triangular matrix, and QR decomposition for general matrices.  Ax=b is transformed to QRx=b then Rx=Q<SUP>t</SUP> b which is then solved by back-substitution.  This method works for non-square matrices and returns the least squares solution when Ax=b is inconsistent or over-determined. Note, [Golub 3.5.3] comments that this implementation of iterative improvement is unlikely to increase the accuracy of the solution since there are few if any significant digits in b-Ax; however, my experiments do show improvement. To guard against loss of precision, the last step that does not produce an improvement (as measured by the norm squared) is thrown away.</LI>
+<LI>The QR decomposition uses Householder reflections [Golub algorithm 5.1.1] applied in vector form rather than matrix form [Golub section 5.1.4].</LI>
+<LI>The eigs routine first makes a similarity transformation (keeping eigenvalues constant) to upper Hessenberg form [Golub algorithm 7.4.2] and then applies the QR method with shifts to force an eigenvalue into the lower right corner. The matrix is then deflated by one row and column and the method is repeated until all eigenvalues are found [Kincaid section 5.5].</LI>
+<LI>Function approximation defaults to Chebyshev nodes rather than equally spaced points in order to avoid the Runge phenomenon [Matthews section 4.5] where approximation accuracy decreases when the number of sample points are increased. The nodes are located at t(n)=cos( (2N+1-2k)*Pi/(2N+2) ) for k=0, 1, … N.  The nodes are then rescaled from [-1,1] to the specified interval.</LI>
+<LI>Polynomial evaluation uses Horner's method of nested multiplication [Kincaid section 1.2].</LI>
+</UL>
+
+<B><P>LIMITATIONS</P></B>
+
+<UL>
+<LI>The determinant has a 50% chance of having the wrong sign because the QR decomposition may be a reflection of R rather than just a rotation.</LI>
+<LI>Matrix sizes are pre-computed when the matrix is constructed. That size does not update if an element is deleted. Recommend building a new matrix from the desired vectors.</LI>
+<LI>The LU decomposition does not use pivoting or scaling resulting in less numerical stability and inability to bypass zero elements on the diagonal.</LI>
+<LI>The QR decomposition results in a Q that is slightly off from being orthonormal because it prioritizes the other post-conditions (that A=Q*R and R is upper-triangular). As a result the post-condition assertion sometimes fails for Q<SUP>t</SUP>Q=I within a tight tolerance. Either lower the tolerance or disable post-condition assertion checking.</LI>
+<LI>The QR decomposition has not been tested for matrices with complex values.</LI>
+<LI>The .eigs() method handles only real matrices with real eigenvalues.</LI>
+<LI>Matrix exponentation is only defined for positive integer powers.</LI>
+</UL>
+
+</BODY>
+</HTML>

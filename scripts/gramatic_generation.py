@@ -42,69 +42,69 @@ def int2bin(n, count=24):
 
 
 
-def buildTriLine(docu, value,position, width):
-        lineGroup = docu.makeGroup()
+def buildTriLine(value,position, width):
+        lineGroup = etree.Element('g', id='linegroup')
         if value == 0:
-            lineGroup.appendChild(buildRect(docu,Point(position.x - 0.5*width,position.y),lineHeightToWidth*width, width, lineAttributes))
+            lineGroup.append(buildRect(Point(position.x - 0.5*width,position.y),lineHeightToWidth*width, width, lineAttributes))
         elif value == 1:
             blockWidthRatio = 0.5*(1 - singleGapWidthRatio)
-            lineGroup.appendChild(buildRect(docu,Point(position.x - 0.5*width,position.y),lineHeightToWidth*width, blockWidthRatio*width, lineAttributes))
-            lineGroup.appendChild(buildRect(docu,Point(position.x + 0.5*singleGapWidthRatio*width,position.y),lineHeightToWidth*width,  blockWidthRatio*width,  lineAttributes))
+            lineGroup.append(buildRect(Point(position.x - 0.5*width,position.y),lineHeightToWidth*width, blockWidthRatio*width, lineAttributes))
+            lineGroup.append(buildRect(Point(position.x + 0.5*singleGapWidthRatio*width,position.y),lineHeightToWidth*width,  blockWidthRatio*width,  lineAttributes))
         elif value == 2:
             blockWidthRatio = 1.0/3*(1.0 - 2*doubleGapWidthRatio)
-            lineGroup.appendChild(buildRect(docu,Point(position.x - 0.5*width,position.y),lineHeightToWidth*width, blockWidthRatio*width, lineAttributes))
-            lineGroup.appendChild(buildRect(docu,Point(position.x - 0.5*width+ blockWidthRatio*width +doubleGapWidthRatio*width,position.y),lineHeightToWidth*width,  blockWidthRatio*width, lineAttributes))
-            lineGroup.appendChild(buildRect(docu,Point(position.x -0.5*width + 2*blockWidthRatio*width +2*doubleGapWidthRatio*width,position.y),lineHeightToWidth*width,  blockWidthRatio*width, lineAttributes))
+            lineGroup.append(buildRect(Point(position.x - 0.5*width,position.y),lineHeightToWidth*width, blockWidthRatio*width, lineAttributes))
+            lineGroup.append(buildRect(Point(position.x - 0.5*width+ blockWidthRatio*width +doubleGapWidthRatio*width,position.y),lineHeightToWidth*width,  blockWidthRatio*width, lineAttributes))
+            lineGroup.append(buildRect(Point(position.x -0.5*width + 2*blockWidthRatio*width +2*doubleGapWidthRatio*width,position.y),lineHeightToWidth*width,  blockWidthRatio*width, lineAttributes))
             
         return lineGroup
     
 
 
-def buildTieredGram(docu, valuePair, position, width):
-    gramGroup = docu.makeGroup()
+def buildTieredGram(valuePair, position, width):
+    gramGroup = etree.Element('g', id='grams')
     currentPosition = position
     for i in range(len(valuePair)):
-        gramGroup.appendChild(buildTriLine(docu, valuePair[i], currentPosition, width))
+        gramGroup.append(buildTriLine( valuePair[i], currentPosition, width))
         currentPosition = currentPosition + Point(0, lineHeightToWidth*width*(1+lineSpacing))
     return gramGroup
     
     print
 
-def digramCentred(docu,value, centrePoint, width):
+def digramCentred(value, centrePoint, width):
     gramGroup = docu.makeGroup()
     bottomLine = (value-1) % 3 
     topLine = ((value-1) - ((value-1)%3))/3
-    gramGroup.appendChild(buildTriLine(docu, topLine, centrePoint + Point(0,0.5*lineHeightToWidth*width*lineSpacing), width))
-    gramGroup.appendChild(buildTriLine(docu, bottomLine, centrePoint - Point(0,0.5*lineHeightToWidth*width*lineSpacing+lineHeightToWidth*width), width))
+    gramGroup.append(buildTriLine( topLine, centrePoint + Point(0,0.5*lineHeightToWidth*width*lineSpacing), width))
+    gramGroup.append(buildTriLine( bottomLine, centrePoint - Point(0,0.5*lineHeightToWidth*width*lineSpacing+lineHeightToWidth*width), width))
     return gramGroup
 
 def makeTHCBigrams():
     
     for p in permutations.xselections((0,1,2), 2):
         docu = document.Document()
-        docu.appendElement(buildTieredGram(docu,p, Point(), 64))
+        docu.append(buildTieredGram(p, Point(), 64))
         docu.writeSVG('THC-bigrams/THC_bigram-'+str(p[1])+str(p[0])+'.svg')
 
 def makeTHCTrigrams():
     
     for p in permutations.xselections((0,1,2), 3):
         docu = document.Document()
-        docu.appendElement(buildTieredGram(docu,p, Point(), 64))
-        docu.writeSVG('THC-trigrams/THC_trigram-'+str(p[2])+str(p[1])+str(p[0])+'.svg')
+        docu.append(buildTieredGram(p, Point(), 64))
+        docu.writeSVG('THC_trigram-'+str(p[2])+str(p[1])+str(p[0])+'.svg')
 
 def makeTHCQuadgrams():
     
     for p in permutations.xselections((0,1,2), 4):
         docu = document.Document()
-        docu.appendElement(buildTieredGram(docu,p, Point(), 64))
-        docu.writeSVG('THC-quadgrams/THC_quadgram-'+str(p[3])+str(p[2])+str(p[1])+str(p[0])+'.svg')
+        docu.append(buildTieredGram(p, Point(), 64))
+        docu.writeSVG('THC_quadgram-'+str(p[3])+str(p[2])+str(p[1])+str(p[0])+'.svg')
 
 def makeTHCHexagrams():
     
     for p in permutations.xselections((0,1,2), 6):
         docu = document.Document()
-        docu.appendElement(buildTieredGram(docu,p, Point(), 64))
-        docu.writeSVG('THC-hexagrams/THC_hexagram-'+str(p[5])+str(p[4])+str(p[3])+str(p[2])+str(p[1])+str(p[0])+'.svg')
+        docu.append(buildTieredGram(p, Point(), 64))
+        docu.writeSVG('THC_hexagram-'+str(p[5])+str(p[4])+str(p[3])+str(p[2])+str(p[1])+str(p[0])+'.svg')
 
 def makeDescendingHeavenGrid():
     docu = document.Document()
@@ -122,16 +122,16 @@ def makeDescendingHeavenGrid():
         textIndex = numChart[inverseBinaryConversion[columnNum]][inverseBinaryConversion[7-rowNum]]
         digList = Denary2Binary(i)
         digList.reverse()
-        hexagram = buildTieredGram(docu, digList, Point(xPos, yPos), hexWidth)
+        hexagram = buildTieredGram( digList, Point(xPos, yPos), hexWidth)
         fontHeight = 8
-        nameText = buildText(docu, names[textIndex-1][0], {'x':str(xPos-0.5*hexWidth), 'y':str( yPos), 'style':'fill: black; font-size:' + str(fontHeight) + 'px'})
-        nameText2 = buildText(docu, names[textIndex-1][1], {'x':str(xPos-0.5*hexWidth), 'y':str(yPos+fontHeight+4), 'style':'fill: black; font-size:' + str(fontHeight) + 'px'})
-        textGroup.appendChild(nameText)
-        textGroup.appendChild(nameText2)
-        gridGroup.appendChild(hexagram)
+        nameText = buildText( names[textIndex-1][0], {'x':str(xPos-0.5*hexWidth), 'y':str( yPos), 'style':'fill: black; font-size:' + str(fontHeight) + 'px'})
+        nameText2 = buildText( names[textIndex-1][1], {'x':str(xPos-0.5*hexWidth), 'y':str(yPos+fontHeight+4), 'style':'fill: black; font-size:' + str(fontHeight) + 'px'})
+        textGroup.append(nameText)
+        textGroup.append(nameText2)
+        gridGroup.append(hexagram)
         
-    docu.appendElement(gridGroup)
-    docu.appendElement(textGroup)
+    docu.append(gridGroup)
+    docu.append(textGroup)
     docu.writeSVG("hexagram_grid_dh.svg")
 
 def makeAscendingEarthGrid():
@@ -149,16 +149,16 @@ def makeAscendingEarthGrid():
         yPos = rowNum*(vertSpacing+hexWidth*(lineHeightToWidth*6*(1+lineSpacing)))
         textIndex = numChart[7-rowNum][columnNum]
         digList = Denary2Binary(i)
-        hexagram = buildTieredGram(docu, digList, Point(xPos, yPos), hexWidth)
+        hexagram = buildTieredGram( digList, Point(xPos, yPos), hexWidth)
         fontHeight = 8
-        nameText = buildText(docu, names[textIndex-1][0], {'x':str(xPos-0.5*hexWidth), 'y':str( yPos), 'style':'fill: black; font-size:' + str(fontHeight) + 'px'})
-        nameText2 = buildText(docu, names[textIndex-1][1], {'x':str(xPos-0.5*hexWidth), 'y':str(yPos+fontHeight+4), 'style':'fill: black; font-size:' + str(fontHeight) + 'px'})
-        textGroup.appendChild(nameText)
-        textGroup.appendChild(nameText2)
-        gridGroup.appendChild(hexagram)
+        nameText = buildText( names[textIndex-1][0], {'x':str(xPos-0.5*hexWidth), 'y':str( yPos), 'style':'fill: black; font-size:' + str(fontHeight) + 'px'})
+        nameText2 = buildText( names[textIndex-1][1], {'x':str(xPos-0.5*hexWidth), 'y':str(yPos+fontHeight+4), 'style':'fill: black; font-size:' + str(fontHeight) + 'px'})
+        textGroup.append(nameText)
+        textGroup.append(nameText2)
+        gridGroup.append(hexagram)
         
-    docu.appendElement(gridGroup)
-    docu.appendElement(textGroup)
+    docu.append(gridGroup)
+    docu.append(textGroup)
     docu.writeSVG("hexagram_grid_ae.svg")    
     
 if   __name__ == '__main__':
@@ -170,9 +170,9 @@ if   __name__ == '__main__':
     #makeAscendingEarthGrid()
 ##    
 ##    docu = document.Document()
-####    docu.appendElement(buildDigramLine(docu, 2 ,Point(0,0), 40) )
+####    docu.append(buildDigramLine( 2 ,Point(0,0), 40) )
 ##    
-##    docu.appendElement(buildTieredGram(docu, (0,2,1,1,0) ,Point(0,0), 64) )
+##    docu.append(buildTieredGram( (0,2,1,1,0) ,Point(0,0), 64) )
 ##    
     
 ##    docu.writeSVG('trigramTest.svg')

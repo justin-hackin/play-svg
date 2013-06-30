@@ -19,11 +19,11 @@ class MetcalfeStar(inkex.Effect):
 	
 	
     def effect(self):
-        docu = playsvg.document.Document(document=self.document)
+        
 	#using path results in buggyness of display
     ##new = playsvg.element.buildPath(docu, playsvg.pathshapes.metcalfeStar(self.options.points, self.options.radius), {'style':'stroke:black;fill:none'} )
-	new = playsvg.compshapes.buildMetcalfeStar(docu, self.options.points, self.options.radius)
-        self.document.documentElement.appendChild(new)
+        new = playsvg.compshapes.buildMetcalfeStar(self.options.points, self.options.radius)
+        self.current_layer.append(new)
 
 e = MetcalfeStar()
 e.affect()

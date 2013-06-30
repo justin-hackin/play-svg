@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="590"
+   xlink:xlink="xlink"
+   height="590"
+   id="svg2258"
+   sodipodi:version="0.32"
+   inkscape:version="0.45"
+   sodipodi:docname="circle_squared.svg"
+   sodipodi:docbase="/media/oldubu/home/tamarind/0_Code_0/play-svg/scripts/images"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   sodipodi:modified="true">
+  <metadata
+     id="metadata2268">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="625"
+     inkscape:window-width="874"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="0.68983051"
+     inkscape:cx="295"
+     inkscape:cy="352.98526"
+     inkscape:window-x="5"
+     inkscape:window-y="49"
+     inkscape:current-layer="svg2258" />
+  <defs
+     id="defs2260" />
+  <path
+     style="fill:#000000;fill-opacity:1;stroke:none"
+     d="M 295 95 C 261.55892 95 230.02448 103.21993 202.3125 117.75 L 387.6875 117.75 C 359.97552 103.21993 328.44108 95 295 95 z M 117.75 202.3125 C 103.21993 230.02448 95 261.55892 95 295 C 95 328.44108 103.21993 359.97552 117.75 387.6875 L 117.75 202.3125 z M 472.25 202.3125 L 472.25 387.6875 C 486.78007 359.97552 495 328.44108 495 295 C 495 261.55892 486.78007 230.02448 472.25 202.3125 z M 202.3125 472.25 C 230.02448 486.78007 261.55892 495 295 495 C 328.44108 495 359.97552 486.78007 387.6875 472.25 L 202.3125 472.25 z "
+     id="circle2263" />
+</svg>

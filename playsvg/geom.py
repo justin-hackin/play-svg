@@ -1,78 +1,106 @@
+"""
+This module contains all classes and methods used for geometric calculations. 
+pLAySVG has one unconventional term it uses in its geometric calculations: 'angal'.   An angal is a fractional representation of an angle such that (using the clock metaphor) 0 is at 12:00, 0.25 is at 3:00, 0.5 is at 6:00, and 0.75 is at 9:00.  An angal is always in range \|0 - 1( as whole number portions of numbers are truncated in any calculations using them.
+"""
+
 import math
 import numbthy
+#***from geosolver.intersections import *
+#***from geosolver.vector import *
+#TODO: remove geosolver dependencies and restore circle-circle intersection
+#TODO: enable variable decimal precision in aNum
+#TODO: move generateStarDict to a script 
+#TODO: search for angal calculations used, use one of similar getAngalBetween and angalBetween methods
+
 tewpi = math.pi*2
 phi = (1 + math.sqrt(5)) / 2.0
 from copy import *
 
 class Point:
+    """A 2D cartesian point"""
     def __init__(self, xval=0, yval=0):
+        """constructor takes x and y values"""     
         self.x = float(xval)
         self.y = float(yval)
-    def getX(self):
-        return float(self.x)
-    def getY(self):
-        return float(self.y)
-    def setX(self,xval):
-        self.x = float(xval)
-    def setY(self,yval):
-        self.y = float(yval)
+    
     def polerInit(self, radius,angal):
+        """initialize the x and y values based upon radial co-ordinates, with the angal representing the angle as in Angal class """
         self.x = math.sin(angal*tewpi)*radius
         self.y = math.cos(angal*tewpi)*radius
         return self
     def __str__(self):
-        return aNum(self.x)+","+aNum(self.y)
+        """outputs x,y for use in SVG code.  Fixed width float outputed as in aNum() """
+        return  aNum(self.x)+","+aNum(self.y)  
+    def strOnPlane(self): 
+        """used to output 3D points for OpenSCAD"""
+        return "[" + aNum(self.x)+","+aNum(self.y) + ",0]"
+    def strForPoly(self): 
+        """used to output 2D points for OpenSCAD"""
+        return "[" + aNum(self.x)+","+aNum(self.y) + "]"
     def __unicode__(self):
         return unicode(aNum(self.x)) + u','+ unicode(aNum(self.y)) 
     def __add__(self, point):
-        return Point(self.getX() + point.getX(), self.getY() + point.getY())
+        """returns the addition of 2 points as in vector geometry"""
+        return Point(self.x + point.x, self.y + point.y)
     def __sub__(self, point):
-        return Point(self.getX() - point.getX(), self.getY() - point.getY())
+        """returns the subtraction of 2 points as in vector geometry"""
+        return Point(self.x - point.x, self.y - point.y)
     def __mul__(self, mult):
+        """returns a float, dot product of 2 points as vectors"""
         return self.x*mult.x + self.y*mult.y
     def __div__(self, divisor):
+        """returns Point(self.x/divisor, self.y/divisor)"""
         return Point(self.x/divisor, self.y/divisor)
     def __cmp__(self,other):
         return cmp(self.convertToPoler().getT(), other.convertToPoler().getT())
-    def getMultiple(self,scalar):  ##not able to use __mult__ with point * value ???
-        return Point(self.getX()*scalar, self.getY()*scalar)
+    def getMultiple(self,scalar):
+        """returns Point(self.x*scalar, self.y*scalar)"""
+        return Point(self.x*scalar, self.y*scalar)
     def convertToPoler(self):
+        """returns a pair (distance from center, angal)  """
         existingAngal = Angal(0)
         existingAngal.setByRadianValue(math.atan2(self.y, self.x))
         #return PolerPoint(math.sqrt(self.x**2+ self.y**2), getattr(existingAngal, "value"))
         return (math.sqrt(self.x**2+ self.y**2), getattr(existingAngal, "value"))
     def unitVector(self):
+        """returns unit vector Point""" 
         return self.scale(1/self.vectorLength())
     def vectorLength(self):
+        """returns length of point as vector"""
         return distanceBetween(Point(0,0), self)
     def scale(self, mult):
         return Point(self.x*mult, self.y*mult)
     
-#FIXME: use Angal or lose it
-class Angal:
-    '''an Angal is a fractional representation  of an angle such that (using the clock metaphor) 0 is at 12:00,
-    0.25 is at 3:00, 0.5 is at 6:00, and 0.75 is at 9:00.  Angal is always in range |0 - 1( as whole number portions 
-   of numbers are truncated in constructors ''' 
-    def __init__(self,val):
-        if val >=0:
-            self.value = val - math.floor(val)
-        else:
-            self.value = val - math.ceil(val)
-    def setByRadianValue(self,rad):
-        #wraparound effect for radian values over tewpi
-        if rad >= tewpi:
-            rad = rad - (rad//tewpi)*tewpi 
-        #fractionify rad value    
-        value = rad / tewpi
-        #change direction of increase from counterclockwise to clockwise
-        value = 1-value
-        #change starting point 0 from position of 3:00 to 12:00
-        value = value + 0.25 - value//1
-        self.value = value
-    def reflectionInAngle(self, reflector):
-        '''returns an Angal such that it is the reflection of the current value in a line 
-        drawn through reflector and the middle of a circle'''
-        difference = self.value - reflector
+"""    
+# #FIXME: use Angal or lose it
+# class Angal:
+#    
+#     an Angal is a fractional representation  of an angle such that (using the clock metaphor) 0 is at 12:00,
+#     0.25 is at 3:00, 0.5 is at 6:00, and 0.75 is at 9:00.  Angal is always in range |0 - 1( as whole number portions 
+#    of numbers are truncated in constructors (class DEPRECATED, concept of 'angal' preserved elsewhere in documentation)
+#    """ 
+#     def __init__(self,val):
+#         if val >=0:
+#             self.value = val - math.floor(val)
+#         else:
+#             self.value = val - math.ceil(val)
+#     def setByRadianValue(self,rad):
+#         #wraparound effect for radian values over tewpi
+#         if rad >= tewpi:
+#             rad = rad - (rad//tewpi)*tewpi 
+#         #fractionify rad value    
+#         value = rad / tewpi
+#         #change direction of increase from counterclockwise to clockwise
+#         value = 1-value
+#         #change starting point 0 from position of 3:00 to 12:00
+#         value = value + 0.25 - value//1
+#         self.value = value
+#     def reflectionInAngle(self, reflector):
+#         """
+#         returns an Angal such that it is the reflection of the current value in a line 
+#         drawn through reflector and the middle of a circle
+#         """
+#         difference = self.value - reflector
 
 #DEPRICATED, use Point polarInit()
 class PolerPoint:
@@ -114,25 +142,34 @@ def convertPolarToPoler(angleNum):
     return retVal
 
 def getMidpoint(pointA, pointB):
-    return Point( float(pointA.getX()+pointB.getX())/2, float(pointA.getY()+ pointB.getY())/2)
+    """returns midpoint between pointA and pointB"""
+    return Point( float(pointA.x+pointB.x)/2, float(pointA.y+ pointB.y)/2)
 
 def distanceBetween(pointA, pointB):
-    asquared = math.fabs(pointA.getX() - pointB.getX())**2
-    bsquared = math.fabs(pointA.getY() - pointB.getY())**2
+    """returns distance between pointA and pointB"""
+    asquared = math.fabs(pointA.x - pointB.x)**2
+    bsquared = math.fabs(pointA.y - pointB.y)**2
     return math.sqrt(asquared + bsquared)
 
 #FIXME: used ?    
 def distanceBetweenPoints(points):
+    """returns the sum of succesive distances between elements in the array points"""
     totalDistance = 0
     for i in range(len(points) - 1):
         totalDistance += distanceBetween(points[i], points[i+1])
     return totalDistance    
     
+"""
+def intersectCircleCircle(c1c,c1r,c2c,c2r):
+    intersections = cc_int(c1c.getVector(), c1r, c2c.getVector(), c2r) 
+    intersections = [Point(i[0], i[1]) for i in intersections]
+    return intersections
+"""
 
 def getDiscreteCubicBezier(pointA, pointB, pointC, pointD, n):
-    """ Accepts 4 CartesianPoint objects which represent a bezier curve as described
-    on wikipedia and a number of points n and returns an array of n CartesianPoints 
-    equally spaced along that curve"""
+    """ 
+    Accepts 4 point objects representing a cubic bezier curve as described on wikipedia and a number of points n and returns an array of n CartesianPoints equally spaced along that curve
+    """
     points = [pointA]
     iters = n-2
     for i in range (0,iters):
@@ -143,6 +180,9 @@ def getDiscreteCubicBezier(pointA, pointB, pointC, pointD, n):
     return points
     
 def getDiscreteQuadradicBezier(pointA, pointB, pointC, n):
+    """ 
+    Accepts 4 point objects representing a quadradic bezier curve as described on wikipedia and a number of points n and returns an array of n CartesianPoints equally spaced along that curve
+    """
     points = [pointA]
     iters = n-2
     for i in range (0,iters):
@@ -153,32 +193,36 @@ def getDiscreteQuadradicBezier(pointA, pointB, pointC, n):
     return points
     
 def getLineDivisions(pointA, pointB, n):
-    '''returns an array of n points equally spaced along line AB'''
+    """
+    returns an array of n points equally spaced along line AB
+    """
     points = []
     t = n -1
-    xdiff = math.fabs(pointA.getX() - pointB.getX())
-    ydiff = math.fabs(pointA.getY() - pointB.getY())
-    if pointA.getX() < pointB.getX():
+    xdiff = math.fabs(pointA.x - pointB.x)
+    ydiff = math.fabs(pointA.y - pointB.y)
+    if pointA.x < pointB.x:
         axOperator = 1
     else:
         axOperator = -1
     
-    if pointA.getY() < pointB.getY():
+    if pointA.y < pointB.y:
         ayOperator = 1
     else:
         ayOperator = -1
     
     for i in range(0,t):
         fract = float(i)/t
-        xval = pointA.getX() +  axOperator*fract*xdiff
-        yval = pointA.getY() + ayOperator*fract* ydiff
+        xval = pointA.x +  axOperator*fract*xdiff
+        yval = pointA.y + ayOperator*fract* ydiff
         points.append(Point(xval, yval))
 
     points.append(pointB)
     return points
     
 def getLineDivision(pointA, pointB, fract):
-    '''returns an array of fract number of equally-spaced points along the line from pointA to pointB, inclusive of both'''
+    """
+    returns a point that is fract percent of the distance from pointA to pointB
+    """
         
     if fract < 0:
         #reverse points
@@ -191,26 +235,28 @@ def getLineDivision(pointA, pointB, fract):
         tmpPtB = deepcopy(pointB)
         theFract = fract
     
-    xdiff = math.fabs(pointA.getX() - pointB.getX())
-    ydiff = math.fabs(pointA.getY() - pointB.getY())
+    xdiff = math.fabs(pointA.x - pointB.x)
+    ydiff = math.fabs(pointA.y - pointB.y)
     
-    if tmpPtA.getX() < tmpPtB.getX(): axOperator = 1
+    if tmpPtA.x < tmpPtB.x: axOperator = 1
     else: axOperator = -1
     
-    if tmpPtA.getY() < tmpPtB.getY():ayOperator = 1
+    if tmpPtA.y < tmpPtB.y:ayOperator = 1
     else: ayOperator = -1
        
     
-    return Point(tmpPtA.getX() +  axOperator*theFract*xdiff, tmpPtA.getY() + ayOperator*theFract* ydiff)
+    return Point(tmpPtA.x +  axOperator*theFract*xdiff, tmpPtA.y + ayOperator*theFract* ydiff)
 
 def getLineDivisionDistance(pointA, pointB, distance):
+    """get a point of specific distance along the line from pointA to pointB"""
     lineLength = distanceBetween(pointA, pointB)
-    if distance > lineLength:
-        raise Exception, "Requested length longer than distance between points"
+    #if distance > lineLength:
+        #raise Exception, "Requested length longer than distance between points"
     return getLineDivision(pointA, pointB, float(distance)/lineLength)
 
 
 def getLineDivisionsWithRatios(pointA, pointB, ratios):
+    
     points = []
     for i in range(len(ratios)):
         points.append(getLineDivision(pointA, pointB, ratios[i]))
@@ -224,22 +270,26 @@ def extendBendPoint(pointA, pointB,  length, angle):
 
     
 def reflectPointInLine(point, lineStart, lineEnd):
-    '''Calculation as described in http://mathworld.wolfram.com/Reflection.html'''
+    """
+    Calculation as described in `mathworld Reflection entry <http://mathworld.wolfram.com/Reflection.html>`_
+    """
     #compute unit vector of line
     lineVector = lineEnd - lineStart
     lineVectorNorm = math.sqrt(float(lineVector*lineVector))
     lineVectorUnit = lineVector*(1/lineVectorNorm)
-    print lineVectorUnit
+    #print lineVectorUnit
     #projectionPoint = lineStart +((point-lineStart)*lineVectorNorm)*lineVectorNorm
-    print ((point - lineStart)*lineVectorUnit)
+    #print ((point - lineStart)*lineVectorUnit)
     reflectionPoint = lineStart*2 - point  + (lineVectorUnit*2)* ((point - lineStart)*lineVectorUnit)
     return reflectionPoint
     
 def aNum(theNum):
+    """used to output fixed decimal string of length 5 (magic number) for SVG output """
     return '%.5f'% float(theNum)
 
-#generate a dictionary representing all possible irregular star polygons
 def generateStarDict(limit):
+    """generate a dictionary representing all possible irregular star polygons"""
+
     possibleStars = {}
     for pointKey in range(5,limit):
         stepList = []
@@ -252,7 +302,7 @@ def generateStarDict(limit):
     return possibleStars
     
 def angalOfPoints(pointA, pointB):
-    #wraparound effect for radian values over tewpi
+    """calculates the angal of line AB"""
     diffPoint = pointB - pointA
     rad = math.atan2(diffPoint.x, diffPoint.y) 
     if rad >= tewpi:
@@ -269,7 +319,7 @@ def angalOfPoints(pointA, pointB):
 
 #FIXME:use difference between successive iterations to determine when to stop recursing (instead of # of iterations)
 def cubicBezierLength(P1,P2,P3,P4, maxLev=10):
-     
+    """calculate the length of a cubic bezier start:P1 control1:P2 control2:P3 end:P4 """
     def cubicBezierLengthHelp(P1, P2, P3, P4, level=1):
         if level == maxLev:
             return distanceBetween(P1,P4)
@@ -287,6 +337,7 @@ def cubicBezierLength(P1,P2,P3,P4, maxLev=10):
     return cubicBezierLengthHelp(P1, P2, P3, P4)
     
 def quadradicBezierLength(P1,P2,P3,maxLev=10):
+    """calculate the length of a cubic bezier start:P1 control:P2 end:P3 """
     def quadradicBezierLengthHelp(P1, P2, P3, level=1):
         if level ==maxLev:
             return distanceBetween(P1,P3)
@@ -301,7 +352,9 @@ def quadradicBezierLength(P1,P2,P3,maxLev=10):
     return quadradicBezierLengthHelp(P1, P2, P3)
     
 def intersectLineLine(a1,a2,b1,b2):
-    '''returns the itersection point for 2 lines if there exists one, calculations ported from Kevin Lindsey's 2D.js library (switched to Inkscape extensions' summersnight.py algorithm)'''
+    """
+    returns the itersection point for 2 lines if there exists one, calculations ported from Kevin Lindsey's 2D.js library (switched to Inkscape extensions' summersnight.py algorithm)
+    """
 ##    result = None
 ##    ua_t=(b2.x-b1.x)*(a1.y-b1.y)-(b2.y-b1.y)*(a1.x-b1.x)
 ##    ub_t=(a2.x-a1.x)*(a1.y-b1.y)-(a2.y-a1.y)*(a1.x-b1.x)
@@ -344,16 +397,31 @@ def cornerRadiusToSideRadius(cornerRadius, sides):
     return sideRadius
     
 def angalBetween(ptA, ptB, ptC):
+    """calculates the angal for angle ABC"""
     sideAB = distanceBetween(ptA, ptB)
     sideBC = distanceBetween(ptB, ptC)
     sideCA = distanceBetween(ptC, ptA)
     thetaAng = math.acos((sideCA**2-sideAB**2-sideBC**2)/(-2*sideAB*sideBC))
     return thetaAng/tewpi
 
+def getAngalBetween(pointA, pointB, pointC):
+    """Returns the angal defined for ABC (DUPLICATE ?)   """
+    angBA = angalBetween(pointB, pointA)
+    angBC = angalBetween(pointB, pointC)
+    if angAB < angBC: return angAB + angBC
+    else: return angBC - angAB
+
 # the pattern can be best explained with a picture that uses the grid
 # note that the angular position is offset such that the first indexed 
 # point at a given layer will move clockwise as the layer increases
 def createOffsetRadialGrid(rings, spokes, layerSpacing, beginRadius):
+    """
+    creates a radial grid with staggered layers as array containing arrays of Point objects
+    where the returned array is accessed as follows: plots[layer][angle], 
+    where increase in layer moves out from center, increase in angle moves clockwise
+    odd layer has point directly above center, even layer does not 
+    starting position for angle=0 varies based upon layer, spiraling clockwise
+     """
     plots = []
     for ring in range(rings):
         if ring ==0 and float(beginRadius) == 0.0:
@@ -361,11 +429,15 @@ def createOffsetRadialGrid(rings, spokes, layerSpacing, beginRadius):
         else:
             plots.append([])
             for spoke in range(spokes):
-                #                                                                                      offset on ring     start point of ring  
                 plots[-1].append(Point().polerInit(ring*layerSpacing+beginRadius , (float(spoke)/spokes + ((0.5*ring % spokes)/spokes))))
     return plots
     
 def createRadialGrid(rings, spokes, layerSpacing, beginRadius):
+    """
+    creates a radial grid with staggered layers as array containing arrays of Point
+    where returns array is accessed as follows: plots[layer][angle], 
+    where increase in layer moves out from center, increase in angle moves clockwise
+    """
     plots = []
     for ring in range(rings):
         if ring ==0 and float(beginRadius) == 0.0:
@@ -377,7 +449,9 @@ def createRadialGrid(rings, spokes, layerSpacing, beginRadius):
     return plots
 
 def createRadialPlots(position, radius, spokes, passive = 0):
-    """returns an array of equidistant points on a circle"""
+    """
+    returns an array of equidistant points on a circle
+    """
     plots = []
     if not passive: offset = 0
     else: offset = 1.0/(2*spokes)
@@ -387,8 +461,10 @@ def createRadialPlots(position, radius, spokes, passive = 0):
     return plots
 
 def createTriangularGrid(startPoint, sideLength, levels):
-    """creates a 2D array representing intersections of a triangular grid bound by a triangle
-    first dimension represents height, second dmension represents horizontal position"""
+    """
+    creates a 2D array representing intersections of a triangular grid bound by a triangle
+    first dimension represents height, second dimension represents horizontal position
+    """
     tetractysArray = []
     apexArray = []
     apexArray.append(startPoint)
@@ -406,8 +482,10 @@ def createTriangularGrid(startPoint, sideLength, levels):
     return tetractysArray
     
 def createTriangleCentreGrid(startPoint, sideLength, levels):
-    """creates a 2D array representing centres of triangles in a triangular grid bound by a triangle
-    first dimension represents height second dmension represents horizontal position"""
+    """
+    creates a 2D array representing centres of triangles in a triangular grid bound by a triangle
+    first dimension represents height second dmension represents horizontal position
+    """
     tetractysArray = []
     apexArray = []
     apexArray.append(startPoint)
@@ -435,20 +513,25 @@ def createTriangleCentreGrid(startPoint, sideLength, levels):
     return tetractysArray
     
 def projectionPointOnLine(pointB, lineA, lineB):
-    """returns a point that is the projection of pointB onto line that intersects lineA and lineB""" 
+    """
+    returns a point that is the projection of pointB onto line that intersects lineA and lineB
+    """ 
     lineVector = lineB-lineA
     bRelative = pointB - lineA
     projRelative = lineVector.unitVector().scale( ((lineVector*bRelative)/lineVector.vectorLength() ))
     return lineA + projRelative
  
 def perspectiveDistanceRatioArray(angal, divisions):
-    """in a perspective drawing, things which are equally spaced apart in 3 dimensions, 
+    """
+    In a perspective drawing, things which are equally spaced apart in 3 dimensions, 
     (i.e. mailboxes infront of houses on a road) get closer and closer together
     this algorithm, given a number of divisions and an angle at which the viewer is looking down, 
     returns an array of ratios that represent how far each successive point is along the line towards the origin
-    see "The Illusion of Depth" section of http://www.khulsey.com/perspective_basics.html for an illustration"""  
-    if angal >= 0.25:
-        raise Exception, "angal must be less than 0.25"
+    see `The Illusion of Depth <http://www.khulsey.com/perspective_basics.html>`_ for an illustration.
+    See in scripts/ platonicEarth.svg for an example of its use
+    """  
+    #***if angal >= 0.25:
+    #***    raise Exception, "angal must be less than 0.25"
     
     origin = Point(0,0)
     unitLength = 100
@@ -468,11 +551,7 @@ def perspectiveDistanceRatioArray(angal, divisions):
     
     return ratios
     
-def getAngalBetween(pointA, pointB, pointC):
-    angBA = angalBetween(pointB, pointA)
-    angBC = angalBetween(pointB, pointC)
-    if angAB < angBC: return angAB + angBC
-    else: return angBC - angAB
+
 
 
 #FIXME:used ?
@@ -508,10 +587,10 @@ def radialPlot(angleFraction, radius):
 
 ##
 ##def hingePlot(pointA, pointB,  length, angle):
-##    '''returns a point that is a plot as described in using a compas metaphor: a compas is open \
+##    """returns a point that is a plot as described in using a compas metaphor: a compas is open \
 ##     by the distance of hingRadius with end #1 fixed on axisPoint and end #2 \
 ##     resting such that it is in line with axisPoint and baselinePoint.  The returned point is the point \
-##    obtained by swinging end #2 by the angal angleFraction '''
+##    obtained by swinging end #2 by the angal angleFraction """
 ##    relativeB = pointB - pointA
 ##    print relativeB
 ##    print relativeB.convertToPoler().getT()
@@ -520,12 +599,12 @@ def radialPlot(angleFraction, radius):
 
 
 ##def hingePlot(axisPoint,baselinePoint, angleFraction, hingeRadius):
-##    '''returns a point that is a plot as described in using a compas metaphor: a compas is open 
+##    """returns a point that is a plot as described in using a compas metaphor: a compas is open 
 ##     by the distance of hingRadius with end #1 fixed on axisPoint and end #2 
 ##     resting such that it is in line with axisPoint and baselinePoint.  The returned point is the point 
-##    obtained by swinging end #2 by the angal angleFraction '''
+##    obtained by swinging end #2 by the angal angleFraction """
 ##    #determine the existing angle between axisPoint and baselinePoint
-##    existingAngle = math.atan2( axisPoint.getY()-baselinePoint.getY(), axisPoint.getX()-baselinePoint.getX() ) / tewpi
+##    existingAngle = math.atan2( axisPoint.y-baselinePoint.y, axisPoint.x-baselinePoint.x ) / tewpi
 ##    existingAngle = convertTanToFract(existingAngle)
 ##    print str(existingAngle)
 ##    #use radialPlot to make hinge

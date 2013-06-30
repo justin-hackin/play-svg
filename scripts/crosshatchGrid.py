@@ -2,9 +2,11 @@ from playsvg.document import *
 from playsvg.element import *
 from playsvg.path import *
 from playsvg import compshapes
+from lxml import etree
+
 
 def buildCrosshatchGrid(docu, numPoints, size):
-    gridGroup = docu.makeGroup()
+    gridGroup = etree.Element('g', id='grid')
     corners = [Point(-1*size, size), Point(size, size), Point(size, -1*size), Point(-1*size, -1*size)]
     sidePoints = []
     lineAtts = {'style':'stroke:black;fill:none'}
@@ -22,18 +24,18 @@ def buildCrosshatchGrid(docu, numPoints, size):
         for j in range(numPoints):
           
             #draws vertical and horizontal lines
-            gridGroup.appendChild(buildLine(docu, sidePoints[i][j],sidePoints[(i+2)%4][numPoints-1-j], lineAtts))
+            gridGroup.append(buildLine( sidePoints[i][j],sidePoints[(i+2)%4][numPoints-1-j], lineAtts))
     
     for i in range(4):
         for j in range(numPoints):
     
             #draws lines angled at 45 degrees
-            gridGroup.appendChild(buildLine(docu, sidePoints[i][j],sidePoints[(i+1)%4][numPoints-1-j], lineAtts))
+            gridGroup.append(buildLine( sidePoints[i][j],sidePoints[(i+1)%4][numPoints-1-j], lineAtts))
             
     return gridGroup
 
 docu = Document()
-docu.appendElement(buildCrosshatchGrid(docu, 10,100))
+docu.append(buildCrosshatchGrid(docu, 10,100))
 docu.writeSVG("crosshatch_grid.svg")
 
 

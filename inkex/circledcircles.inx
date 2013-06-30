@@ -1,0 +1,21 @@
+<inkscape-extension>
+    <_name>Circled circles</_name>
+    <id>playsvg.ext.circledcircles</id>
+	<dependency type="executable" location="extensions">circledcircles.py</dependency>
+	<dependency type="executable" location="extensions">inkex.py</dependency>
+	
+	<param name="circles" type="int" min="2" max="5000" _gui-text="Number of circles">20</param>
+	<param name="radius" type="float" min="0.0" max="10000.0" _gui-text="Radius">300.0</param>
+	<param name="spacing" type="float" min="0.0" max="10000.0" _gui-text="Spacing ratio %">100.0</param>
+	
+	
+    <effect>
+		<object-type>all</object-type>
+                <effects-menu>
+                    <submenu _name="playSVG"/>
+                </effects-menu>					    
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">circledcircles.py</command>
+    </script>
+</inkscape-extension>

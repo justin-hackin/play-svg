@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 """an alternative version of the Envelope function that supports groups of paths as well as paths with control points outside the object's bounding box"""
 import inkex, os, copy, re
-import xml.xpath
 import playsvg.geom, playsvg.element, playsvg.document, playsvg.path
+from copy import deepcopy
 
 #FIXME: unlinking clones,
 #FIXME: converting objects to paths
@@ -64,7 +64,7 @@ class FitInBox(inkex.Effect):
             err.close()
            
         
-        docu = playsvg.document.Document(document=self.document)
+       
         grid = None
         envCord = None
         rangeEnd = None
@@ -74,17 +74,24 @@ class FitInBox(inkex.Effect):
 
         obj = self.selected[self.options.ids[0]]
         box = self.selected[self.options.ids[1]]
-        objCopy = obj.cloneNode(1)
-        objCopy.attributes.getNamedItem('id').value += 'copy'
-        docu.xdoc.documentElement.appendChild(objCopy)
-        selectedObjectPaths = xml.xpath.Evaluate("descendant-or-self::path", objCopy)
-        envPts = playsvg.path.PathData(text = box.attributes.getNamedItem('d').value).getNodes()
+        objCopy = deepcopy(obj)
+        new = inkex.etree.Element('g')
+        new.append(objCopy)
+        objCopy.set('id' , objCopy.get('id')+'copy')
+        new.append(objCopy)
+        
+        
+        selectedObjectPaths = objCopy.iter()
+        selectedObjectPaths = [i for i in selectedObjectPaths if (inkex.etree.QName(i).localname   == 'path')]
+        envPts = playsvg.path.PathData(text = box.get('d')).getNodes()
         
         for path in selectedObjectPaths:
             
-            pathData = playsvg.path.PathData(text=path.attributes.getNamedItem('d').value)
+            pathData = playsvg.path.PathData(text=path.get('d'))
             pathData.transformPoints(getTransformLambda(bb, envPts))
-            path.attributes.getNamedItem('d').value = str(pathData)
+            path.set('d', str(pathData))
+            
+            
         
     
 

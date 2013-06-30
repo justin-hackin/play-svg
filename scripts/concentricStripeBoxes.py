@@ -16,13 +16,13 @@ def makeStripeBox(docu, layers, layerSize):
     stripeBoxGroup = docu.makeGroup()
     for i in range(layers,0, -1):
         if i%2 == 0:
-            stripeBoxGroup.appendChild(buildPath(docu, makeCentredBox(docu, i*layerSize),{'style': 'stroke:none;fill:black'})) 
+            stripeBoxGroup.append(buildPath(makeCentredBox(docu, i*layerSize),{'style': 'stroke:none;fill:black'})) 
         else:
-            stripeBoxGroup.appendChild(buildPath(docu, makeCentredBox(docu, i*layerSize),{'style': 'stroke:none;fill:white'})) 
+            stripeBoxGroup.append(buildPath(makeCentredBox(docu, i*layerSize),{'style': 'stroke:none;fill:white'})) 
     return stripeBoxGroup    
 
 docu = document.Document()
-docu.appendElement(makeStripeBox(docu,20, 20 ))
+docu.append(makeStripeBox(docu,20, 20 ))
 
 docu.writeSVG("concentricStripeBox.svg" )
 print "done"

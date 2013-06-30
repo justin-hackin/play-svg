@@ -3,6 +3,7 @@ import playsvg.document
 import playsvg.pathshapes
 from playsvg.geom import *
 from playsvg.element import *
+from playsvg.path import *
 
 docu = document.Document()
 
@@ -28,9 +29,9 @@ for i in range(numPoints):
         path1.SCRVBD((extent, otherTilt), Point().polerInit( radius, float((i+1)%numPoints)/numPoints))
 path1.closePath()
 path2.closePath()
-docu.appendElement(buildPath(abase, path1, {'style':'stroke:black;fill:none'}))
-docu.appendElement(buildPath(abase, path2, {'style':'stroke:black;fill:none'}))
+docu.append(buildPath(path1, {'style':'stroke:black;fill:none'}))
+docu.append(buildPath( path2, {'style':'stroke:black;fill:none'}))
 
-abase.writeSVG('timeWeaveE.svg')
+docu.writeSVG('timeWeaveE.svg')
 print "done01"
 

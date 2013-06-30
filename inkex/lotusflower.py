@@ -27,10 +27,9 @@ class LotusFlower(inkex.Effect):
 	
 	
     def effect(self):
-        docu = playsvg.document.Document(document=self.document)
-	path = playsvg.pathshapes.lotusPetalFlower(self.options.petals, self.options.radius, self.options.radius+self.options.petallength, self.options.controldistance)
-	new = playsvg.element.buildPath(docu, path, {'style':'stroke:black;fill:none'})
-	self.document.documentElement.appendChild(new)
+        path = playsvg.pathshapes.lotusPetalFlower(self.options.petals, self.options.radius, self.options.radius+self.options.petallength, self.options.controldistance)
+        new = playsvg.element.buildPath(path, {'style':'stroke:black;fill:none'})
+        self.current_layer.append(new)
 
 e = LotusFlower()
 e.affect()

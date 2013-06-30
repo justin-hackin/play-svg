@@ -6,16 +6,17 @@ import os
 import string
 
 
-def recursiveMagenStar(docu, radius, levels):
-    starGroup = docu.makeGroup()
+def recursiveMagenStar( radius, levels):
+    starGroup = etree.Element('g', id='stargroup')
  
     for i in range(1, levels+1):
         triPath = PathData().moveTo(Point().polerInit(float(i)/levels*radius, 0)).lineTo(Point().polerInit(float(i)/levels*radius, 1.0/3)).lineTo(Point().polerInit(float(i)/levels*radius, 2.0/3)).lineTo(Point().polerInit(float(i)/levels*radius, 0))\
         .moveTo(Point().polerInit(float(i)/levels*radius, 1.0/6)).lineTo(Point().polerInit(float(i)/levels*radius, 1.0/2)).lineTo(Point().polerInit(float(i)/levels*radius, 5.0/6)).closePath()
-        starGroup.appendChild(buildPath(docu, triPath, {'style':'stroke:black; fill:none'}))
+        starGroup.append(buildPath( triPath, {'style':'stroke:black; fill:none'}))
     return starGroup
+
 docu = document.Document()
-docu.appendElement( recursiveMagenStar(docu,200, 6 ))
+docu.append( recursiveMagenStar(200, 32 ))
 
 docu.writeSVG("recursiveMagenStar.svg" )
 print "done"

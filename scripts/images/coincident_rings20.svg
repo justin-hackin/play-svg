@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns:href='http://www.w3.org/1999/xlink' width='590' xmlns='http://www.w3.org/2000/svg' href:xlink='xlink' height='590'>
+  <defs/>
+  <g id='canvas' transform='matrix(1,0,0,-1,0,590) translate(295,295)'>
+    <circle style='stroke:black;fill:none' cx='0.0' r='50' cy='50.0'/>
+    <circle style='stroke:black;fill:none' cx='15.4508497187' r='50' cy='47.5528258148'/>
+    <circle style='stroke:black;fill:none' cx='29.3892626146' r='50' cy='40.4508497187'/>
+    <circle style='stroke:black;fill:none' cx='40.4508497187' r='50' cy='29.3892626146'/>
+    <circle style='stroke:black;fill:none' cx='47.5528258148' r='50' cy='15.4508497187'/>
+    <circle style='stroke:black;fill:none' cx='50.0' r='50' cy='3.06151588456e-15'/>
+    <circle style='stroke:black;fill:none' cx='47.5528258148' r='50' cy='-15.4508497187'/>
+    <circle style='stroke:black;fill:none' cx='40.4508497187' r='50' cy='-29.3892626146'/>
+    <circle style='stroke:black;fill:none' cx='29.3892626146' r='50' cy='-40.4508497187'/>
+    <circle style='stroke:black;fill:none' cx='15.4508497187' r='50' cy='-47.5528258148'/>
+    <circle style='stroke:black;fill:none' cx='6.12303176911e-15' r='50' cy='-50.0'/>
+    <circle style='stroke:black;fill:none' cx='-15.4508497187' r='50' cy='-47.5528258148'/>
+    <circle style='stroke:black;fill:none' cx='-29.3892626146' r='50' cy='-40.4508497187'/>
+    <circle style='stroke:black;fill:none' cx='-40.4508497187' r='50' cy='-29.3892626146'/>
+    <circle style='stroke:black;fill:none' cx='-47.5528258148' r='50' cy='-15.4508497187'/>
+    <circle style='stroke:black;fill:none' cx='-50.0' r='50' cy='-9.18454765367e-15'/>
+    <circle style='stroke:black;fill:none' cx='-47.5528258148' r='50' cy='15.4508497187'/>
+    <circle style='stroke:black;fill:none' cx='-40.4508497187' r='50' cy='29.3892626146'/>
+    <circle style='stroke:black;fill:none' cx='-29.3892626146' r='50' cy='40.4508497187'/>
+    <circle style='stroke:black;fill:none' cx='-15.4508497187' r='50' cy='47.5528258148'/>
+  </g>
+</svg>

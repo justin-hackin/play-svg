@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns:href='http://www.w3.org/1999/xlink' width='590' xmlns='http://www.w3.org/2000/svg' href:xlink='xlink' height='590'>
+  <defs/>
+  <g id='canvas' transform='matrix(1,0,0,-1,0,590) translate(295,295)'>
+    <g>
+      <circle style='stroke:none;fill:white' cx='0.0' r='400' cy='0.0'/>
+      <circle style='stroke:none;fill:black' cx='0.0' r='380' cy='0.0'/>
+      <circle style='stroke:none;fill:white' cx='0.0' r='360' cy='0.0'/>
+      <circle style='stroke:none;fill:black' cx='0.0' r='340' cy='0.0'/>
+      <circle style='stroke:none;fill:white' cx='0.0' r='320' cy='0.0'/>
+      <circle style='stroke:none;fill:black' cx='0.0' r='300' cy='0.0'/>
+      <circle style='stroke:none;fill:white' cx='0.0' r='280' cy='0.0'/>
+      <circle style='stroke:none;fill:black' cx='0.0' r='260' cy='0.0'/>
+      <circle style='stroke:none;fill:white' cx='0.0' r='240' cy='0.0'/>
+      <circle style='stroke:none;fill:black' cx='0.0' r='220' cy='0.0'/>
+      <circle style='stroke:none;fill:white' cx='0.0' r='200' cy='0.0'/>
+      <circle style='stroke:none;fill:black' cx='0.0' r='180' cy='0.0'/>
+      <circle style='stroke:none;fill:white' cx='0.0' r='160' cy='0.0'/>
+      <circle style='stroke:none;fill:black' cx='0.0' r='140' cy='0.0'/>
+      <circle style='stroke:none;fill:white' cx='0.0' r='120' cy='0.0'/>
+      <circle style='stroke:none;fill:black' cx='0.0' r='100' cy='0.0'/>
+      <circle style='stroke:none;fill:white' cx='0.0' r='80' cy='0.0'/>
+      <circle style='stroke:none;fill:black' cx='0.0' r='60' cy='0.0'/>
+      <circle style='stroke:none;fill:white' cx='0.0' r='40' cy='0.0'/>
+      <circle style='stroke:none;fill:black' cx='0.0' r='20' cy='0.0'/>
+    </g>
+  </g>
+</svg>

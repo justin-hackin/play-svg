@@ -1,0 +1,1286 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns:href='http://www.w3.org/1999/xlink' width='590' xmlns='http://www.w3.org/2000/svg' href:xlink='xlink' height='590'>
+  <defs/>
+  <g id='canvas' transform='matrix(1,0,0,-1,0,590) translate(295,295)'>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='0.00000' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='8.33333' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='16.66667' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='25.00000' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='33.33333' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='41.66667' x='-25.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='0.00000' x='25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='8.33333' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='16.66667' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='25.00000' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='33.33333' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='41.66667' x='25.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='0.00000' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='8.33333' x='75.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='16.66667' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='25.00000' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='33.33333' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='41.66667' x='75.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='0.00000' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='8.33333' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='16.66667' x='125.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='25.00000' x='125.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='33.33333' x='125.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='41.66667' x='125.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='0.00000' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='8.33333' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='16.66667' x='175.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='25.00000' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='33.33333' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='41.66667' x='175.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='0.00000' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='8.33333' x='225.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='16.66667' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='25.00000' x='225.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='33.33333' x='225.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='41.66667' x='225.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='0.00000' x='275.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='8.33333' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='16.66667' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='25.00000' x='275.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='33.33333' x='275.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='41.66667' x='275.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='0.00000' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='8.33333' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='16.66667' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='25.00000' x='325.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='33.33333' x='325.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='41.66667' x='325.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='50.00000' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='58.33333' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='66.66667' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='75.00000' x='-25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='83.33333' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='91.66667' x='-25.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='50.00000' x='25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='58.33333' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='66.66667' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='75.00000' x='25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='83.33333' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='91.66667' x='25.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='50.00000' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='58.33333' x='75.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='66.66667' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='75.00000' x='75.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='83.33333' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='91.66667' x='75.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='50.00000' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='58.33333' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='66.66667' x='125.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='75.00000' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='83.33333' x='125.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='91.66667' x='125.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='50.00000' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='58.33333' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='66.66667' x='175.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='75.00000' x='175.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='83.33333' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='91.66667' x='175.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='50.00000' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='58.33333' x='225.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='66.66667' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='75.00000' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='83.33333' x='225.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='91.66667' x='225.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='50.00000' x='275.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='58.33333' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='66.66667' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='75.00000' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='83.33333' x='275.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='91.66667' x='275.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='50.00000' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='58.33333' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='66.66667' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='75.00000' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='83.33333' x='325.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='91.66667' x='325.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='100.00000' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='108.33333' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='116.66667' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='125.00000' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='133.33333' x='-25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='141.66667' x='-25.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='100.00000' x='25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='108.33333' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='116.66667' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='125.00000' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='133.33333' x='25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='141.66667' x='25.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='100.00000' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='108.33333' x='75.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='116.66667' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='125.00000' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='133.33333' x='75.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='141.66667' x='75.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='100.00000' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='108.33333' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='116.66667' x='125.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='125.00000' x='125.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='133.33333' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='141.66667' x='125.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='100.00000' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='108.33333' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='116.66667' x='175.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='125.00000' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='133.33333' x='175.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='141.66667' x='175.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='100.00000' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='108.33333' x='225.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='116.66667' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='125.00000' x='225.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='133.33333' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='141.66667' x='225.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='100.00000' x='275.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='108.33333' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='116.66667' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='125.00000' x='275.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='133.33333' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='141.66667' x='275.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='100.00000' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='108.33333' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='116.66667' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='125.00000' x='325.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='133.33333' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='141.66667' x='325.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='150.00000' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='158.33333' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='166.66667' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='175.00000' x='-25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='183.33333' x='-25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='191.66667' x='-25.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='150.00000' x='25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='158.33333' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='166.66667' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='175.00000' x='25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='183.33333' x='25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='191.66667' x='25.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='150.00000' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='158.33333' x='75.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='166.66667' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='175.00000' x='75.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='183.33333' x='75.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='191.66667' x='75.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='150.00000' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='158.33333' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='166.66667' x='125.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='175.00000' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='183.33333' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='191.66667' x='125.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='150.00000' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='158.33333' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='166.66667' x='175.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='175.00000' x='175.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='183.33333' x='175.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='191.66667' x='175.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='150.00000' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='158.33333' x='225.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='166.66667' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='175.00000' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='183.33333' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='191.66667' x='225.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='150.00000' x='275.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='158.33333' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='166.66667' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='175.00000' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='183.33333' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='191.66667' x='275.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='150.00000' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='158.33333' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='166.66667' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='175.00000' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='183.33333' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='191.66667' x='325.00000' fill='black'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='200.00000' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='208.33333' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='216.66667' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='225.00000' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='233.33333' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='241.66667' x='-25.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='200.00000' x='25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='208.33333' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='216.66667' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='225.00000' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='233.33333' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='241.66667' x='25.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='200.00000' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='208.33333' x='75.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='216.66667' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='225.00000' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='233.33333' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='241.66667' x='75.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='200.00000' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='208.33333' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='216.66667' x='125.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='225.00000' x='125.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='233.33333' x='125.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='241.66667' x='125.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='200.00000' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='208.33333' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='216.66667' x='175.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='225.00000' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='233.33333' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='241.66667' x='175.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='200.00000' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='208.33333' x='225.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='216.66667' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='225.00000' x='225.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='233.33333' x='225.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='241.66667' x='225.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='200.00000' x='275.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='208.33333' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='216.66667' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='225.00000' x='275.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='233.33333' x='275.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='241.66667' x='275.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='200.00000' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='208.33333' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='216.66667' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='225.00000' x='325.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='233.33333' x='325.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='241.66667' x='325.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='250.00000' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='258.33333' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='266.66667' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='275.00000' x='-25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='283.33333' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='291.66667' x='-25.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='250.00000' x='25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='258.33333' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='266.66667' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='275.00000' x='25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='283.33333' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='291.66667' x='25.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='250.00000' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='258.33333' x='75.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='266.66667' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='275.00000' x='75.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='283.33333' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='291.66667' x='75.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='250.00000' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='258.33333' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='266.66667' x='125.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='275.00000' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='283.33333' x='125.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='291.66667' x='125.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='250.00000' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='258.33333' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='266.66667' x='175.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='275.00000' x='175.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='283.33333' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='291.66667' x='175.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='250.00000' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='258.33333' x='225.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='266.66667' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='275.00000' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='283.33333' x='225.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='291.66667' x='225.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='250.00000' x='275.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='258.33333' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='266.66667' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='275.00000' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='283.33333' x='275.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='291.66667' x='275.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='250.00000' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='258.33333' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='266.66667' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='275.00000' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='283.33333' x='325.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='291.66667' x='325.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='300.00000' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='308.33333' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='316.66667' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='325.00000' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='333.33333' x='-25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='341.66667' x='-25.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='300.00000' x='25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='308.33333' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='316.66667' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='325.00000' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='333.33333' x='25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='341.66667' x='25.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='300.00000' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='308.33333' x='75.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='316.66667' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='325.00000' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='333.33333' x='75.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='341.66667' x='75.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='300.00000' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='308.33333' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='316.66667' x='125.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='325.00000' x='125.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='333.33333' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='341.66667' x='125.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='300.00000' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='308.33333' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='316.66667' x='175.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='325.00000' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='333.33333' x='175.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='341.66667' x='175.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='300.00000' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='308.33333' x='225.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='316.66667' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='325.00000' x='225.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='333.33333' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='341.66667' x='225.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='300.00000' x='275.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='308.33333' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='316.66667' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='325.00000' x='275.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='333.33333' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='341.66667' x='275.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='300.00000' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='308.33333' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='316.66667' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='325.00000' x='325.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='333.33333' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='341.66667' x='325.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='350.00000' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='358.33333' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='366.66667' x='-25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='375.00000' x='-25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='383.33333' x='-25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='391.66667' x='-25.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='350.00000' x='25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='358.33333' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='366.66667' x='25.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='375.00000' x='25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='383.33333' x='25.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='391.66667' x='25.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='350.00000' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='358.33333' x='75.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='366.66667' x='75.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='375.00000' x='75.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='383.33333' x='75.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='391.66667' x='75.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='350.00000' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='358.33333' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='366.66667' x='125.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='375.00000' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='383.33333' x='125.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='391.66667' x='125.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='350.00000' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='358.33333' x='175.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='366.66667' x='175.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='375.00000' x='175.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='383.33333' x='175.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='391.66667' x='175.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='350.00000' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='358.33333' x='225.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='366.66667' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='375.00000' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='383.33333' x='225.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='391.66667' x='225.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='350.00000' x='275.00000' fill='black'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='358.33333' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='366.66667' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='375.00000' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='383.33333' x='275.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='391.66667' x='275.00000' fill='white'/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='350.00000' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='358.33333' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='366.66667' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='375.00000' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='383.33333' x='325.00000' fill='white'/>
+      </g>
+      <g>
+        <rect height='8.33333' width='50.00000' stroke='none' y='391.66667' x='325.00000' fill='white'/>
+      </g>
+    </g>
+  </g>
+</svg>

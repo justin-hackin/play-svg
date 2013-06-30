@@ -26,9 +26,9 @@ class RadialOffsetGrid(inkex.Effect):
         
 
     def effect(self):
-        docu = playsvg.document.Document(document=self.document)
-	new = playsvg.compshapes.buildOffsetRadialGrid(docu, self.options.layers, self.options.spokes, self.options.beginradius, self.options.layerradius)
-	self.document.documentElement.appendChild(new)
+        
+	       new = playsvg.compshapes.buildOffsetRadialGrid(self.options.layers, self.options.spokes, self.options.beginradius, self.options.layerradius)
+	       self.current_layer.append(new)
 
 e = RadialOffsetGrid()
 e.affect()

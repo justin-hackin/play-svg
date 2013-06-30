@@ -18,9 +18,9 @@ class FlowerOfLife(inkex.Effect):
 	
 	
     def effect(self):
-        docu = playsvg.document.Document(document=self.document)
-	new = playsvg.compshapes.buildFlowerOfLife(docu, self.options.levels, self.options.radius)
-	self.document.documentElement.appendChild(new)
+           new = playsvg.compshapes.buildFlowerOfLife( self.options.levels, self.options.radius)
+           self.current_layer.append(new)
+           
 
 e = FlowerOfLife()
 e.affect()

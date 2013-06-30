@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 """tiles an object into a Radial Grid or an Offset Radial Grid as generated in compshapes.py"""
 import inkex, os, copy, re
-import xml.xpath
 import playsvg.geom, playsvg.element, playsvg.document, playsvg.path
 import pathmodifier
+from copy import deepcopy
+
 #FIXME: unlinking clones,
 #FIXME: converting objects to paths
 #FIXME: supporting multiply nested groups,
@@ -65,11 +66,12 @@ class RadialTile(pathmodifier.PathModifier):
             err.close()
            
         
-        docu = playsvg.document.Document(document=self.document)
+       
         grid = None
         envCord = None
         rangeEnd = None
         numGridLayers = None
+        idCounter = 1
         
         #initialized values based on offset option
         if self.options.offset:
@@ -87,17 +89,21 @@ class RadialTile(pathmodifier.PathModifier):
 
 
         obj = self.selected[self.options.ids[0]]
-        tileGroup = docu.makeGroup('tilegroup')
+        
+        tileGroup = inkex.etree.SubElement(self.current_layer, 'g')
+        
         envPts = None
         
         #create copies of the tile enveloped to the grid
         for layer in range(numGridLayers-1,rangeEnd,-1):
             for spoke in range(self.options.spokes):
-                inkex.debug("Node id:" + obj.attributes.getNamedItem('id').value)
+                
                 #inkex.debug("Length of duplicate list:" + len(self.duplicateNodes({obj.attributes.getNamedItem('id').value:obj})))
                 #pathmodifier.fuseTransform(obj)
-                objID = obj.attributes.getNamedItem('id').value
-                objCopy = self.duplicateNodes({objID:obj}).values()[0]
+                
+                objCopy = deepcopy(obj)
+                tileGroup.append(objCopy)
+                
                 #FIXME: add support for gradients
                 
 ##                #check if fill is gradient
@@ -110,19 +116,27 @@ class RadialTile(pathmodifier.PathModifier):
 ##                    #transform control points in new gradient (control points likely outside of bounding box ????)
 ##                    #set color to new gradient
                 #FIXME: only paths and not convertible objects get selected and properly tiled
-                selectedObjectPaths = xml.xpath.Evaluate("descendant-or-self::path", objCopy)
+                selectedObjectPaths = objCopy.iter()
+                
+                selectedObjectPaths = [i for i in selectedObjectPaths if (inkex.etree.QName(i).localname   == 'path')]
+                
+                #inkex.debug("objectPathsLen"+str(len(selectedObjectPaths)))
+                
                 
                 envPts = []
                 for i in range(4):
                     envPts.append(grid[(layer+envCord[i][0])][(spoke+envCord[i][1])%self.options.spokes ] )
                     
                 for path in selectedObjectPaths:
-                    self.objectToPath(path)    
-                    pathData = playsvg.path.PathData(text=path.attributes.getNamedItem('d').value)
+                    
+                    pathData = playsvg.path.PathData(text=path.get('d'))
                     pathData.transformPoints(getTransformLambda(bb, envPts))
-                    path.attributes.getNamedItem('d').value = str(pathData)
-                tileGroup.appendChild(objCopy)
-        docu.xdoc.documentElement.appendChild(tileGroup)
+                    inkex.debug("this"+str(pathData))
+                    path.set('d',str(pathData))
+        
+            
+       
+
     
 
 e = RadialTile()

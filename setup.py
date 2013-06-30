@@ -19,8 +19,8 @@ setup(name='playsvg',
       author='playful_geometr',
       author_email='justinbarca@gmail.com',
       url='http://sourceforge.net/projects/play-svg/',
-      packages=['playsvg']
-      #data_files=dataFiles
+      packages=['playsvg'],
+      data_files=dataFiles
       #data_files = [("scripts",[os.path.join("scripts", i) for i in glob.glob(os.path.join("scripts *.py"))] ), ("", ["README.TXT"]), ("inkex",[os.path.join("inkex", i) for i in glob.glob(os.path.join("inkex *.py"))] )  ]
      )
 

@@ -1,3 +1,4 @@
+"""
 ######################################################################################
 # NUMBTHY.PY
 # Basic Number Theory functions implemented in Python
@@ -7,7 +8,7 @@
 # Date: 26 March, 2005
 # Version 0.4
 ######################################################################################
-"""Basic number theory functions.
+Basic number theory functions.
    Functions implemented are:
    		gcd(a,b) - Compute the greatest common divisor of a and b.
    		xgcd(a,b) - Find [g,x,y] such that g=gcd(a,b) and g = ax + by.
@@ -21,7 +22,8 @@
    		factors(n) - Return a sorted list of the prime factors of n.
    		factorPR(n) - Find a factor of n using the Pollard Rho method
 		isprimitive(g,n) - Test whether g is primitive - generates the group of units mod n.
-   A list of the functions implemented in numbthy is printed by the command info()."""
+   A list of the functions implemented in numbthy is printed by the command info().
+"""
    
    
 Version = 'NUMBTHY.PY, version 0.1, 10 Jan, 2003, by Robert Campbell, campbell@math.umbc.edu'
@@ -181,7 +183,7 @@ def isprimitive(g,n):
 	
 def info():
 	"""Return information about the module"""
-	print locals()
+	#***print locals()
 
 # import numbthy
 # reload(numbthy)

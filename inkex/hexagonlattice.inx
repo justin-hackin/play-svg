@@ -3,13 +3,13 @@
     <id>playsvg.ext.hexagonlattice</id>
 	<dependency type="executable" location="extensions">hexagonlattice.py</dependency>
 	<dependency type="executable" location="extensions">inkex.py</dependency>
-	<param name="radius" type="float" min="0.0" max="1000" _gui-text="Radius">300.0</param>
+	<param name="radius" type="float" min="0.0" max="1000" _gui-text="Radius">50.0</param>
 	<param name="levels" type="int" min="2" max="20" _gui-text="Number of concentric levels">6</param>
 	
     <effect>
 		<object-type>all</object-type>
                 <effects-menu>
-                    <submenu _name="Render"/>
+                    <submenu _name="playSVG"/>
                 </effects-menu>					    
     </effect>
     <script>

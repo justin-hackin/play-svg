@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns:href='http://www.w3.org/1999/xlink' width='590' xmlns='http://www.w3.org/2000/svg' href:xlink='xlink' height='590'>
+  <defs/>
+  <g id='canvas' transform='matrix(1,0,0,-1,0,590) translate(295,295)'>
+    <g>
+      <line y1='0.00000' x2='0.00000' style='stroke:black;stroke-width:8' x1='0.00000' y2='200.00000'/>
+      <line y1='0.00000' x2='200.00000' style='stroke:black;stroke-width:8' x1='200.00000' y2='200.00000'/>
+      <line y1='0.00000' x2='200.00000' style='stroke:black;stroke-width:8' x1='0.00000' y2='0.00000'/>
+      <line y1='200.00000' x2='200.00000' style='stroke:black;stroke-width:8' x1='0.00000' y2='200.00000'/>
+      <line y1='0.00000' x2='200.00000' style='stroke:black;stroke-width:8' x1='0.00000' y2='0.00000'/>
+      <line y1='0.00000' x2='0.00000' style='stroke:black;stroke-width:8' x1='0.00000' y2='200.00000'/>
+      <line y1='100.00000' x2='200.00000' style='stroke:black;stroke-width:8' x1='0.00000' y2='100.00000'/>
+      <line y1='0.00000' x2='100.00000' style='stroke:black;stroke-width:8' x1='100.00000' y2='200.00000'/>
+      <line y1='50.00000' x2='200.00000' style='stroke:black;stroke-width:4' x1='0.00000' y2='50.00000'/>
+      <line y1='0.00000' x2='50.00000' style='stroke:black;stroke-width:4' x1='50.00000' y2='200.00000'/>
+      <line y1='150.00000' x2='200.00000' style='stroke:black;stroke-width:4' x1='0.00000' y2='150.00000'/>
+      <line y1='0.00000' x2='150.00000' style='stroke:black;stroke-width:4' x1='150.00000' y2='200.00000'/>
+      <line y1='25.00000' x2='200.00000' style='stroke:black;stroke-width:2' x1='0.00000' y2='25.00000'/>
+      <line y1='0.00000' x2='25.00000' style='stroke:black;stroke-width:2' x1='25.00000' y2='200.00000'/>
+      <line y1='75.00000' x2='200.00000' style='stroke:black;stroke-width:2' x1='0.00000' y2='75.00000'/>
+      <line y1='0.00000' x2='75.00000' style='stroke:black;stroke-width:2' x1='75.00000' y2='200.00000'/>
+      <line y1='125.00000' x2='200.00000' style='stroke:black;stroke-width:2' x1='0.00000' y2='125.00000'/>
+      <line y1='0.00000' x2='125.00000' style='stroke:black;stroke-width:2' x1='125.00000' y2='200.00000'/>
+      <line y1='175.00000' x2='200.00000' style='stroke:black;stroke-width:2' x1='0.00000' y2='175.00000'/>
+      <line y1='0.00000' x2='175.00000' style='stroke:black;stroke-width:2' x1='175.00000' y2='200.00000'/>
+      <line y1='12.50000' x2='200.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='12.50000'/>
+      <line y1='0.00000' x2='12.50000' style='stroke:black;stroke-width:1' x1='12.50000' y2='200.00000'/>
+      <line y1='37.50000' x2='200.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='37.50000'/>
+      <line y1='0.00000' x2='37.50000' style='stroke:black;stroke-width:1' x1='37.50000' y2='200.00000'/>
+      <line y1='62.50000' x2='200.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='62.50000'/>
+      <line y1='0.00000' x2='62.50000' style='stroke:black;stroke-width:1' x1='62.50000' y2='200.00000'/>
+      <line y1='87.50000' x2='200.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='87.50000'/>
+      <line y1='0.00000' x2='87.50000' style='stroke:black;stroke-width:1' x1='87.50000' y2='200.00000'/>
+      <line y1='112.50000' x2='200.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='112.50000'/>
+      <line y1='0.00000' x2='112.50000' style='stroke:black;stroke-width:1' x1='112.50000' y2='200.00000'/>
+      <line y1='137.50000' x2='200.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='137.50000'/>
+      <line y1='0.00000' x2='137.50000' style='stroke:black;stroke-width:1' x1='137.50000' y2='200.00000'/>
+      <line y1='162.50000' x2='200.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='162.50000'/>
+      <line y1='0.00000' x2='162.50000' style='stroke:black;stroke-width:1' x1='162.50000' y2='200.00000'/>
+      <line y1='187.50000' x2='200.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='187.50000'/>
+      <line y1='0.00000' x2='187.50000' style='stroke:black;stroke-width:1' x1='187.50000' y2='200.00000'/>
+    </g>
+  </g>
+</svg>

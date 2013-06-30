@@ -1,0 +1,363 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns:href='http://www.w3.org/1999/xlink' width='590' xmlns='http://www.w3.org/2000/svg' href:xlink='xlink' height='590'>
+  <defs/>
+  <g id='canvas' transform='matrix(1,0,0,-1,0,590) translate(295,295)'>
+    <g>
+      <line y1='0.00000' x2='0.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='550.00000'/>
+      <line y1='0.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='550.00000' y2='550.00000'/>
+      <line y1='0.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='0.00000'/>
+      <line y1='550.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='550.00000'/>
+      <line y1='0.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='0.00000'/>
+      <line y1='0.00000' x2='0.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='550.00000'/>
+      <line y1='275.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='275.00000'/>
+      <line y1='0.00000' x2='275.00000' style='stroke:black;stroke-width:1' x1='275.00000' y2='550.00000'/>
+      <line y1='25.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='25.00000'/>
+      <line y1='0.00000' x2='25.00000' style='stroke:black;stroke-width:1' x1='25.00000' y2='550.00000'/>
+      <line y1='50.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='50.00000'/>
+      <line y1='0.00000' x2='50.00000' style='stroke:black;stroke-width:1' x1='50.00000' y2='550.00000'/>
+      <line y1='75.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='75.00000'/>
+      <line y1='0.00000' x2='75.00000' style='stroke:black;stroke-width:1' x1='75.00000' y2='550.00000'/>
+      <line y1='100.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='100.00000'/>
+      <line y1='0.00000' x2='100.00000' style='stroke:black;stroke-width:1' x1='100.00000' y2='550.00000'/>
+      <line y1='125.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='125.00000'/>
+      <line y1='0.00000' x2='125.00000' style='stroke:black;stroke-width:1' x1='125.00000' y2='550.00000'/>
+      <line y1='150.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='150.00000'/>
+      <line y1='0.00000' x2='150.00000' style='stroke:black;stroke-width:1' x1='150.00000' y2='550.00000'/>
+      <line y1='175.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='175.00000'/>
+      <line y1='0.00000' x2='175.00000' style='stroke:black;stroke-width:1' x1='175.00000' y2='550.00000'/>
+      <line y1='200.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='200.00000'/>
+      <line y1='0.00000' x2='200.00000' style='stroke:black;stroke-width:1' x1='200.00000' y2='550.00000'/>
+      <line y1='225.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='225.00000'/>
+      <line y1='0.00000' x2='225.00000' style='stroke:black;stroke-width:1' x1='225.00000' y2='550.00000'/>
+      <line y1='250.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='250.00000'/>
+      <line y1='0.00000' x2='250.00000' style='stroke:black;stroke-width:1' x1='250.00000' y2='550.00000'/>
+      <line y1='300.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='300.00000'/>
+      <line y1='0.00000' x2='300.00000' style='stroke:black;stroke-width:1' x1='300.00000' y2='550.00000'/>
+      <line y1='325.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='325.00000'/>
+      <line y1='0.00000' x2='325.00000' style='stroke:black;stroke-width:1' x1='325.00000' y2='550.00000'/>
+      <line y1='350.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='350.00000'/>
+      <line y1='0.00000' x2='350.00000' style='stroke:black;stroke-width:1' x1='350.00000' y2='550.00000'/>
+      <line y1='375.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='375.00000'/>
+      <line y1='0.00000' x2='375.00000' style='stroke:black;stroke-width:1' x1='375.00000' y2='550.00000'/>
+      <line y1='400.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='400.00000'/>
+      <line y1='0.00000' x2='400.00000' style='stroke:black;stroke-width:1' x1='400.00000' y2='550.00000'/>
+      <line y1='425.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='425.00000'/>
+      <line y1='0.00000' x2='425.00000' style='stroke:black;stroke-width:1' x1='425.00000' y2='550.00000'/>
+      <line y1='450.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='450.00000'/>
+      <line y1='0.00000' x2='450.00000' style='stroke:black;stroke-width:1' x1='450.00000' y2='550.00000'/>
+      <line y1='475.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='475.00000'/>
+      <line y1='0.00000' x2='475.00000' style='stroke:black;stroke-width:1' x1='475.00000' y2='550.00000'/>
+      <line y1='500.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='500.00000'/>
+      <line y1='0.00000' x2='500.00000' style='stroke:black;stroke-width:1' x1='500.00000' y2='550.00000'/>
+      <line y1='525.00000' x2='550.00000' style='stroke:black;stroke-width:1' x1='0.00000' y2='525.00000'/>
+      <line y1='0.00000' x2='525.00000' style='stroke:black;stroke-width:1' x1='525.00000' y2='550.00000'/>
+    </g>
+    <g>
+      <g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='225.0' r='22.2222222222' cy='500.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='225.0' r='11.1111111111' cy='500.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='275.0' r='22.2222222222' cy='500.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='275.0' r='11.1111111111' cy='500.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='325.0' r='22.2222222222' cy='500.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='325.0' r='11.1111111111' cy='500.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='225.0' r='22.2222222222' cy='450.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='225.0' r='11.1111111111' cy='450.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='275.0' r='22.2222222222' cy='450.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='275.0' r='11.1111111111' cy='450.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='325.0' r='22.2222222222' cy='450.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='325.0' r='11.1111111111' cy='450.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='225.0' r='22.2222222222' cy='400.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='225.0' r='11.1111111111' cy='400.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='275.0' r='22.2222222222' cy='400.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='275.0' r='11.1111111111' cy='400.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='325.0' r='22.2222222222' cy='400.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='325.0' r='11.1111111111' cy='400.0'/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='50.0' r='22.2222222222' cy='500.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='50.0' r='11.1111111111' cy='500.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='100.0' r='22.2222222222' cy='500.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='100.0' r='11.1111111111' cy='500.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='150.0' r='22.2222222222' cy='500.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='150.0' r='11.1111111111' cy='500.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='50.0' r='22.2222222222' cy='450.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='50.0' r='11.1111111111' cy='450.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='100.0' r='22.2222222222' cy='450.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='100.0' r='11.1111111111' cy='450.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='150.0' r='22.2222222222' cy='450.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='150.0' r='11.1111111111' cy='450.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='50.0' r='22.2222222222' cy='400.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='50.0' r='11.1111111111' cy='400.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='100.0' r='22.2222222222' cy='400.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='100.0' r='11.1111111111' cy='400.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='150.0' r='22.2222222222' cy='400.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='150.0' r='11.1111111111' cy='400.0'/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='225.0' r='22.2222222222' cy='150.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='225.0' r='11.1111111111' cy='150.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='275.0' r='22.2222222222' cy='150.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='275.0' r='11.1111111111' cy='150.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='325.0' r='22.2222222222' cy='150.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='325.0' r='11.1111111111' cy='150.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='225.0' r='22.2222222222' cy='100.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='225.0' r='11.1111111111' cy='100.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='275.0' r='22.2222222222' cy='100.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='275.0' r='11.1111111111' cy='100.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='325.0' r='22.2222222222' cy='100.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='325.0' r='11.1111111111' cy='100.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='225.0' r='22.2222222222' cy='50.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='225.0' r='11.1111111111' cy='50.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='275.0' r='22.2222222222' cy='50.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='275.0' r='11.1111111111' cy='50.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='325.0' r='22.2222222222' cy='50.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='325.0' r='11.1111111111' cy='50.0'/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='400.0' r='22.2222222222' cy='150.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='400.0' r='11.1111111111' cy='150.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='450.0' r='22.2222222222' cy='150.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='450.0' r='11.1111111111' cy='150.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='500.0' r='22.2222222222' cy='150.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='500.0' r='11.1111111111' cy='150.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='400.0' r='22.2222222222' cy='100.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='400.0' r='11.1111111111' cy='100.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='450.0' r='22.2222222222' cy='100.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='450.0' r='11.1111111111' cy='100.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='500.0' r='22.2222222222' cy='100.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='500.0' r='11.1111111111' cy='100.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='400.0' r='22.2222222222' cy='50.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='400.0' r='11.1111111111' cy='50.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='450.0' r='22.2222222222' cy='50.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='450.0' r='11.1111111111' cy='50.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='500.0' r='22.2222222222' cy='50.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='500.0' r='11.1111111111' cy='50.0'/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='50.0' r='22.2222222222' cy='325.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='50.0' r='11.1111111111' cy='325.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='100.0' r='22.2222222222' cy='325.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='100.0' r='11.1111111111' cy='325.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='150.0' r='22.2222222222' cy='325.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='150.0' r='11.1111111111' cy='325.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='50.0' r='22.2222222222' cy='275.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='50.0' r='11.1111111111' cy='275.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='100.0' r='22.2222222222' cy='275.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='100.0' r='11.1111111111' cy='275.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='150.0' r='22.2222222222' cy='275.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='150.0' r='11.1111111111' cy='275.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='50.0' r='22.2222222222' cy='225.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='50.0' r='11.1111111111' cy='225.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='100.0' r='22.2222222222' cy='225.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='100.0' r='11.1111111111' cy='225.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='150.0' r='22.2222222222' cy='225.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='150.0' r='11.1111111111' cy='225.0'/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='50.0' r='22.2222222222' cy='150.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='50.0' r='11.1111111111' cy='150.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='100.0' r='22.2222222222' cy='150.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='100.0' r='11.1111111111' cy='150.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='150.0' r='22.2222222222' cy='150.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='150.0' r='11.1111111111' cy='150.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='50.0' r='22.2222222222' cy='100.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='50.0' r='11.1111111111' cy='100.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='100.0' r='22.2222222222' cy='100.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='100.0' r='11.1111111111' cy='100.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='150.0' r='22.2222222222' cy='100.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='150.0' r='11.1111111111' cy='100.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='50.0' r='22.2222222222' cy='50.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='50.0' r='11.1111111111' cy='50.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='100.0' r='22.2222222222' cy='50.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='100.0' r='11.1111111111' cy='50.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='150.0' r='22.2222222222' cy='50.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='150.0' r='11.1111111111' cy='50.0'/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='400.0' r='22.2222222222' cy='325.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='400.0' r='11.1111111111' cy='325.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='450.0' r='22.2222222222' cy='325.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='450.0' r='11.1111111111' cy='325.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='500.0' r='22.2222222222' cy='325.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='500.0' r='11.1111111111' cy='325.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='400.0' r='22.2222222222' cy='275.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='400.0' r='11.1111111111' cy='275.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='450.0' r='22.2222222222' cy='275.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='450.0' r='11.1111111111' cy='275.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='500.0' r='22.2222222222' cy='275.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='500.0' r='11.1111111111' cy='275.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='400.0' r='22.2222222222' cy='225.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='400.0' r='11.1111111111' cy='225.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='450.0' r='22.2222222222' cy='225.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='450.0' r='11.1111111111' cy='225.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='500.0' r='22.2222222222' cy='225.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='500.0' r='11.1111111111' cy='225.0'/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='400.0' r='22.2222222222' cy='500.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='400.0' r='11.1111111111' cy='500.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='450.0' r='22.2222222222' cy='500.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='450.0' r='11.1111111111' cy='500.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='500.0' r='22.2222222222' cy='500.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='500.0' r='11.1111111111' cy='500.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='400.0' r='22.2222222222' cy='450.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='400.0' r='11.1111111111' cy='450.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='450.0' r='22.2222222222' cy='450.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='450.0' r='11.1111111111' cy='450.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='500.0' r='22.2222222222' cy='450.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='500.0' r='11.1111111111' cy='450.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='400.0' r='22.2222222222' cy='400.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='400.0' r='11.1111111111' cy='400.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='450.0' r='22.2222222222' cy='400.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:white' cx='450.0' r='11.1111111111' cy='400.0'/>
+        </g>
+        <g>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:grey' cx='500.0' r='22.2222222222' cy='400.0'/>
+          <circle style='stroke:orange;stroke-width:2.46913580247;fill:black' cx='500.0' r='11.1111111111' cy='400.0'/>
+        </g>
+      </g>
+    </g>
+    <path style='fill:none;stroke:black;stroke-width:7' d='M225.00000,325.00000 L275.00000,325.00000 L275.00000,225.00000 L325.00000,225.00000 M325.00000,325.00000 L325.00000,275.00000 L225.00000,275.00000 L225.00000,225.00000'/>
+  </g>
+</svg>

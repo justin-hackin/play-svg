@@ -1,4 +1,3 @@
-from __future__ import division
 from playsvg import document
 from playsvg.geom import *
 from playsvg.element import *
@@ -11,7 +10,7 @@ squares = 11
 size = 300
 boxSize = float(size)/squares
 corners = [] #defined in order of top-left, top-right, bottom-right, bottom left
-quadSize = -1*size/2
+quadSize = -1*size/2.0
 upperCorner = Point(quadSize,quadSize)
 checkerGrid = []
 for i in range(squares+1):
@@ -41,14 +40,14 @@ outerSize = 800
 
 innerCorners = []
 outerCorners = []
-innerCorners.append(Point(1*innerSize/2, 1*innerSize/2))
-outerCorners.append(Point(outerSize/2, outerSize/2))
-innerCorners.append(Point(1*innerSize/2, -1*innerSize/2))
-outerCorners.append(Point(outerSize/2, -1*outerSize/2))
-innerCorners.append(Point(-1*innerSize/2, -1*innerSize/2))
-outerCorners.append(Point(-1*outerSize/2, -1*outerSize/2))
-innerCorners.append(Point(-1*innerSize/2, 1*innerSize/2))
-outerCorners.append(Point(-1*outerSize/2, outerSize/2))
+innerCorners.append(Point(1*innerSize/2.0, 1*innerSize/2.0))
+outerCorners.append(Point(outerSize/2.0, outerSize/2.0))
+innerCorners.append(Point(1*innerSize/2.0, -1*innerSize/2.0))
+outerCorners.append(Point(outerSize/2.0, -1*outerSize/2.0))
+innerCorners.append(Point(-1*innerSize/2.0, -1*innerSize/2.0))
+outerCorners.append(Point(-1*outerSize/2.0, -1*outerSize/2.0))
+innerCorners.append(Point(-1*innerSize/2.0, 1*innerSize/2.0))
+outerCorners.append(Point(-1*outerSize/2.0, outerSize/2.0))
 ratios = perspectiveDistanceRatioArray(1.0/8, squares+1)
 
 for corner in range(len(innerCorners)):
@@ -63,8 +62,8 @@ for corner in range(len(innerCorners)):
             else:
                 darkBoxPath.moveTo(leftMarks[k]).lineTo(rightMarks[k]).lineTo(rightMarks[k+1]).lineTo(leftMarks[k+1]).lineTo(leftMarks[k])
 
-docu.appendElement(buildPath(docu, lightBoxPath, {'style':'fill:#7cff00; stroke:black; stroke-width:3'}))
-docu.appendElement(buildPath(docu, darkBoxPath, {'style':'stroke:black; stroke-width:3;fill:#faff00'}))
+docu.append(buildPath( lightBoxPath, {'style':'fill:#7cff00; stroke:black; stroke-width:3'}))
+docu.append(buildPath( darkBoxPath, {'style':'stroke:black; stroke-width:3;fill:#faff00'}))
 
     
 docu.writeSVG('platonicEarth.svg')

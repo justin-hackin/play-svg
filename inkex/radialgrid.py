@@ -26,9 +26,8 @@ class RadialGrid(inkex.Effect):
         
 
     def effect(self):
-        docu = playsvg.document.Document(document=self.document)
-	new = playsvg.compshapes.buildRadialGrid(docu, self.options.layers, self.options.spokes, self.options.beginradius, self.options.layerradius)
-	self.document.documentElement.appendChild(new)
+        new = playsvg.compshapes.buildRadialGrid(self.options.layers, self.options.spokes, self.options.beginradius, self.options.layerradius)
+        self.current_layer.append(new)
 
 e = RadialGrid()
 e.affect()

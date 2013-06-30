@@ -1,0 +1,18 @@
+<inkscape-extension>
+    <_name>Cardiod</_name>
+    <id>playsvg.ext.cardiod</id>
+	<dependency type="executable" location="extensions">cardiod.py</dependency>
+	<dependency type="executable" location="extensions">inkex.py</dependency>
+	<param name="radius" type="float" min="0.0" max="10000" _gui-text="Radius">30.0</param>
+	<param name="circles" type="int" min="2" max="1000" _gui-text="Number of circles">20</param>
+	
+    <effect>
+		<object-type>all</object-type>
+                <effects-menu>
+                    <submenu _name="playSVG"/>
+                </effects-menu>					    
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">cardiod.py</command>
+    </script>
+</inkscape-extension>

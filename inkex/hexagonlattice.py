@@ -15,13 +15,10 @@ class HexagonLattice(inkex.Effect):
                         action="store", type="int", 
                         dest="levels", default=20,
                         help="Number of concentric layers in lattice")
-	
-	
-	
+
     def effect(self):
-        docu = playsvg.document.Document(document=self.document)
-	new = playsvg.compshapes.buildHexagonLattice(docu, self.options.levels, self.options.radius)
-	self.document.documentElement.appendChild(new)
+        new = playsvg.compshapes.buildHexagonLattice(self.options.levels, self.options.radius)
+        self.current_layer.append(new)
 
 e = HexagonLattice()
 e.affect()

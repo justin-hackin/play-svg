@@ -1,19 +1,18 @@
-'''Document is the SVG document representation, provides file I/O and access to the DOM '''
+"""SVG document representation, provides file I/O and access to the DOM"""
+#TODO: enable exceptions and print statements and make compatible with sphinx (search:#***)
 import os
 from copy import copy
 from element import *
 from geom import *
 try:
-    import xml.dom.ext
-    import xml.dom.minidom
-    import xml.dom.ext.reader.Sax2
-    import xml.xpath
+    from lxml import etree
 except:
-    sys.exit('The document.py module requires PyXML. Please download the latest version from <http://pyxml.sourceforge.net/>.')
+    sys.exit('The document.py module requires lxml etree. ')
 
 def setAttributesFromDict(element,dict):
+    """uses a dictionary to populate xml attributes for a particular lxml element """
     for key, val in dict.items():
-        element.setAttribute(key, val)
+        element.set(key, val)
 
 ##def allSubnodesIteratorHelp(subnodes, node):
 ##    children = node.xml_children
@@ -29,61 +28,50 @@ def setAttributesFromDict(element,dict):
 
 
 class Document:
-    def __init__(self, document = None, file=None,  gridSize=295, alignment='mm'):
-        #FIXME: test file support
-        #FIXME: add support for different canvas alignments and sizes of document
-        if file != None:
-            reader = xml.dom.ext.reader.Sax2.Reader()
-            try:
-                stream = open(file,'r')
-            except:
-                print 'failed to parse SVG document'
-        else:
-            #create SVG document elements from scratch
-            if document == None:
-                self.xdoc= xml.dom.getDOMImplementation().createDocument(None, 'svg',None)
-                svgAttributes = {u'xmlns':'http://www.w3.org/2000/svg', u'height':unicode(gridSize*2), u'width':unicode(gridSize*2)}  
-                setAttributesFromDict(self.xdoc.documentElement, svgAttributes)
-                self.xdoc.documentElement.setAttributeNS( 'http://www.w3.org/1999/xlink', 'href:xlink', 'xlink')
-                self.defs = self.xdoc.createElement(u'defs')
-                self.xdoc.documentElement.appendChild(self.defs)
-                #append canvas, the co-ordinate system group
-                canvasAtts = {u'id':u'canvas', u'transform':(u'matrix(1,0,0,-1,0,'+str(gridSize*2) +u') ' + u'translate('+unicode(gridSize)+ u','+ unicode(gridSize)+u')')}
-                self.canvas = self.xdoc.createElement(u'g')
-                setAttributesFromDict(self.canvas, canvasAtts)
-                self.xdoc.documentElement.appendChild(self.canvas)
-            else:
-                self.xdoc = document
-            
-            
-            
+    """represents a single SVG document, a square of width and height gridSize"""
+    def __init__(self, gridSize=640):
+        #TODO: enable different width and height               
+        NSMAP = {"svg" : 'http://www.w3.org/2000/svg',  "xlink" : 'http://www.w3.org/1999/xlink'}
+        #root xml node
+        self.xdoc= etree.Element('svg', NSMAP)
+        svgAttributes = {u'height':unicode(gridSize*2), u'width':unicode(gridSize*2)}  
+        setAttributesFromDict(self.xdoc, svgAttributes)
+        #definitions for use in linking
+        self.defs = etree.SubElement(self.xdoc, 'defs')
+                
+        canvasAtts = {u'id':u'canvas', u'transform':(u'matrix(1,0,0,-1,0,'+str(gridSize*2) +u') ' + u'translate('+unicode(gridSize)+ u','+ unicode(gridSize)+u')')}
+        #the co-ordinate system group
+        self.canvas = etree.SubElement(self.xdoc,'g')
+        setAttributesFromDict(self.canvas, canvasAtts)
     
-    def appendElement(self, element):
-        """appends element to canvas"""
-        self.canvas.appendChild(element)
+    def append(self, element):
+        """append element as lxml node to canvas"""
+        self.canvas.append(element)
     def makeGroup(self, id=None):
-        """returns a group element"""
-        groupElement = self.xdoc.createElement('g')
+        """returns a group element lxml node with given id
+        DEPRECATED, as no longer document-dependent, use element.buildGroup()"""
+        groupElement = etree.Element('g')
         if id != None:
-            groupElement.setAttribute('id', id)
+            groupElement.set('id', id)
         return groupElement
     def appendDefinition(self, definition):
-        """adds element to defs"""
-        self.defs.appendChild(definition)
-    def writeSVG(self, filename ):
+        """adds lxml node element to defs"""
+        self.defs.append(definition)
+    def writeSVG(self, filename, pathAbsolute=False ):
         """writes SVG document to file"""
-        imagePath = os.getcwd() + "/images/"
-        if not os.path.exists(imagePath):
-            os.mkdir(imagePath)  
-        file = open((imagePath+filename),'w')
-        xml.dom.ext.PrettyPrint(self.xdoc, file)
+        imagePath = ""
+        file = None 
+        if (not pathAbsolute):
+            imagePath = os.getcwd() + "/images/"
+            if not os.path.exists(imagePath):
+                os.mkdir(imagePath)
+            file = open((imagePath+filename),'w')
+        else:
+            file = open(filename,'w')  
+        
+        file.write(etree.tostring(self.xdoc, pretty_print=True))
         file.close()
-
-
-if __name__ == "__main__":
-    docu = Document()
-    docu.appendElement(buildCircle(docu, Point(0,0), 100, {u'style':u'fill:black'}))
-    docu.writeSVG('testdocum.svg')
-    print 'done'
-    
-
+    def __str__(self):
+        """for console output in testing"""
+        return etree.tostring(self.xdoc, pretty_print=True)
+ 

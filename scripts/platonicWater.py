@@ -35,14 +35,14 @@ docu.appendDefinition(strokeFillRadGradient.createDefinition(docu))
 
 faceGroup = docu.makeGroup()
 trianglePath = PathData().makeHull(trianglePoints)
-faceGroup.appendChild(buildPath(docu, trianglePath, {'style':'fill:url(#radFill)'}))
+faceGroup.append(buildPath( trianglePath, {'style':'fill:url(#radFill)'}))
 
 for i in range(3):
     crossPath = PathData().moveTo(tickGrid[i][0])
     for j in range(0,gridSize,2):
         crossPath.lineTo(tickGrid[i][j]).lineTo(tickGrid[(i+1)%3][j]).lineTo(tickGrid[(i+1)%3][j+1]).lineTo(tickGrid[i][j+1])
-    faceGroup.appendChild(buildPath(docu, crossPath, {u'stroke':u'url(#strokeRadFill)',u'stroke-width':u'2', u'fill':u'none'}))
-docu.appendElement(faceGroup)
+    faceGroup.append(buildPath( crossPath, {u'stroke':u'url(#strokeRadFill)',u'stroke-width':u'2', u'fill':u'none'}))
+docu.append(faceGroup)
 docu.writeSVG('platonicWater.svg')
 
 print "done01"

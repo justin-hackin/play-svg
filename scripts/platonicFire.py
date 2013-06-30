@@ -38,8 +38,8 @@ for i in range(levels-1):
         docu.appendDefinition(upGradient.createDefinition(docu))
         points = []
         points = [tetractysArray[i][j],  tetractysArray[i+1][j+1],  tetractysArray[i+1][j] ]
-        upTriangles.appendChild(gradshape.polygonGradient(docu, points, upGradient, id ='up'+str(i*11+j)))
-abraGroup.appendChild(upTriangles)
+        upTriangles.append(gradshape.polygonGradient( points, upGradient, id ='up'+str(i*11+j)))
+abraGroup.append(upTriangles)
 
 downTriangles = docu.makeGroup('downsies')
 for i in range(1, levels-1):
@@ -48,10 +48,10 @@ for i in range(1, levels-1):
         docu.appendDefinition(downGradient.createDefinition(docu))
         points = []
         points = [tetractysArray[i][j],  tetractysArray[i+1][j+1], tetractysArray[i][j+1]]
-        downTriangles.appendChild(gradshape.polygonGradient(docu, points, downGradient, id ='down'+str(i*11+j) ))
-abraGroup.appendChild(downTriangles)
+        downTriangles.append(gradshape.polygonGradient( points, downGradient, id ='down'+str(i*11+j) ))
+abraGroup.append(downTriangles)
  
-docu.appendElement(abraGroup)
+docu.append(abraGroup)
 
 ###create shaded overlay
 ##SupGradientColors = [ '#ff009e', '#a500ff']
@@ -60,7 +60,7 @@ docu.appendElement(abraGroup)
 ##SupGradient.id = 'supgrade'
 ##docu.appendDefinition(SupGradient.createDefinition(docu))
 ##points = [tetractysArray[0][0],  tetractysArray[5][0],  tetractysArray[5][5] ]
-##docu.appendElement(gradshape.polygonGradient(docu, points, SupGradient, id ='supgrade'))
+##docu.append(gradshape.polygonGradient( points, SupGradient, id ='supgrade'))
 ##
 
 #innerTriangleCorners = ((0,0), (6,6), (0,6)),((10, 6), (0,6),(6,6)), ((10,0), ())

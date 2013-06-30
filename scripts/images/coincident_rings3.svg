@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns:href='http://www.w3.org/1999/xlink' width='590' xmlns='http://www.w3.org/2000/svg' href:xlink='xlink' height='590'>
+  <defs/>
+  <g id='canvas' transform='matrix(1,0,0,-1,0,590) translate(295,295)'>
+    <circle style='stroke:black;fill:none' cx='0.0' r='50' cy='50.0'/>
+    <circle style='stroke:black;fill:none' cx='43.3012701892' r='50' cy='-25.0'/>
+    <circle style='stroke:black;fill:none' cx='-43.3012701892' r='50' cy='-25.0'/>
+  </g>
+</svg>

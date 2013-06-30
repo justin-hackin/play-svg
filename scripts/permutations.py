@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 __version__ = "1.0"
 
 """xpermutations.py
@@ -16,7 +15,7 @@ See also: http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/66463
 See also: http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/66465
 """
 
-from __future__ import generators
+
 
 def xcombinations(items, n):
     if n==0: yield []

@@ -6,8 +6,8 @@ from playsvg.element import *
 from playsvg import color
 
 
-def polygonGradientIris(docu, position,sides, radius, divisionOfPieRotation, sideTurnings, reverse=0, passive=0):
-    gradientIrisGroup = docu.makeGroup()
+def polygonGradientIris( position,sides, radius, divisionOfPieRotation, sideTurnings, reverse=0, passive=0):
+    gradientIrisGroup = etree.Element("g")
     #calculate creepRatio from rotationAngle,
     #where rotationAngle is the angle each polygon is rotated
     #and creepRatio is the percentage of the polygon side to move from one corner to the other
@@ -37,7 +37,7 @@ def polygonGradientIris(docu, position,sides, radius, divisionOfPieRotation, sid
         for j in range(1,sides):
             trianglePath.lineTo(linePoints[j])
         trianglePath.closePath()
-        gradientIrisGroup.appendChild(buildPath(docu, trianglePath, polygonAttributes))
+        gradientIrisGroup.append(buildPath( trianglePath, polygonAttributes))
         newLinePoints = []
         for j in range(sides):
             newLinePoints.append(getLineDivision(linePoints[j], linePoints[(j+1)%sides], creepRatio))
@@ -45,11 +45,11 @@ def polygonGradientIris(docu, position,sides, radius, divisionOfPieRotation, sid
     return gradientIrisGroup
 
 docu = document.Document()
-docu.appendElement(polygonGradientIris(docu,Point(0,0),4,100, 16, 2 ))
+docu.append(polygonGradientIris(Point(0,0),4,100, 16, 2 ))
 docu.writeSVG('squareIris.svg')
 
 docu = document.Document()
-docu.appendElement(polygonGradientIris(docu,Point(0,0),6,100, 16, 2 ))
+docu.append(polygonGradientIris(Point(0,0),6,100, 16, 2 ))
 docu.writeSVG('hexagoner.svg')
 print "done01"
 

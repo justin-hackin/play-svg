@@ -30,7 +30,7 @@ def middleStripe(boxSize, ratio):
     return stripesPath
     
 
-def buildAngledStripes(docu, boxSize, numStripes, corneredFlag):
+def buildAngledStripes(boxSize, numStripes, corneredFlag):
     """builds a box containing stripes on a 45 degree angle that move from bottom left to top right
         numStripes is always odd, if an even number is given, numStripes is incremented by one
         a stripe is centred on the line from bottom left corner to top right corner
@@ -40,7 +40,7 @@ def buildAngledStripes(docu, boxSize, numStripes, corneredFlag):
     #only works for odd numStripes, if even, add one more stripe
     if numStripes%2 == 0: numStripes +=1
     
-    stripesGroup = docu.makeGroup()
+    stripesGroup = etree.Element('g', id='stripes')
     
     #represents what portion of box side a stripe will ocupy
     stripeSizeRatio = 0
@@ -59,14 +59,14 @@ def buildAngledStripes(docu, boxSize, numStripes, corneredFlag):
             stripesPath.lineTo(getLineDivision(corners[0], corners[1], stripeSizeRatio))
             stripesPath.lineTo(getLineDivision(corners[0], corners[3], stripeSizeRatio))
             stripesPath.closePath()
-            stripesGroup.appendChild(buildPath(docu, stripesPath, stripesAttrs))
+            stripesGroup.append(buildPath( stripesPath, stripesAttrs))
             
             stripesPath = PathData()
             stripesPath.moveTo(corners[2])
             stripesPath.lineTo(getLineDivision(corners[2], corners[3], stripeSizeRatio))
             stripesPath.lineTo(getLineDivision(corners[2], corners[1], stripeSizeRatio))
             stripesPath.closePath()
-            stripesGroup.appendChild(buildPath(docu, stripesPath, stripesAttrs))
+            stripesGroup.append(buildPath(stripesPath, stripesAttrs))
             
             #add middle stripe
             stripesPath = PathData()
@@ -77,7 +77,7 @@ def buildAngledStripes(docu, boxSize, numStripes, corneredFlag):
             stripesPath.lineTo(corners[3])
             stripesPath.lineTo(getLineDivision(corners[3], corners[0], 0.5*stripeSizeRatio))
             stripesPath.closePath()
-            stripesGroup.appendChild(buildPath(docu, stripesPath, stripesAttrs))
+            stripesGroup.append(buildPath( stripesPath, stripesAttrs))
                
                 
             if numStripes > 3:
@@ -88,7 +88,7 @@ def buildAngledStripes(docu, boxSize, numStripes, corneredFlag):
                     stripesPath.lineTo(getLineDivision(corners[0], corners[3],((1+i)*2+1)*stripeSizeRatio ))
                     stripesPath.lineTo(getLineDivision(corners[0], corners[3], (1+i)*2*stripeSizeRatio))
                     stripesPath.closePath()
-                    stripesGroup.appendChild(buildPath(docu, stripesPath, stripesAttrs))
+                    stripesGroup.append(buildPath( stripesPath, stripesAttrs))
                     
                     stripesPath = PathData()
                     stripesPath.moveTo(getLineDivision(corners[2], corners[1], (1+i)*2*stripeSizeRatio))
@@ -96,7 +96,7 @@ def buildAngledStripes(docu, boxSize, numStripes, corneredFlag):
                     stripesPath.lineTo(getLineDivision(corners[2], corners[3],((1+i)*2+1)*stripeSizeRatio ))
                     stripesPath.lineTo(getLineDivision(corners[2], corners[3], (1+i)*2*stripeSizeRatio))
                     stripesPath.closePath()
-                    stripesGroup.appendChild(buildPath(docu, stripesPath, stripesAttrs))
+                    stripesGroup.append(buildPath( stripesPath, stripesAttrs))
                     
         
     return stripesGroup
@@ -104,8 +104,8 @@ def buildAngledStripes(docu, boxSize, numStripes, corneredFlag):
 
 
 docu = document.Document()
-docu.appendElement( buildWeaveTile(docu,100, 0.5 ))
+docu.append( buildAngledStripes(100, 100, True ))
 
-docu.writeSVG("weave_tile.svg" )
+docu.writeSVG("stripes.svg" )
 print "done"
 

@@ -31,13 +31,13 @@ faceGroup = docu.makeGroup()
 for i in range(gridSize-1):
     for j in range(gridSize-2):
         boxPoints = [perspectiveGrid[i][j], perspectiveGrid[i+1][j], perspectiveGrid[i+1][j+1], perspectiveGrid[i][j+1]]
-        faceGroup.appendChild(buildPath(docu, PathData().makeHull(boxPoints),{'style':'stroke:black;stroke-width:1;fill:'+checkerColors[(i+j)%2]} ))
+        faceGroup.append(buildPath(docu, PathData().makeHull(boxPoints),{'style':'stroke:black;stroke-width:1;fill:'+checkerColors[(i+j)%2]} ))
 j = gridSize-2
 for i in range(gridSize-1):
 ##        boxPath = PathData().moveTo(perspectiveGrid[i][j]).\
 ##        lineTo(perspectiveGrid[i][j+1]).lineTo(perspectiveGrid[i+1][j+1]).lineTo(perspectiveGrid[i+1][j]).closePath()
         triPoints = [trianglePoints[0],perspectiveGrid[i][j], perspectiveGrid[i+1][j] ]
-        faceGroup.appendChild(buildPath(docu, PathData().makeHull(triPoints),{'style':'stroke:black;stroke-width:1;fill:'+checkerColors[(i+j)%2]} ))
+        faceGroup.append(buildPath(docu, PathData().makeHull(triPoints),{'style':'stroke:black;stroke-width:1;fill:'+checkerColors[(i+j)%2]} ))
         
-docu.appendElement(faceGroup)
+docu.append(faceGroup)
 docu.writeSVG('platonicAir.svg')

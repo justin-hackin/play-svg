@@ -25,9 +25,9 @@ class DiscreteColorGrad(inkex.Effect):
 
 
     def effect(self):
-        docu = playsvg.document.Document(document=self.document)
-	new = playsvg.compshapes.buildDiscreteColorGrad(docu, self.options.intervals, self.options.startcolor, self.options.endcolor, self.options.size)
-	self.document.documentElement.appendChild(new)
+        docu = None
+        new = playsvg.compshapes.buildDiscreteColorGrad(self.options.intervals, self.options.startcolor, self.options.endcolor, self.options.size)
+        self.current_layer.append(new)
 
 e = DiscreteColorGrad()
 e.affect()

@@ -1,0 +1,156 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>document module &mdash; pLAySVG 0.3.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.3.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="pLAySVG 0.3.1 documentation" href="index.html" />
+    <link rel="next" title="path module" href="path.html" />
+    <link rel="prev" title="geom module" href="geom.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="path.html" title="path module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="geom.html" title="geom module"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">pLAySVG 0.3.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-document">
+<span id="document-module"></span><h1>document module<a class="headerlink" href="#module-document" title="Permalink to this headline">¶</a></h1>
+<p>SVG document representation, provides file I/O and access to the DOM</p>
+<dl class="class">
+<dt id="document.Document">
+<em class="property">class </em><tt class="descclassname">document.</tt><tt class="descname">Document</tt><big>(</big><em>gridSize=640</em><big>)</big><a class="reference internal" href="_modules/document.html#Document"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#document.Document" title="Permalink to this definition">¶</a></dt>
+<dd><p>represents a single SVG document, a square of width and height gridSize</p>
+<dl class="method">
+<dt id="document.Document.append">
+<tt class="descname">append</tt><big>(</big><em>element</em><big>)</big><a class="reference internal" href="_modules/document.html#Document.append"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#document.Document.append" title="Permalink to this definition">¶</a></dt>
+<dd><p>append element as lxml node to canvas</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="document.Document.appendDefinition">
+<tt class="descname">appendDefinition</tt><big>(</big><em>definition</em><big>)</big><a class="reference internal" href="_modules/document.html#Document.appendDefinition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#document.Document.appendDefinition" title="Permalink to this definition">¶</a></dt>
+<dd><p>adds lxml node element to defs</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="document.Document.makeGroup">
+<tt class="descname">makeGroup</tt><big>(</big><em>id=None</em><big>)</big><a class="reference internal" href="_modules/document.html#Document.makeGroup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#document.Document.makeGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a group element lxml node with given id
+DEPRECATED, as no longer document-dependent, use element.buildGroup()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="document.Document.writeSVG">
+<tt class="descname">writeSVG</tt><big>(</big><em>filename</em>, <em>pathAbsolute=False</em><big>)</big><a class="reference internal" href="_modules/document.html#Document.writeSVG"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#document.Document.writeSVG" title="Permalink to this definition">¶</a></dt>
+<dd><p>writes SVG document to file</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="document.setAttributesFromDict">
+<tt class="descclassname">document.</tt><tt class="descname">setAttributesFromDict</tt><big>(</big><em>element</em>, <em>dict</em><big>)</big><a class="reference internal" href="_modules/document.html#setAttributesFromDict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#document.setAttributesFromDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>uses a dictionary to populate xml attributes for a particular lxml element</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="geom.html"
+                        title="previous chapter">geom module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="path.html"
+                        title="next chapter">path module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/document.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="path.html" title="path module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="geom.html" title="geom module"
+             >previous</a> |</li>
+        <li><a href="index.html">pLAySVG 0.3.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Cosmo Guffa.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

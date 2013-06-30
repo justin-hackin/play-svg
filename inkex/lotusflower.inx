@@ -3,7 +3,7 @@
     <id>playsvg.ext.lotusflower</id>
 	<dependency type="executable" location="extensions">lotusflower.py</dependency>
 	<dependency type="executable" location="extensions">inkex.py</dependency>
-	<param name="petals" type="int" min="5" max="100" _gui-text="Number of petals">12 </param>
+	<param name="petals" type="int" min="5" max="1000" _gui-text="Number of petals">12 </param>
 	<param name="radius" type="float" min="0.0" max="1000.0" _gui-text="Radius">300.0</param>
 	<param name="petallength" type="float" min="0.0" max="100.0" _gui-text="Petal length">50.0</param>
 	<param name="controldistance" type="float" min="0.0" max="5.0" _gui-text="Control point distance">1.0</param>
@@ -11,7 +11,7 @@
     <effect>
 		<object-type>all</object-type>
                 <effects-menu>
-                    <submenu _name="Render"/>
+                    <submenu _name="playSVG"/>
                 </effects-menu>					    
     </effect>
     <script>

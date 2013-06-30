@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns:href='http://www.w3.org/1999/xlink' width='590' xmlns='http://www.w3.org/2000/svg' href:xlink='xlink' height='590'>
+  <defs/>
+  <g id='canvas' transform='matrix(1,0,0,-1,0,590) translate(295,295)'>
+    <path style='stroke:black; fill:none' d='M-100.00000,-100.00000 L100.00000,-100.00000 L100.00000,100.00000 L-100.00000,100.00000 Z'/>
+    <path style='stroke:black; fill:none' d='M0.00000,-100.00000 L100.00000,0.00000 L0.00000,100.00000 L-100.00000,0.00000 Z'/>
+    <path style='stroke:none; fill:black' d='M-25.00000,-25.00000 L25.00000,-25.00000 L25.00000,25.00000 L-25.00000,25.00000 Z'/>
+    <g>
+      <path style='stroke:none; fill:black' d='M33.33333,-83.33333 L83.33333,-83.33333 L83.33333,-33.33333 Z'/>
+      <path style='stroke:none; fill:black' d='M83.33333,33.33333 L83.33333,83.33333 L33.33333,83.33333 Z'/>
+      <path style='stroke:none; fill:black' d='M-33.33333,83.33333 L-83.33333,83.33333 L-83.33333,33.33333 Z'/>
+      <path style='stroke:none; fill:black' d='M-83.33333,-33.33333 L-83.33333,-83.33333 L-33.33333,-83.33333 Z'/>
+    </g>
+    <g>
+      <line y1='-50.00000' x2='25.00000' style='stroke:black; fill:none' x1='50.00000' y2='-25.00000'/>
+      <line y1='-100.00000' x2='0.00000' style='stroke:black; fill:none' x1='0.00000' y2='-25.00000'/>
+      <line y1='50.00000' x2='25.00000' style='stroke:black; fill:none' x1='50.00000' y2='25.00000'/>
+      <line y1='0.00000' x2='25.00000' style='stroke:black; fill:none' x1='100.00000' y2='0.00000'/>
+      <line y1='50.00000' x2='-25.00000' style='stroke:black; fill:none' x1='-50.00000' y2='25.00000'/>
+      <line y1='100.00000' x2='0.00000' style='stroke:black; fill:none' x1='0.00000' y2='25.00000'/>
+      <line y1='-50.00000' x2='-25.00000' style='stroke:black; fill:none' x1='-50.00000' y2='-25.00000'/>
+      <line y1='0.00000' x2='-25.00000' style='stroke:black; fill:none' x1='-100.00000' y2='0.00000'/>
+    </g>
+    <g>
+      <g>
+        <line y1='-25.00000' x2='25.00000' style='stroke:black; fill:none' x1='0.00000' y2='-25.00000'/>
+        <line y1='-28.94737' x2='26.31579' style='stroke:black; fill:none' x1='0.00000' y2='-26.31579'/>
+        <line y1='-32.89474' x2='27.63158' style='stroke:black; fill:none' x1='0.00000' y2='-27.63158'/>
+        <line y1='-36.84211' x2='28.94737' style='stroke:black; fill:none' x1='0.00000' y2='-28.94737'/>
+        <line y1='-40.78947' x2='30.26316' style='stroke:black; fill:none' x1='0.00000' y2='-30.26316'/>
+        <line y1='-44.73684' x2='31.57895' style='stroke:black; fill:none' x1='0.00000' y2='-31.57895'/>
+        <line y1='-48.68421' x2='32.89474' style='stroke:black; fill:none' x1='0.00000' y2='-32.89474'/>
+        <line y1='-52.63158' x2='34.21053' style='stroke:black; fill:none' x1='0.00000' y2='-34.21053'/>
+        <line y1='-56.57895' x2='35.52632' style='stroke:black; fill:none' x1='0.00000' y2='-35.52632'/>
+        <line y1='-60.52632' x2='36.84211' style='stroke:black; fill:none' x1='0.00000' y2='-36.84211'/>
+        <line y1='-64.47368' x2='38.15789' style='stroke:black; fill:none' x1='0.00000' y2='-38.15789'/>
+        <line y1='-68.42105' x2='39.47368' style='stroke:black; fill:none' x1='0.00000' y2='-39.47368'/>
+        <line y1='-72.36842' x2='40.78947' style='stroke:black; fill:none' x1='0.00000' y2='-40.78947'/>
+        <line y1='-76.31579' x2='42.10526' style='stroke:black; fill:none' x1='0.00000' y2='-42.10526'/>
+        <line y1='-80.26316' x2='43.42105' style='stroke:black; fill:none' x1='0.00000' y2='-43.42105'/>
+        <line y1='-84.21053' x2='44.73684' style='stroke:black; fill:none' x1='0.00000' y2='-44.73684'/>
+        <line y1='-88.15789' x2='46.05263' style='stroke:black; fill:none' x1='0.00000' y2='-46.05263'/>
+        <line y1='-92.10526' x2='47.36842' style='stroke:black; fill:none' x1='0.00000' y2='-47.36842'/>
+        <line y1='-96.05263' x2='48.68421' style='stroke:black; fill:none' x1='0.00000' y2='-48.68421'/>
+        <line y1='-100.00000' x2='50.00000' style='stroke:black; fill:none' x1='0.00000' y2='-50.00000'/>
+      </g>
+      <g>
+        <line y1='-25.00000' x2='25.00000' style='stroke:black; fill:none' x1='25.00000' y2='0.00000'/>
+        <line y1='-26.31579' x2='28.94737' style='stroke:black; fill:none' x1='26.31579' y2='0.00000'/>
+        <line y1='-27.63158' x2='32.89474' style='stroke:black; fill:none' x1='27.63158' y2='0.00000'/>
+        <line y1='-28.94737' x2='36.84211' style='stroke:black; fill:none' x1='28.94737' y2='0.00000'/>
+        <line y1='-30.26316' x2='40.78947' style='stroke:black; fill:none' x1='30.26316' y2='0.00000'/>
+        <line y1='-31.57895' x2='44.73684' style='stroke:black; fill:none' x1='31.57895' y2='0.00000'/>
+        <line y1='-32.89474' x2='48.68421' style='stroke:black; fill:none' x1='32.89474' y2='0.00000'/>
+        <line y1='-34.21053' x2='52.63158' style='stroke:black; fill:none' x1='34.21053' y2='0.00000'/>
+        <line y1='-35.52632' x2='56.57895' style='stroke:black; fill:none' x1='35.52632' y2='0.00000'/>
+        <line y1='-36.84211' x2='60.52632' style='stroke:black; fill:none' x1='36.84211' y2='0.00000'/>
+        <line y1='-38.15789' x2='64.47368' style='stroke:black; fill:none' x1='38.15789' y2='0.00000'/>
+        <line y1='-39.47368' x2='68.42105' style='stroke:black; fill:none' x1='39.47368' y2='0.00000'/>
+        <line y1='-40.78947' x2='72.36842' style='stroke:black; fill:none' x1='40.78947' y2='0.00000'/>
+        <line y1='-42.10526' x2='76.31579' style='stroke:black; fill:none' x1='42.10526' y2='0.00000'/>
+        <line y1='-43.42105' x2='80.26316' style='stroke:black; fill:none' x1='43.42105' y2='0.00000'/>
+        <line y1='-44.73684' x2='84.21053' style='stroke:black; fill:none' x1='44.73684' y2='0.00000'/>
+        <line y1='-46.05263' x2='88.15789' style='stroke:black; fill:none' x1='46.05263' y2='0.00000'/>
+        <line y1='-47.36842' x2='92.10526' style='stroke:black; fill:none' x1='47.36842' y2='0.00000'/>
+        <line y1='-48.68421' x2='96.05263' style='stroke:black; fill:none' x1='48.68421' y2='0.00000'/>
+        <line y1='-50.00000' x2='100.00000' style='stroke:black; fill:none' x1='50.00000' y2='0.00000'/>
+      </g>
+      <g>
+        <line y1='0.00000' x2='25.00000' style='stroke:black; fill:none' x1='25.00000' y2='25.00000'/>
+        <line y1='0.00000' x2='26.31579' style='stroke:black; fill:none' x1='28.94737' y2='26.31579'/>
+        <line y1='0.00000' x2='27.63158' style='stroke:black; fill:none' x1='32.89474' y2='27.63158'/>
+        <line y1='0.00000' x2='28.94737' style='stroke:black; fill:none' x1='36.84211' y2='28.94737'/>
+        <line y1='0.00000' x2='30.26316' style='stroke:black; fill:none' x1='40.78947' y2='30.26316'/>
+        <line y1='0.00000' x2='31.57895' style='stroke:black; fill:none' x1='44.73684' y2='31.57895'/>
+        <line y1='0.00000' x2='32.89474' style='stroke:black; fill:none' x1='48.68421' y2='32.89474'/>
+        <line y1='0.00000' x2='34.21053' style='stroke:black; fill:none' x1='52.63158' y2='34.21053'/>
+        <line y1='0.00000' x2='35.52632' style='stroke:black; fill:none' x1='56.57895' y2='35.52632'/>
+        <line y1='0.00000' x2='36.84211' style='stroke:black; fill:none' x1='60.52632' y2='36.84211'/>
+        <line y1='0.00000' x2='38.15789' style='stroke:black; fill:none' x1='64.47368' y2='38.15789'/>
+        <line y1='0.00000' x2='39.47368' style='stroke:black; fill:none' x1='68.42105' y2='39.47368'/>
+        <line y1='0.00000' x2='40.78947' style='stroke:black; fill:none' x1='72.36842' y2='40.78947'/>
+        <line y1='0.00000' x2='42.10526' style='stroke:black; fill:none' x1='76.31579' y2='42.10526'/>
+        <line y1='0.00000' x2='43.42105' style='stroke:black; fill:none' x1='80.26316' y2='43.42105'/>
+        <line y1='0.00000' x2='44.73684' style='stroke:black; fill:none' x1='84.21053' y2='44.73684'/>
+        <line y1='0.00000' x2='46.05263' style='stroke:black; fill:none' x1='88.15789' y2='46.05263'/>
+        <line y1='0.00000' x2='47.36842' style='stroke:black; fill:none' x1='92.10526' y2='47.36842'/>
+        <line y1='0.00000' x2='48.68421' style='stroke:black; fill:none' x1='96.05263' y2='48.68421'/>
+        <line y1='0.00000' x2='50.00000' style='stroke:black; fill:none' x1='100.00000' y2='50.00000'/>
+      </g>
+      <g>
+        <line y1='25.00000' x2='0.00000' style='stroke:black; fill:none' x1='25.00000' y2='25.00000'/>
+        <line y1='26.31579' x2='0.00000' style='stroke:black; fill:none' x1='26.31579' y2='28.94737'/>
+        <line y1='27.63158' x2='0.00000' style='stroke:black; fill:none' x1='27.63158' y2='32.89474'/>
+        <line y1='28.94737' x2='0.00000' style='stroke:black; fill:none' x1='28.94737' y2='36.84211'/>
+        <line y1='30.26316' x2='0.00000' style='stroke:black; fill:none' x1='30.26316' y2='40.78947'/>
+        <line y1='31.57895' x2='0.00000' style='stroke:black; fill:none' x1='31.57895' y2='44.73684'/>
+        <line y1='32.89474' x2='0.00000' style='stroke:black; fill:none' x1='32.89474' y2='48.68421'/>
+        <line y1='34.21053' x2='0.00000' style='stroke:black; fill:none' x1='34.21053' y2='52.63158'/>
+        <line y1='35.52632' x2='0.00000' style='stroke:black; fill:none' x1='35.52632' y2='56.57895'/>
+        <line y1='36.84211' x2='0.00000' style='stroke:black; fill:none' x1='36.84211' y2='60.52632'/>
+        <line y1='38.15789' x2='0.00000' style='stroke:black; fill:none' x1='38.15789' y2='64.47368'/>
+        <line y1='39.47368' x2='0.00000' style='stroke:black; fill:none' x1='39.47368' y2='68.42105'/>
+        <line y1='40.78947' x2='0.00000' style='stroke:black; fill:none' x1='40.78947' y2='72.36842'/>
+        <line y1='42.10526' x2='0.00000' style='stroke:black; fill:none' x1='42.10526' y2='76.31579'/>
+        <line y1='43.42105' x2='0.00000' style='stroke:black; fill:none' x1='43.42105' y2='80.26316'/>
+        <line y1='44.73684' x2='0.00000' style='stroke:black; fill:none' x1='44.73684' y2='84.21053'/>
+        <line y1='46.05263' x2='0.00000' style='stroke:black; fill:none' x1='46.05263' y2='88.15789'/>
+        <line y1='47.36842' x2='0.00000' style='stroke:black; fill:none' x1='47.36842' y2='92.10526'/>
+        <line y1='48.68421' x2='0.00000' style='stroke:black; fill:none' x1='48.68421' y2='96.05263'/>
+        <line y1='50.00000' x2='0.00000' style='stroke:black; fill:none' x1='50.00000' y2='100.00000'/>
+      </g>
+      <g>
+        <line y1='25.00000' x2='-25.00000' style='stroke:black; fill:none' x1='0.00000' y2='25.00000'/>
+        <line y1='28.94737' x2='-26.31579' style='stroke:black; fill:none' x1='0.00000' y2='26.31579'/>
+        <line y1='32.89474' x2='-27.63158' style='stroke:black; fill:none' x1='0.00000' y2='27.63158'/>
+        <line y1='36.84211' x2='-28.94737' style='stroke:black; fill:none' x1='0.00000' y2='28.94737'/>
+        <line y1='40.78947' x2='-30.26316' style='stroke:black; fill:none' x1='0.00000' y2='30.26316'/>
+        <line y1='44.73684' x2='-31.57895' style='stroke:black; fill:none' x1='0.00000' y2='31.57895'/>
+        <line y1='48.68421' x2='-32.89474' style='stroke:black; fill:none' x1='0.00000' y2='32.89474'/>
+        <line y1='52.63158' x2='-34.21053' style='stroke:black; fill:none' x1='0.00000' y2='34.21053'/>
+        <line y1='56.57895' x2='-35.52632' style='stroke:black; fill:none' x1='0.00000' y2='35.52632'/>
+        <line y1='60.52632' x2='-36.84211' style='stroke:black; fill:none' x1='0.00000' y2='36.84211'/>
+        <line y1='64.47368' x2='-38.15789' style='stroke:black; fill:none' x1='0.00000' y2='38.15789'/>
+        <line y1='68.42105' x2='-39.47368' style='stroke:black; fill:none' x1='0.00000' y2='39.47368'/>
+        <line y1='72.36842' x2='-40.78947' style='stroke:black; fill:none' x1='0.00000' y2='40.78947'/>
+        <line y1='76.31579' x2='-42.10526' style='stroke:black; fill:none' x1='0.00000' y2='42.10526'/>
+        <line y1='80.26316' x2='-43.42105' style='stroke:black; fill:none' x1='0.00000' y2='43.42105'/>
+        <line y1='84.21053' x2='-44.73684' style='stroke:black; fill:none' x1='0.00000' y2='44.73684'/>
+        <line y1='88.15789' x2='-46.05263' style='stroke:black; fill:none' x1='0.00000' y2='46.05263'/>
+        <line y1='92.10526' x2='-47.36842' style='stroke:black; fill:none' x1='0.00000' y2='47.36842'/>
+        <line y1='96.05263' x2='-48.68421' style='stroke:black; fill:none' x1='0.00000' y2='48.68421'/>
+        <line y1='100.00000' x2='-50.00000' style='stroke:black; fill:none' x1='0.00000' y2='50.00000'/>
+      </g>
+      <g>
+        <line y1='25.00000' x2='-25.00000' style='stroke:black; fill:none' x1='-25.00000' y2='0.00000'/>
+        <line y1='26.31579' x2='-28.94737' style='stroke:black; fill:none' x1='-26.31579' y2='0.00000'/>
+        <line y1='27.63158' x2='-32.89474' style='stroke:black; fill:none' x1='-27.63158' y2='0.00000'/>
+        <line y1='28.94737' x2='-36.84211' style='stroke:black; fill:none' x1='-28.94737' y2='0.00000'/>
+        <line y1='30.26316' x2='-40.78947' style='stroke:black; fill:none' x1='-30.26316' y2='0.00000'/>
+        <line y1='31.57895' x2='-44.73684' style='stroke:black; fill:none' x1='-31.57895' y2='0.00000'/>
+        <line y1='32.89474' x2='-48.68421' style='stroke:black; fill:none' x1='-32.89474' y2='0.00000'/>
+        <line y1='34.21053' x2='-52.63158' style='stroke:black; fill:none' x1='-34.21053' y2='0.00000'/>
+        <line y1='35.52632' x2='-56.57895' style='stroke:black; fill:none' x1='-35.52632' y2='0.00000'/>
+        <line y1='36.84211' x2='-60.52632' style='stroke:black; fill:none' x1='-36.84211' y2='0.00000'/>
+        <line y1='38.15789' x2='-64.47368' style='stroke:black; fill:none' x1='-38.15789' y2='0.00000'/>
+        <line y1='39.47368' x2='-68.42105' style='stroke:black; fill:none' x1='-39.47368' y2='0.00000'/>
+        <line y1='40.78947' x2='-72.36842' style='stroke:black; fill:none' x1='-40.78947' y2='0.00000'/>
+        <line y1='42.10526' x2='-76.31579' style='stroke:black; fill:none' x1='-42.10526' y2='0.00000'/>
+        <line y1='43.42105' x2='-80.26316' style='stroke:black; fill:none' x1='-43.42105' y2='0.00000'/>
+        <line y1='44.73684' x2='-84.21053' style='stroke:black; fill:none' x1='-44.73684' y2='0.00000'/>
+        <line y1='46.05263' x2='-88.15789' style='stroke:black; fill:none' x1='-46.05263' y2='0.00000'/>
+        <line y1='47.36842' x2='-92.10526' style='stroke:black; fill:none' x1='-47.36842' y2='0.00000'/>
+        <line y1='48.68421' x2='-96.05263' style='stroke:black; fill:none' x1='-48.68421' y2='0.00000'/>
+        <line y1='50.00000' x2='-100.00000' style='stroke:black; fill:none' x1='-50.00000' y2='0.00000'/>
+      </g>
+      <g>
+        <line y1='0.00000' x2='-25.00000' style='stroke:black; fill:none' x1='-25.00000' y2='-25.00000'/>
+        <line y1='0.00000' x2='-26.31579' style='stroke:black; fill:none' x1='-28.94737' y2='-26.31579'/>
+        <line y1='0.00000' x2='-27.63158' style='stroke:black; fill:none' x1='-32.89474' y2='-27.63158'/>
+        <line y1='0.00000' x2='-28.94737' style='stroke:black; fill:none' x1='-36.84211' y2='-28.94737'/>
+        <line y1='0.00000' x2='-30.26316' style='stroke:black; fill:none' x1='-40.78947' y2='-30.26316'/>
+        <line y1='0.00000' x2='-31.57895' style='stroke:black; fill:none' x1='-44.73684' y2='-31.57895'/>
+        <line y1='0.00000' x2='-32.89474' style='stroke:black; fill:none' x1='-48.68421' y2='-32.89474'/>
+        <line y1='0.00000' x2='-34.21053' style='stroke:black; fill:none' x1='-52.63158' y2='-34.21053'/>
+        <line y1='0.00000' x2='-35.52632' style='stroke:black; fill:none' x1='-56.57895' y2='-35.52632'/>
+        <line y1='0.00000' x2='-36.84211' style='stroke:black; fill:none' x1='-60.52632' y2='-36.84211'/>
+        <line y1='0.00000' x2='-38.15789' style='stroke:black; fill:none' x1='-64.47368' y2='-38.15789'/>
+        <line y1='0.00000' x2='-39.47368' style='stroke:black; fill:none' x1='-68.42105' y2='-39.47368'/>
+        <line y1='0.00000' x2='-40.78947' style='stroke:black; fill:none' x1='-72.36842' y2='-40.78947'/>
+        <line y1='0.00000' x2='-42.10526' style='stroke:black; fill:none' x1='-76.31579' y2='-42.10526'/>
+        <line y1='0.00000' x2='-43.42105' style='stroke:black; fill:none' x1='-80.26316' y2='-43.42105'/>
+        <line y1='0.00000' x2='-44.73684' style='stroke:black; fill:none' x1='-84.21053' y2='-44.73684'/>
+        <line y1='0.00000' x2='-46.05263' style='stroke:black; fill:none' x1='-88.15789' y2='-46.05263'/>
+        <line y1='0.00000' x2='-47.36842' style='stroke:black; fill:none' x1='-92.10526' y2='-47.36842'/>
+        <line y1='0.00000' x2='-48.68421' style='stroke:black; fill:none' x1='-96.05263' y2='-48.68421'/>
+        <line y1='0.00000' x2='-50.00000' style='stroke:black; fill:none' x1='-100.00000' y2='-50.00000'/>
+      </g>
+      <g>
+        <line y1='-25.00000' x2='0.00000' style='stroke:black; fill:none' x1='-25.00000' y2='-25.00000'/>
+        <line y1='-26.31579' x2='0.00000' style='stroke:black; fill:none' x1='-26.31579' y2='-28.94737'/>
+        <line y1='-27.63158' x2='0.00000' style='stroke:black; fill:none' x1='-27.63158' y2='-32.89474'/>
+        <line y1='-28.94737' x2='0.00000' style='stroke:black; fill:none' x1='-28.94737' y2='-36.84211'/>
+        <line y1='-30.26316' x2='0.00000' style='stroke:black; fill:none' x1='-30.26316' y2='-40.78947'/>
+        <line y1='-31.57895' x2='0.00000' style='stroke:black; fill:none' x1='-31.57895' y2='-44.73684'/>
+        <line y1='-32.89474' x2='0.00000' style='stroke:black; fill:none' x1='-32.89474' y2='-48.68421'/>
+        <line y1='-34.21053' x2='0.00000' style='stroke:black; fill:none' x1='-34.21053' y2='-52.63158'/>
+        <line y1='-35.52632' x2='0.00000' style='stroke:black; fill:none' x1='-35.52632' y2='-56.57895'/>
+        <line y1='-36.84211' x2='0.00000' style='stroke:black; fill:none' x1='-36.84211' y2='-60.52632'/>
+        <line y1='-38.15789' x2='0.00000' style='stroke:black; fill:none' x1='-38.15789' y2='-64.47368'/>
+        <line y1='-39.47368' x2='0.00000' style='stroke:black; fill:none' x1='-39.47368' y2='-68.42105'/>
+        <line y1='-40.78947' x2='0.00000' style='stroke:black; fill:none' x1='-40.78947' y2='-72.36842'/>
+        <line y1='-42.10526' x2='0.00000' style='stroke:black; fill:none' x1='-42.10526' y2='-76.31579'/>
+        <line y1='-43.42105' x2='0.00000' style='stroke:black; fill:none' x1='-43.42105' y2='-80.26316'/>
+        <line y1='-44.73684' x2='0.00000' style='stroke:black; fill:none' x1='-44.73684' y2='-84.21053'/>
+        <line y1='-46.05263' x2='0.00000' style='stroke:black; fill:none' x1='-46.05263' y2='-88.15789'/>
+        <line y1='-47.36842' x2='0.00000' style='stroke:black; fill:none' x1='-47.36842' y2='-92.10526'/>
+        <line y1='-48.68421' x2='0.00000' style='stroke:black; fill:none' x1='-48.68421' y2='-96.05263'/>
+        <line y1='-50.00000' x2='0.00000' style='stroke:black; fill:none' x1='-50.00000' y2='-100.00000'/>
+      </g>
+    </g>
+  </g>
+</svg>

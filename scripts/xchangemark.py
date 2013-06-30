@@ -6,7 +6,7 @@ numCircles = 20
 radius = 50
 docu = document.Document()
 for i in range(numCircles):
-    docu.appendElement(buildCircle(docu, Point().polerInit(radius, float(i)/numCircles),radius,{'style':'stroke:black;fill:none'})) 
+    docu.append(buildCircle(Point().polerInit(radius, float(i)/numCircles),radius,{'style':'stroke:black;fill:none'})) 
 docu.writeSVG("coincident_rings20.svg" )
 print "done"
 

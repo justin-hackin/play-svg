@@ -14,7 +14,7 @@ if not os.path.exists("images/star_polygons/"):
 for i in starDictionary.keys():
     for j in starDictionary[i]:
         docu = document.Document()
-        docu.appendElement(buildPath(docu, pathshapes.starPolygon(i,j,100), {'style':'fill:none;stroke:black'}))
+        docu.append(buildPath( pathshapes.starPolygon(i,j,100), {'style':'fill:none;stroke:black'}))
         docu.writeSVG("star_polygons/star_polygon-"+string.zfill(i,2)+ "_" + string.zfill(j,2)+ ".svg" )
         
 

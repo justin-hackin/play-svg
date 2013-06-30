@@ -1,3 +1,8 @@
+"""
+#FIXME: gradient lxml conversion
+CODE INVALID
+DO NOT USE
+"""
 from document import *
 """Classes for building gradients"""
 class GradientStop:
@@ -43,15 +48,15 @@ class Gradient:
         for i in range(len(colors)):
             self.appendStop(GradientStop(colors[i], float(i)/((len(colors))-1)))
         return self
-    def createDefinition(self, docu):
-        definition = docu.xdoc.createElement(u'linearGradient') 
-        setAttributesFromDict(definition, {u'id':unicode(self.id) })
+    def createDefinition(self):
+        #***definition = docu.xdoc.createElement(u'linearGradient') 
+        #***setAttributesFromDict(definition, {u'id':unicode(self.id) })
         
         for i in range(len(self.stopList)):
             stopElement = docu.xdoc.createElement(u'stop')
             setAttributesFromDict(stopElement, {u'style':u'stop-color:'+unicode(self.stopList[i].color)+u';stop-opacity:'+unicode(self.stopList[i].opacity) , u'offset': u'%.5f'%(100.0*self.stopList[i].offset)+u"%" })
             
-            definition.appendChild(stopElement)
+            definition.append(stopElement)
         return definition
 
 class LinearGradient:
@@ -62,7 +67,7 @@ class LinearGradient:
         self.attributes = {}
         self.gradient = gradient
 
-    def createDefinition(self, docu):
+    def createDefinition(self):
         """creates an XML node to be stored in the defs of an SVG document"""
         self.attributes[u'id'] = unicode(self.id)
         if not self.ctrls == None :

@@ -1,0 +1,23 @@
+<inkscape-extension>
+    <_name>Polygon iris</_name>
+    <id>playsvg.ext.polygoniris</id>
+	<dependency type="executable" location="extensions">polygoniris.py</dependency>
+	<dependency type="executable" location="extensions">inkex.py</dependency>
+	<param name="sides" type="int" min="2" max="100" _gui-text="Polygon sides">6</param>
+    <param name="radius" type="float" min="0.0" max="1000.0" _gui-text="Palette size">300</param>
+    
+    <param name="startcolor" type="string"  _gui-text="Starting color">#ff0000</param>
+    <param name="endcolor" type="string"  _gui-text="Ending color">#0000ff</param>
+    <param name="divisions" type="int" min="2" max="1000" _gui-text="Divisions denominator">16</param>
+	<param name="sideturn" type="int" min="2" max="100" _gui-text="Side turn">2</param>
+	
+    <effect>
+		<object-type>all</object-type>
+                <effects-menu>
+                    <submenu _name="playSVG"/>
+                </effects-menu>					    
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">polygoniris.py</command>
+    </script>
+</inkscape-extension>
