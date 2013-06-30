@@ -1,3 +1,0 @@
-include *.txt
-recursive-include inkex *.inx *.py
-recursive-include scripts *.py

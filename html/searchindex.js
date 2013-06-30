@@ -1,0 +1,1 @@
+Search.setIndex({objtypes:{},filenames:["index"],terms:{content:0,indic:0,document:0,plai:0,page:0,svg:0,tabl:0,welcom:0,modul:0,index:0,search:0},objnames:{},titles:["Welcome to play-svg&#8217;s documentation!"],objects:{}})

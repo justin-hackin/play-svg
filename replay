@@ -1,6 +1,0 @@
-#!/bin/sh
-
-cd ~/tamarind/0_Code_0/play-svg/inkex
-cp *.* /usr/share/inkscape/extensions
-cd ..
-python setup.py install
