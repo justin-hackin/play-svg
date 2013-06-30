@@ -10,6 +10,6 @@ It can be used as a library to generate SVG images 'from scratch' by writing a p
 To install pLAySVG, first ensure you have python 2.4 installed.  Then extract the compressed file.  This will create a directory called play-svg.  Enter this directory using a command prompt and install the libraries by entering:
 python setup.py install
 
-To install the Inkscape plugins, copy all files in the inkex folder into your Inkscape extensions folder.  See http://wiki.inkscape.org/wiki/index.php/ScriptingHOWTO for more info on how to install Inkscape scripts.  You must first install pLAySVG for these plugins to work.
+To install the Inkscape plugins, copy all files in the inkex folder into your Inkscape extensions folder.  See http://wiki.inkscape.org/wiki/index.php/ScriptingHOWTO for more info on how to install Inkscape scripts.  You must first install pLAySVG for these plugins to work.  Linux users: the Inkscape plugins will automatically be installed for you :) 
 
   
