@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="590"
+   xlink:xlink="xlink"
+   height="590"
+   id="svg2590"
+   sodipodi:version="0.32"
+   inkscape:version="0.45"
+   sodipodi:docname="kolam_tiles.svg"
+   sodipodi:docbase="/media/oldubu/home/tamarind/0_Code_0/play-svg/scripts/images"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   sodipodi:modified="true">
+  <sodipodi:namedview
+     inkscape:window-height="625"
+     inkscape:window-width="874"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="0.34491525"
+     inkscape:cx="489.17771"
+     inkscape:cy="262.35599"
+     inkscape:window-x="0"
+     inkscape:window-y="49"
+     inkscape:current-layer="svg2590" />
+  <metadata
+     id="metadata2626">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2592" />
+  <g
+     id="g2595"
+     transform="matrix(0.7071068,-0.7071068,-0.7071068,-0.7071068,1179.7748,491.09251)">
+    <path
+       style="fill:none;stroke:none"
+       id="path2597"
+       d="M -100,100 L 100,100 L 100,-100 L -100,-100 L -100,100 z " />
+    <path
+       style="fill:none;stroke:#000000"
+       id="path2599"
+       d="M -100,100 L 100,100 L 100,-100 L -100,-100 L -100,100 z " />
+  </g>
+  <g
+     id="g2601"
+     transform="matrix(0.7071068,0.7071068,0.7071068,-0.7071068,160.92915,455.2319)">
+    <path
+       style="fill:none;stroke:none"
+       id="path2603"
+       d="M -100,100 L 100,100 L 100,-100 L -100,-100 L -100,100 z " />
+    <path
+       style="fill:none;stroke:#000000"
+       id="path2605"
+       d="M -100,100 C 300,100 -100,-300 -100,100 z " />
+  </g>
+  <g
+     id="g2607"
+     transform="matrix(0.7071068,-0.7071068,-0.7071068,-0.7071068,1461.9533,493.59952)">
+    <path
+       style="fill:none;stroke:none"
+       id="path2609"
+       d="M -100,100 L 100,100 L 100,-100 L -100,-100 L -100,100 z " />
+    <path
+       style="fill:none;stroke:#000000"
+       id="path2611"
+       d="M -100,100 L 100,100 C 100,-50 -100,-50 -100,100 z " />
+  </g>
+  <g
+     id="g2613"
+     transform="matrix(-0.7071068,-0.7071068,-0.7071068,0.7071068,1459.5817,209.27088)">
+    <path
+       style="fill:none;stroke:none"
+       id="path2615"
+       d="M -100,100 L 100,100 L 100,-100 L -100,-100 L -100,100 z " />
+    <path
+       style="fill:none;stroke:#000000"
+       id="path2617"
+       d="M -100,100 C 50,100 100,50 100,-100 C -50,-100 -100,-50 -100,100 z " />
+  </g>
+  <g
+     id="g2619"
+     transform="matrix(-0.7071068,0.7071068,0.7071068,0.7071068,155.47114,107.33932)">
+    <path
+       style="fill:none;stroke:none"
+       id="path2621"
+       d="M -100,100 L 100,100 L 100,-100 L -100,-100 L -100,100 z " />
+    <path
+       style="fill:none;stroke:#000000"
+       id="path2623"
+       d="M -100,100 L 100,100 L 100,-100 C -50,-100 -100,-50 -100,100 z " />
+  </g>
+</svg>

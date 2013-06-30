@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns:href='http://www.w3.org/1999/xlink' width='590' xmlns='http://www.w3.org/2000/svg' href:xlink='xlink' height='590'>
+  <defs/>
+  <g id='canvas' transform='matrix(1,0,0,-1,0,590) translate(295,295)'>
+    <g>
+      <path style='fill:black;stroke:none' d='M-100.00000,100.00000 L-76.47059,100.00000 L-100.00000,76.47059 Z'/>
+      <path style='fill:black;stroke:none' d='M100.00000,-100.00000 L76.47059,-100.00000 L100.00000,-76.47059 Z'/>
+      <path style='fill:black;stroke:none' d='M88.23529,100.00000 L100.00000,100.00000 L100.00000,88.23529 L-88.23529,-100.00000 L-100.00000,-100.00000 L-100.00000,-88.23529 Z'/>
+      <path style='fill:black;stroke:none' d='M-52.94118,100.00000 L-29.41176,100.00000 L-100.00000,29.41176 L-100.00000,52.94118 Z'/>
+      <path style='fill:black;stroke:none' d='M100.00000,-52.94118 L100.00000,-29.41176 L29.41176,-100.00000 L52.94118,-100.00000 Z'/>
+      <path style='fill:black;stroke:none' d='M-5.88235,100.00000 L17.64706,100.00000 L-100.00000,-17.64706 L-100.00000,5.88235 Z'/>
+      <path style='fill:black;stroke:none' d='M100.00000,-5.88235 L100.00000,17.64706 L-17.64706,-100.00000 L5.88235,-100.00000 Z'/>
+      <path style='fill:black;stroke:none' d='M41.17647,100.00000 L64.70588,100.00000 L-100.00000,-64.70588 L-100.00000,-41.17647 Z'/>
+      <path style='fill:black;stroke:none' d='M100.00000,41.17647 L100.00000,64.70588 L-64.70588,-100.00000 L-41.17647,-100.00000 Z'/>
+    </g>
+  </g>
+</svg>

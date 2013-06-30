@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="590"
+   xlink:xlink="xlink"
+   height="590"
+   id="svg2671"
+   sodipodi:version="0.32"
+   inkscape:version="0.45"
+   sodipodi:docname="tri_box.svg"
+   sodipodi:docbase="/media/oldubu/home/tamarind/0_Code_0/play-svg/scripts/images"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   sodipodi:modified="TRUE">
+  <metadata
+     id="metadata2765">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="693"
+     inkscape:window-width="1024"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="0.80338983"
+     inkscape:cx="295"
+     inkscape:cy="317.79397"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:current-layer="svg2671" />
+  <defs
+     id="defs2673" />
+  <g
+     id="canvas"
+     transform="matrix(1.4636603,0,0,-1.4636603,295,295)"
+     inkscape:export-filename="/media/oldubu/home/tamarind/0_Code_0/play-svg/scripts/images/circleSquared.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90">
+    <rect
+       y="-200"
+       x="-200"
+       style="fill:#000000;stroke:none"
+       height="400"
+       width="400"
+       id="rect2676" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="200"
+       cy="0"
+       id="circle2678"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="200"
+       sodipodi:ry="200" />
+    <rect
+       y="-141.42136"
+       x="-141.42136"
+       style="fill:#000000;stroke:none"
+       height="282.84271"
+       width="282.84271"
+       id="rect2680" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="141.42136"
+       cy="0"
+       id="circle2682"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="141.42136"
+       sodipodi:ry="141.42136" />
+    <rect
+       y="-100"
+       x="-100"
+       style="fill:#000000;stroke:none"
+       height="200"
+       width="200"
+       id="rect2684" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="100"
+       cy="0"
+       id="circle2686"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="100"
+       sodipodi:ry="100" />
+    <rect
+       y="-70.710678"
+       x="-70.710678"
+       style="fill:#000000;stroke:none"
+       height="141.42136"
+       width="141.42136"
+       id="rect2688" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="70.710678"
+       cy="0"
+       id="circle2690"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="70.710678"
+       sodipodi:ry="70.710678" />
+    <rect
+       y="-50"
+       x="-50"
+       style="fill:#000000;stroke:none"
+       height="100"
+       width="100"
+       id="rect2692" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="50"
+       cy="0"
+       id="circle2694"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="50"
+       sodipodi:ry="50" />
+    <rect
+       y="-35.355339"
+       x="-35.355339"
+       style="fill:#000000;stroke:none"
+       height="70.710678"
+       width="70.710678"
+       id="rect2696" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="35.355339"
+       cy="0"
+       id="circle2698"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="35.355339"
+       sodipodi:ry="35.355339" />
+    <rect
+       y="-25"
+       x="-25"
+       style="fill:#000000;stroke:none"
+       height="50"
+       width="50"
+       id="rect2700" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="25"
+       cy="0"
+       id="circle2702"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="25"
+       sodipodi:ry="25" />
+    <rect
+       y="-17.67767"
+       x="-17.67767"
+       style="fill:#000000;stroke:none"
+       height="35.355339"
+       width="35.355339"
+       id="rect2704" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="17.67767"
+       cy="0"
+       id="circle2706"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="17.67767"
+       sodipodi:ry="17.67767" />
+    <rect
+       y="-12.5"
+       x="-12.5"
+       style="fill:#000000;stroke:none"
+       height="25"
+       width="25"
+       id="rect2708" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="12.5"
+       cy="0"
+       id="circle2710"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="12.5"
+       sodipodi:ry="12.5" />
+    <rect
+       y="-8.83883"
+       x="-8.83883"
+       style="fill:#000000;stroke:none"
+       height="17.67767"
+       width="17.67767"
+       id="rect2712" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="8.8388348"
+       cy="0"
+       id="circle2714"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="8.8388348"
+       sodipodi:ry="8.8388348" />
+    <rect
+       y="-6.25"
+       x="-6.25"
+       style="fill:#000000;stroke:none"
+       height="12.5"
+       width="12.5"
+       id="rect2716" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="6.25"
+       cy="0"
+       id="circle2718"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="6.25"
+       sodipodi:ry="6.25" />
+    <rect
+       y="-4.4194198"
+       x="-4.4194198"
+       style="fill:#000000;stroke:none"
+       height="8.83883"
+       width="8.83883"
+       id="rect2720" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="4.4194174"
+       cy="0"
+       id="circle2722"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="4.4194174"
+       sodipodi:ry="4.4194174" />
+    <rect
+       y="-3.125"
+       x="-3.125"
+       style="fill:#000000;stroke:none"
+       height="6.25"
+       width="6.25"
+       id="rect2724" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="3.125"
+       cy="0"
+       id="circle2726"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="3.125"
+       sodipodi:ry="3.125" />
+    <rect
+       y="-2.2097099"
+       x="-2.2097099"
+       style="fill:#000000;stroke:none"
+       height="4.4194198"
+       width="4.4194198"
+       id="rect2728" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="2.2097087"
+       cy="0"
+       id="circle2730"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="2.2097087"
+       sodipodi:ry="2.2097087" />
+    <rect
+       y="-1.5625"
+       x="-1.5625"
+       style="fill:#000000;stroke:none"
+       height="3.125"
+       width="3.125"
+       id="rect2732" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="1.5625"
+       cy="0"
+       id="circle2734"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="1.5625"
+       sodipodi:ry="1.5625" />
+    <rect
+       y="-1.1048501"
+       x="-1.1048501"
+       style="fill:#000000;stroke:none"
+       height="2.2097099"
+       width="2.2097099"
+       id="rect2736" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="1.1048543"
+       cy="0"
+       id="circle2738"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="1.1048543"
+       sodipodi:ry="1.1048543" />
+    <rect
+       y="-0.78125"
+       x="-0.78125"
+       style="fill:#000000;stroke:none"
+       height="1.5625"
+       width="1.5625"
+       id="rect2740" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="0.78125"
+       cy="0"
+       id="circle2742"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="0.78125"
+       sodipodi:ry="0.78125" />
+    <rect
+       y="-0.55242997"
+       x="-0.55242997"
+       style="fill:#000000;stroke:none"
+       height="1.1048501"
+       width="1.1048501"
+       id="rect2744" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="0.55242717"
+       cy="0"
+       id="circle2746"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="0.55242717"
+       sodipodi:ry="0.55242717" />
+    <rect
+       y="-0.39061999"
+       x="-0.39061999"
+       style="fill:#000000;stroke:none"
+       height="0.78125"
+       width="0.78125"
+       id="rect2748" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="0.390625"
+       cy="0"
+       id="circle2750"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="0.390625"
+       sodipodi:ry="0.390625" />
+    <rect
+       y="-0.27621001"
+       x="-0.27621001"
+       style="fill:#000000;stroke:none"
+       height="0.55242997"
+       width="0.55242997"
+       id="rect2752" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="0.27621359"
+       cy="0"
+       id="circle2754"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="0.27621359"
+       sodipodi:ry="0.27621359" />
+    <rect
+       y="-0.19531"
+       x="-0.19531"
+       style="fill:#000000;stroke:none"
+       height="0.39061999"
+       width="0.39061999"
+       id="rect2756" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="0.1953125"
+       cy="0"
+       id="circle2758"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="0.1953125"
+       sodipodi:ry="0.1953125" />
+    <rect
+       y="-0.13811"
+       x="-0.13811"
+       style="fill:#000000;stroke:none"
+       height="0.27621001"
+       width="0.27621001"
+       id="rect2760" />
+    <circle
+       style="fill:#ffffff;stroke:none"
+       cx="0"
+       r="0.13810679"
+       cy="0"
+       id="circle2762"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="0.13810679"
+       sodipodi:ry="0.13810679" />
+  </g>
+</svg>

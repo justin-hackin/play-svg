@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns:href='http://www.w3.org/1999/xlink' width='590' xmlns='http://www.w3.org/2000/svg' href:xlink='xlink' height='590'>
+  <defs/>
+  <g id='canvas' transform='matrix(1,0,0,-1,0,590) translate(295,295)'>
+    <g>
+      <path style='fill:black;stroke:none' d='M-100.00000,100.00000 L-87.87879,100.00000 L-100.00000,87.87879 Z'/>
+      <path style='fill:black;stroke:none' d='M100.00000,-100.00000 L87.87879,-100.00000 L100.00000,-87.87879 Z'/>
+      <path style='fill:black;stroke:none' d='M93.93939,100.00000 L100.00000,100.00000 L100.00000,93.93939 L-93.93939,-100.00000 L-100.00000,-100.00000 L-100.00000,-93.93939 Z'/>
+      <path style='fill:black;stroke:none' d='M-75.75758,100.00000 L-63.63636,100.00000 L-100.00000,63.63636 L-100.00000,75.75758 Z'/>
+      <path style='fill:black;stroke:none' d='M100.00000,-75.75758 L100.00000,-63.63636 L63.63636,-100.00000 L75.75758,-100.00000 Z'/>
+      <path style='fill:black;stroke:none' d='M-51.51515,100.00000 L-39.39394,100.00000 L-100.00000,39.39394 L-100.00000,51.51515 Z'/>
+      <path style='fill:black;stroke:none' d='M100.00000,-51.51515 L100.00000,-39.39394 L39.39394,-100.00000 L51.51515,-100.00000 Z'/>
+      <path style='fill:black;stroke:none' d='M-27.27273,100.00000 L-15.15152,100.00000 L-100.00000,15.15152 L-100.00000,27.27273 Z'/>
+      <path style='fill:black;stroke:none' d='M100.00000,-27.27273 L100.00000,-15.15152 L15.15152,-100.00000 L27.27273,-100.00000 Z'/>
+      <path style='fill:black;stroke:none' d='M-3.03030,100.00000 L9.09091,100.00000 L-100.00000,-9.09091 L-100.00000,3.03030 Z'/>
+      <path style='fill:black;stroke:none' d='M100.00000,-3.03030 L100.00000,9.09091 L-9.09091,-100.00000 L3.03030,-100.00000 Z'/>
+      <path style='fill:black;stroke:none' d='M21.21212,100.00000 L33.33333,100.00000 L-100.00000,-33.33333 L-100.00000,-21.21212 Z'/>
+      <path style='fill:black;stroke:none' d='M100.00000,21.21212 L100.00000,33.33333 L-33.33333,-100.00000 L-21.21212,-100.00000 Z'/>
+      <path style='fill:black;stroke:none' d='M45.45455,100.00000 L57.57576,100.00000 L-100.00000,-57.57576 L-100.00000,-45.45455 Z'/>
+      <path style='fill:black;stroke:none' d='M100.00000,45.45455 L100.00000,57.57576 L-57.57576,-100.00000 L-45.45455,-100.00000 Z'/>
+      <path style='fill:black;stroke:none' d='M69.69697,100.00000 L81.81818,100.00000 L-100.00000,-81.81818 L-100.00000,-69.69697 Z'/>
+      <path style='fill:black;stroke:none' d='M100.00000,69.69697 L100.00000,81.81818 L-81.81818,-100.00000 L-69.69697,-100.00000 Z'/>
+    </g>
+  </g>
+</svg>
