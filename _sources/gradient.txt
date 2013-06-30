@@ -1,0 +1,6 @@
+gradient module
+===============
+
+.. automodule:: foo
+   :members:
+
