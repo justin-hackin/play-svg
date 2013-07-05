@@ -331,6 +331,14 @@ def buildSymetricPetalFlower(petals, centreHoopRadius, flowerRadius, rvbdVector,
         flowerGroup.append(buildPath(playsvg.pathshapes.symetricBezierPetal(innerPt, outerPt, rvbdVector), {'style':'fill:none;stroke:black'}))
     return flowerGroup
 
+
+
+
+
+
+
+     
+
 ##Code not compatible with new Document to replace Base
 ###FIXME: create method for creating true vesica pisces shapes
 ##
