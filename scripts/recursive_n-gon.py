@@ -5,7 +5,7 @@ from playsvg.element import *
 from playsvg.path import *
 
 #number of sides
-n = 12
+n = 11
 iters = 2
 initRadius = 260
 #based upon the internal angal of the n-gon
