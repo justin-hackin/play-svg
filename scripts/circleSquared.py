@@ -1,7 +1,6 @@
 from playsvg.document import *
 from playsvg.element import *
-from playsvg.path import *
-from playsvg import compshapes
+
 docu = Document()
 levels = 22
 startSize = 200

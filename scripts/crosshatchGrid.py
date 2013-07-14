@@ -1,12 +1,10 @@
 from playsvg.document import *
 from playsvg.element import *
 from playsvg.path import *
-from playsvg import compshapes
-from lxml import etree
 
 
 def buildCrosshatchGrid(docu, numPoints, size):
-    gridGroup = etree.Element('g', id='grid')
+    gridGroup = buildGroup(id='grid')
     corners = [Point(-1*size, size), Point(size, size), Point(size, -1*size), Point(-1*size, -1*size)]
     sidePoints = []
     lineAtts = {'style':'stroke:black;fill:none'}

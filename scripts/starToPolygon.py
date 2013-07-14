@@ -1,7 +1,7 @@
 from playsvg.document import *
 from playsvg.element import *
 from playsvg.path import *
-from playsvg import compshapes
+
 starRadius = 50
 polygonRadius = 200
 starPoints = 11

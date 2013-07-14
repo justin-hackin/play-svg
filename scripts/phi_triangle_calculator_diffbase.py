@@ -21,7 +21,7 @@ pointB = Point(0,lengthAB)
 ratioBCtoAB = phi
 bestValue=0
 bestBase=0
-for baseDeg in range(12,14400, 2): 
+for baseDeg in range(13,14400, 2): 
     
     numPhiTri = 0
     for i in range(1,baseDeg/2):
