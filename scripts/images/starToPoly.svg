@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns:href='http://www.w3.org/1999/xlink' width='590' xmlns='http://www.w3.org/2000/svg' href:xlink='xlink' height='590'>
-  <defs/>
-  <g id='canvas' transform='matrix(1,0,0,-1,0,590) translate(295,295)'>
-    <path style='stroke:black;fill:none' d='M0.00000,50.00000 L11.22570,15.45085 L47.55283,15.45085 L18.16356,-5.90170 L29.38926,-40.45085 L0.00000,-19.09830 L-29.38926,-40.45085 L-18.16356,-5.90170 L-47.55283,15.45085 L-11.22570,15.45085 Z'/>
-    <path style='stroke:black;fill:none' d='M0.00000,200.00000 L190.21130,61.80340 L117.55705,-161.80340 L-117.55705,-161.80340 L-190.21130,61.80340 Z'/>
-  </g>
-</svg>

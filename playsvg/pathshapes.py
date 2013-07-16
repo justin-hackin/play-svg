@@ -70,6 +70,32 @@ def phiSpiralBez(pointA, pointB, iter, reverseDirection=0, expanding=0):
     
     return spiralPath
 
+# def phiSpiralArc(pointA, pointB, iter, reverseDirection=0, expanding=0):
+#     '''creates a Phi spiral inside a rectangle with short side AB, and rectangle existing
+#     on the right side of AB when travelling from A to B (or the opposite if reverseDirection = 1).
+#     iter defines the number of iterations.  Composed with a series of arcs. '''
+#     phi = (1 + math.sqrt(5)) / 2.0
+#     if reverseDirection: 
+#         angle = 0.25
+#     else: angle = 0.75
+#     sweepValue = int((not reverseDirection) ^ (not expanding))
+#     if expanding : multVal = 1.0 +phi
+#     else: multVal = phi -1
+#     
+#     spiralPath = PathData().moveTo(pointA)
+#     currentPoint = deepcopy(pointA)
+#     adjacentCorner = deepcopy(pointB)
+#     sideLength = distanceBetween(currentPoint, adjacentCorner)
+#     destinationPoint = extendBendPoint(currentPoint, adjacentCorner,  sideLength,angle)
+#     for i in range(iter):
+#         spiralPath.elipticalArc(Point(sideLength, sideLength), destinationPoint, sweepFlag=sweepValue)
+#         currentPoint = deepcopy(destinationPoint)
+#         adjacentCorner= extendBendPoint(adjacentCorner,destinationPoint , float(sideLength)*(multVal),0)
+#         sideLength = distanceBetween(currentPoint, adjacentCorner)
+#         destinationPoint = extendBendPoint(currentPoint, adjacentCorner, sideLength,angle)
+#     return spiralPath
+#     
+
 def phiFlower(centerRadius,rays, spiralWidth, spiralIter):
     """a flower-like shape formed by phi spirals"""
     flowerPath = PathData()
@@ -322,31 +348,7 @@ def hexagon(point, radius):
     return path
 
 
-##def phiSpiralArc(pointA, pointB, iter, reverseDirection=0, expanding=0):
-##    '''creates a Phi spiral inside a rectangle with short side AB, and rectangle existing
-##    on the right side of AB when travelling from A to B (or the opposite if reverseDirection = 1).
-##    iter defines the number of iterations.  Composed with a series of arcs. '''
-##    phi = (1 + math.sqrt(5)) / 2.0
-##    if reverseDirection: 
-##        angle = 0.25
-##    else: angle = 0.75
-##    sweepValue = int((not reverseDirection) ^ (not expanding))
-##    if expanding : multVal = 1.0 +phi
-##    else: multVal = phi -1
-##    
-##    spiralPath = PathData().moveTo(pointA)
-##    currentPoint = deepcopy(pointA)
-##    adjacentCorner = deepcopy(pointB)
-##    sideLength = distanceBetween(currentPoint, adjacentCorner)
-##    destinationPoint = extendBendPoint(currentPoint, adjacentCorner,  sideLength,angle)
-##    for i in range(iter):
-##        spiralPath.elipticalArc(Point(sideLength, sideLength), destinationPoint, sweepFlag=sweepValue)
-##        currentPoint = deepcopy(destinationPoint)
-##        adjacentCorner= extendBendPoint(adjacentCorner,destinationPoint , float(sideLength)*(multVal),0)
-##        sideLength = distanceBetween(currentPoint, adjacentCorner)
-##        destinationPoint = extendBendPoint(currentPoint, adjacentCorner, sideLength,angle)
-##    return spiralPath
-##    
+
 
   
 ##def lineSawWave(pointA, pointB, heightRatio, reps):

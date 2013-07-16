@@ -3,7 +3,7 @@ from playsvg.element import *
 from playsvg.path import *
 
 
-def buildCrosshatchGrid(docu, numPoints, size):
+def buildCrosshatchGrid(numPoints, size):
     gridGroup = buildGroup(id='grid')
     corners = [Point(-1*size, size), Point(size, size), Point(size, -1*size), Point(-1*size, -1*size)]
     sidePoints = []
@@ -33,7 +33,7 @@ def buildCrosshatchGrid(docu, numPoints, size):
     return gridGroup
 
 docu = Document()
-docu.append(buildCrosshatchGrid(docu, 10,100))
-docu.writeSVG("crosshatch_grid.svg")
+docu.append(buildCrosshatchGrid(10,600))
+docu.writeSVG("crosshatchGrid.svg")
 
 

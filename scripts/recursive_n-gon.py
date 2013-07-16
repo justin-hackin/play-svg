@@ -5,9 +5,9 @@ from playsvg.element import *
 from playsvg.path import *
 
 #number of sides
-n = 11
-iters = 2
-initRadius = 260
+n = 10
+iters = 3
+initRadius = 600
 #based upon the internal angal of the n-gon
 bendAngal = 0.5 - 0.5*(n-2)/n
 gonDepthGroup = []
@@ -37,7 +37,8 @@ gonHelper(createRadialPlots(Point(), initRadius, n) , 0)
 for i in range(0, iters):
     docu.append(gonDepthGroup[i])
 
-docu.writeSVG("recursive_" +str(n) + "-gon_iter-"+str(iters) + ".svg" )
+#docu.writeSVG("recursive_" +str(n) + "-gon_iter-"+str(iters) + ".svg" )
+docu.writeSVG("recursive_n-gon.svg" )
 print "done"
 
 

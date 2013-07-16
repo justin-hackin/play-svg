@@ -7,7 +7,7 @@ docu = document.Document()
 centre = Point(0,0)
 
 squares = 11
-size = 300
+size = 600
 boxSize = float(size)/squares
 corners = [] #defined in order of top-left, top-right, bottom-right, bottom left
 quadSize = -1*size/2.0
@@ -35,8 +35,8 @@ for i in range(squares):
 
 
 #4 quadrants    
-innerSize = 300
-outerSize = 800
+innerSize = size
+outerSize = innerSize*phi
 
 innerCorners = []
 outerCorners = []

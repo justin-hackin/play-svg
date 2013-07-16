@@ -5,13 +5,10 @@ from playsvg.element import *
 import playsvg.pathshapes
 from playsvg.path import *
 import playsvg.color
-from lxml import etree
-
-
 
 def buildFlowerOfLife( level, radius):
     centre = Point(0,0)
-    flowerGroup = etree.Element('g', id="hexagonlattice")
+    flowerGroup = buildGroup(id="hexagonlattice")
     
     #add centre hexagon
     circleAttributes = {'style':'stroke:black;fill:none'}
@@ -21,7 +18,7 @@ def buildFlowerOfLife( level, radius):
     #creates a set of concentric hexagons
     for i in range(1,level):
         
-        flowerLayerGroup = etree.Element('g', id='flowerlayer'+str(i))
+        flowerLayerGroup = buildGroup(id='flowerlayer'+str(i))
         #corners of an invisible hexagon on which the concentric hexagons will be centred on
         hexagonFrame = []
         
@@ -44,14 +41,14 @@ def buildHexagonLattice(level, radius):
     #add centre hexagon
     
     distFromHex = radius*math.sin((0.5-1.0/6)*2*math.pi)/math.sin(1.0/12*2*math.pi)
-    latticeGroup = etree.Element('g', id="hexagonlattice")
+    latticeGroup = buildGroup( id="hexagonlattice")
     hexAttr = {'style':'stroke:black;fill:none'}
     latticeGroup.append(buildPath( playsvg.pathshapes.hexagon( Point(0,0),radius), hexAttr))
     #creates a set of concentric hexagons
     for i in range(1,level):
         #corners of an invisible hexagon on which the concentric hexagons will be centred on
         hexagonFrame = []
-        levelGroup = etree.Element('g', id='level'+str(i))
+        levelGroup = buildGroup(id='level'+str(i))
         for j in range(6):
             
             hexagonFrame.append(PolerPoint(i*distFromHex , float(j)/6+1.0/12).convertToCartesian()) 
@@ -70,7 +67,7 @@ def buildHexagonLattice(level, radius):
 
 def buildMetcalfeStar(numVertices, radius):
     '''Named after Metcalfe's Law, this function draws a fully connected graph with vertices equally spaced from each other and equidistant from the centre point'''
-    starGroup = etree.Element('g', id='metcalfestar')
+    starGroup = buildGroup(id='metcalfestar')
     lineAttrs = {'style':'stroke:black;fill:none'}
     #define vertices
     vertices = []
@@ -85,10 +82,10 @@ def buildMetcalfeStar(numVertices, radius):
 def buildTriangularGrid( levels, sideLength):
     '''creates a triangular grid bounded by a large triangle, grouped into upward pointing and downward pointing triangles '''
     gridPoints = createTriangularGrid(Point(0,0), sideLength, levels)
-    gridGroup = etree.Element('g', id='triangulargrid')
+    gridGroup = buildGroup( id='triangulargrid')
     triAttrs = {'style':'stroke:black;fill:none'}
     
-    upwardTriangles = etree.Element('g', id='upwardtriangles')
+    upwardTriangles = buildGroup(id='upwardtriangles')
     for i in range(levels-1):
         for j in range(i+1):
             triangulatePath = PathData()
@@ -99,7 +96,7 @@ def buildTriangularGrid( levels, sideLength):
             upwardTriangles.append(buildPath( triangulatePath, triAttrs))
     gridGroup.append(upwardTriangles)
     
-    downwardTriangles = etree.Element('g', id='downwardtriangles')
+    downwardTriangles = buildGroup(id='downwardtriangles')
     for i in range(1, levels-1):
         for j in range(i):
             triangulatePath = PathData()
@@ -117,21 +114,21 @@ def buildTriangularGrid( levels, sideLength):
 def buildDiscreteColorGrad(intervals, startColor, endColor,  size):
     """creates a series of vertically-stacked boxes with a fill color changing incrementally from one color to another"""
     colorGradation = playsvg.color.tupleGradient(playsvg.color.hexToRGB(startColor), playsvg.color.hexToRGB(endColor),intervals )
-    gradBoxGroup = etree.Element('g', id='discrete_gradation')
+    gradBoxGroup = buildGroup(id='discrete_gradation')
     boxSize = float(size)/intervals
     for i in range(intervals):
         gradBoxGroup.append(buildRect(Point(0,i*boxSize), boxSize, boxSize, {'style':'stroke:black;fill:'+colorGradation[i]} ))
     return gradBoxGroup
     
     
-def buildOffsetRadialGrid(layers, spokes, layerSpacing, startRadius):
+def buildOffsetRadialGrid(layers, spokes, layerSpacing, startRadius, gridAttrs={'style':'stroke:black;stroke-width:4;fill:none'}):
     """creates a grid similar to the pattern made in a dreamcatcher"""
     plots = createOffsetRadialGrid(layers+2, spokes, startRadius, layerSpacing)
     
     paths = []
-    gridGroup = etree.Element('g', id='offsetradialgrid')
-    diamondEvenGroup = etree.Element('g', id='even')
-    diamondOddGroup = etree.Element('g', id='odd')
+    gridGroup = buildGroup(id='offsetradialgrid')
+    diamondEvenGroup = buildGroup( id='even')
+    diamondOddGroup = buildGroup(id='odd')
     for ring in range(layers+1,1,-1):
         diamondPath = PathData()
         
@@ -148,7 +145,7 @@ def buildOffsetRadialGrid(layers, spokes, layerSpacing, startRadius):
             diamondPath.lineTo(plots[ring-2][(spoke+1)%spokes])
             diamondPath.lineTo(plots[ring-1][spoke])
             diamondPath.closePath()
-            diamondGroup.append(buildPath( diamondPath, {'style':'fill:none;stroke:black'}))
+            diamondGroup.append(buildPath( diamondPath, gridAttrs))
             
     gridGroup.append(diamondEvenGroup)
     gridGroup.append(diamondOddGroup)
@@ -160,9 +157,9 @@ def buildRadialGrid( layers, spokes, layerSpacing, startRadius):
     plots = createRadialGrid(layers+1, spokes, startRadius, layerSpacing)
     
     paths = []
-    gridGroup = etree.Element('g', id='radialgrid')
-    boxEvenGroup = etree.Element('g', id='even')
-    boxEvenGroup = etree.Element('g', id='odd')
+    gridGroup = buildGroup(id='radialgrid')
+    boxEvenGroup = buildGroup(id='even')
+    boxEvenGroup = buildGroup( id='odd')
     for ring in range(layers,0,-1):
         boxPath = PathData()
         
@@ -189,7 +186,7 @@ def buildRadialGrid( layers, spokes, layerSpacing, startRadius):
 def buildHexagonalCube(radius):
     """creates an image of a cube with 1 corner in the centre, forming a hexagon outline""" 
     outerCorners = createRadialPlots(Point(0, 0), radius,  6)
-    hexBoxGroup = etree.Element('g', id='hexbox')
+    hexBoxGroup = buildGroup( id='hexbox')
     boxFace1 = PathData().moveTo(outerCorners[5]).lineTo(outerCorners[0]).lineTo(outerCorners[1]).lineTo(Point(0,0)).closePath()
     boxFace2 = PathData().moveTo(outerCorners[1]).lineTo(outerCorners[2]).lineTo(outerCorners[3]).lineTo(Point(0,0)).closePath()
     boxFace3 = PathData().moveTo(outerCorners[3]).lineTo(outerCorners[4]).lineTo(outerCorners[5]).lineTo(Point(0,0)).closePath()
@@ -202,7 +199,7 @@ def buildHexagonalCube(radius):
 
 def buildOpenBox(outerSize, innerSize):
     """returns an image of looking down into a box in 3D """
-    openBoxGroup = etree.Element('g', id='openbox')
+    openBoxGroup = buildGroup( id='openbox')
     innerCorners = [Point(innerSize, innerSize), Point(innerSize*-1, innerSize), Point(innerSize*-1, innerSize*-1), Point(innerSize, innerSize*-1)]
     outerCorners = [Point(outerSize, outerSize), Point(outerSize*-1, outerSize), Point(outerSize*-1, outerSize*-1), Point(outerSize, outerSize*-1)]
     paths = []
@@ -218,7 +215,7 @@ def buildCircleCardioid(circles, radius):
     '''Creates a series of circles whose envelope forms a cartoid.\
     Inspired by http://mathworld.wolfram.com/Cardioid.html. '''
     
-    cardioidGroup = etree.Element('g', id='cardiod')
+    cardioidGroup = buildGroup(id='cardiod')
         
     centrePoint = Point(0,0)
     focusPoint = Point().polerInit(radius,0)
@@ -226,11 +223,11 @@ def buildCircleCardioid(circles, radius):
     for i in range(circles):
         currentPoint = Point().polerInit(radius, float(i)/circles)
         distance = distanceBetween(focusPoint, currentPoint)
-        cardioidGroup.append(buildCircle( currentPoint, distance, {u'fill':u'none',u'style':u'fill:none;stroke:black;stroke-width:3;'}))
+        cardioidGroup.append(buildCircle( currentPoint, distance, {u'fill':u'none',u'style':u'fill:none;stroke:black;stroke-width:1;'}))
     return cardioidGroup
 
 def buildStringArt( divs, size):
-    stringArtGroup =etree.Element('g', id='stringart')
+    stringArtGroup =buildGroup(id='stringart')
     corners = []
     corners.append(Point(size,size))
     corners.append(Point(size, -1*size))
@@ -254,7 +251,7 @@ def buildSubunitWheel( pssSpoke, pssLayer, axleRadius, wheelRadius, attrList=())
     pss is represented as a list of (division, width) pairs (division being > 1).  The first division divides the wheel 
     into any number of sections.  Every subsequent division divides all sections into the 
     specified number of subsections.'''
-    wheelGroup = etree.Element('g', id='wheelgroup')
+    wheelGroup = buildGroup( id='wheelgroup')
     wheelGroup.append(buildCircle(Point(0,0), axleRadius,{u'fill':u'none', u'stroke-width':u'13', u'stroke':u'black', u'stroke-opacity':u'1'}))
     wheelGroup.append(buildCircle(Point(0,0), wheelRadius,{u'fill':u'none', u'stroke-width':u'13', u'stroke':u'black', u'stroke-opacity':u'1'}))
     
@@ -294,9 +291,9 @@ def buildSubunitWheel( pssSpoke, pssLayer, axleRadius, wheelRadius, attrList=())
     
     return wheelGroup 
 
-def buildCircularWeave(numPoints, radius, gap, extent):
+def buildCircularWeave(numPoints, radius, gap, extent, weaveAttrs={'style':'stroke:black;stroke-width:4;fill:none'}):
     """creates a pattern of two interlocking waves moving around a circle"""
-    weaveGroup = etree.Element('g', id='weavegroup') 
+    weaveGroup = buildGroup( id='weavegroup') 
     centrePoint = Point(0,0)
     #extent = 0.5
     #gap = 0.1
@@ -314,13 +311,13 @@ def buildCircularWeave(numPoints, radius, gap, extent):
             path1.SCRVBD((extent, otherTilt), Point().polerInit( radius, float((i+1)%numPoints)/numPoints))
     path1.closePath()
     path2.closePath()
-    weaveGroup.append(buildPath( path1, {'style':'stroke:black;fill:none'}))
-    weaveGroup.append(buildPath( path2, {'style':'stroke:black;fill:none'}))
+    weaveGroup.append(buildPath( path1, weaveAttrs))
+    weaveGroup.append(buildPath( path2, weaveAttrs))
     return weaveGroup
 
 def buildSymetricPetalFlower(petals, centreHoopRadius, flowerRadius, rvbdVector, insideOut=0):
     """creates a flower pattern with petals formed by two mirrored bezier curves of a given RVBD (see path methods for more details on RVBD)"""
-    flowerGroup = etree.Element('g', id='flower') 
+    flowerGroup = buildGroup(id='flower') 
     #insideOut determines whether the petal from the centreHoop moves toward the centre of the CentreHoop (if == 1)/
     #or away from the centre (when insideOut == 0)
     if insideOut : offsetAngle = 0.5
@@ -332,12 +329,14 @@ def buildSymetricPetalFlower(petals, centreHoopRadius, flowerRadius, rvbdVector,
     return flowerGroup
 
 
-
-
-
-
-
-     
+def buildCircledCircles(circles, radius, spacing, attrs = defaultStyleAttrs):
+    circleGroup = buildGroup( id='circledcircles')
+    
+    vertices = createRadialPlots(Point(0,0), radius*spacing/100.0, circles)
+    for i in range(circles):
+        circleGroup.append(buildCircle(vertices[i], radius, attrs))
+    return circleGroup
+    
 
 ##Code not compatible with new Document to replace Base
 ###FIXME: create method for creating true vesica pisces shapes

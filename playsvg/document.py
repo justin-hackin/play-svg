@@ -1,5 +1,4 @@
 """SVG document representation, provides file I/O and access to the DOM"""
-#TODO: enable exceptions and print statements and make compatible with sphinx (search:#***)
 import os
 from copy import copy
 from element import *
@@ -29,17 +28,23 @@ def setAttributesFromDict(element,dict):
 
 class Document:
     """represents a single SVG document, a square of width and height gridSize"""
-    def __init__(self, gridSize=640):
+    def __init__(self, gridSize=1280, notCentered=False):
+        
         #TODO: enable different width and height               
-        NSMAP = {"svg" : 'http://www.w3.org/2000/svg',  "xlink" : 'http://www.w3.org/1999/xlink'}
+        NSMAP = {"xmlns" : "http://www.w3.org/2000/svg", \
+                 "xlink" : 'http://www.w3.org/1999/xlink', \
+                 "{http://www.w3.org/2000/svg}svg": "http://www.w3.org/2000/svg"}
         #root xml node
         self.xdoc= etree.Element('svg', NSMAP)
-        svgAttributes = {u'height':unicode(gridSize*2), u'width':unicode(gridSize*2)}  
+        svgAttributes = {'height':str(gridSize), 'width':str(gridSize)}  
         setAttributesFromDict(self.xdoc, svgAttributes)
         #definitions for use in linking
         self.defs = etree.SubElement(self.xdoc, 'defs')
-                
-        canvasAtts = {u'id':u'canvas', u'transform':(u'matrix(1,0,0,-1,0,'+str(gridSize*2) +u') ' + u'translate('+unicode(gridSize)+ u','+ unicode(gridSize)+u')')}
+        if notCentered:
+            self.transformMatrix = ""
+        else:
+            self.transformMatrix = 'matrix(1,0,0,-1,0,'+str(gridSize) +') ' + 'translate('+str(gridSize/2)+ ','+ str(gridSize/2)+')'        
+        canvasAtts = {'id':'canvas', 'transform':self.transformMatrix}
         #the co-ordinate system group
         self.canvas = etree.SubElement(self.xdoc,'g')
         setAttributesFromDict(self.canvas, canvasAtts)

@@ -13,13 +13,13 @@ docu = document.Document()
 startPoint = Point(0,0)
 levels = 6
 #length of one side of one triangle in the grid
-sideLength = 80 
+sideLength = 100
 
 #distance from center of a tile to one of its corners
 trigridRadius = sideLength /  (math.sin(1.0/3*tewpi)*math.sin(1.0/12*tewpi)*4.0) 
 
 tetractysArray = []
-abraGroup = docu.makeGroup()
+faceGroup = docu.makeGroup()
 tetractysArray = createTriangularGrid(Point(0,0), sideLength, levels)
 #upGradientColors = [ '#fd00ff','#67ff00','#1e00ff']
 upGradientColors = [ '#a500ff', '#ff009e']
@@ -35,23 +35,23 @@ upTriangles = docu.makeGroup('upsies')
 for i in range(levels-1):
     for j in range(i+1):
         upGradient.id = 'upgrade' + str(i*11+j)
-        docu.appendDefinition(upGradient.createDefinition(docu))
+        docu.appendDefinition(upGradient.createDefinition())
         points = []
         points = [tetractysArray[i][j],  tetractysArray[i+1][j+1],  tetractysArray[i+1][j] ]
-        upTriangles.append(gradshape.polygonGradient( points, upGradient, id ='up'+str(i*11+j)))
-abraGroup.append(upTriangles)
+        upTriangles.append(gradshape.polygonGradient(docu, points, upGradient, id ='up'+str(i*11+j)))
+faceGroup.append(upTriangles)
 
 downTriangles = docu.makeGroup('downsies')
 for i in range(1, levels-1):
     for j in range(i):
         downGradient.id = 'downgrade' + str(i*11+j)
-        docu.appendDefinition(downGradient.createDefinition(docu))
+        docu.appendDefinition(downGradient.createDefinition())
         points = []
         points = [tetractysArray[i][j],  tetractysArray[i+1][j+1], tetractysArray[i][j+1]]
-        downTriangles.append(gradshape.polygonGradient( points, downGradient, id ='down'+str(i*11+j) ))
-abraGroup.append(downTriangles)
+        downTriangles.append(gradshape.polygonGradient(docu, points, downGradient, id ='down'+str(i*11+j) ))
+faceGroup.append(downTriangles)
  
-docu.append(abraGroup)
+docu.append(faceGroup)
 
 ###create shaded overlay
 ##SupGradientColors = [ '#ff009e', '#a500ff']

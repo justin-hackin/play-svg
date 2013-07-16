@@ -19,6 +19,6 @@ def makeStripeRings(docu, layers, layerSize):
 docu = document.Document()
 docu.append(makeStripeRings(20, 20 ))
 
-docu.writeSVG("concentricStripeRings_rev.svg" )
+docu.writeSVG("concentricStripeRings.svg" )
 print "done"
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python 
 """creates a pattern similar to the Flower of Life (circles on outer edges should be arcs and not full circles)  """
 import inkex
-from playsvg import element, geom, path
+from playsvg import compshapes
 
 
 class CircledCircles(inkex.Effect):
@@ -20,19 +20,11 @@ class CircledCircles(inkex.Effect):
                         dest="spacing", default=1.0,
                         help="Spacing ratio")
        
-    def buildCircledCircles(self, circles, radius, spacing):
-        circleGroup = inkex.etree.Element('g', id='circledcircles')
-        
-        vertices = geom.createRadialPlots(geom.Point(0,0), radius*spacing/100.0, circles)
-        for i in range(circles):
-            circleGroup.append(element.buildCircle(vertices[i], radius, {'style':' stroke:black; fill:none' }))
-        return circleGroup
-        
-            
+          
     
     
     def effect(self):
-        new = self.buildCircledCircles(self.options.circles, self.options.radius, self.options.spacing)
+        new = compshapes.buildCircledCircles(self.options.circles, self.options.radius, self.options.spacing)
         self.current_layer.append(new)
 
            

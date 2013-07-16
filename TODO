@@ -1,0 +1,20 @@
+TODO
+
+* make global variable define decimal accuracy for svg printout (search for instances of " '%.5f' % ")
+* re-enable exceptions and print statements removed for sphinx documentation errors they cause (search:#***)
+* enable definition/access of width and height for document (only square documents supported) 
+* move generateStarDict to a script 
+* is Angal object needed ?  investigate un-substantiating (only functions for calc)
+* undouble similar getAngalBetween and angalBetween methods
+* ensure drop-in replacement of sympy Point object is compatible with all elements generated  
+* preserve ClosePath command on path.reversePath() (currently replaced by a MoveTo )
+* check for updates to simplepath.py
+* make commented gradient.LinearGradient and gradient.RadialGradient subclasses of abstract gradient.Gradient (which currently defines a linear gradient)
+* release user-friendly version of boxMaker.py script (compshapes ?)
+
+
+
+ 
+
+
+

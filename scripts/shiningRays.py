@@ -1,16 +1,9 @@
 from playsvg.document import *
 from playsvg.element import *
 from playsvg.path import *
-import playsvg.pathshapes
+
 import os
 import string
-
-def makeCentredBox( size):
-    boxPath = PathData().moveTo(Point(size, size)).\
-            lineTo(Point(size, -1*size)).\
-            lineTo(Point(-1*size, -1*size)).\
-            lineTo(Point(-1*size, size)).closePath()
-    return boxPath
 
 def makeShiningRays( spokes, radius):
     rayGroup = etree.Element('g')
@@ -25,7 +18,7 @@ def makeShiningRays( spokes, radius):
     return rayGroup    
 
 docu = document.Document()
-docu.append(makeShiningRays(64, 200 ))
+docu.append(makeShiningRays(64, 560 ))
 
 docu.writeSVG("shiningRays.svg" )
 print "done"

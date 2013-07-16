@@ -5,12 +5,6 @@ pLAySVG has one unconventional term it uses in its geometric calculations: 'anga
 
 import math
 import numbthy
-#***from geosolver.intersections import *
-#***from geosolver.vector import *
-#TODO: remove geosolver dependencies and restore circle-circle intersection
-#TODO: enable variable decimal precision in aNum
-#TODO: move generateStarDict to a script 
-#TODO: search for angal calculations used, use one of similar getAngalBetween and angalBetween methods
 
 tewpi = math.pi*2
 phi = (1 + math.sqrt(5)) / 2.0
@@ -71,30 +65,29 @@ class Point:
     def scale(self, mult):
         return Point(self.x*mult, self.y*mult)
     
-"""    
 # #FIXME: use Angal or lose it
-# class Angal:
-#    
-#     an Angal is a fractional representation  of an angle such that (using the clock metaphor) 0 is at 12:00,
-#     0.25 is at 3:00, 0.5 is at 6:00, and 0.75 is at 9:00.  Angal is always in range |0 - 1( as whole number portions 
-#    of numbers are truncated in constructors (class DEPRECATED, concept of 'angal' preserved elsewhere in documentation)
-#    """ 
-#     def __init__(self,val):
-#         if val >=0:
-#             self.value = val - math.floor(val)
-#         else:
-#             self.value = val - math.ceil(val)
-#     def setByRadianValue(self,rad):
-#         #wraparound effect for radian values over tewpi
-#         if rad >= tewpi:
-#             rad = rad - (rad//tewpi)*tewpi 
-#         #fractionify rad value    
-#         value = rad / tewpi
-#         #change direction of increase from counterclockwise to clockwise
-#         value = 1-value
-#         #change starting point 0 from position of 3:00 to 12:00
-#         value = value + 0.25 - value//1
-#         self.value = value
+class Angal:
+    """
+     an Angal is a fractional representation  of an angle such that (using the clock metaphor) 0 is at 12:00,
+     0.25 is at 3:00, 0.5 is at 6:00, and 0.75 is at 9:00.  Angal is always in range |0 - 1( as whole number portions 
+    of numbers are truncated in constructors (class DEPRECATED, concept of 'angal' preserved elsewhere in documentation)
+    """ 
+    def __init__(self,val):
+        if val >=0:
+            self.value = val - math.floor(val)
+        else:
+            self.value = val - math.ceil(val)
+    def setByRadianValue(self,rad):
+        #wraparound effect for radian values over tewpi
+        if rad >= tewpi:
+            rad = rad - (rad//tewpi)*tewpi 
+        #fractionify rad value    
+        value = rad / tewpi
+        #change direction of increase from counterclockwise to clockwise
+        value = 1-value
+        #change starting point 0 from position of 3:00 to 12:00
+        value = value + 0.25 - value//1
+        self.value = value
 #     def reflectionInAngle(self, reflector):
 #         """
 #         returns an Angal such that it is the reflection of the current value in a line 
@@ -103,6 +96,7 @@ class Point:
 #         difference = self.value - reflector
 
 #DEPRICATED, use Point polarInit()
+
 class PolerPoint:
 #PolerPoints are almost identical to points in the polar co-ordinate system, except they have slightly different conventions (hence the spelling).  Poler points are represented by two values, theyda (t) and radius(r).
     r = 0
@@ -165,6 +159,25 @@ def intersectCircleCircle(c1c,c1r,c2c,c2r):
     intersections = [Point(i[0], i[1]) for i in intersections]
     return intersections
 """
+
+def intersectCircleCircle(c1c , c1r, c2c, c2r ) :
+    dx = c1c.x - c2c.x;
+    dy = c1c.y - c2c.y
+    d2 = dx*dx + dy*dy
+    d = math.sqrt( d2 )
+    if ( d>c1r+c2r or d<math.fabs(c1r-c2r) ): return None
+    
+
+    a = (c1r**2 - c2r**2 + d2) / (2*d)
+    h = math.sqrt( c1r**2 - a*a )
+    x2 = c1c.x + a*(c2c.x - c1c.x)/d
+    y2 = c1c.y + a*(c2c.y - c1c.y)/d
+ 
+    paX = x2 + h*(c2c.y - c1c.y)/d
+    paY = y2 - h*(c2c.x - c1c.x)/d
+    pbX = x2 - h*(c2c.y - c1c.y)/d
+    pbY = y2 + h*(c2c.x - c1c.x)/d
+    return (Point(paX, paY), Point(pbX, pbY))    
 
 def getDiscreteCubicBezier(pointA, pointB, pointC, pointD, n):
     """ 

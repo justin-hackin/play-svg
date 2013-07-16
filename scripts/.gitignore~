@@ -1,0 +1,5 @@
+#  Make this folder ignored
+###################
+scripts-private/*.*
+
+

@@ -44,13 +44,13 @@ def polygonGradientIris( position,sides, radius, divisionOfPieRotation, sideTurn
         linePoints = newLinePoints
     return gradientIrisGroup
 
-docu = document.Document()
-docu.append(polygonGradientIris(Point(0,0),4,100, 16, 2 ))
-docu.writeSVG('squareIris.svg')
+# docu = document.Document()
+# docu.append(polygonGradientIris(Point(0,0),4,100, 16, 2 ))
+# docu.writeSVG('squareIris.svg')
 
 docu = document.Document()
-docu.append(polygonGradientIris(Point(0,0),6,100, 16, 2 ))
-docu.writeSVG('hexagoner.svg')
+docu.append(polygonGradientIris(Point(0,0),6,600, 16, 6 ))
+docu.writeSVG('polygonIris.svg')
 print "done01"
 
 

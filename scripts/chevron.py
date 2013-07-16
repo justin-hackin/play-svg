@@ -4,7 +4,7 @@ from playsvg.path import *
 import playsvg.pathshapes
 
 thickness = 60
-width = 100
+width = 600
 angal = 30.0/360
 
 length = width/math.cos(angal*tewpi)
@@ -18,5 +18,5 @@ chevPoints.append(Point(-1*topLeft.x, topLeft.y-thickness))
 chevPoints.append(Point(-1*topLeft.x, topLeft.y))
 chevPoints.append(Point())
 docu = Document()
-docu.appendElement(buildPath(PathData().makeHull(chevPoints), {'style':'stroke:black;fill:none'} ))
-docu.writeSVG('chevron_30.svg')
+docu.append(buildPath(PathData().makeHull(chevPoints), {'style':'stroke:black;fill:none'} ))
+docu.writeSVG('chevron.svg')

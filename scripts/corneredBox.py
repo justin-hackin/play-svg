@@ -8,7 +8,7 @@ centreBoxRatio = 1.0/3
 spacerRatio = 1.0/16
 cornerInsetRatio =  (1-centreBoxRatio)/2 - spacerRatio
 elBoxRatio = cornerInsetRatio - spacerRatio
-size = 300
+size = 600
 #draw corner-chipped box
 docu = document.Document()
 corneredBox = PathData().moveTo(Point(cornerInsetRatio*size, 0)).lineTo(Point(size, 0)).\
@@ -29,4 +29,5 @@ darkBlocks = PathData().moveTo(Point( spacerRatio*size, (cornerInsetRatio + spac
 docu.append(buildPath( darkBlocks , {'style':'stroke:none;fill:black'}))
 darkBlocks = PathData().moveTo(Point( cornerInsetRatio*size, cornerInsetRatio*size)).lineTo( Point( (1-cornerInsetRatio)*size, cornerInsetRatio*size)).lineTo(Point( (1- cornerInsetRatio)*size, (1-cornerInsetRatio)*size)).lineTo(Point( cornerInsetRatio*size, (1-cornerInsetRatio)*size)).closePath()
 docu.append(buildPath( darkBlocks , {'style':'stroke:none;fill:black'}))
-docu.writeSVG('cornerdbox.svg')
+docu.writeSVG('corneredBox.svg')
+

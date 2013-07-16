@@ -7,7 +7,7 @@ import os
 import string
 docu = document.Document()
 
-boxSize = 100
+boxSize = 600
 borderCorners = [Point(-1*boxSize, -1*boxSize),\
 Point(boxSize, -1*boxSize),\
 Point(boxSize, boxSize),\
@@ -17,9 +17,9 @@ for i in range(4):
     borderCenters.append(getMidpoint(borderCorners[i], borderCorners[(i+1)%4]))
 
 borderBox = PathData().makeHull(borderCorners)
-docu.appendElement(buildPath(docu, borderBox, {'style':'stroke:black; fill:none'}))
+docu.append(buildPath( borderBox, {'style':'stroke:black; fill:none'}))
 diamondBox = PathData().makeHull(borderCenters)
-docu.appendElement(buildPath(docu, diamondBox, {'style':'stroke:black; fill:none'}))
+docu.append(buildPath( diamondBox, {'style':'stroke:black; fill:none'}))
 
 diamondCenters = []
 for i in range(4):
@@ -29,7 +29,7 @@ innerBoxCorners = [Point(-1*innerBoxRatio*boxSize, -1*innerBoxRatio*boxSize),\
 Point(innerBoxRatio*boxSize, -1*innerBoxRatio*boxSize),\
 Point(innerBoxRatio*boxSize, innerBoxRatio*boxSize),\
 Point(-1*innerBoxRatio*boxSize, innerBoxRatio*boxSize)]
-docu.appendElement(buildPath(docu, PathData().makeHull(innerBoxCorners), {'style':'stroke:none; fill:black'}))
+docu.append(buildPath( PathData().makeHull(innerBoxCorners), {'style':'stroke:none; fill:black'}))
 
 innerBoxCenters = []
 for i in range(4):
@@ -48,20 +48,20 @@ inRatio = 0.5
 darkTriCornerGroup = docu.makeGroup()
 for i in range(4):
     innerTri = getInnerTrianglePoints([borderCenters[i], borderCorners[(i+1)%4],  borderCenters[(i+1)%4]], inRatio) 
-    darkTriCornerGroup.appendChild(buildPath(docu, PathData().makeHull(innerTri), {'style':'stroke:none; fill:black'}))
-docu.appendElement(darkTriCornerGroup)
+    darkTriCornerGroup.append(buildPath( PathData().makeHull(innerTri), {'style':'stroke:none; fill:black'}))
+docu.append(darkTriCornerGroup)
 spireGroup = docu.makeGroup()
 
 for i in range(4):
-    spireGroup.appendChild(buildLine(docu,diamondCenters[i], innerBoxCorners[(i+1)%4],{'style':'stroke:black; fill:none'} ))
-    spireGroup.appendChild(buildLine(docu,borderCenters[i], innerBoxCenters[i],{'style':'stroke:black; fill:none'} ))
+    spireGroup.append(buildLine(diamondCenters[i], innerBoxCorners[(i+1)%4],{'style':'stroke:black; fill:none'} ))
+    spireGroup.append(buildLine(borderCenters[i], innerBoxCenters[i],{'style':'stroke:black; fill:none'} ))
 
-docu.appendElement(spireGroup)
+docu.append(spireGroup)
 allRibs = docu.makeGroup()
 def makeRibCage(arr):
         ribCageGroup = docu.makeGroup()
         for i in range(len(arr[0])):
-            ribCageGroup.appendChild(buildLine(docu, arr[0][i], arr[1][i], {'style':'stroke:black; fill:none'}))
+            ribCageGroup.append(buildLine( arr[0][i], arr[1][i], {'style':'stroke:black; fill:none'}))
         return ribCageGroup
 
 numRibs = 20
@@ -70,15 +70,15 @@ for i in range(4):
     pointsBetween= []
     pointsBetween.append(getLineDivisions(innerBoxCenters[i], borderCenters[i], numRibs))
     pointsBetween.append(getLineDivisions(innerBoxCorners[(i+1)%4], diamondCenters[i], numRibs))
-    allRibs.appendChild(makeRibCage(pointsBetween))
+    allRibs.append(makeRibCage(pointsBetween))
     pointsBetween= []
     pointsBetween.append(getLineDivisions(innerBoxCorners[(i+1)%4], diamondCenters[i], numRibs))
     pointsBetween.append(getLineDivisions(innerBoxCenters[(i+1)%4], borderCenters[(i+1)%4], numRibs))
-    allRibs.appendChild(makeRibCage(pointsBetween))
+    allRibs.append(makeRibCage(pointsBetween))
     
-docu.appendElement(allRibs)
+docu.append(allRibs)
     
     
-docu.writeSVG("88lemi.svg" )
+docu.writeSVG("doubleLemniscateTile.svg" )
 print "done"
 

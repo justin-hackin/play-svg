@@ -1,3 +1,10 @@
+"""
+WARNING: requires sympy installation
+A script to generate the Sri Yantra using Patrick Flanagan's method seen 'here <http://www.sriyantraresearch.com/Construction/Flanagan/patrick_flanagan_method.htm>`_
+Originally t1heightRatio was defined as math.sqrt(phi) as in Flanagan's methods.  
+This ratio was altered to optimize for the final t10 triangle being an equalateral triangle through trial and error
+"""
+
 from playsvg.document import *
 from playsvg.element import *
 from playsvg.path import *
@@ -27,10 +34,13 @@ def centerOfTriangle(p1, p2, p3):
 #variable conventions t(triangle) # (triangle number)[l,r,a](left base, right base, apex)
 
 scale = 400
+#t1heightRatio = math.sqrt(phi)
+t1heightRatio = 1.3281978
+
 print "t1"
 t1l = Point(-1*scale, 0 )
 t1r = Point(scale, 0 )
-t1height = scale*1.3281978
+t1height = scale*t1heightRatio
 t1a = Point(0, t1height)
 t1 = Triangle(t1a, t1r, t1l)
 #print t1.angles
@@ -158,9 +168,6 @@ print "Angle t10a:" + str(t10.angles[t10a].n()/math.pi*180)
 print "Angle t10r:" + str(t10.angles[t10r].n()/math.pi*180)
 print "Angle t10l:" + str(t10.angles[t10l].n()/math.pi*180)
 
-unConcentricDeg = c1.center - t10.center &&&&&&&&&&
-
-print str()
 
 # 
 # docu.append(labelPoint(Circle(t1a, 2), "red", "t1", Point(10,5)))
@@ -176,6 +183,6 @@ print str()
 
  
  
-docu.writeSVG("sri_yantra_via_phi.svg")
+docu.writeSVG("sri_yantra.svg")
 print "done"
 

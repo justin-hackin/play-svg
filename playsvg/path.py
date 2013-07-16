@@ -2,13 +2,16 @@
 This module contains the PathData class which is used to store and manipulate paths as defined in the SVG specifications.  
 Methods correspond to SVG path's D attribute commands as specified `here <http://www.w3.org/TR/SVG/paths.html#PathData>`_
 PathData has only one attribute, commandList, which stores a list of objects representing commands.
+
+playSVG is transitionally implementing the use of sympy.geometry.Point instead of the geom.Point for greater geometric functionality, with following replacements
+str(point) => printPoint(point)
+str(pathData) => pathData.getD()
 """
 
 from geom import *
 import string
 import re
 import simplepath
-from ctypes import pointer
 from copy import deepcopy
 
 ## Path Abstractions
@@ -42,6 +45,19 @@ class PathData:
                 self.elipticalArc(Point(params[0], params[1]), Point(params[5], params[6]), params[2], params[3], params[4])
             elif command == 'Z':
                 self.closePath()
+    
+    def __str__(self):
+       return  string.join([str(i) for i in self.commandList], ' ')
+    def getD(self):
+       return  string.join([i.toString() for i in self.commandList], ' ') 
+    
+    
+    def __len__(self):
+        length = 0
+        for i in range(len(commandList)):
+            length += getattr(commandList[i], 'length')
+        return length
+    
     def moveTo(self,point):
         """always the first command of the path.  repositions drawing location to point"""
         command = MoveCommand(point)
@@ -129,13 +145,7 @@ class PathData:
         ctrlPt2 = extendBendPoint(startPt, endPt, vector2[0]*startEndDist, 0.5 + vector2[1] )
         self.cubicBezier(ctrlPt1, ctrlPt2, endPt)
         return self
-    def __str__(self):
-       return  string.join([str(i) for i in self.commandList], ' ')
-    def __len__(self):
-        length = 0
-        for i in range(len(commandList)):
-            length += getattr(commandList[i], 'length')
-        return length
+    
     def appendPath(self, path):
         """Concatenate commands from another PathData object into command list"""
         for command in path.commandList:
@@ -204,6 +214,44 @@ class PathData:
             newCommandList.append(thisCommand)
         self.commandList = newCommandList
         
+    def up(self, val):
+        """Turtle-like command to draw line up specified distance from last command endPt"""
+        point = self.commandList[-1].endPt + Point(0, val) 
+        command = LineCommand(point)
+        command.length = distanceBetween(point, getattr(self.commandList[-1], 'endPt'))
+        self.commandList.append(command)
+        return self
+    
+    def down(self, val):
+        """Turtle-like command to draw line down specified distance from last command endPt"""
+        point = self.commandList[-1].endPt + Point(0, -1*val) 
+        command = LineCommand(point)
+        command.length = distanceBetween(point, getattr(self.commandList[-1], 'endPt'))
+        self.commandList.append(command)
+        return self
+    
+    def left(self, val):
+        """Turtle-like command to draw line down specified distance from last command endPt"""
+        point = self.commandList[-1].endPt + Point(-1*val, 0) 
+        command = LineCommand(point)
+        command.length = distanceBetween(point, getattr(self.commandList[-1], 'endPt'))
+        self.commandList.append(command)
+        return self
+    
+    def right(self, val):
+        """Turtle-like command to draw line down specified distance from last command endPt"""
+        point = self.commandList[-1].endPt + Point(val, 0) 
+        command = LineCommand(point)
+        command.length = distanceBetween(point, getattr(self.commandList[-1], 'endPt'))
+        self.commandList.append(command)
+        return self
+    
+    
+    
+    
+    
+        
+        
 #TODO: preserve close path on reverse        
 #        closeIndices = []
 #        for i in range(len(self.commandList)):
@@ -259,18 +307,21 @@ class MoveCommand(PathCommand):
         self.endPt = endPt
         PathCommand.__init__(self)
     def __str__(self): return 'M'  + str(self.endPt)
+    def toString(self): return 'M '  + printPoint(self.endPt)
 
 class LineCommand(PathCommand):
     def __init__(self, endPt):
         self.endPt = endPt
         PathCommand.__init__(self)        
     def __str__(self): return 'L'  + str(self.endPt)
+    def toString(self): return 'L'  + printPoint(self.endPt)
         
 class CloseCommand(PathCommand):
     def __init__(self):
         self.endPt = None
         PathCommand.__init__(self)
     def __str__(self): return 'Z'
+    def toString(self): return 'Z' 
 
 class CubicBezierCommand(PathCommand):
     def __init__(self, ctrlPt1, ctrlPt2, endPt):
@@ -279,7 +330,8 @@ class CubicBezierCommand(PathCommand):
         self.endPt = endPt
         PathCommand.__init__(self)
     def __str__(self): return 'C'  + str(self.ctrlPt1) + ' ' + str(self.ctrlPt2) + ' ' + str(self.endPt)
-    
+    def toString(self): return 'C'  + printPoint(self.ctrlPt1) + ' ' + printPoint(self.ctrlPt2) + ' ' + printPoint(self.endPt)
+     
 
 class SmoothCubicBezierCommand(PathCommand):
     def __init__(self, ctrlPt, endPt):
@@ -287,6 +339,7 @@ class SmoothCubicBezierCommand(PathCommand):
         self.endPt = endPt
         PathCommand.__init__(self)
     def __str__(self): return 'S'  + str(self.ctrlPt1) + ' ' + str(self.ctrlPt2) + ' ' + str(self.endPt)
+    def toString(self): return 'S'  + printPoint(self.ctrlPt1) + ' ' + printPoint(self.ctrlPt2) + ' ' + printPoint(self.endPt)
 
 
 class QuadradicBezierCommand(PathCommand):
@@ -295,12 +348,14 @@ class QuadradicBezierCommand(PathCommand):
         self.endPt = endPt
         PathCommand.__init__(self)
     def __str__(self): return 'Q'  + str(self.ctrlPt) +  ' ' + str(self.endPt)
+    def toString(self): return 'Q'  + printPoint(self.ctrlPt) +  ' ' + printPoint(self.endPt)
 
 class SmoothQuadradicBezierCommand(PathCommand):
     def __init__(self, endPt):
             self.endPt = endPt
             PathCommand.__init__(self)
     def __str__(self): return 'T'  +  ' ' + str(self.endPt)
+    def toString(self): return 'T'  +  ' ' + printPoint(self.endPt)
     
 class ArcCommand(PathCommand):
     def __init__(self, rPoint, xAxisRotation, sweepFlag, arcFlag, endPt):
@@ -312,6 +367,16 @@ class ArcCommand(PathCommand):
         PathCommand.__init__(self)
     def __str__(self): 
         return ' A' +  ' '+ str(getattr(self.rPoint, 'x')) +' '+ str(getattr(self.rPoint, 'y')) +' '+ str(self.sweepFlag) +' '+ str(self.arcFlag) +' '+ str(self.endPt)
-
     
+    def toString(self): 
+        return ' A' +  ' '+ printPoint(self.rPoint) + ' '+ str(self.sweepFlag) +','+ str(self.arcFlag) +' '+ printPoint(self.endPt)
+
+
+def printPoint(point):
+    return '%.5f'% float(point.x) + ' , ' + '%.5f'% float(point.y)
+
+
+
+
+
 

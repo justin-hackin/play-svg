@@ -10,7 +10,7 @@ circleCentreArray = []
 
 def buildMetatronCube(docu):
     level = 5
-    radius = 50
+    radius = 100
     lineAttrs = {'style':'stroke:black;fill:none'}
     circleAttrs = {'style':'stroke:black;fill:none'}
     
@@ -61,6 +61,6 @@ def buildMetatronCube(docu):
 
 docu.append(buildMetatronCube(docu))
 
-docu.writeSVG('metatrons_cube.svg')
+docu.writeSVG('metatronsCube.svg')
 print "done"
 

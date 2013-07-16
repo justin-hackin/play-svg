@@ -15,7 +15,7 @@ phiTriAng = [132, 96, 72, 36, 24, 12]
 numVert = 10
 polyRad = 400
 docSize = 640
-docu = Document(gridSize=640)
+docu = Document()
 docu.append(buildRect(Point(docSize*-1., docSize*-1.), docSize*2, docSize*2, {'style':'fill:black'} ))
 for h in range(2):
     polyVert = createRadialPlots(Point(), polyRad, numVert, True)
@@ -61,6 +61,5 @@ for h in range(2):
             thisRingGroup.append(thisGroup)
     docu.append(thisRingGroup)        
     polyRad = polyRad*(phi**-1)
-    
-        
+
 docu.writeSVG("phi_triangle_star.svg")

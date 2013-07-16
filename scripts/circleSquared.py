@@ -1,3 +1,4 @@
+"""creates a circle in a rectangle in a circle in a rectangle in a.... """
 from playsvg.document import *
 from playsvg.element import *
 

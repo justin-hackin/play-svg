@@ -8,26 +8,26 @@ from playsvg.gradient import *
 from playsvg import gradshape
 
 docu = document.Document()
-outerRadius = 260
+outerRadius = 640
 borderWidth = 20
 borderSlices = 12
 borderPoints = createRadialPlots(Point(0,0), outerRadius+borderWidth, 5)
 outerStarPoints = createRadialPlots(Point(0,0), outerRadius, 5)
-midRadius = intersectLineLine(outerStarPoints[0], outerStarPoints[3], outerStarPoints[4], outerStarPoints[1]).convertToPoler().r
+midRadius = intersectLineLine(outerStarPoints[0], outerStarPoints[3], outerStarPoints[4], outerStarPoints[1]).convertToPoler()[0]
 midStarPoints = createRadialPlots(Point(0,0), midRadius, 5, passive = 1)
-innerRadius =  intersectLineLine(midStarPoints[0], midStarPoints[3], midStarPoints[4], midStarPoints[1]).convertToPoler().r
+innerRadius =  intersectLineLine(midStarPoints[0], midStarPoints[3], midStarPoints[4], midStarPoints[1]).convertToPoler()[0]
 innerStarPoints = createRadialPlots(Point(0,0), innerRadius, 5)
 
 upGradientColors = [  '#a500ff', '#faff00']
 upGradient = Gradient('upgrad000')
 upGradient.createBalancedGradient(upGradientColors)
-docu.append(upGradient.createDefinition(docu))
+docu.append(upGradient.createDefinition())
 upGradientColors.reverse()
 #upGradients order becomes reversed
 downGradientColors = upGradientColors
 downGradient = Gradient('downgrad000')
 downGradient.createBalancedGradient(downGradientColors)
-docu.append(downGradient.createDefinition(docu))
+docu.append(downGradient.createDefinition())
 
 #starBackground
 ##backing = PathData().makeHull(innerStarPoints)
@@ -41,7 +41,7 @@ for i in range(5):
     ##starPointData = PathData().moveTo(outerStarPoints[i]).lineTo(midStarPoints[i]).lineTo(midStarPoints[(i-1)%5]).closePath()
     ##outerStarRaysGroup.append(buildPath( starPointData,  outerRayAttributes))
     points = [outerStarPoints[i], midStarPoints[i], midStarPoints[(i-1)%5]]
-    starRaysGroup.append(gradshape.polygonGradient( points, upGradient, 'outspire'+str(i)))
+    starRaysGroup.append(gradshape.polygonGradient(docu, points, upGradient, 'outspire'+str(i)))
 
 # inner star rays
 
@@ -50,7 +50,7 @@ for i in range(5):
     ##starPointData = PathData().moveTo(midStarPoints[i]).lineTo(innerStarPoints[i]).lineTo(innerStarPoints[(i+1)%5]).closePath()
     ##outerStarRaysGroup.append(buildPath( starPointData,  innerRayAttributes))
     points = [midStarPoints[i], innerStarPoints[i], innerStarPoints[(i+1)%5] ]
-    starRaysGroup.append(gradshape.polygonGradient( points, upGradient, 'inspire'+str(i)))
+    starRaysGroup.append(gradshape.polygonGradient(docu,  points, upGradient, 'inspire'+str(i)))
 
 docu.append(starRaysGroup)
 
@@ -61,17 +61,17 @@ for i in range(5):
     ##starPointData = PathData().moveTo(outerStarPoints[i]).lineTo(midStarPoints[i]).lineTo(outerStarPoints[(i+1)%5]).closePath()
     ##betweenTrianglesGroup.append(buildPath( starPointData, innerRayAttributes))
     points =  [outerStarPoints[i], midStarPoints[i], outerStarPoints[(i+1)%5] ]
-    betweenTrianglesGroup.append(gradshape.polygonGradient( points, downGradient, 'outback'+str(i)))
+    betweenTrianglesGroup.append(gradshape.polygonGradient(docu,  points, downGradient, 'outback'+str(i)))
 for i in range(5):
 ##    starPointData = PathData().moveTo(midStarPoints[i]).lineTo(innerStarPoints[(i+1)%5]).lineTo(midStarPoints[(i+1)%5]).closePath()
 ##    betweenTrianglesGroup.append(buildPath( starPointData,  innerRayAttributes))
     points = [midStarPoints[i], innerStarPoints[(i+1)%5], midStarPoints[(i+1)%5] ]
-    betweenTrianglesGroup.append(gradshape.polygonGradient( points, downGradient, 'inback'+str(i)))
+    betweenTrianglesGroup.append(gradshape.polygonGradient(docu,  points, downGradient, 'inback'+str(i)))
     
 docu.append(betweenTrianglesGroup)
 
 #inner pentagon
-betweenTrianglesGroup.append(gradshape.polygonGradient( innerStarPoints, downGradient, 'center'+str(i)))
+betweenTrianglesGroup.append(gradshape.polygonGradient(docu,  innerStarPoints, downGradient, 'center'+str(i)))
 
 ###border
 ##borderAttributes = {u'style':u'fill: black; stroke:white'}
