@@ -1,0 +1,112 @@
+<svg xmlns:ns0="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" ns0:svg="http://www.w3.org/2000/svg" width="1280" height="1280">
+  <defs/>
+  <g id="canvas" transform="matrix(1,0,0,-1,0,1280) translate(640,640)">
+    <g id="triangulargrid" transform="rotate(0)">
+      <g id="upwardtriangles">
+        <path style="stroke:black;fill:none" d="M0.00000,0.00000 L-15.00000,-25.98076 L15.00000,-25.98076 Z"/>
+        <path style="stroke:black;fill:none" d="M-15.00000,-25.98076 L-30.00000,-51.96152 L0.00000,-51.96152 Z"/>
+        <path style="stroke:black;fill:none" d="M15.00000,-25.98076 L0.00000,-51.96152 L30.00000,-51.96152 Z"/>
+        <path style="stroke:black;fill:none" d="M-30.00000,-51.96152 L-45.00000,-77.94229 L-15.00000,-77.94229 Z"/>
+        <path style="stroke:black;fill:none" d="M0.00000,-51.96152 L-15.00000,-77.94229 L15.00000,-77.94229 Z"/>
+        <path style="stroke:black;fill:none" d="M30.00000,-51.96152 L15.00000,-77.94229 L45.00000,-77.94229 Z"/>
+        <path style="stroke:black;fill:none" d="M-45.00000,-77.94229 L-60.00000,-103.92305 L-30.00000,-103.92305 Z"/>
+        <path style="stroke:black;fill:none" d="M-15.00000,-77.94229 L-30.00000,-103.92305 L0.00000,-103.92305 Z"/>
+        <path style="stroke:black;fill:none" d="M15.00000,-77.94229 L0.00000,-103.92305 L30.00000,-103.92305 Z"/>
+        <path style="stroke:black;fill:none" d="M45.00000,-77.94229 L30.00000,-103.92305 L60.00000,-103.92305 Z"/>
+        <path style="stroke:black;fill:none" d="M-60.00000,-103.92305 L-75.00000,-129.90381 L-45.00000,-129.90381 Z"/>
+        <path style="stroke:black;fill:none" d="M-30.00000,-103.92305 L-45.00000,-129.90381 L-15.00000,-129.90381 Z"/>
+        <path style="stroke:black;fill:none" d="M0.00000,-103.92305 L-15.00000,-129.90381 L15.00000,-129.90381 Z"/>
+        <path style="stroke:black;fill:none" d="M30.00000,-103.92305 L15.00000,-129.90381 L45.00000,-129.90381 Z"/>
+        <path style="stroke:black;fill:none" d="M60.00000,-103.92305 L45.00000,-129.90381 L75.00000,-129.90381 Z"/>
+        <path style="stroke:black;fill:none" d="M-75.00000,-129.90381 L-90.00000,-155.88457 L-60.00000,-155.88457 Z"/>
+        <path style="stroke:black;fill:none" d="M-45.00000,-129.90381 L-60.00000,-155.88457 L-30.00000,-155.88457 Z"/>
+        <path style="stroke:black;fill:none" d="M-15.00000,-129.90381 L-30.00000,-155.88457 L0.00000,-155.88457 Z"/>
+        <path style="stroke:black;fill:none" d="M15.00000,-129.90381 L0.00000,-155.88457 L30.00000,-155.88457 Z"/>
+        <path style="stroke:black;fill:none" d="M45.00000,-129.90381 L30.00000,-155.88457 L60.00000,-155.88457 Z"/>
+        <path style="stroke:black;fill:none" d="M75.00000,-129.90381 L60.00000,-155.88457 L90.00000,-155.88457 Z"/>
+        <path style="stroke:black;fill:none" d="M-90.00000,-155.88457 L-105.00000,-181.86533 L-75.00000,-181.86533 Z"/>
+        <path style="stroke:black;fill:none" d="M-60.00000,-155.88457 L-75.00000,-181.86533 L-45.00000,-181.86533 Z"/>
+        <path style="stroke:black;fill:none" d="M-30.00000,-155.88457 L-45.00000,-181.86533 L-15.00000,-181.86533 Z"/>
+        <path style="stroke:black;fill:none" d="M0.00000,-155.88457 L-15.00000,-181.86533 L15.00000,-181.86533 Z"/>
+        <path style="stroke:black;fill:none" d="M30.00000,-155.88457 L15.00000,-181.86533 L45.00000,-181.86533 Z"/>
+        <path style="stroke:black;fill:none" d="M60.00000,-155.88457 L45.00000,-181.86533 L75.00000,-181.86533 Z"/>
+        <path style="stroke:black;fill:none" d="M90.00000,-155.88457 L75.00000,-181.86533 L105.00000,-181.86533 Z"/>
+        <path style="stroke:black;fill:none" d="M-105.00000,-181.86533 L-120.00000,-207.84610 L-90.00000,-207.84610 Z"/>
+        <path style="stroke:black;fill:none" d="M-75.00000,-181.86533 L-90.00000,-207.84610 L-60.00000,-207.84610 Z"/>
+        <path style="stroke:black;fill:none" d="M-45.00000,-181.86533 L-60.00000,-207.84610 L-30.00000,-207.84610 Z"/>
+        <path style="stroke:black;fill:none" d="M-15.00000,-181.86533 L-30.00000,-207.84610 L0.00000,-207.84610 Z"/>
+        <path style="stroke:black;fill:none" d="M15.00000,-181.86533 L0.00000,-207.84610 L30.00000,-207.84610 Z"/>
+        <path style="stroke:black;fill:none" d="M45.00000,-181.86533 L30.00000,-207.84610 L60.00000,-207.84610 Z"/>
+        <path style="stroke:black;fill:none" d="M75.00000,-181.86533 L60.00000,-207.84610 L90.00000,-207.84610 Z"/>
+        <path style="stroke:black;fill:none" d="M105.00000,-181.86533 L90.00000,-207.84610 L120.00000,-207.84610 Z"/>
+        <path style="stroke:black;fill:none" d="M-120.00000,-207.84610 L-135.00000,-233.82686 L-105.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M-90.00000,-207.84610 L-105.00000,-233.82686 L-75.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M-60.00000,-207.84610 L-75.00000,-233.82686 L-45.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M-30.00000,-207.84610 L-45.00000,-233.82686 L-15.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M0.00000,-207.84610 L-15.00000,-233.82686 L15.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M30.00000,-207.84610 L15.00000,-233.82686 L45.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M60.00000,-207.84610 L45.00000,-233.82686 L75.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M90.00000,-207.84610 L75.00000,-233.82686 L105.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M120.00000,-207.84610 L105.00000,-233.82686 L135.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M-135.00000,-233.82686 L-150.00000,-259.80762 L-120.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M-105.00000,-233.82686 L-120.00000,-259.80762 L-90.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M-75.00000,-233.82686 L-90.00000,-259.80762 L-60.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M-45.00000,-233.82686 L-60.00000,-259.80762 L-30.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M-15.00000,-233.82686 L-30.00000,-259.80762 L0.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M15.00000,-233.82686 L0.00000,-259.80762 L30.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M45.00000,-233.82686 L30.00000,-259.80762 L60.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M75.00000,-233.82686 L60.00000,-259.80762 L90.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M105.00000,-233.82686 L90.00000,-259.80762 L120.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M135.00000,-233.82686 L120.00000,-259.80762 L150.00000,-259.80762 Z"/>
+      </g>
+      <g id="downwardtriangles">
+        <path style="stroke:black;fill:none" d="M-15.00000,-25.98076 L15.00000,-25.98076 L0.00000,-51.96152 Z"/>
+        <path style="stroke:black;fill:none" d="M-30.00000,-51.96152 L0.00000,-51.96152 L-15.00000,-77.94229 Z"/>
+        <path style="stroke:black;fill:none" d="M0.00000,-51.96152 L30.00000,-51.96152 L15.00000,-77.94229 Z"/>
+        <path style="stroke:black;fill:none" d="M-45.00000,-77.94229 L-15.00000,-77.94229 L-30.00000,-103.92305 Z"/>
+        <path style="stroke:black;fill:none" d="M-15.00000,-77.94229 L15.00000,-77.94229 L0.00000,-103.92305 Z"/>
+        <path style="stroke:black;fill:none" d="M15.00000,-77.94229 L45.00000,-77.94229 L30.00000,-103.92305 Z"/>
+        <path style="stroke:black;fill:none" d="M-60.00000,-103.92305 L-30.00000,-103.92305 L-45.00000,-129.90381 Z"/>
+        <path style="stroke:black;fill:none" d="M-30.00000,-103.92305 L0.00000,-103.92305 L-15.00000,-129.90381 Z"/>
+        <path style="stroke:black;fill:none" d="M0.00000,-103.92305 L30.00000,-103.92305 L15.00000,-129.90381 Z"/>
+        <path style="stroke:black;fill:none" d="M30.00000,-103.92305 L60.00000,-103.92305 L45.00000,-129.90381 Z"/>
+        <path style="stroke:black;fill:none" d="M-75.00000,-129.90381 L-45.00000,-129.90381 L-60.00000,-155.88457 Z"/>
+        <path style="stroke:black;fill:none" d="M-45.00000,-129.90381 L-15.00000,-129.90381 L-30.00000,-155.88457 Z"/>
+        <path style="stroke:black;fill:none" d="M-15.00000,-129.90381 L15.00000,-129.90381 L0.00000,-155.88457 Z"/>
+        <path style="stroke:black;fill:none" d="M15.00000,-129.90381 L45.00000,-129.90381 L30.00000,-155.88457 Z"/>
+        <path style="stroke:black;fill:none" d="M45.00000,-129.90381 L75.00000,-129.90381 L60.00000,-155.88457 Z"/>
+        <path style="stroke:black;fill:none" d="M-90.00000,-155.88457 L-60.00000,-155.88457 L-75.00000,-181.86533 Z"/>
+        <path style="stroke:black;fill:none" d="M-60.00000,-155.88457 L-30.00000,-155.88457 L-45.00000,-181.86533 Z"/>
+        <path style="stroke:black;fill:none" d="M-30.00000,-155.88457 L0.00000,-155.88457 L-15.00000,-181.86533 Z"/>
+        <path style="stroke:black;fill:none" d="M0.00000,-155.88457 L30.00000,-155.88457 L15.00000,-181.86533 Z"/>
+        <path style="stroke:black;fill:none" d="M30.00000,-155.88457 L60.00000,-155.88457 L45.00000,-181.86533 Z"/>
+        <path style="stroke:black;fill:none" d="M60.00000,-155.88457 L90.00000,-155.88457 L75.00000,-181.86533 Z"/>
+        <path style="stroke:black;fill:none" d="M-105.00000,-181.86533 L-75.00000,-181.86533 L-90.00000,-207.84610 Z"/>
+        <path style="stroke:black;fill:none" d="M-75.00000,-181.86533 L-45.00000,-181.86533 L-60.00000,-207.84610 Z"/>
+        <path style="stroke:black;fill:none" d="M-45.00000,-181.86533 L-15.00000,-181.86533 L-30.00000,-207.84610 Z"/>
+        <path style="stroke:black;fill:none" d="M-15.00000,-181.86533 L15.00000,-181.86533 L0.00000,-207.84610 Z"/>
+        <path style="stroke:black;fill:none" d="M15.00000,-181.86533 L45.00000,-181.86533 L30.00000,-207.84610 Z"/>
+        <path style="stroke:black;fill:none" d="M45.00000,-181.86533 L75.00000,-181.86533 L60.00000,-207.84610 Z"/>
+        <path style="stroke:black;fill:none" d="M75.00000,-181.86533 L105.00000,-181.86533 L90.00000,-207.84610 Z"/>
+        <path style="stroke:black;fill:none" d="M-120.00000,-207.84610 L-90.00000,-207.84610 L-105.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M-90.00000,-207.84610 L-60.00000,-207.84610 L-75.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M-60.00000,-207.84610 L-30.00000,-207.84610 L-45.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M-30.00000,-207.84610 L0.00000,-207.84610 L-15.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M0.00000,-207.84610 L30.00000,-207.84610 L15.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M30.00000,-207.84610 L60.00000,-207.84610 L45.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M60.00000,-207.84610 L90.00000,-207.84610 L75.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M90.00000,-207.84610 L120.00000,-207.84610 L105.00000,-233.82686 Z"/>
+        <path style="stroke:black;fill:none" d="M-135.00000,-233.82686 L-105.00000,-233.82686 L-120.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M-105.00000,-233.82686 L-75.00000,-233.82686 L-90.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M-75.00000,-233.82686 L-45.00000,-233.82686 L-60.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M-45.00000,-233.82686 L-15.00000,-233.82686 L-30.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M-15.00000,-233.82686 L15.00000,-233.82686 L0.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M15.00000,-233.82686 L45.00000,-233.82686 L30.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M45.00000,-233.82686 L75.00000,-233.82686 L60.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M75.00000,-233.82686 L105.00000,-233.82686 L90.00000,-259.80762 Z"/>
+        <path style="stroke:black;fill:none" d="M105.00000,-233.82686 L135.00000,-233.82686 L120.00000,-259.80762 Z"/>
+      </g>
+      <path style="stroke:black;fill:none" d="M0.00000,0.00000 L-150.00000,-259.80762 L150.00000,-259.80762 Z"/>
+    </g>
+  </g>
+</svg>

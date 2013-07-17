@@ -1,0 +1,19 @@
+<svg xmlns:ns0="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" ns0:svg="http://www.w3.org/2000/svg" width="1280" height="1280">
+  <defs/>
+  <g id="canvas" transform="matrix(1,0,0,-1,0,1280) translate(640,640)">
+    <circle style="fill:none;stroke:black;stroke-width:1" cx="0.00000" r="416.21954" cy="115.05958"/>
+    <path style="fill:none;stroke:black;stroke-width:1" d="M 0.00000 , 531.27912 L400.00000 , 0.00000 L-400.00000 , 0.00000 Z"/>
+    <path style="fill:none;stroke:black;stroke-width:1" d="M 0.00000 , -301.15996 L399.57076 , 231.60105 L-399.57076 , 231.60105 Z"/>
+    <line y1="399.57076" x2="225.86997" style="fill:none;stroke:black;stroke-width:1" x1="0.00000" y2="0.00000"/>
+    <line y1="399.57076" x2="-225.86997" style="fill:none;stroke:black;stroke-width:1" x1="0.00000" y2="0.00000"/>
+    <line y1="-168.39895" x2="225.62759" style="fill:none;stroke:black;stroke-width:1" x1="0.00000" y2="231.60105"/>
+    <line y1="-168.39895" x2="-225.62759" style="fill:none;stroke:black;stroke-width:1" x1="0.00000" y2="231.60105"/>
+    <path style="fill:none;stroke:black;stroke-width:1" d="M 0.00000 , 231.60105 L164.05560 , -168.39895 L-164.05560 , -168.39895 Z"/>
+    <path style="fill:none;stroke:black;stroke-width:1" d="M 0.00000 , 399.57076 L-289.64234 , -112.81523 L289.64234 , -112.81523 Z"/>
+    <path style="fill:none;stroke:black;stroke-width:1" d="M 0.00000 , 67.14286 L191.92773 , 399.57076 L-191.92773 , 399.57076 Z"/>
+    <path style="fill:none;stroke:black;stroke-width:1" d="M 0.00000 , -168.39895 L281.03898 , 329.83618 L-281.03898 , 329.83618 Z"/>
+    <path style="fill:none;stroke:black;stroke-width:1" d="M 0.00000 , 329.83618 L132.86183 , 67.14286 L-132.86183 , 67.14286 Z"/>
+    <path style="fill:none;stroke:black;stroke-width:1" d="M 0.00000 , -112.81523 L118.57457 , 189.80879 L-118.57457 , 189.80879 Z"/>
+    <path style="fill:none;stroke:black;stroke-width:1" d="M 0.00000 , 0.00000 L98.31527 , 135.44805 L-98.31527 , 135.44805 Z"/>
+  </g>
+</svg>

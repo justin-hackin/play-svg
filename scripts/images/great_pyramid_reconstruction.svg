@@ -1,0 +1,25 @@
+<svg xmlns:ns0="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" ns0:svg="http://www.w3.org/2000/svg" width="900" height="900">
+  <defs/>
+  <g id="canvas" transform="matrix(1,0,0,-1,0,900) translate(450,450)">
+    <g>
+      <path style=" stroke:blue ;fill:blue; fill-opacity:0" d="M0.00000,114.72610 L115.05288,115.31783 L114.54486,0.10065 L115.25511,-115.07326 L-0.01718,-114.46340 L-115.19854,-115.03805 L-114.59040,0.00004 L-115.19995,115.31853 L0.00000,114.72610"/>
+      <path style=" stroke:blue ;fill:blue; fill-opacity:0" d="M0.00000,70.90463 L71.10659,71.27034 L70.79261,0.06221 L71.23157,-71.11918 L-0.01062,-70.74227 L-71.19662,-71.09743 L-70.82076,0.00002 L-71.19748,71.27077 L0.00000,70.90463"/>
+    </g>
+    <g>
+      <path style=" stroke:blue ;fill:blue; fill-opacity:0" d="M0.00000,400.00000 L-115.20082,213.71388 L0.00000,214.07950 L115.05382,213.71438 Z"/>
+      <path style=" stroke:red ;fill:red; fill-opacity:0" d="M0.00000,400.00000 L0.00000,214.07950"/>
+    </g>
+    <g>
+      <path style=" stroke:blue ;fill:blue; fill-opacity:0" d="M400.00000,0.00000 L213.81568,115.21769 L214.19120,0.00000 L213.74040,-115.05352 Z"/>
+      <path style=" stroke:red ;fill:red; fill-opacity:0" d="M400.00000,0.00000 L214.19120,0.00000"/>
+    </g>
+    <g>
+      <path style=" stroke:blue ;fill:blue; fill-opacity:0" d="M0.00000,-400.00000 L115.27332,-213.87635 L0.00000,-214.24150 L-115.18222,-213.87664 Z"/>
+      <path style=" stroke:red ;fill:red; fill-opacity:0" d="M0.00000,-400.00000 L0.00000,-214.24150"/>
+    </g>
+    <g>
+      <path style=" stroke:blue ;fill:blue; fill-opacity:0" d="M-400.00000,0.00000 L-213.78814,-115.03909 L-214.16320,0.00000 L-213.78732,115.31949 Z"/>
+      <path style=" stroke:red ;fill:red; fill-opacity:0" d="M-400.00000,0.00000 L-214.16320,0.00000"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns:ns0="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" ns0:svg="http://www.w3.org/2000/svg" width="1280" height="1280">
+  <defs/>
+  <g id="canvas" transform="matrix(1,0,0,-1,0,1280) translate(640,640)">
+    <path style="stroke:black;fill:none" id="petalspin" d="M-600.00000,0.00000 C-114.58980,352.67115 114.58980,352.67115 600.00000,0.00000 C114.58980,-352.67115 -114.58980,-352.67115 -600.00000,0.00000 Z"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(12.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(24.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(36.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(48.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(60.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(72.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(84.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(96.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(108.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(120.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(132.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(144.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(156.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(168.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(180.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(192.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(204.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(216.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(228.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(240.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(252.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(264.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(276.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(288.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(300.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(312.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(324.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(336.0)"/>
+    <use xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#petalspin" transform="rotate(348.0)"/>
+  </g>
+</svg>

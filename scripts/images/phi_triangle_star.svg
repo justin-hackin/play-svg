@@ -1,0 +1,730 @@
+<svg xmlns:ns0="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" ns0:svg="http://www.w3.org/2000/svg" width="1280" height="1280">
+  <defs/>
+  <g id="canvas" transform="matrix(1,0,0,-1,0,1280) translate(640,640)">
+    <rect y="-640.00000" x="-640.00000" style="fill:black" width="1280.00000" height="1280.00000"/>
+    <g id="ring-group_0">
+      <g id="triangle_48-93-38_iter-0-group_0">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRD" d="M123.60680,380.42261 L323.60680,235.11410 L174.15914,203.34802 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_RLD" d="M323.60680,235.11410 L123.60680,380.42261 L136.92301,228.21760 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M123.60680,380.42261 L323.60680,235.11410 L273.05445,412.18869 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M123.60680,380.42261 L323.60680,235.11410 L310.29059,387.31911 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-0-group_0">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRD" d="M123.60680,380.42261 L323.60680,235.11410 L221.37274,121.57168 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_RLD" d="M323.60680,235.11410 L123.60680,380.42261 L44.91598,249.45910 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M123.60680,380.42261 L323.60680,235.11410 L225.84086,493.96503 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M123.60680,380.42261 L323.60680,235.11410 L402.29761,366.07761 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-0-group_0">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRD" d="M123.60680,380.42261 L323.60680,235.11410 L276.39320,89.80560 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_RLD" d="M323.60680,235.11410 L123.60680,380.42261 L-1.54850,292.78793 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M123.60680,380.42261 L323.60680,235.11410 L170.82039,525.73111 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M123.60680,380.42261 L323.60680,235.11410 L448.76209,322.74878 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-0-group_0">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRD" d="M123.60680,380.42261 L323.60680,235.11410 L370.82039,89.80560 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_RLD" d="M323.60680,235.11410 L123.60680,380.42261 L-29.15634,383.08910 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M123.60680,380.42261 L323.60680,235.11410 L76.39320,525.73111 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M123.60680,380.42261 L323.60680,235.11410 L476.36993,232.44761 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-0-group_0">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRD" d="M123.60680,380.42261 L323.60680,235.11410 L400.00000,102.79719 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_RLD" d="M323.60680,235.11410 L123.60680,380.42261 L-25.26370,414.79207 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M123.60680,380.42261 L323.60680,235.11410 L47.21360,512.73951 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M123.60680,380.42261 L323.60680,235.11410 L472.47730,200.74464 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-0-group_0">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRD" d="M123.60680,380.42261 L323.60680,235.11410 L425.84086,121.57168 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_RLD" d="M323.60680,235.11410 L123.60680,380.42261 L-14.86471,444.99293 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M123.60680,380.42261 L323.60680,235.11410 L21.37274,493.96503 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M123.60680,380.42261 L323.60680,235.11410 L462.07831,170.54378 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-0-group_1">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRD" d="M323.60680,235.11410 L400.00000,0.00000 L260.42267,62.14383 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_RLD" d="M400.00000,0.00000 L323.60680,235.11410 L244.91598,104.15059 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M323.60680,235.11410 L400.00000,0.00000 L463.18412,172.97027 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M323.60680,235.11410 L400.00000,0.00000 L478.69082,130.96351 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-0-group_1">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRD" d="M323.60680,235.11410 L400.00000,0.00000 L250.55235,-31.76608 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_RLD" d="M400.00000,0.00000 L323.60680,235.11410 L182.96617,175.41570 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M323.60680,235.11410 L400.00000,0.00000 L473.05445,266.88018 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M323.60680,235.11410 L400.00000,0.00000 L540.64063,59.69840 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-0-group_1">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRD" d="M323.60680,235.11410 L400.00000,0.00000 L276.39320,-89.80560 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_RLD" d="M400.00000,0.00000 L323.60680,235.11410 L170.84366,237.78059 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M323.60680,235.11410 L400.00000,0.00000 L447.21360,324.91970 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M323.60680,235.11410 L400.00000,0.00000 L552.76313,-2.66649 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-0-group_1">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRD" d="M323.60680,235.11410 L400.00000,0.00000 L352.78640,-145.30851 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_RLD" d="M400.00000,0.00000 L323.60680,235.11410 L201.58615,327.06325 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M323.60680,235.11410 L400.00000,0.00000 L370.82039,380.42261 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M323.60680,235.11410 L400.00000,0.00000 L522.02065,-91.94915 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-0-group_1">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRD" d="M323.60680,235.11410 L400.00000,0.00000 L384.02947,-151.94942 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_RLD" d="M400.00000,0.00000 L323.60680,235.11410 L223.36990,350.42346 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M323.60680,235.11410 L400.00000,0.00000 L339.57733,387.06353 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M323.60680,235.11410 L400.00000,0.00000 L500.23690,-115.30936 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-0-group_1">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRD" d="M323.60680,235.11410 L400.00000,0.00000 L415.97053,-151.94942 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_RLD" d="M400.00000,0.00000 L323.60680,235.11410 L249.53448,368.74410 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M323.60680,235.11410 L400.00000,0.00000 L307.63627,387.06353 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M323.60680,235.11410 L400.00000,0.00000 L474.07232,-133.63000 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-0-group_2">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRD" d="M400.00000,0.00000 L323.60680,-235.11410 L247.21360,-102.79719 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_RLD" d="M323.60680,-235.11410 L400.00000,0.00000 L259.35937,-59.69840 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M400.00000,0.00000 L323.60680,-235.11410 L476.39320,-132.31691 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M400.00000,0.00000 L323.60680,-235.11410 L464.24742,-175.41570 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-0-group_2">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRD" d="M400.00000,0.00000 L323.60680,-235.11410 L184.02947,-172.97027 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_RLD" d="M323.60680,-235.11410 L400.00000,0.00000 L251.12950,34.36946 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M400.00000,0.00000 L323.60680,-235.11410 L539.57733,-62.14383 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M400.00000,0.00000 L323.60680,-235.11410 L472.47730,-269.48356 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-0-group_2">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRD" d="M400.00000,0.00000 L323.60680,-235.11410 L170.82039,-235.11410 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_RLD" d="M323.60680,-235.11410 L400.00000,0.00000 L277.97935,91.94915 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M400.00000,0.00000 L323.60680,-235.11410 L552.78640,0.00000 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M400.00000,0.00000 L323.60680,-235.11410 L445.62745,-327.06325 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-0-group_2">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRD" d="M400.00000,0.00000 L323.60680,-235.11410 L200.00000,-324.91970 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_RLD" d="M323.60680,-235.11410 L400.00000,0.00000 L355.32958,146.11037 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M400.00000,0.00000 L323.60680,-235.11410 L523.60680,89.80560 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M400.00000,0.00000 L323.60680,-235.11410 L368.27722,-381.22447 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-0-group_2">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRD" d="M400.00000,0.00000 L323.60680,-235.11410 L221.37274,-348.65653 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_RLD" d="M323.60680,-235.11410 L400.00000,0.00000 L386.68379,152.20501 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M400.00000,0.00000 L323.60680,-235.11410 L502.23406,113.54243 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M400.00000,0.00000 L323.60680,-235.11410 L336.92301,-387.31911 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-0-group_2">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRD" d="M400.00000,0.00000 L323.60680,-235.11410 L247.21360,-367.43101 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_RLD" d="M323.60680,-235.11410 L400.00000,0.00000 L418.61998,151.64756 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M400.00000,0.00000 L323.60680,-235.11410 L476.39320,132.31691 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M400.00000,0.00000 L323.60680,-235.11410 L304.98682,-386.76166 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-0-group_3">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRD" d="M323.60680,-235.11410 L123.60680,-380.42261 L139.57733,-228.47318 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_RLD" d="M123.60680,-380.42261 L323.60680,-235.11410 L174.73630,-200.74464 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M323.60680,-235.11410 L123.60680,-380.42261 L307.63627,-387.06353 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M323.60680,-235.11410 L123.60680,-380.42261 L272.47730,-414.79207 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-0-group_3">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRD" d="M323.60680,-235.11410 L123.60680,-380.42261 L47.21360,-248.10570 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_RLD" d="M123.60680,-380.42261 L323.60680,-235.11410 L223.36990,-119.80474 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M323.60680,-235.11410 L123.60680,-380.42261 L400.00000,-367.43101 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M323.60680,-235.11410 L123.60680,-380.42261 L223.84370,-495.73197 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-0-group_3">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRD" d="M323.60680,-235.11410 L123.60680,-380.42261 L-0.00000,-290.61701 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_RLD" d="M123.60680,-380.42261 L323.60680,-235.11410 L278.93638,-89.00374 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M323.60680,-235.11410 L123.60680,-380.42261 L447.21360,-324.91970 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M323.60680,-235.11410 L123.60680,-380.42261 L168.27722,-526.53297 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-0-group_3">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRD" d="M323.60680,-235.11410 L123.60680,-380.42261 L-29.17961,-380.42261 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_RLD" d="M123.60680,-380.42261 L323.60680,-235.11410 L373.34919,-90.65172 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M323.60680,-235.11410 L123.60680,-380.42261 L476.39320,-235.11410 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M323.60680,-235.11410 L123.60680,-380.42261 L73.86441,-524.88499 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-0-group_3">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRD" d="M323.60680,-235.11410 L123.60680,-380.42261 L-25.84086,-412.18869 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_RLD" d="M123.60680,-380.42261 L323.60680,-235.11410 L402.29761,-104.15059 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M323.60680,-235.11410 L123.60680,-380.42261 L473.05445,-203.34802 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M323.60680,-235.11410 L123.60680,-380.42261 L44.91598,-511.38612 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-0-group_3">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRD" d="M323.60680,-235.11410 L123.60680,-380.42261 L-15.97053,-442.56644 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_RLD" d="M123.60680,-380.42261 L323.60680,-235.11410 L427.80688,-123.37320 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M323.60680,-235.11410 L123.60680,-380.42261 L463.18412,-172.97027 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M323.60680,-235.11410 L123.60680,-380.42261 L19.40672,-492.16351 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-0-group_4">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRD" d="M123.60680,-380.42261 L-123.60680,-380.42261 L-21.37274,-266.88018 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_RLD" d="M-123.60680,-380.42261 L123.60680,-380.42261 L23.36990,-265.11324 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M123.60680,-380.42261 L-123.60680,-380.42261 L21.37274,-493.96503 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M123.60680,-380.42261 L-123.60680,-380.42261 L-23.36990,-495.73197 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-0-group_4">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRD" d="M123.60680,-380.42261 L-123.60680,-380.42261 L-107.63627,-228.47318 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_RLD" d="M-123.60680,-380.42261 L123.60680,-380.42261 L110.29059,-228.21760 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M123.60680,-380.42261 L-123.60680,-380.42261 L107.63627,-532.37203 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M123.60680,-380.42261 L-123.60680,-380.42261 L-110.29059,-532.62761 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-0-group_4">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRD" d="M123.60680,-380.42261 L-123.60680,-380.42261 L-170.82039,-235.11410 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_RLD" d="M-123.60680,-380.42261 L123.60680,-380.42261 L173.34919,-235.96022 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M123.60680,-380.42261 L-123.60680,-380.42261 L170.82039,-525.73111 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M123.60680,-380.42261 L-123.60680,-380.42261 L-173.34919,-524.88499 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-0-group_4">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRD" d="M123.60680,-380.42261 L-123.60680,-380.42261 L-247.21360,-290.61701 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_RLD" d="M-123.60680,-380.42261 L123.60680,-380.42261 L248.76209,-292.78793 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M123.60680,-380.42261 L-123.60680,-380.42261 L247.21360,-470.22820 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M123.60680,-380.42261 L-123.60680,-380.42261 L-248.76209,-468.05729 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-0-group_4">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRD" d="M123.60680,-380.42261 L-123.60680,-380.42261 L-263.18412,-318.27878 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_RLD" d="M-123.60680,-380.42261 L123.60680,-380.42261 L264.24742,-320.72420 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M123.60680,-380.42261 L-123.60680,-380.42261 L263.18412,-442.56644 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M123.60680,-380.42261 L-123.60680,-380.42261 L-264.24742,-440.12101 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-0-group_4">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRD" d="M123.60680,-380.42261 L-123.60680,-380.42261 L-273.05445,-348.65653 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_RLD" d="M-123.60680,-380.42261 L123.60680,-380.42261 L273.58609,-351.26959 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M123.60680,-380.42261 L-123.60680,-380.42261 L273.05445,-412.18869 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M123.60680,-380.42261 L-123.60680,-380.42261 L-273.58609,-409.57563 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-0-group_5">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRD" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-174.15914,-203.34802 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_RLD" d="M-323.60680,-235.11410 L-123.60680,-380.42261 L-136.92301,-228.21760 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-273.05445,-412.18869 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-310.29059,-387.31911 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-0-group_5">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRD" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-221.37274,-121.57168 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_RLD" d="M-323.60680,-235.11410 L-123.60680,-380.42261 L-44.91598,-249.45910 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-225.84086,-493.96503 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-402.29761,-366.07761 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-0-group_5">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRD" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-276.39320,-89.80560 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_RLD" d="M-323.60680,-235.11410 L-123.60680,-380.42261 L1.54850,-292.78793 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-170.82039,-525.73111 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-448.76209,-322.74878 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-0-group_5">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRD" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-370.82039,-89.80560 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_RLD" d="M-323.60680,-235.11410 L-123.60680,-380.42261 L29.15634,-383.08910 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-76.39320,-525.73111 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-476.36993,-232.44761 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-0-group_5">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRD" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-400.00000,-102.79719 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_RLD" d="M-323.60680,-235.11410 L-123.60680,-380.42261 L25.26370,-414.79207 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-47.21360,-512.73951 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-472.47730,-200.74464 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-0-group_5">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRD" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-425.84086,-121.57168 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_RLD" d="M-323.60680,-235.11410 L-123.60680,-380.42261 L14.86471,-444.99293 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-21.37274,-493.96503 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M-123.60680,-380.42261 L-323.60680,-235.11410 L-462.07831,-170.54378 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-0-group_6">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRD" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-260.42267,-62.14383 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_RLD" d="M-400.00000,-0.00000 L-323.60680,-235.11410 L-244.91598,-104.15059 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-463.18412,-172.97027 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-478.69082,-130.96351 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-0-group_6">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRD" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-250.55235,31.76608 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_RLD" d="M-400.00000,-0.00000 L-323.60680,-235.11410 L-182.96617,-175.41570 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-473.05445,-266.88018 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-540.64063,-59.69840 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-0-group_6">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRD" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-276.39320,89.80560 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_RLD" d="M-400.00000,-0.00000 L-323.60680,-235.11410 L-170.84366,-237.78059 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-447.21360,-324.91970 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-552.76313,2.66649 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-0-group_6">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRD" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-352.78640,145.30851 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_RLD" d="M-400.00000,-0.00000 L-323.60680,-235.11410 L-201.58615,-327.06325 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-370.82039,-380.42261 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-522.02065,91.94915 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-0-group_6">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRD" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-384.02947,151.94942 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_RLD" d="M-400.00000,-0.00000 L-323.60680,-235.11410 L-223.36990,-350.42346 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-339.57733,-387.06353 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-500.23690,115.30936 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-0-group_6">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRD" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-415.97053,151.94942 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_RLD" d="M-400.00000,-0.00000 L-323.60680,-235.11410 L-249.53448,-368.74410 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-307.63627,-387.06353 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M-323.60680,-235.11410 L-400.00000,-0.00000 L-474.07232,133.63000 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-0-group_7">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRD" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-247.21360,102.79719 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_RLD" d="M-323.60680,235.11410 L-400.00000,-0.00000 L-259.35937,59.69840 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-476.39320,132.31691 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-464.24742,175.41570 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-0-group_7">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRD" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-184.02947,172.97027 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_RLD" d="M-323.60680,235.11410 L-400.00000,-0.00000 L-251.12950,-34.36946 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-539.57733,62.14383 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-472.47730,269.48356 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-0-group_7">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRD" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-170.82039,235.11410 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_RLD" d="M-323.60680,235.11410 L-400.00000,-0.00000 L-277.97935,-91.94915 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-552.78640,-0.00000 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-445.62745,327.06325 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-0-group_7">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRD" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-200.00000,324.91970 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_RLD" d="M-323.60680,235.11410 L-400.00000,-0.00000 L-355.32958,-146.11037 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-523.60680,-89.80560 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-368.27722,381.22447 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-0-group_7">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRD" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-221.37274,348.65653 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_RLD" d="M-323.60680,235.11410 L-400.00000,-0.00000 L-386.68379,-152.20501 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-502.23406,-113.54243 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-336.92301,387.31911 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-0-group_7">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRD" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-247.21360,367.43101 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_RLD" d="M-323.60680,235.11410 L-400.00000,-0.00000 L-418.61998,-151.64756 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-476.39320,-132.31691 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M-400.00000,-0.00000 L-323.60680,235.11410 L-304.98682,386.76166 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-0-group_8">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRD" d="M-323.60680,235.11410 L-123.60680,380.42261 L-139.57733,228.47318 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_RLD" d="M-123.60680,380.42261 L-323.60680,235.11410 L-174.73630,200.74464 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M-323.60680,235.11410 L-123.60680,380.42261 L-307.63627,387.06353 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M-323.60680,235.11410 L-123.60680,380.42261 L-272.47730,414.79207 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-0-group_8">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRD" d="M-323.60680,235.11410 L-123.60680,380.42261 L-47.21360,248.10570 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_RLD" d="M-123.60680,380.42261 L-323.60680,235.11410 L-223.36990,119.80474 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M-323.60680,235.11410 L-123.60680,380.42261 L-400.00000,367.43101 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M-323.60680,235.11410 L-123.60680,380.42261 L-223.84370,495.73197 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-0-group_8">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRD" d="M-323.60680,235.11410 L-123.60680,380.42261 L-0.00000,290.61701 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_RLD" d="M-123.60680,380.42261 L-323.60680,235.11410 L-278.93638,89.00374 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M-323.60680,235.11410 L-123.60680,380.42261 L-447.21360,324.91970 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M-323.60680,235.11410 L-123.60680,380.42261 L-168.27722,526.53297 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-0-group_8">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRD" d="M-323.60680,235.11410 L-123.60680,380.42261 L29.17961,380.42261 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_RLD" d="M-123.60680,380.42261 L-323.60680,235.11410 L-373.34919,90.65172 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M-323.60680,235.11410 L-123.60680,380.42261 L-476.39320,235.11410 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M-323.60680,235.11410 L-123.60680,380.42261 L-73.86441,524.88499 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-0-group_8">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRD" d="M-323.60680,235.11410 L-123.60680,380.42261 L25.84086,412.18869 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_RLD" d="M-123.60680,380.42261 L-323.60680,235.11410 L-402.29761,104.15059 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M-323.60680,235.11410 L-123.60680,380.42261 L-473.05445,203.34802 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M-323.60680,235.11410 L-123.60680,380.42261 L-44.91598,511.38612 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-0-group_8">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRD" d="M-323.60680,235.11410 L-123.60680,380.42261 L15.97053,442.56644 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_RLD" d="M-123.60680,380.42261 L-323.60680,235.11410 L-427.80688,123.37320 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M-323.60680,235.11410 L-123.60680,380.42261 L-463.18412,172.97027 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M-323.60680,235.11410 L-123.60680,380.42261 L-19.40672,492.16351 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-0-group_9">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRD" d="M-123.60680,380.42261 L123.60680,380.42261 L21.37274,266.88018 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_RLD" d="M123.60680,380.42261 L-123.60680,380.42261 L-23.36990,265.11324 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M-123.60680,380.42261 L123.60680,380.42261 L-21.37274,493.96503 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-0_LRU" d="M-123.60680,380.42261 L123.60680,380.42261 L23.36990,495.73197 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-0-group_9">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRD" d="M-123.60680,380.42261 L123.60680,380.42261 L107.63627,228.47318 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_RLD" d="M123.60680,380.42261 L-123.60680,380.42261 L-110.29059,228.21760 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M-123.60680,380.42261 L123.60680,380.42261 L-107.63627,532.37203 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-0_LRU" d="M-123.60680,380.42261 L123.60680,380.42261 L110.29059,532.62761 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-0-group_9">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRD" d="M-123.60680,380.42261 L123.60680,380.42261 L170.82039,235.11410 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_RLD" d="M123.60680,380.42261 L-123.60680,380.42261 L-173.34919,235.96022 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M-123.60680,380.42261 L123.60680,380.42261 L-170.82039,525.73111 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-0_LRU" d="M-123.60680,380.42261 L123.60680,380.42261 L173.34919,524.88499 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-0-group_9">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRD" d="M-123.60680,380.42261 L123.60680,380.42261 L247.21360,290.61701 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_RLD" d="M123.60680,380.42261 L-123.60680,380.42261 L-248.76209,292.78793 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M-123.60680,380.42261 L123.60680,380.42261 L-247.21360,470.22820 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-0_LRU" d="M-123.60680,380.42261 L123.60680,380.42261 L248.76209,468.05729 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-0-group_9">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRD" d="M-123.60680,380.42261 L123.60680,380.42261 L263.18412,318.27878 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_RLD" d="M123.60680,380.42261 L-123.60680,380.42261 L-264.24742,320.72420 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M-123.60680,380.42261 L123.60680,380.42261 L-263.18412,442.56644 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-0_LRU" d="M-123.60680,380.42261 L123.60680,380.42261 L264.24742,440.12101 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-0-group_9">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRD" d="M-123.60680,380.42261 L123.60680,380.42261 L273.05445,348.65653 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_RLD" d="M123.60680,380.42261 L-123.60680,380.42261 L-273.58609,351.26959 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M-123.60680,380.42261 L123.60680,380.42261 L-273.05445,412.18869 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-0_LRU" d="M-123.60680,380.42261 L123.60680,380.42261 L273.58609,409.57563 Z"/>
+      </g>
+    </g>
+    <g id="ring-group_1">
+      <g id="triangle_48-93-38_iter-1-group_0">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRD" d="M76.39320,235.11410 L200.00000,145.30851 L107.63627,125.67599 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_RLD" d="M200.00000,145.30851 L76.39320,235.11410 L84.62307,141.04623 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M76.39320,235.11410 L200.00000,145.30851 L168.75693,254.74662 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M76.39320,235.11410 L200.00000,145.30851 L191.77013,239.37637 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-1-group_0">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRD" d="M76.39320,235.11410 L200.00000,145.30851 L136.81588,75.13543 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_RLD" d="M200.00000,145.30851 L76.39320,235.11410 L27.75960,154.17420 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M76.39320,235.11410 L200.00000,145.30851 L139.57733,305.28718 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M76.39320,235.11410 L200.00000,145.30851 L248.63360,226.24841 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-1-group_0">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRD" d="M76.39320,235.11410 L200.00000,145.30851 L170.82039,55.50291 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_RLD" d="M200.00000,145.30851 L76.39320,235.11410 L-0.95702,180.95289 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M76.39320,235.11410 L200.00000,145.30851 L105.57281,324.91970 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M76.39320,235.11410 L200.00000,145.30851 L277.35023,199.46972 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-1-group_0">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRD" d="M76.39320,235.11410 L200.00000,145.30851 L229.17961,55.50291 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_RLD" d="M200.00000,145.30851 L76.39320,235.11410 L-18.01961,236.76208 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M76.39320,235.11410 L200.00000,145.30851 L47.21360,324.91970 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M76.39320,235.11410 L200.00000,145.30851 L294.41281,143.66052 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-1-group_0">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRD" d="M76.39320,235.11410 L200.00000,145.30851 L247.21360,63.53216 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_RLD" d="M200.00000,145.30851 L76.39320,235.11410 L-15.61383,256.35560 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M76.39320,235.11410 L200.00000,145.30851 L29.17961,316.89045 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M76.39320,235.11410 L200.00000,145.30851 L292.00703,124.06701 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-1-group_0">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRD" d="M76.39320,235.11410 L200.00000,145.30851 L263.18412,75.13543 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_RLD" d="M200.00000,145.30851 L76.39320,235.11410 L-9.18690,275.02076 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M76.39320,235.11410 L200.00000,145.30851 L13.20908,305.28718 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M76.39320,235.11410 L200.00000,145.30851 L285.58010,105.40185 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-1-group_1">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRD" d="M200.00000,145.30851 L247.21360,0.00000 L160.95006,38.40700 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_RLD" d="M247.21360,0.00000 L200.00000,145.30851 L151.36640,64.36861 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M200.00000,145.30851 L247.21360,0.00000 L286.26353,106.90151 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M200.00000,145.30851 L247.21360,0.00000 L295.84719,80.93990 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-1-group_1">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRD" d="M200.00000,145.30851 L247.21360,0.00000 L154.84987,-19.63252 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_RLD" d="M247.21360,0.00000 L200.00000,145.30851 L113.07931,108.41286 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M200.00000,145.30851 L247.21360,0.00000 L292.36373,164.94102 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M200.00000,145.30851 L247.21360,0.00000 L334.13428,36.89564 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-1-group_1">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRD" d="M200.00000,145.30851 L247.21360,0.00000 L170.82039,-55.50291 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_RLD" d="M247.21360,0.00000 L200.00000,145.30851 L105.58719,146.95649 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M200.00000,145.30851 L247.21360,0.00000 L276.39320,200.81142 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M200.00000,145.30851 L247.21360,0.00000 L341.62640,-1.64798 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-1-group_1">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRD" d="M200.00000,145.30851 L247.21360,0.00000 L218.03399,-89.80560 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_RLD" d="M247.21360,0.00000 L200.00000,145.30851 L124.58709,202.13621 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M200.00000,145.30851 L247.21360,0.00000 L229.17961,235.11410 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M200.00000,145.30851 L247.21360,0.00000 L322.62650,-56.82770 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-1-group_1">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRD" d="M200.00000,145.30851 L247.21360,0.00000 L237.34327,-93.90991 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_RLD" d="M247.21360,0.00000 L200.00000,145.30851 L138.05019,216.57361 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M200.00000,145.30851 L247.21360,0.00000 L209.87033,239.21841 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M200.00000,145.30851 L247.21360,0.00000 L309.16341,-71.26511 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-1-group_1">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRD" d="M200.00000,145.30851 L247.21360,0.00000 L257.08392,-93.90991 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_RLD" d="M247.21360,0.00000 L200.00000,145.30851 L154.22079,227.89639 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M200.00000,145.30851 L247.21360,0.00000 L190.12967,239.21841 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M200.00000,145.30851 L247.21360,0.00000 L292.99281,-82.58788 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-1-group_2">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRD" d="M247.21360,0.00000 L200.00000,-145.30851 L152.78640,-63.53216 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_RLD" d="M200.00000,-145.30851 L247.21360,0.00000 L160.29291,-36.89564 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M247.21360,0.00000 L200.00000,-145.30851 L294.42719,-81.77635 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M247.21360,0.00000 L200.00000,-145.30851 L286.92069,-108.41286 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-1-group_2">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRD" d="M247.21360,0.00000 L200.00000,-145.30851 L113.73647,-106.90151 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_RLD" d="M200.00000,-145.30851 L247.21360,0.00000 L155.20657,21.24150 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M247.21360,0.00000 L200.00000,-145.30851 L333.47713,-38.40700 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M247.21360,0.00000 L200.00000,-145.30851 L292.00703,-166.55000 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-1-group_2">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRD" d="M247.21360,0.00000 L200.00000,-145.30851 L105.57281,-145.30851 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_RLD" d="M200.00000,-145.30851 L247.21360,0.00000 L171.80069,56.82770 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M247.21360,0.00000 L200.00000,-145.30851 L341.64079,0.00000 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M247.21360,0.00000 L200.00000,-145.30851 L275.41291,-202.13621 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-1-group_2">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRD" d="M247.21360,0.00000 L200.00000,-145.30851 L123.60680,-200.81142 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_RLD" d="M200.00000,-145.30851 L247.21360,0.00000 L219.60576,90.30117 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M247.21360,0.00000 L200.00000,-145.30851 L323.60680,55.50291 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M247.21360,0.00000 L200.00000,-145.30851 L227.60784,-235.60968 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-1-group_2">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRD" d="M247.21360,0.00000 L200.00000,-145.30851 L136.81588,-215.48158 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_RLD" d="M200.00000,-145.30851 L247.21360,0.00000 L238.98372,94.06787 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M247.21360,0.00000 L200.00000,-145.30851 L310.39772,70.17308 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M247.21360,0.00000 L200.00000,-145.30851 L208.22987,-239.37637 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-1-group_2">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRD" d="M247.21360,0.00000 L200.00000,-145.30851 L152.78640,-227.08485 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_RLD" d="M200.00000,-145.30851 L247.21360,0.00000 L258.72138,93.72335 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M247.21360,0.00000 L200.00000,-145.30851 L294.42719,81.77635 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M247.21360,0.00000 L200.00000,-145.30851 L188.49222,-239.03185 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-1-group_3">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRD" d="M200.00000,-145.30851 L76.39320,-235.11410 L86.26353,-141.20419 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_RLD" d="M76.39320,-235.11410 L200.00000,-145.30851 L107.99297,-124.06701 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M200.00000,-145.30851 L76.39320,-235.11410 L190.12967,-239.21841 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M200.00000,-145.30851 L76.39320,-235.11410 L168.40023,-256.35560 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-1-group_3">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRD" d="M200.00000,-145.30851 L76.39320,-235.11410 L29.17961,-153.33775 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_RLD" d="M76.39320,-235.11410 L200.00000,-145.30851 L138.05019,-74.04340 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M200.00000,-145.30851 L76.39320,-235.11410 L247.21360,-227.08485 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M200.00000,-145.30851 L76.39320,-235.11410 L138.34301,-306.37921 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-1-group_3">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRD" d="M200.00000,-145.30851 L76.39320,-235.11410 L-0.00000,-179.61119 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_RLD" d="M76.39320,-235.11410 L200.00000,-145.30851 L172.39216,-55.00733 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M200.00000,-145.30851 L76.39320,-235.11410 L276.39320,-200.81142 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M200.00000,-145.30851 L76.39320,-235.11410 L104.00104,-325.41527 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-1-group_3">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRD" d="M200.00000,-145.30851 L76.39320,-235.11410 L-18.03399,-235.11410 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_RLD" d="M76.39320,-235.11410 L200.00000,-145.30851 L230.74249,-56.02584 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M200.00000,-145.30851 L76.39320,-235.11410 L294.42719,-145.30851 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M200.00000,-145.30851 L76.39320,-235.11410 L45.65072,-324.39676 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-1-group_3">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRD" d="M200.00000,-145.30851 L76.39320,-235.11410 L-15.97053,-254.74662 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_RLD" d="M76.39320,-235.11410 L200.00000,-145.30851 L248.63360,-64.36861 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M200.00000,-145.30851 L76.39320,-235.11410 L292.36373,-125.67599 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M200.00000,-145.30851 L76.39320,-235.11410 L27.75960,-316.05400 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-1-group_3">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRD" d="M200.00000,-145.30851 L76.39320,-235.11410 L-9.87033,-273.52110 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_RLD" d="M76.39320,-235.11410 L200.00000,-145.30851 L264.39919,-76.24883 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M200.00000,-145.30851 L76.39320,-235.11410 L286.26353,-106.90151 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M200.00000,-145.30851 L76.39320,-235.11410 L11.99401,-304.17378 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-1-group_4">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRD" d="M76.39320,-235.11410 L-76.39320,-235.11410 L-13.20908,-164.94102 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_RLD" d="M-76.39320,-235.11410 L76.39320,-235.11410 L14.44339,-163.84900 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M76.39320,-235.11410 L-76.39320,-235.11410 L13.20908,-305.28718 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M76.39320,-235.11410 L-76.39320,-235.11410 L-14.44339,-306.37921 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-1-group_4">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRD" d="M76.39320,-235.11410 L-76.39320,-235.11410 L-66.52287,-141.20419 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_RLD" d="M-76.39320,-235.11410 L76.39320,-235.11410 L68.16333,-141.04623 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M76.39320,-235.11410 L-76.39320,-235.11410 L66.52287,-329.02401 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M76.39320,-235.11410 L-76.39320,-235.11410 L-68.16333,-329.18197 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-1-group_4">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRD" d="M76.39320,-235.11410 L-76.39320,-235.11410 L-105.57281,-145.30851 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_RLD" d="M-76.39320,-235.11410 L76.39320,-235.11410 L107.13569,-145.83144 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M76.39320,-235.11410 L-76.39320,-235.11410 L105.57281,-324.91970 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M76.39320,-235.11410 L-76.39320,-235.11410 L-107.13569,-324.39676 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-1-group_4">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRD" d="M76.39320,-235.11410 L-76.39320,-235.11410 L-152.78640,-179.61119 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_RLD" d="M-76.39320,-235.11410 L76.39320,-235.11410 L153.74343,-180.95289 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M76.39320,-235.11410 L-76.39320,-235.11410 L152.78640,-290.61701 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M76.39320,-235.11410 L-76.39320,-235.11410 L-153.74343,-289.27531 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-1-group_4">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRD" d="M76.39320,-235.11410 L-76.39320,-235.11410 L-162.65673,-196.70710 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_RLD" d="M-76.39320,-235.11410 L76.39320,-235.11410 L163.31389,-198.21846 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M76.39320,-235.11410 L-76.39320,-235.11410 L162.65673,-273.52110 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M76.39320,-235.11410 L-76.39320,-235.11410 L-163.31389,-272.00974 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-1-group_4">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRD" d="M76.39320,-235.11410 L-76.39320,-235.11410 L-168.75693,-215.48158 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_RLD" d="M-76.39320,-235.11410 L76.39320,-235.11410 L169.08550,-217.09654 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M76.39320,-235.11410 L-76.39320,-235.11410 L168.75693,-254.74662 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M76.39320,-235.11410 L-76.39320,-235.11410 L-169.08550,-253.13166 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-1-group_5">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRD" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-107.63627,-125.67599 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_RLD" d="M-200.00000,-145.30851 L-76.39320,-235.11410 L-84.62307,-141.04623 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-168.75693,-254.74662 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-191.77013,-239.37637 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-1-group_5">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRD" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-136.81588,-75.13543 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_RLD" d="M-200.00000,-145.30851 L-76.39320,-235.11410 L-27.75960,-154.17420 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-139.57733,-305.28718 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-248.63360,-226.24841 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-1-group_5">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRD" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-170.82039,-55.50291 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_RLD" d="M-200.00000,-145.30851 L-76.39320,-235.11410 L0.95702,-180.95289 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-105.57281,-324.91970 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-277.35023,-199.46972 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-1-group_5">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRD" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-229.17961,-55.50291 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_RLD" d="M-200.00000,-145.30851 L-76.39320,-235.11410 L18.01961,-236.76208 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-47.21360,-324.91970 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-294.41281,-143.66052 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-1-group_5">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRD" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-247.21360,-63.53216 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_RLD" d="M-200.00000,-145.30851 L-76.39320,-235.11410 L15.61383,-256.35560 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-29.17961,-316.89045 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-292.00703,-124.06701 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-1-group_5">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRD" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-263.18412,-75.13543 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_RLD" d="M-200.00000,-145.30851 L-76.39320,-235.11410 L9.18690,-275.02076 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-13.20908,-305.28718 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M-76.39320,-235.11410 L-200.00000,-145.30851 L-285.58010,-105.40185 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-1-group_6">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRD" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-160.95006,-38.40700 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_RLD" d="M-247.21360,-0.00000 L-200.00000,-145.30851 L-151.36640,-64.36861 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-286.26353,-106.90151 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-295.84719,-80.93990 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-1-group_6">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRD" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-154.84987,19.63252 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_RLD" d="M-247.21360,-0.00000 L-200.00000,-145.30851 L-113.07931,-108.41286 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-292.36373,-164.94102 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-334.13428,-36.89564 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-1-group_6">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRD" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-170.82039,55.50291 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_RLD" d="M-247.21360,-0.00000 L-200.00000,-145.30851 L-105.58719,-146.95649 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-276.39320,-200.81142 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-341.62640,1.64798 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-1-group_6">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRD" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-218.03399,89.80560 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_RLD" d="M-247.21360,-0.00000 L-200.00000,-145.30851 L-124.58709,-202.13621 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-229.17961,-235.11410 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-322.62650,56.82770 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-1-group_6">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRD" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-237.34327,93.90991 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_RLD" d="M-247.21360,-0.00000 L-200.00000,-145.30851 L-138.05019,-216.57361 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-209.87033,-239.21841 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-309.16341,71.26511 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-1-group_6">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRD" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-257.08392,93.90991 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_RLD" d="M-247.21360,-0.00000 L-200.00000,-145.30851 L-154.22079,-227.89639 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-190.12967,-239.21841 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M-200.00000,-145.30851 L-247.21360,-0.00000 L-292.99281,82.58788 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-1-group_7">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRD" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-152.78640,63.53216 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_RLD" d="M-200.00000,145.30851 L-247.21360,-0.00000 L-160.29291,36.89564 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-294.42719,81.77635 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-286.92069,108.41286 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-1-group_7">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRD" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-113.73647,106.90151 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_RLD" d="M-200.00000,145.30851 L-247.21360,-0.00000 L-155.20657,-21.24150 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-333.47713,38.40700 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-292.00703,166.55000 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-1-group_7">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRD" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-105.57281,145.30851 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_RLD" d="M-200.00000,145.30851 L-247.21360,-0.00000 L-171.80069,-56.82770 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-341.64079,-0.00000 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-275.41291,202.13621 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-1-group_7">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRD" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-123.60680,200.81142 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_RLD" d="M-200.00000,145.30851 L-247.21360,-0.00000 L-219.60576,-90.30117 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-323.60680,-55.50291 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-227.60784,235.60968 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-1-group_7">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRD" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-136.81588,215.48158 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_RLD" d="M-200.00000,145.30851 L-247.21360,-0.00000 L-238.98372,-94.06787 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-310.39772,-70.17308 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-208.22987,239.37637 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-1-group_7">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRD" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-152.78640,227.08485 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_RLD" d="M-200.00000,145.30851 L-247.21360,-0.00000 L-258.72138,-93.72335 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-294.42719,-81.77635 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M-247.21360,-0.00000 L-200.00000,145.30851 L-188.49222,239.03185 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-1-group_8">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRD" d="M-200.00000,145.30851 L-76.39320,235.11410 L-86.26353,141.20419 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_RLD" d="M-76.39320,235.11410 L-200.00000,145.30851 L-107.99297,124.06701 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M-200.00000,145.30851 L-76.39320,235.11410 L-190.12967,239.21841 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M-200.00000,145.30851 L-76.39320,235.11410 L-168.40023,256.35560 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-1-group_8">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRD" d="M-200.00000,145.30851 L-76.39320,235.11410 L-29.17961,153.33775 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_RLD" d="M-76.39320,235.11410 L-200.00000,145.30851 L-138.05019,74.04340 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M-200.00000,145.30851 L-76.39320,235.11410 L-247.21360,227.08485 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M-200.00000,145.30851 L-76.39320,235.11410 L-138.34301,306.37921 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-1-group_8">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRD" d="M-200.00000,145.30851 L-76.39320,235.11410 L-0.00000,179.61119 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_RLD" d="M-76.39320,235.11410 L-200.00000,145.30851 L-172.39216,55.00733 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M-200.00000,145.30851 L-76.39320,235.11410 L-276.39320,200.81142 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M-200.00000,145.30851 L-76.39320,235.11410 L-104.00104,325.41527 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-1-group_8">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRD" d="M-200.00000,145.30851 L-76.39320,235.11410 L18.03399,235.11410 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_RLD" d="M-76.39320,235.11410 L-200.00000,145.30851 L-230.74249,56.02584 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M-200.00000,145.30851 L-76.39320,235.11410 L-294.42719,145.30851 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M-200.00000,145.30851 L-76.39320,235.11410 L-45.65072,324.39676 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-1-group_8">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRD" d="M-200.00000,145.30851 L-76.39320,235.11410 L15.97053,254.74662 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_RLD" d="M-76.39320,235.11410 L-200.00000,145.30851 L-248.63360,64.36861 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M-200.00000,145.30851 L-76.39320,235.11410 L-292.36373,125.67599 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M-200.00000,145.30851 L-76.39320,235.11410 L-27.75960,316.05400 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-1-group_8">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRD" d="M-200.00000,145.30851 L-76.39320,235.11410 L9.87033,273.52110 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_RLD" d="M-76.39320,235.11410 L-200.00000,145.30851 L-264.39919,76.24883 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M-200.00000,145.30851 L-76.39320,235.11410 L-286.26353,106.90151 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M-200.00000,145.30851 L-76.39320,235.11410 L-11.99401,304.17378 Z"/>
+      </g>
+      <g id="triangle_48-93-38_iter-1-group_9">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRD" d="M-76.39320,235.11410 L76.39320,235.11410 L13.20908,164.94102 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_RLD" d="M76.39320,235.11410 L-76.39320,235.11410 L-14.44339,163.84900 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M-76.39320,235.11410 L76.39320,235.11410 L-13.20908,305.28718 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_48-93-38_iter-1_LRU" d="M-76.39320,235.11410 L76.39320,235.11410 L14.44339,306.37921 Z"/>
+      </g>
+      <g id="triangle_84-62-33_iter-1-group_9">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRD" d="M-76.39320,235.11410 L76.39320,235.11410 L66.52287,141.20419 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_RLD" d="M76.39320,235.11410 L-76.39320,235.11410 L-68.16333,141.04623 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M-76.39320,235.11410 L76.39320,235.11410 L-66.52287,329.02401 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_84-62-33_iter-1_LRU" d="M-76.39320,235.11410 L76.39320,235.11410 L68.16333,329.18197 Z"/>
+      </g>
+      <g id="triangle_108-45-26_iter-1-group_9">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRD" d="M-76.39320,235.11410 L76.39320,235.11410 L105.57281,145.30851 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_RLD" d="M76.39320,235.11410 L-76.39320,235.11410 L-107.13569,145.83144 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M-76.39320,235.11410 L76.39320,235.11410 L-105.57281,324.91970 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_108-45-26_iter-1_LRU" d="M-76.39320,235.11410 L76.39320,235.11410 L107.13569,324.39676 Z"/>
+      </g>
+      <g id="triangle_144-22-13_iter-1-group_9">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRD" d="M-76.39320,235.11410 L76.39320,235.11410 L152.78640,179.61119 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_RLD" d="M76.39320,235.11410 L-76.39320,235.11410 L-153.74343,180.95289 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M-76.39320,235.11410 L76.39320,235.11410 L-152.78640,290.61701 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_144-22-13_iter-1_LRU" d="M-76.39320,235.11410 L76.39320,235.11410 L153.74343,289.27531 Z"/>
+      </g>
+      <g id="triangle_156-14-9_iter-1-group_9">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRD" d="M-76.39320,235.11410 L76.39320,235.11410 L162.65673,196.70710 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_RLD" d="M76.39320,235.11410 L-76.39320,235.11410 L-163.31389,198.21846 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M-76.39320,235.11410 L76.39320,235.11410 L-162.65673,273.52110 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_156-14-9_iter-1_LRU" d="M-76.39320,235.11410 L76.39320,235.11410 L163.31389,272.00974 Z"/>
+      </g>
+      <g id="triangle_168-7-4_iter-1-group_9">
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRD" d="M-76.39320,235.11410 L76.39320,235.11410 L168.75693,215.48158 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_RLD" d="M76.39320,235.11410 L-76.39320,235.11410 L-169.08550,217.09654 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M-76.39320,235.11410 L76.39320,235.11410 L-168.75693,254.74662 Z"/>
+        <path style="fill:white;opacity:0.18;stroke:none" id="triangle_168-7-4_iter-1_LRU" d="M-76.39320,235.11410 L76.39320,235.11410 L169.08550,253.13166 Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns:ns0="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" ns0:svg="http://www.w3.org/2000/svg" width="1280" height="1280">
+  <defs/>
+  <g id="canvas" transform="matrix(1,0,0,-1,0,1280) translate(640,640)">
+    <g id="discrete_gradation">
+      <rect y="0.00000" x="0.00000" style="stroke:black;fill:#fe0000" width="20.00000" height="20.00000"/>
+      <rect y="20.00000" x="0.00000" style="stroke:black;fill:#fe0000" width="20.00000" height="20.00000"/>
+      <rect y="40.00000" x="0.00000" style="stroke:black;fill:#f0000d" width="20.00000" height="20.00000"/>
+      <rect y="60.00000" x="0.00000" style="stroke:black;fill:#e3001a" width="20.00000" height="20.00000"/>
+      <rect y="80.00000" x="0.00000" style="stroke:black;fill:#d50028" width="20.00000" height="20.00000"/>
+      <rect y="100.00000" x="0.00000" style="stroke:black;fill:#c80035" width="20.00000" height="20.00000"/>
+      <rect y="120.00000" x="0.00000" style="stroke:black;fill:#bb0042" width="20.00000" height="20.00000"/>
+      <rect y="140.00000" x="0.00000" style="stroke:black;fill:#ad0050" width="20.00000" height="20.00000"/>
+      <rect y="160.00000" x="0.00000" style="stroke:black;fill:#a0005d" width="20.00000" height="20.00000"/>
+      <rect y="180.00000" x="0.00000" style="stroke:black;fill:#93006a" width="20.00000" height="20.00000"/>
+      <rect y="200.00000" x="0.00000" style="stroke:black;fill:#850078" width="20.00000" height="20.00000"/>
+      <rect y="220.00000" x="0.00000" style="stroke:black;fill:#780085" width="20.00000" height="20.00000"/>
+      <rect y="240.00000" x="0.00000" style="stroke:black;fill:#6a0093" width="20.00000" height="20.00000"/>
+      <rect y="260.00000" x="0.00000" style="stroke:black;fill:#5d00a0" width="20.00000" height="20.00000"/>
+      <rect y="280.00000" x="0.00000" style="stroke:black;fill:#5000ad" width="20.00000" height="20.00000"/>
+      <rect y="300.00000" x="0.00000" style="stroke:black;fill:#4200bb" width="20.00000" height="20.00000"/>
+      <rect y="320.00000" x="0.00000" style="stroke:black;fill:#3500c8" width="20.00000" height="20.00000"/>
+      <rect y="340.00000" x="0.00000" style="stroke:black;fill:#2800d5" width="20.00000" height="20.00000"/>
+      <rect y="360.00000" x="0.00000" style="stroke:black;fill:#1a00e3" width="20.00000" height="20.00000"/>
+      <rect y="380.00000" x="0.00000" style="stroke:black;fill:#0d00f0" width="20.00000" height="20.00000"/>
+    </g>
+  </g>
+</svg>

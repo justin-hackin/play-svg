@@ -1,0 +1,312 @@
+<svg xmlns:ns0="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" ns0:svg="http://www.w3.org/2000/svg" width="1280" height="1280">
+  <defs>
+    <linearGradient id="upgrade0">
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade0" y2="-57.73503" gradientUnits="userSpaceOnUse" x2="0.00000" y1="-43.30127" x1="25.00000" id="triGrad-up0000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade0" y2="-57.73503" gradientUnits="userSpaceOnUse" x2="0.00000" y1="-86.60254" x1="0.00000" id="triGrad-up0001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade0" y2="-57.73503" gradientUnits="userSpaceOnUse" x2="0.00000" y1="-43.30127" x1="-25.00000" id="triGrad-up0002"/>
+    <linearGradient id="upgrade11">
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade11" y2="-144.33757" gradientUnits="userSpaceOnUse" x2="-50.00000" y1="-129.90381" x1="-25.00000" id="triGrad-up11000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade11" y2="-144.33757" gradientUnits="userSpaceOnUse" x2="-50.00000" y1="-173.20508" x1="-50.00000" id="triGrad-up11001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade11" y2="-144.33757" gradientUnits="userSpaceOnUse" x2="-50.00000" y1="-129.90381" x1="-75.00000" id="triGrad-up11002"/>
+    <linearGradient id="upgrade12">
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade12" y2="-144.33757" gradientUnits="userSpaceOnUse" x2="50.00000" y1="-129.90381" x1="75.00000" id="triGrad-up12000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade12" y2="-144.33757" gradientUnits="userSpaceOnUse" x2="50.00000" y1="-173.20508" x1="50.00000" id="triGrad-up12001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade12" y2="-144.33757" gradientUnits="userSpaceOnUse" x2="50.00000" y1="-129.90381" x1="25.00000" id="triGrad-up12002"/>
+    <linearGradient id="upgrade22">
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade22" y2="-230.94011" gradientUnits="userSpaceOnUse" x2="-100.00000" y1="-216.50635" x1="-75.00000" id="triGrad-up22000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade22" y2="-230.94011" gradientUnits="userSpaceOnUse" x2="-100.00000" y1="-259.80762" x1="-100.00000" id="triGrad-up22001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade22" y2="-230.94011" gradientUnits="userSpaceOnUse" x2="-100.00000" y1="-216.50635" x1="-125.00000" id="triGrad-up22002"/>
+    <linearGradient id="upgrade23">
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade23" y2="-230.94011" gradientUnits="userSpaceOnUse" x2="0.00000" y1="-216.50635" x1="25.00000" id="triGrad-up23000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade23" y2="-230.94011" gradientUnits="userSpaceOnUse" x2="0.00000" y1="-259.80762" x1="0.00000" id="triGrad-up23001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade23" y2="-230.94011" gradientUnits="userSpaceOnUse" x2="0.00000" y1="-216.50635" x1="-25.00000" id="triGrad-up23002"/>
+    <linearGradient id="upgrade24">
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade24" y2="-230.94011" gradientUnits="userSpaceOnUse" x2="100.00000" y1="-216.50635" x1="125.00000" id="triGrad-up24000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade24" y2="-230.94011" gradientUnits="userSpaceOnUse" x2="100.00000" y1="-259.80762" x1="100.00000" id="triGrad-up24001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade24" y2="-230.94011" gradientUnits="userSpaceOnUse" x2="100.00000" y1="-216.50635" x1="75.00000" id="triGrad-up24002"/>
+    <linearGradient id="upgrade33">
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade33" y2="-317.54265" gradientUnits="userSpaceOnUse" x2="-150.00000" y1="-303.10889" x1="-125.00000" id="triGrad-up33000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade33" y2="-317.54265" gradientUnits="userSpaceOnUse" x2="-150.00000" y1="-346.41016" x1="-150.00000" id="triGrad-up33001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade33" y2="-317.54265" gradientUnits="userSpaceOnUse" x2="-150.00000" y1="-303.10889" x1="-175.00000" id="triGrad-up33002"/>
+    <linearGradient id="upgrade34">
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade34" y2="-317.54265" gradientUnits="userSpaceOnUse" x2="-50.00000" y1="-303.10889" x1="-25.00000" id="triGrad-up34000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade34" y2="-317.54265" gradientUnits="userSpaceOnUse" x2="-50.00000" y1="-346.41016" x1="-50.00000" id="triGrad-up34001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade34" y2="-317.54265" gradientUnits="userSpaceOnUse" x2="-50.00000" y1="-303.10889" x1="-75.00000" id="triGrad-up34002"/>
+    <linearGradient id="upgrade35">
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade35" y2="-317.54265" gradientUnits="userSpaceOnUse" x2="50.00000" y1="-303.10889" x1="75.00000" id="triGrad-up35000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade35" y2="-317.54265" gradientUnits="userSpaceOnUse" x2="50.00000" y1="-346.41016" x1="50.00000" id="triGrad-up35001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade35" y2="-317.54265" gradientUnits="userSpaceOnUse" x2="50.00000" y1="-303.10889" x1="25.00000" id="triGrad-up35002"/>
+    <linearGradient id="upgrade36">
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade36" y2="-317.54265" gradientUnits="userSpaceOnUse" x2="150.00000" y1="-303.10889" x1="175.00000" id="triGrad-up36000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade36" y2="-317.54265" gradientUnits="userSpaceOnUse" x2="150.00000" y1="-346.41016" x1="150.00000" id="triGrad-up36001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade36" y2="-317.54265" gradientUnits="userSpaceOnUse" x2="150.00000" y1="-303.10889" x1="125.00000" id="triGrad-up36002"/>
+    <linearGradient id="upgrade44">
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade44" y2="-404.14519" gradientUnits="userSpaceOnUse" x2="-200.00000" y1="-389.71143" x1="-175.00000" id="triGrad-up44000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade44" y2="-404.14519" gradientUnits="userSpaceOnUse" x2="-200.00000" y1="-433.01270" x1="-200.00000" id="triGrad-up44001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade44" y2="-404.14519" gradientUnits="userSpaceOnUse" x2="-200.00000" y1="-389.71143" x1="-225.00000" id="triGrad-up44002"/>
+    <linearGradient id="upgrade45">
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade45" y2="-404.14519" gradientUnits="userSpaceOnUse" x2="-100.00000" y1="-389.71143" x1="-75.00000" id="triGrad-up45000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade45" y2="-404.14519" gradientUnits="userSpaceOnUse" x2="-100.00000" y1="-433.01270" x1="-100.00000" id="triGrad-up45001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade45" y2="-404.14519" gradientUnits="userSpaceOnUse" x2="-100.00000" y1="-389.71143" x1="-125.00000" id="triGrad-up45002"/>
+    <linearGradient id="upgrade46">
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade46" y2="-404.14519" gradientUnits="userSpaceOnUse" x2="0.00000" y1="-389.71143" x1="25.00000" id="triGrad-up46000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade46" y2="-404.14519" gradientUnits="userSpaceOnUse" x2="0.00000" y1="-433.01270" x1="0.00000" id="triGrad-up46001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade46" y2="-404.14519" gradientUnits="userSpaceOnUse" x2="0.00000" y1="-389.71143" x1="-25.00000" id="triGrad-up46002"/>
+    <linearGradient id="upgrade47">
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade47" y2="-404.14519" gradientUnits="userSpaceOnUse" x2="100.00000" y1="-389.71143" x1="125.00000" id="triGrad-up47000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade47" y2="-404.14519" gradientUnits="userSpaceOnUse" x2="100.00000" y1="-433.01270" x1="100.00000" id="triGrad-up47001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade47" y2="-404.14519" gradientUnits="userSpaceOnUse" x2="100.00000" y1="-389.71143" x1="75.00000" id="triGrad-up47002"/>
+    <linearGradient id="upgrade48">
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade48" y2="-404.14519" gradientUnits="userSpaceOnUse" x2="200.00000" y1="-389.71143" x1="225.00000" id="triGrad-up48000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade48" y2="-404.14519" gradientUnits="userSpaceOnUse" x2="200.00000" y1="-433.01270" x1="200.00000" id="triGrad-up48001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#upgrade48" y2="-404.14519" gradientUnits="userSpaceOnUse" x2="200.00000" y1="-389.71143" x1="175.00000" id="triGrad-up48002"/>
+    <linearGradient id="downgrade11">
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade11" y2="-115.47005" gradientUnits="userSpaceOnUse" x2="0.00000" y1="-129.90381" x1="-25.00000" id="triGrad-down11000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade11" y2="-115.47005" gradientUnits="userSpaceOnUse" x2="0.00000" y1="-129.90381" x1="25.00000" id="triGrad-down11001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade11" y2="-115.47005" gradientUnits="userSpaceOnUse" x2="0.00000" y1="-86.60254" x1="0.00000" id="triGrad-down11002"/>
+    <linearGradient id="downgrade22">
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade22" y2="-202.07259" gradientUnits="userSpaceOnUse" x2="-50.00000" y1="-216.50635" x1="-75.00000" id="triGrad-down22000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade22" y2="-202.07259" gradientUnits="userSpaceOnUse" x2="-50.00000" y1="-216.50635" x1="-25.00000" id="triGrad-down22001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade22" y2="-202.07259" gradientUnits="userSpaceOnUse" x2="-50.00000" y1="-173.20508" x1="-50.00000" id="triGrad-down22002"/>
+    <linearGradient id="downgrade23">
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade23" y2="-202.07259" gradientUnits="userSpaceOnUse" x2="50.00000" y1="-216.50635" x1="25.00000" id="triGrad-down23000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade23" y2="-202.07259" gradientUnits="userSpaceOnUse" x2="50.00000" y1="-216.50635" x1="75.00000" id="triGrad-down23001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade23" y2="-202.07259" gradientUnits="userSpaceOnUse" x2="50.00000" y1="-173.20508" x1="50.00000" id="triGrad-down23002"/>
+    <linearGradient id="downgrade33">
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade33" y2="-288.67513" gradientUnits="userSpaceOnUse" x2="-100.00000" y1="-303.10889" x1="-125.00000" id="triGrad-down33000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade33" y2="-288.67513" gradientUnits="userSpaceOnUse" x2="-100.00000" y1="-303.10889" x1="-75.00000" id="triGrad-down33001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade33" y2="-288.67513" gradientUnits="userSpaceOnUse" x2="-100.00000" y1="-259.80762" x1="-100.00000" id="triGrad-down33002"/>
+    <linearGradient id="downgrade34">
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade34" y2="-288.67513" gradientUnits="userSpaceOnUse" x2="0.00000" y1="-303.10889" x1="-25.00000" id="triGrad-down34000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade34" y2="-288.67513" gradientUnits="userSpaceOnUse" x2="0.00000" y1="-303.10889" x1="25.00000" id="triGrad-down34001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade34" y2="-288.67513" gradientUnits="userSpaceOnUse" x2="0.00000" y1="-259.80762" x1="0.00000" id="triGrad-down34002"/>
+    <linearGradient id="downgrade35">
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade35" y2="-288.67513" gradientUnits="userSpaceOnUse" x2="100.00000" y1="-303.10889" x1="75.00000" id="triGrad-down35000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade35" y2="-288.67513" gradientUnits="userSpaceOnUse" x2="100.00000" y1="-303.10889" x1="125.00000" id="triGrad-down35001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade35" y2="-288.67513" gradientUnits="userSpaceOnUse" x2="100.00000" y1="-259.80762" x1="100.00000" id="triGrad-down35002"/>
+    <linearGradient id="downgrade44">
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade44" y2="-375.27767" gradientUnits="userSpaceOnUse" x2="-150.00000" y1="-389.71143" x1="-175.00000" id="triGrad-down44000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade44" y2="-375.27767" gradientUnits="userSpaceOnUse" x2="-150.00000" y1="-389.71143" x1="-125.00000" id="triGrad-down44001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade44" y2="-375.27767" gradientUnits="userSpaceOnUse" x2="-150.00000" y1="-346.41016" x1="-150.00000" id="triGrad-down44002"/>
+    <linearGradient id="downgrade45">
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade45" y2="-375.27767" gradientUnits="userSpaceOnUse" x2="-50.00000" y1="-389.71143" x1="-75.00000" id="triGrad-down45000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade45" y2="-375.27767" gradientUnits="userSpaceOnUse" x2="-50.00000" y1="-389.71143" x1="-25.00000" id="triGrad-down45001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade45" y2="-375.27767" gradientUnits="userSpaceOnUse" x2="-50.00000" y1="-346.41016" x1="-50.00000" id="triGrad-down45002"/>
+    <linearGradient id="downgrade46">
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade46" y2="-375.27767" gradientUnits="userSpaceOnUse" x2="50.00000" y1="-389.71143" x1="25.00000" id="triGrad-down46000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade46" y2="-375.27767" gradientUnits="userSpaceOnUse" x2="50.00000" y1="-389.71143" x1="75.00000" id="triGrad-down46001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade46" y2="-375.27767" gradientUnits="userSpaceOnUse" x2="50.00000" y1="-346.41016" x1="50.00000" id="triGrad-down46002"/>
+    <linearGradient id="downgrade47">
+      <stop style="stop-color:#ff009e;stop-opacity:1.0" offset="0.00000%"/>
+      <stop style="stop-color:#a500ff;stop-opacity:1.0" offset="100.00000%"/>
+    </linearGradient>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade47" y2="-375.27767" gradientUnits="userSpaceOnUse" x2="150.00000" y1="-389.71143" x1="125.00000" id="triGrad-down47000"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade47" y2="-375.27767" gradientUnits="userSpaceOnUse" x2="150.00000" y1="-389.71143" x1="175.00000" id="triGrad-down47001"/>
+    <linearGradient xmlns:ns0="http://www.w3.org/1999/xlink" ns0:href="#downgrade47" y2="-375.27767" gradientUnits="userSpaceOnUse" x2="150.00000" y1="-346.41016" x1="150.00000" id="triGrad-down47002"/>
+  </defs>
+  <g id="canvas" transform="matrix(1,0,0,-1,0,1280) translate(640,640)">
+    <g>
+      <g id="upsies">
+        <g>
+          <path style="fill:url(#triGrad-up0000);stroke:none;opacity:1;fill-opacity:1" d="M0.00000,-57.73503 L0.00000,0.00000 L50.00000,-86.60254 Z"/>
+          <path style="fill:url(#triGrad-up0001);stroke:none;opacity:1;fill-opacity:1" d="M0.00000,-57.73503 L50.00000,-86.60254 L-50.00000,-86.60254 Z"/>
+          <path style="fill:url(#triGrad-up0002);stroke:none;opacity:1;fill-opacity:1" d="M0.00000,-57.73503 L-50.00000,-86.60254 L0.00000,0.00000 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-up11000);stroke:none;opacity:1;fill-opacity:1" d="M-50.00000,-144.33757 L-50.00000,-86.60254 L0.00000,-173.20508 Z"/>
+          <path style="fill:url(#triGrad-up11001);stroke:none;opacity:1;fill-opacity:1" d="M-50.00000,-144.33757 L0.00000,-173.20508 L-100.00000,-173.20508 Z"/>
+          <path style="fill:url(#triGrad-up11002);stroke:none;opacity:1;fill-opacity:1" d="M-50.00000,-144.33757 L-100.00000,-173.20508 L-50.00000,-86.60254 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-up12000);stroke:none;opacity:1;fill-opacity:1" d="M50.00000,-144.33757 L50.00000,-86.60254 L100.00000,-173.20508 Z"/>
+          <path style="fill:url(#triGrad-up12001);stroke:none;opacity:1;fill-opacity:1" d="M50.00000,-144.33757 L100.00000,-173.20508 L0.00000,-173.20508 Z"/>
+          <path style="fill:url(#triGrad-up12002);stroke:none;opacity:1;fill-opacity:1" d="M50.00000,-144.33757 L0.00000,-173.20508 L50.00000,-86.60254 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-up22000);stroke:none;opacity:1;fill-opacity:1" d="M-100.00000,-230.94011 L-100.00000,-173.20508 L-50.00000,-259.80762 Z"/>
+          <path style="fill:url(#triGrad-up22001);stroke:none;opacity:1;fill-opacity:1" d="M-100.00000,-230.94011 L-50.00000,-259.80762 L-150.00000,-259.80762 Z"/>
+          <path style="fill:url(#triGrad-up22002);stroke:none;opacity:1;fill-opacity:1" d="M-100.00000,-230.94011 L-150.00000,-259.80762 L-100.00000,-173.20508 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-up23000);stroke:none;opacity:1;fill-opacity:1" d="M0.00000,-230.94011 L0.00000,-173.20508 L50.00000,-259.80762 Z"/>
+          <path style="fill:url(#triGrad-up23001);stroke:none;opacity:1;fill-opacity:1" d="M0.00000,-230.94011 L50.00000,-259.80762 L-50.00000,-259.80762 Z"/>
+          <path style="fill:url(#triGrad-up23002);stroke:none;opacity:1;fill-opacity:1" d="M0.00000,-230.94011 L-50.00000,-259.80762 L0.00000,-173.20508 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-up24000);stroke:none;opacity:1;fill-opacity:1" d="M100.00000,-230.94011 L100.00000,-173.20508 L150.00000,-259.80762 Z"/>
+          <path style="fill:url(#triGrad-up24001);stroke:none;opacity:1;fill-opacity:1" d="M100.00000,-230.94011 L150.00000,-259.80762 L50.00000,-259.80762 Z"/>
+          <path style="fill:url(#triGrad-up24002);stroke:none;opacity:1;fill-opacity:1" d="M100.00000,-230.94011 L50.00000,-259.80762 L100.00000,-173.20508 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-up33000);stroke:none;opacity:1;fill-opacity:1" d="M-150.00000,-317.54265 L-150.00000,-259.80762 L-100.00000,-346.41016 Z"/>
+          <path style="fill:url(#triGrad-up33001);stroke:none;opacity:1;fill-opacity:1" d="M-150.00000,-317.54265 L-100.00000,-346.41016 L-200.00000,-346.41016 Z"/>
+          <path style="fill:url(#triGrad-up33002);stroke:none;opacity:1;fill-opacity:1" d="M-150.00000,-317.54265 L-200.00000,-346.41016 L-150.00000,-259.80762 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-up34000);stroke:none;opacity:1;fill-opacity:1" d="M-50.00000,-317.54265 L-50.00000,-259.80762 L0.00000,-346.41016 Z"/>
+          <path style="fill:url(#triGrad-up34001);stroke:none;opacity:1;fill-opacity:1" d="M-50.00000,-317.54265 L0.00000,-346.41016 L-100.00000,-346.41016 Z"/>
+          <path style="fill:url(#triGrad-up34002);stroke:none;opacity:1;fill-opacity:1" d="M-50.00000,-317.54265 L-100.00000,-346.41016 L-50.00000,-259.80762 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-up35000);stroke:none;opacity:1;fill-opacity:1" d="M50.00000,-317.54265 L50.00000,-259.80762 L100.00000,-346.41016 Z"/>
+          <path style="fill:url(#triGrad-up35001);stroke:none;opacity:1;fill-opacity:1" d="M50.00000,-317.54265 L100.00000,-346.41016 L0.00000,-346.41016 Z"/>
+          <path style="fill:url(#triGrad-up35002);stroke:none;opacity:1;fill-opacity:1" d="M50.00000,-317.54265 L0.00000,-346.41016 L50.00000,-259.80762 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-up36000);stroke:none;opacity:1;fill-opacity:1" d="M150.00000,-317.54265 L150.00000,-259.80762 L200.00000,-346.41016 Z"/>
+          <path style="fill:url(#triGrad-up36001);stroke:none;opacity:1;fill-opacity:1" d="M150.00000,-317.54265 L200.00000,-346.41016 L100.00000,-346.41016 Z"/>
+          <path style="fill:url(#triGrad-up36002);stroke:none;opacity:1;fill-opacity:1" d="M150.00000,-317.54265 L100.00000,-346.41016 L150.00000,-259.80762 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-up44000);stroke:none;opacity:1;fill-opacity:1" d="M-200.00000,-404.14519 L-200.00000,-346.41016 L-150.00000,-433.01270 Z"/>
+          <path style="fill:url(#triGrad-up44001);stroke:none;opacity:1;fill-opacity:1" d="M-200.00000,-404.14519 L-150.00000,-433.01270 L-250.00000,-433.01270 Z"/>
+          <path style="fill:url(#triGrad-up44002);stroke:none;opacity:1;fill-opacity:1" d="M-200.00000,-404.14519 L-250.00000,-433.01270 L-200.00000,-346.41016 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-up45000);stroke:none;opacity:1;fill-opacity:1" d="M-100.00000,-404.14519 L-100.00000,-346.41016 L-50.00000,-433.01270 Z"/>
+          <path style="fill:url(#triGrad-up45001);stroke:none;opacity:1;fill-opacity:1" d="M-100.00000,-404.14519 L-50.00000,-433.01270 L-150.00000,-433.01270 Z"/>
+          <path style="fill:url(#triGrad-up45002);stroke:none;opacity:1;fill-opacity:1" d="M-100.00000,-404.14519 L-150.00000,-433.01270 L-100.00000,-346.41016 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-up46000);stroke:none;opacity:1;fill-opacity:1" d="M0.00000,-404.14519 L0.00000,-346.41016 L50.00000,-433.01270 Z"/>
+          <path style="fill:url(#triGrad-up46001);stroke:none;opacity:1;fill-opacity:1" d="M0.00000,-404.14519 L50.00000,-433.01270 L-50.00000,-433.01270 Z"/>
+          <path style="fill:url(#triGrad-up46002);stroke:none;opacity:1;fill-opacity:1" d="M0.00000,-404.14519 L-50.00000,-433.01270 L0.00000,-346.41016 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-up47000);stroke:none;opacity:1;fill-opacity:1" d="M100.00000,-404.14519 L100.00000,-346.41016 L150.00000,-433.01270 Z"/>
+          <path style="fill:url(#triGrad-up47001);stroke:none;opacity:1;fill-opacity:1" d="M100.00000,-404.14519 L150.00000,-433.01270 L50.00000,-433.01270 Z"/>
+          <path style="fill:url(#triGrad-up47002);stroke:none;opacity:1;fill-opacity:1" d="M100.00000,-404.14519 L50.00000,-433.01270 L100.00000,-346.41016 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-up48000);stroke:none;opacity:1;fill-opacity:1" d="M200.00000,-404.14519 L200.00000,-346.41016 L250.00000,-433.01270 Z"/>
+          <path style="fill:url(#triGrad-up48001);stroke:none;opacity:1;fill-opacity:1" d="M200.00000,-404.14519 L250.00000,-433.01270 L150.00000,-433.01270 Z"/>
+          <path style="fill:url(#triGrad-up48002);stroke:none;opacity:1;fill-opacity:1" d="M200.00000,-404.14519 L150.00000,-433.01270 L200.00000,-346.41016 Z"/>
+        </g>
+      </g>
+      <g id="downsies">
+        <g>
+          <path style="fill:url(#triGrad-down11000);stroke:none;opacity:1;fill-opacity:1" d="M0.00000,-115.47005 L-50.00000,-86.60254 L0.00000,-173.20508 Z"/>
+          <path style="fill:url(#triGrad-down11001);stroke:none;opacity:1;fill-opacity:1" d="M0.00000,-115.47005 L0.00000,-173.20508 L50.00000,-86.60254 Z"/>
+          <path style="fill:url(#triGrad-down11002);stroke:none;opacity:1;fill-opacity:1" d="M0.00000,-115.47005 L50.00000,-86.60254 L-50.00000,-86.60254 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-down22000);stroke:none;opacity:1;fill-opacity:1" d="M-50.00000,-202.07259 L-100.00000,-173.20508 L-50.00000,-259.80762 Z"/>
+          <path style="fill:url(#triGrad-down22001);stroke:none;opacity:1;fill-opacity:1" d="M-50.00000,-202.07259 L-50.00000,-259.80762 L0.00000,-173.20508 Z"/>
+          <path style="fill:url(#triGrad-down22002);stroke:none;opacity:1;fill-opacity:1" d="M-50.00000,-202.07259 L0.00000,-173.20508 L-100.00000,-173.20508 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-down23000);stroke:none;opacity:1;fill-opacity:1" d="M50.00000,-202.07259 L0.00000,-173.20508 L50.00000,-259.80762 Z"/>
+          <path style="fill:url(#triGrad-down23001);stroke:none;opacity:1;fill-opacity:1" d="M50.00000,-202.07259 L50.00000,-259.80762 L100.00000,-173.20508 Z"/>
+          <path style="fill:url(#triGrad-down23002);stroke:none;opacity:1;fill-opacity:1" d="M50.00000,-202.07259 L100.00000,-173.20508 L0.00000,-173.20508 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-down33000);stroke:none;opacity:1;fill-opacity:1" d="M-100.00000,-288.67513 L-150.00000,-259.80762 L-100.00000,-346.41016 Z"/>
+          <path style="fill:url(#triGrad-down33001);stroke:none;opacity:1;fill-opacity:1" d="M-100.00000,-288.67513 L-100.00000,-346.41016 L-50.00000,-259.80762 Z"/>
+          <path style="fill:url(#triGrad-down33002);stroke:none;opacity:1;fill-opacity:1" d="M-100.00000,-288.67513 L-50.00000,-259.80762 L-150.00000,-259.80762 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-down34000);stroke:none;opacity:1;fill-opacity:1" d="M0.00000,-288.67513 L-50.00000,-259.80762 L0.00000,-346.41016 Z"/>
+          <path style="fill:url(#triGrad-down34001);stroke:none;opacity:1;fill-opacity:1" d="M0.00000,-288.67513 L0.00000,-346.41016 L50.00000,-259.80762 Z"/>
+          <path style="fill:url(#triGrad-down34002);stroke:none;opacity:1;fill-opacity:1" d="M0.00000,-288.67513 L50.00000,-259.80762 L-50.00000,-259.80762 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-down35000);stroke:none;opacity:1;fill-opacity:1" d="M100.00000,-288.67513 L50.00000,-259.80762 L100.00000,-346.41016 Z"/>
+          <path style="fill:url(#triGrad-down35001);stroke:none;opacity:1;fill-opacity:1" d="M100.00000,-288.67513 L100.00000,-346.41016 L150.00000,-259.80762 Z"/>
+          <path style="fill:url(#triGrad-down35002);stroke:none;opacity:1;fill-opacity:1" d="M100.00000,-288.67513 L150.00000,-259.80762 L50.00000,-259.80762 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-down44000);stroke:none;opacity:1;fill-opacity:1" d="M-150.00000,-375.27767 L-200.00000,-346.41016 L-150.00000,-433.01270 Z"/>
+          <path style="fill:url(#triGrad-down44001);stroke:none;opacity:1;fill-opacity:1" d="M-150.00000,-375.27767 L-150.00000,-433.01270 L-100.00000,-346.41016 Z"/>
+          <path style="fill:url(#triGrad-down44002);stroke:none;opacity:1;fill-opacity:1" d="M-150.00000,-375.27767 L-100.00000,-346.41016 L-200.00000,-346.41016 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-down45000);stroke:none;opacity:1;fill-opacity:1" d="M-50.00000,-375.27767 L-100.00000,-346.41016 L-50.00000,-433.01270 Z"/>
+          <path style="fill:url(#triGrad-down45001);stroke:none;opacity:1;fill-opacity:1" d="M-50.00000,-375.27767 L-50.00000,-433.01270 L0.00000,-346.41016 Z"/>
+          <path style="fill:url(#triGrad-down45002);stroke:none;opacity:1;fill-opacity:1" d="M-50.00000,-375.27767 L0.00000,-346.41016 L-100.00000,-346.41016 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-down46000);stroke:none;opacity:1;fill-opacity:1" d="M50.00000,-375.27767 L0.00000,-346.41016 L50.00000,-433.01270 Z"/>
+          <path style="fill:url(#triGrad-down46001);stroke:none;opacity:1;fill-opacity:1" d="M50.00000,-375.27767 L50.00000,-433.01270 L100.00000,-346.41016 Z"/>
+          <path style="fill:url(#triGrad-down46002);stroke:none;opacity:1;fill-opacity:1" d="M50.00000,-375.27767 L100.00000,-346.41016 L0.00000,-346.41016 Z"/>
+        </g>
+        <g>
+          <path style="fill:url(#triGrad-down47000);stroke:none;opacity:1;fill-opacity:1" d="M150.00000,-375.27767 L100.00000,-346.41016 L150.00000,-433.01270 Z"/>
+          <path style="fill:url(#triGrad-down47001);stroke:none;opacity:1;fill-opacity:1" d="M150.00000,-375.27767 L150.00000,-433.01270 L200.00000,-346.41016 Z"/>
+          <path style="fill:url(#triGrad-down47002);stroke:none;opacity:1;fill-opacity:1" d="M150.00000,-375.27767 L200.00000,-346.41016 L100.00000,-346.41016 Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

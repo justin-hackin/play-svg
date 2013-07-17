@@ -1,0 +1,9 @@
+<svg xmlns:ns0="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" ns0:svg="http://www.w3.org/2000/svg" width="1280" height="1280">
+  <defs/>
+  <g id="canvas" transform="matrix(1,0,0,-1,0,1280) translate(640,640)">
+    <path style="stroke:black;fill:none" d="M162.50000,0.00000 L600.00000,0.00000 L600.00000,437.50000 L437.50000,437.50000 L437.50000,600.00000 L0.00000,600.00000 L0.00000,162.50000 L162.50000,162.50000 Z"/>
+    <path style="stroke:none;fill:black" d="M200.00000,37.50000 L562.50000,37.50000 L562.50000,400.00000 L475.00000,400.00000 L475.00000,125.00000 L200.00000,125.00000 Z"/>
+    <path style="stroke:none;fill:black" d="M37.50000,200.00000 L37.50000,562.50000 L400.00000,562.50000 L400.00000,475.00000 L125.00000,475.00000 L125.00000,200.00000 Z"/>
+    <path style="stroke:none;fill:black" d="M162.50000,162.50000 L437.50000,162.50000 L437.50000,437.50000 L162.50000,437.50000 Z"/>
+  </g>
+</svg>
