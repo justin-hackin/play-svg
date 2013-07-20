@@ -2,7 +2,7 @@
 all colors are represented as arrays or tuples of 3 [0,1) values except for hex colors i.e. #ffffff
 '''
 from __future__ import division
-import math
+import math 
 
 
 #>>>Taken from ASPN cookbook'''

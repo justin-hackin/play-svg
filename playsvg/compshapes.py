@@ -6,7 +6,7 @@ import playsvg.pathshapes
 from playsvg.path import *
 import playsvg.color
 
-def buildFlowerOfLife( level, radius):
+def buildFlowerOfLife( level, radius, tweakRadius=1):
     centre = Point(0,0)
     flowerGroup = buildGroup(id="hexagonlattice")
     
@@ -31,13 +31,31 @@ def buildFlowerOfLife( level, radius):
             sidePoints = []
             sidePoints.extend(getLineDivisions(hexagonFrame[j], hexagonFrame[(j+1)%6], i+1))
             for k in range(len(sidePoints)-1):
-                flowerLayerGroup.append(buildCircle(sidePoints[k], radius, circleAttributes))
+                flowerLayerGroup.append(buildCircle(sidePoints[k], radius*tweakRadius, circleAttributes))
              
         flowerGroup.append(flowerLayerGroup)
     return flowerGroup
-    
 
-def buildHexagonLattice(level, radius):
+
+
+def buildCircleGrid(startPoint, columns, rows, radius, radiusSpacingRatio, circleAttrs={'style':'stroke-width:3;stroke:black;fill:none'}):
+    spacing = radiusSpacingRatio*radius
+    radiusAndSpace = radius + spacing
+    circlesGroup = buildGroup()
+    
+    for i in range(columns):
+        thisRows = rows
+        yStart = 0
+        if (i%2==1): 
+            yStart = radiusAndSpace
+            thisRows-=1
+        xval = startPoint.x+i*radiusAndSpace*2*(math.sqrt(3.0)/2.0)       
+        for j in range(thisRows):
+            yVal = startPoint.y +yStart + j*radiusAndSpace*2 
+            circlesGroup.append(buildCircle(Point(xval, yVal), radius, circleAttrs) )
+    return circlesGroup    
+
+def buildHexagonLattice(level, radius, radiusTweak=1):
     #add centre hexagon
     
     distFromHex = radius*math.sin((0.5-1.0/6)*2*math.pi)/math.sin(1.0/12*2*math.pi)
@@ -60,7 +78,7 @@ def buildHexagonLattice(level, radius):
             sidePoints = []
             sidePoints.extend(getLineDivisions(hexagonFrame[j], hexagonFrame[(j+1)%6], i+1))
             for k in range(len(sidePoints)-1):
-                levelGroup.append(buildPath(playsvg.pathshapes.hexagon(sidePoints[k], radius),hexAttr  ))
+                levelGroup.append(buildPath(playsvg.pathshapes.hexagon(sidePoints[k], radius*radiusTweak),hexAttr  ))
         latticeGroup.append(levelGroup)
         
     return latticeGroup
@@ -329,7 +347,7 @@ def buildSymetricPetalFlower(petals, centreHoopRadius, flowerRadius, rvbdVector,
     return flowerGroup
 
 
-def buildCircledCircles(circles, radius, spacing, attrs = defaultStyleAttrs):
+def buildCircledCircles(circles, radius, spacing, attrs = { 'style': "fill:none;stroke:black;stroke-width:1"}):
     circleGroup = buildGroup( id='circledcircles')
     
     vertices = createRadialPlots(Point(0,0), radius*spacing/100.0, circles)

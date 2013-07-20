@@ -275,7 +275,7 @@ class PathData:
 #            #swap positions of closeInd and swap index
 #            self.commandList[closeInd], self.commandList[swapInd] = self.commandList[swapInd], self.commandList[closeInd]
       
-        return self
+        return self 
         
     def backAndForth(self, overlaps):
         """makes a path overlap itself in a back and forth motion a certain number of times"""

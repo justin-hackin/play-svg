@@ -1,18 +1,21 @@
-"""creates a circle in a rectangle in a circle in a rectangle in a.... """
-from playsvg.document import *
+"""generates a circular wave pattern"""
+import playsvg.document
+import playsvg.pathshapes
+from playsvg.geom import *
 from playsvg.element import *
+from playsvg.path import *
+import math
 
-docu = Document()
-levels = 22
-startSize = 200
-currentSize = startSize
-for i in range(levels):
-    docu.append(buildRect(Point(-1*currentSize, -1*currentSize), 2*currentSize, 2*currentSize, {'style':'stroke:none; fill:white'}))
-    docu.append(buildCircle(Point(), currentSize, {'style':'fill:black; stroke:none'}))
-    currentSize = Point().polerInit(currentSize,1.0/8).x
+sqPi = math.sqrt(math.pi)
+rad = 200
+square = PathData().moveTo(Point(sqPi/-2*rad,sqPi/2*rad )).\
+lineTo(Point(sqPi/2*rad,sqPi/2*rad )).\
+lineTo(Point(sqPi/2*rad,sqPi/-2*rad )).\
+lineTo(Point(sqPi/-2*rad,sqPi/-2*rad )).\
+lineTo(Point(sqPi/-2*rad,sqPi/2*rad )).closePath()
 
-docu.writeSVG("circle_squared_rev.svg")
+docu = document.Document()
+docu.append(buildCircle(Point(), rad, {'style':'stroke:black;fill:none'}))
+docu.append(buildPath(square, {'style':'stroke:black;fill:none'}))
 
-
-
-
+docu.writeSVG('circleSquared.svg')

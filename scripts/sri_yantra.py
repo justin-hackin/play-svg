@@ -69,16 +69,16 @@ print "t3"
 t3rRayCross = Segment(t2a, t2r).intersection(Segment(t1l, t1r))[0]
 t3rRay = Ray(t3a, t3rRayCross) 
 docu.append(makeLine(t3rRay))
-t3lRay = Ray(t3a, Point(-1*t3rRayCross.x, t3rRayCross.y ))
+#t3lRay = Ray(t3a, Point(-1*t3rRayCross.x, t3rRayCross.y ))
 docu.append(makeLine(t3lRay))
 
 print "t4"
 
 t4rRayCross = Segment(t2l, t2r).intersection(Segment(t1a, t1r))[0]
 t4rRay = Ray(t4a, t4rRayCross)
-docu.append(makeLine(t4rRay))
+#docu.append(makeLine(t4rRay))
 t4lRay = Ray(t4a, Point(-1*t4rRayCross.x, t4rRayCross.y ))
-docu.append(makeLine(t4lRay))
+#docu.append(makeLine(t4lRay))
 
 print "t5"
 

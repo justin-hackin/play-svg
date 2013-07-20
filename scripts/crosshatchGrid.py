@@ -33,7 +33,7 @@ def buildCrosshatchGrid(numPoints, size):
     return gridGroup
 
 docu = Document()
-docu.append(buildCrosshatchGrid(10,600))
+docu.append(buildCrosshatchGrid(100,600))
 docu.writeSVG("crosshatchGrid.svg")
 
 

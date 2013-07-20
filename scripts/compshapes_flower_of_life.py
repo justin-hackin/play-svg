@@ -5,6 +5,7 @@ from playsvg.document import *
 from playsvg import compshapes
 
 docu = Document()
-docu.append(compshapes.buildFlowerOfLife(7, 50))
+for i in range(0,10,2):
+    docu.append(compshapes.buildFlowerOfLife(7, 80, 0.5+i*.1))
 docu.writeSVG("compshapes_flower_of_life.svg")
 

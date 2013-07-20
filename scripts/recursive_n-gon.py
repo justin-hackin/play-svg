@@ -5,8 +5,8 @@ from playsvg.element import *
 from playsvg.path import *
 
 #number of sides
-n = 10
-iters = 3
+n = 5
+iters = 4
 initRadius = 600
 #based upon the internal angal of the n-gon
 bendAngal = 0.5 - 0.5*(n-2)/n

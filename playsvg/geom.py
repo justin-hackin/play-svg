@@ -1,7 +1,7 @@
 """
 This module contains all classes and methods used for geometric calculations. 
 pLAySVG has one unconventional term it uses in its geometric calculations: 'angal'.   An angal is a fractional representation of an angle such that (using the clock metaphor) 0 is at 12:00, 0.25 is at 3:00, 0.5 is at 6:00, and 0.75 is at 9:00.  An angal is always in range \|0 - 1( as whole number portions of numbers are truncated in any calculations using them.
-"""
+""" 
 
 import math
 import numbthy

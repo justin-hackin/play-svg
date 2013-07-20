@@ -1,0 +1,49 @@
+<svg xmlns:ns0="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" ns0:svg="http://www.w3.org/2000/svg" width="1280" height="1280">
+  <defs/>
+  <g id="canvas" transform="matrix(1,0,0,-1,0,1280) translate(640,640)">
+    <rect y="-600.00000" x="-600.00000" style="stroke:none; fill:white" width="1200.00000" height="1200.00000"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="600.00000" cy="0.00000"/>
+    <rect y="-424.26407" x="-424.26407" style="stroke:none; fill:white" width="848.52814" height="848.52814"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="424.26407" cy="0.00000"/>
+    <rect y="-300.00000" x="-300.00000" style="stroke:none; fill:white" width="600.00000" height="600.00000"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="300.00000" cy="0.00000"/>
+    <rect y="-212.13203" x="-212.13203" style="stroke:none; fill:white" width="424.26407" height="424.26407"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="212.13203" cy="0.00000"/>
+    <rect y="-150.00000" x="-150.00000" style="stroke:none; fill:white" width="300.00000" height="300.00000"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="150.00000" cy="0.00000"/>
+    <rect y="-106.06602" x="-106.06602" style="stroke:none; fill:white" width="212.13203" height="212.13203"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="106.06602" cy="0.00000"/>
+    <rect y="-75.00000" x="-75.00000" style="stroke:none; fill:white" width="150.00000" height="150.00000"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="75.00000" cy="0.00000"/>
+    <rect y="-53.03301" x="-53.03301" style="stroke:none; fill:white" width="106.06602" height="106.06602"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="53.03301" cy="0.00000"/>
+    <rect y="-37.50000" x="-37.50000" style="stroke:none; fill:white" width="75.00000" height="75.00000"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="37.50000" cy="0.00000"/>
+    <rect y="-26.51650" x="-26.51650" style="stroke:none; fill:white" width="53.03301" height="53.03301"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="26.51650" cy="0.00000"/>
+    <rect y="-18.75000" x="-18.75000" style="stroke:none; fill:white" width="37.50000" height="37.50000"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="18.75000" cy="0.00000"/>
+    <rect y="-13.25825" x="-13.25825" style="stroke:none; fill:white" width="26.51650" height="26.51650"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="13.25825" cy="0.00000"/>
+    <rect y="-9.37500" x="-9.37500" style="stroke:none; fill:white" width="18.75000" height="18.75000"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="9.37500" cy="0.00000"/>
+    <rect y="-6.62913" x="-6.62913" style="stroke:none; fill:white" width="13.25825" height="13.25825"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="6.62913" cy="0.00000"/>
+    <rect y="-4.68750" x="-4.68750" style="stroke:none; fill:white" width="9.37500" height="9.37500"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="4.68750" cy="0.00000"/>
+    <rect y="-3.31456" x="-3.31456" style="stroke:none; fill:white" width="6.62913" height="6.62913"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="3.31456" cy="0.00000"/>
+    <rect y="-2.34375" x="-2.34375" style="stroke:none; fill:white" width="4.68750" height="4.68750"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="2.34375" cy="0.00000"/>
+    <rect y="-1.65728" x="-1.65728" style="stroke:none; fill:white" width="3.31456" height="3.31456"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="1.65728" cy="0.00000"/>
+    <rect y="-1.17187" x="-1.17187" style="stroke:none; fill:white" width="2.34375" height="2.34375"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="1.17187" cy="0.00000"/>
+    <rect y="-0.82864" x="-0.82864" style="stroke:none; fill:white" width="1.65728" height="1.65728"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="0.82864" cy="0.00000"/>
+    <rect y="-0.58594" x="-0.58594" style="stroke:none; fill:white" width="1.17187" height="1.17187"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="0.58594" cy="0.00000"/>
+    <rect y="-0.41432" x="-0.41432" style="stroke:none; fill:white" width="0.82864" height="0.82864"/>
+    <circle style="fill:black; stroke:none" cx="0.00000" r="0.41432" cy="0.00000"/>
+  </g>
+</svg>

@@ -70,6 +70,32 @@ def phiSpiralBez(pointA, pointB, iter, reverseDirection=0, expanding=0):
     
     return spiralPath
 
+# def phiSpiralArc(pointA, pointB, iter, reverseDirection=0, expanding=0):
+#     '''creates a Phi spiral inside a rectangle with short side AB, and rectangle existing
+#     on the right side of AB when travelling from A to B (or the opposite if reverseDirection = 1).
+#     iter defines the number of iterations.  Composed with a series of arcs. '''
+#     phi = (1 + math.sqrt(5)) / 2.0
+#     if reverseDirection: 
+#         angle = 0.25
+#     else: angle = 0.75
+#     sweepValue = int((not reverseDirection) ^ (not expanding))
+#     if expanding : multVal = 1.0 +phi
+#     else: multVal = phi -1
+#     
+#     spiralPath = PathData().moveTo(pointA)
+#     currentPoint = deepcopy(pointA)
+#     adjacentCorner = deepcopy(pointB)
+#     sideLength = distanceBetween(currentPoint, adjacentCorner)
+#     destinationPoint = extendBendPoint(currentPoint, adjacentCorner,  sideLength,angle)
+#     for i in range(iter):
+#         spiralPath.elipticalArc(Point(sideLength, sideLength), destinationPoint, sweepFlag=sweepValue)
+#         currentPoint = deepcopy(destinationPoint)
+#         adjacentCorner= extendBendPoint(adjacentCorner,destinationPoint , float(sideLength)*(multVal),0)
+#         sideLength = distanceBetween(currentPoint, adjacentCorner)
+#         destinationPoint = extendBendPoint(currentPoint, adjacentCorner, sideLength,angle)
+#     return spiralPath
+#     
+
 def phiFlower(centerRadius,rays, spiralWidth, spiralIter):
     """a flower-like shape formed by phi spirals"""
     flowerPath = PathData()
@@ -162,6 +188,17 @@ def rayBlocks(rays, innerRadius, outerRadius, innerSpacingRatio, outerSpacingRat
             allBlocks.closePath()
 
     return allBlocks
+
+def chevron(tipPoint,thickness, width, angal):
+    """generates chevron shaped path of given startPoint, thickness, width, and angal"""
+    outerSideLength = (width/2.0)/math.cos((0.5-angal)/2.0*tewpi)
+    tipInner = tipPoint + Point(0,math.tan((0.25-angal/2.0)*tewpi)*thickness)
+    rightOuter = extendBendPoint(tipPoint + Point(0, -10), tipPoint, outerSideLength, angal/2.0)
+    rightInner = rightOuter + Point(-thickness, 0)
+    leftOuter = extendBendPoint(tipPoint + Point(0, -10), tipPoint, outerSideLength, -angal/2.0)
+    leftInner = leftOuter + Point(thickness, 0)
+    chevPoints = [tipPoint, rightOuter, rightInner, tipInner, leftInner, leftOuter]
+    return PathData().makeHull(chevPoints)    
     
 def tomsensFigure(radius, insetRatio):
     '''generates a Tomsens Figure, see : http://mathworld.wolfram.com/ThomsensFigure.html '''
@@ -322,31 +359,7 @@ def hexagon(point, radius):
     return path
 
 
-##def phiSpiralArc(pointA, pointB, iter, reverseDirection=0, expanding=0):
-##    '''creates a Phi spiral inside a rectangle with short side AB, and rectangle existing
-##    on the right side of AB when travelling from A to B (or the opposite if reverseDirection = 1).
-##    iter defines the number of iterations.  Composed with a series of arcs. '''
-##    phi = (1 + math.sqrt(5)) / 2.0
-##    if reverseDirection: 
-##        angle = 0.25
-##    else: angle = 0.75
-##    sweepValue = int((not reverseDirection) ^ (not expanding))
-##    if expanding : multVal = 1.0 +phi
-##    else: multVal = phi -1
-##    
-##    spiralPath = PathData().moveTo(pointA)
-##    currentPoint = deepcopy(pointA)
-##    adjacentCorner = deepcopy(pointB)
-##    sideLength = distanceBetween(currentPoint, adjacentCorner)
-##    destinationPoint = extendBendPoint(currentPoint, adjacentCorner,  sideLength,angle)
-##    for i in range(iter):
-##        spiralPath.elipticalArc(Point(sideLength, sideLength), destinationPoint, sweepFlag=sweepValue)
-##        currentPoint = deepcopy(destinationPoint)
-##        adjacentCorner= extendBendPoint(adjacentCorner,destinationPoint , float(sideLength)*(multVal),0)
-##        sideLength = distanceBetween(currentPoint, adjacentCorner)
-##        destinationPoint = extendBendPoint(currentPoint, adjacentCorner, sideLength,angle)
-##    return spiralPath
-##    
+
 
   
 ##def lineSawWave(pointA, pointB, heightRatio, reps):

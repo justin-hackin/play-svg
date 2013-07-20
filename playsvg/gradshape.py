@@ -2,7 +2,7 @@ import document
 from gradient import *
 from geom import *
 from element import *
-from path import *
+from path import * 
 """module for generating SVG objects with gradients in them
     in most cases, if the method is used more than once with the same gradient and id (or none), fault will occur  
 """

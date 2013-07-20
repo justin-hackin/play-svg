@@ -6,5 +6,6 @@ from playsvg import compshapes
 
 
 docu = Document()
-docu.append(compshapes.buildHexagonLattice(12, 30))
+for i in range(7,13):
+    docu.append(compshapes.buildHexagonLattice(12, 30, i*0.1 ))
 docu.writeSVG("compshapes_hexagonal_lattice.svg")

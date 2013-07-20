@@ -188,6 +188,17 @@ def rayBlocks(rays, innerRadius, outerRadius, innerSpacingRatio, outerSpacingRat
             allBlocks.closePath()
 
     return allBlocks
+
+def chevron(tipPoint,thickness, width, angal):
+    """generates chevron shaped path of given startPoint, thickness, width, and angal"""
+    outerSideLength = (width/2.0)/math.cos((0.5-angal)/2.0*tewpi)
+    tipInner = tipPoint + Point(0,math.tan((0.25-angal/2.0)*tewpi)*thickness)
+    rightOuter = extendBendPoint(tipPoint + Point(0, -10), tipPoint, outerSideLength, angal/2.0)
+    rightInner = rightOuter + Point(-thickness, 0)
+    leftOuter = extendBendPoint(tipPoint + Point(0, -10), tipPoint, outerSideLength, -angal/2.0)
+    leftInner = leftOuter + Point(thickness, 0)
+    chevPoints = [tipPoint, rightOuter, rightInner, tipInner, leftInner, leftOuter]
+    return PathData().makeHull(chevPoints)    
     
 def tomsensFigure(radius, insetRatio):
     '''generates a Tomsens Figure, see : http://mathworld.wolfram.com/ThomsensFigure.html '''

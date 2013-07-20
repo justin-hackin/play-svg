@@ -8,7 +8,7 @@ try:
 except:
     sys.exit('The document.py module requires lxml etree. ')
 
-def setAttributesFromDict(element,dict):
+def setAttributesFromDict(element,dict): 
     """uses a dictionary to populate xml attributes for a particular lxml element """
     for key, val in dict.items():
         element.set(key, val)

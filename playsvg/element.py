@@ -7,7 +7,7 @@ The element module is transitionally implementing the use of sympy.geometry.Poin
 """
 import io 
 from copy import *
-import string
+import string 
 import re
 from geom import *
 from path import PathData

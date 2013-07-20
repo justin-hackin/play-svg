@@ -2,7 +2,7 @@ import document
 from gradient import *
 from geom import *
 from element import *
-from path import *
+from path import * 
 """module for generating SVG objects with gradients in them
     in most cases, if the method is used more than once with the same gradient and id (or none), fault will occur  
 """
@@ -29,21 +29,21 @@ def triangleGradient(docu, points, gradient, id = '' ):
     
     projectionPoint = projectionPointOnLine(points[0], points[1], points[2])
     triLinGrad = LinearGradient('triGrad-'  + id , gradient, (projectionPoint, points[0])) 
-    docu.appendDefinition(triLinGrad.createDefinition(docu))
+    docu.appendDefinition(triLinGrad.createDefinition())
     innerTriangle = PathData().makeHull(points)
-    return buildPath(docu, innerTriangle, \
+    return buildPath( innerTriangle, \
         {u'style':u'fill:url(#triGrad-'+ id +u');stroke:none;opacity:1;fill-opacity:1'})
 
-def quadGradient(docu,points, gradient, id=''):
+def quadGradient(docu, points, gradient, id=''):
     '''returns a quadrilateral with a linear gradient running from the middle of first 2 points to the middle of last 2 points'''
     if len(points) != 4:
         raise Exception, "points must be of length 4"
     controls = (getMidpoint(points[0], points[1]), getMidpoint(points[2], points[3]))
     
     quadGrad = LinearGradient('quadGrad-'  + id , gradient, controls) 
-    docu.appendDefinition(quadGrad.createDefinition(docu))
+    docu.appendDefinition(quadGrad.createDefinition())
     quadPath = PathData().makeHull(points)
-    return buildPath(docu, quadPath, \
+    return buildPath( quadPath, \
         {u'style':u'fill:url(#quadGrad-'+ id +u');stroke:none;opacity:1;fill-opacity:1'})
 
 def verticalQuadGradient(docu,points, gradient, id=''):
@@ -54,9 +54,9 @@ def verticalQuadGradient(docu,points, gradient, id=''):
     ctrl1 = getMidpoint(points[0], points[1])
     ctrl2 = projectionPointOnLine(ctrl1, points[2], points[3])
     quadGrad = LinearGradient('quadGrad-'  + id , gradient, (ctrl1, ctrl2)) 
-    docu.appendDefinition(quadGrad.createDefinition(docu))
+    docu.appendDefinition(quadGrad.createDefinition())
     quadPath = PathData().makeHull(points)
-    return buildPath(docu, quadPath, \
+    return buildPath( quadPath, \
         {u'style':u'fill:url(#quadGrad-'+ id +u');stroke:none;opacity:1;fill-opacity:1'})
 
 def polygonGradient(docu, points, gradient, id=''):
@@ -65,7 +65,7 @@ def polygonGradient(docu, points, gradient, id=''):
     #triangle = PathData().moveTo(Point(0,0)).lineTo(Point(-100, -100)).lineTo(Point(200, -200)).closePath()
     numPoints = len(points)
     midPoint = polygonMidpoint(points)
-    innerTriGroup = docu.makeGroup()
+    innerTriGroup = buildGroup()
         
     for i in range(numPoints):
         triPoints = [midPoint, points[i], points[(i+1)%numPoints]]
@@ -82,8 +82,8 @@ if __name__ == "__main__":
     gradientColors = ('#67ff00', '#fd00ff', '#1e00ff')
     gradient = Gradient('grad000')
     gradient.createBalancedGradient(gradientColors)
-    docu.appendDefinition(gradient.createDefinition(docu))
-    docu.appendElement(polygonGradient(docu,createRadialPlots(Point(100,100), 100, 16, passive=1),gradient ))
+    docu.appendDefinition(gradient.createDefinition())
+    docu.append(polygonGradient(createRadialPlots(Point(100,100), 100, 16, passive=1),gradient ))
     docu.writeSVG('gradientient.svg')
 print "done01"
 
