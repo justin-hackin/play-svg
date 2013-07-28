@@ -31,6 +31,7 @@ class PathData:
     def dInit(self, text):
         """initialize the object with the code from an svg d attribute text """
         self.initWithSimplePathArray(simplepath.parsePath(text))
+        return self
     def initWithSimplePathArray(self, pathArray):
         for command, params in pathArray:
             if command == 'L':
