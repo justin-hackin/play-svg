@@ -1,7 +1,6 @@
 =============
 pLAySVG: making graphical programming as easy as py
-Download: http://github.com/cosmo-guffa/play-svg
-Documentation: http://cosmo-guffa.github.io/play-svg/
+Documentation: http://justin-hackin.github.io/play-svg/
 Example script gallery: http://cosmic-spacecrafts.net/blog/playsvg-gallery
 =============
 
