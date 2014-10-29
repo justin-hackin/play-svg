@@ -1,3 +1,7 @@
+WARNING: Due to the rise of many excellent Javascript libraries for generating SVG, this library is no longer maintained. 
+In particular, http://paperjs.org/ can do everything this library can and more 
+Some of the scripts posted here may serve as a reference for interesting things one can do with vector graphics programming
+
 =============
 pLAySVG: making graphical programming as easy as py
 Documentation: http://justin-hackin.github.io/play-svg/
